@@ -1,14 +1,20 @@
 import csv
 import os
 
-def analysisCDFCount(countPath, writeRequestNum, clientNum, minObjectSize, maxObjectSize):
-    countCDFFile=open(countPath,"r")
-    countReader=csv.DictReader(countCDFFile)
 
-    for line in countReader:
+def getCDFDict(path):
+    cdfFile=open(path, "r")
+    reader=csv.DictReader(cdfFile)
+    filename=os.path.basename(path).split(".csv")[0]
+
+    cdfRatio={}
+    lastCDF=0
+
+    for line in reader:
         print(line)
-
         print(float(line['size'])/1024)
+
+        cdfRatio[int(line['size'])]=float(line[filename])-lastCDF
 
 
 if __name__=="__main__":
@@ -23,7 +29,7 @@ if __name__=="__main__":
     minObjectSize=64*1024
     maxObjectSize=64*1024*1024
 
-    analysisCDFCount(countPath,writeRequestNum,clientNum,minObjectSize,maxObjectSize)
+    getCDFDict(countPath)
 
     # folder=os.path.exists(str(clientNum))
     #
