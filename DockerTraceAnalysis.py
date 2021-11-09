@@ -1,6 +1,9 @@
 import os
 import json
 import csv
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
 
 def get_filelist(dir):
@@ -89,12 +92,58 @@ def getDetailedInfo(path):
     print("Get size greater than 1M num", getGreaterThan1MRequestCounter)
 
 
+def plotCDF(path):
+    data = []
+    data = pd.read_csv(path, header=None)
+    print(list(data))
+
+    # 获取数据的总数
+    denominator = len(data[2])
+    # 将数据转换为Series
+    Data = pd.Series(data[2])
+    # 利用value_counts方法进行分组频数计算
+    Fre = Data.value_counts()
+    # 对获得的表格整体按照索引自小到大进行排序
+    Fre_sort = Fre.sort_index(axis=0, ascending=True)
+
+    # 重置表格索引
+    Fre_df = Fre_sort.reset_index()
+    # 将频数转换成概率
+    Fre_df[0] = Fre_df[0] / denominator
+    # 将列表列索引重命名
+    Fre_df.columns = ['Rds', 'Fre']
+
+    # 利用cumsum函数进行概率的累加并按照顺序添加到表格中
+    Fre_df['cumsum'] = np.cumsum(Fre_df['Fre'])
+
+    # 创建画布
+    plot = plt.figure()
+    # 只有一张图，也可以多张
+    ax1 = plot.add_subplot(1, 1, 1)
+    # 按照Rds列为横坐标，累计概率分布为纵坐标作图
+    ax1.plot(Fre_df['Rds'], Fre_df['cumsum'])
+    # 图的标题
+    ax1.set_title("CDF")
+    # 横轴名
+    ax1.set_xlabel("Rds")
+    # 纵轴名
+    ax1.set_ylabel("P")
+    # 横轴的界限
+    ax1.set_xlim(0.1, 0.5)
+    # 图片显示
+    plt.show()
+
+
 if __name__ == "__main__":
     path = r"./data_centers"
     # get_filelist(path)
 
-    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\dal09.csv"
-    getDetailedInfo(detailedInfoPath)
+    # detailedInfoPath = r"F:\Coding\Python\ali-trace\results\dal09.csv"
+    # getDetailedInfo(detailedInfoPath)
+
+    testPath=r"./test.csv"
+    plotCDF(testPath)
+
 
     # with open(r"F:\Coding\Python\ali-trace\data_centers\dal09\prod-dal09-logstash-2017.06.20-0.json","r") as f:
     #     data=json.load(f)
