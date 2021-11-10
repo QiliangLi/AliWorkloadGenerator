@@ -94,35 +94,39 @@ def getDetailedInfo(path):
 
 
 def plotCDF(path):
-    putRecord={}
-    putRecord['Size']=[]
-    getRecord={}
-    getRecord['Size']=[]
+    putRecord = {}
+    putRecord['Size'] = []
+    getRecord = {}
+    getRecord['Size'] = []
 
     data = pd.read_csv(path, header=None)
-    data.columns=['Name','Type','Size']
+    data.columns = ['Name', 'Type', 'Size']
 
-    # 将size转换成MB
-    data['Size']/=1024*1024
+    # # 将size转换成MB
+    # data['Size'] /= 1024 * 1024
+    # 将size转换成KB
+    data['Size'] /= 1024
     # print(data)
 
     # 获取数据的总数
     requestNum = len(data['Size'])
     for index, row in data.iterrows():
-        if row['Type']=="PUT":
+        if row['Type'] == "PUT":
             putRecord['Size'].append(row['Size'])
         else:
             getRecord['Size'].append(row['Size'])
 
-    putRequestNum=len(putRecord['Size'])
-    getRequestNum=len(getRecord['Size'])
-    putDf=DataFrame(putRecord)
-    getDf=DataFrame(getRecord)
+    putRequestNum = len(putRecord['Size'])
+    getRequestNum = len(getRecord['Size'])
+    print(requestNum, putRequestNum, getRequestNum)
+
+    putDf = DataFrame(putRecord)
+    getDf = DataFrame(getRecord)
 
     # 将数据转换为Series
     Data = pd.Series(data['Size'])
-    putData=pd.Series(putDf['Size'])
-    getData=pd.Series(getDf['Size'])
+    putData = pd.Series(putDf['Size'])
+    getData = pd.Series(getDf['Size'])
 
     # 利用value_counts方法进行分组频数计算
     Fre = Data.value_counts()
@@ -163,17 +167,18 @@ def plotCDF(path):
     # 只有一张图，也可以多张
     ax1 = plot.add_subplot(1, 1, 1)
     # 按照Rds列为横坐标，累计概率分布为纵坐标作图
-    ax1.plot(Fre_df['Size'], Fre_df['cumsum'])
-    ax1.plot(putFre_df['Size'], putFre_df['cumsum'])
-    ax1.plot(getFre_df['Size'], getFre_df['cumsum'])
+    ax1.plot(Fre_df['Size'], Fre_df['cumsum'], label="ALL")
+    ax1.plot(putFre_df['Size'], putFre_df['cumsum'], label="PUT")
+    ax1.plot(getFre_df['Size'], getFre_df['cumsum'], label="GET")
     # 图的标题
     ax1.set_title("CDF")
     # 横轴名
-    ax1.set_xlabel("Object Size(MB)")
+    ax1.set_xlabel("Object Size(KB)")
     # 纵轴名
     ax1.set_ylabel("P")
     # 横轴的界限
-    # ax1.set_xlim(0.1, 0.5)
+    ax1.set_xlim(-1, 16)
+    plt.legend()
     # 图片显示
     plt.show()
 
@@ -182,12 +187,12 @@ if __name__ == "__main__":
     path = r"./data_centers"
     # get_filelist(path)
 
-    # detailedInfoPath = r"F:\Coding\Python\ali-trace\results\dal09.csv"
+    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\dal09.csv"
     # getDetailedInfo(detailedInfoPath)
+    plotCDF(detailedInfoPath)
 
-    testPath=r"./test.csv"
-    plotCDF(testPath)
-
+    # testPath=r"./test.csv"
+    # plotCDF(testPath)
 
     # with open(r"F:\Coding\Python\ali-trace\data_centers\dal09\prod-dal09-logstash-2017.06.20-0.json","r") as f:
     #     data=json.load(f)
