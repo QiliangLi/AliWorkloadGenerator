@@ -120,6 +120,10 @@ def plotCDF(path):
     getRequestNum = len(getRecord['Size'])
     print(requestNum, putRequestNum, getRequestNum)
 
+    avgPutSize = sum(putRecord['Size']) / (putRequestNum * 1024 * 1024)
+    avgGetSize = sum(getRecord['Size']) / (getRequestNum * 1024 * 1024)
+    print("avg object size (MB)", avgPutSize, avgGetSize)
+
     putDf = DataFrame(putRecord)
     getDf = DataFrame(getRecord)
 
@@ -177,10 +181,38 @@ def plotCDF(path):
     # 纵轴名
     ax1.set_ylabel("P")
     # 横轴的界限
-    ax1.set_xlim(-1, 16)
+    ax1.set_xlim(-100, 2048)
     plt.legend()
     # 图片显示
     plt.show()
+
+
+def getFilterTraces(path, minObjectSize, maxObjectSize):
+    names = []
+    types = []
+    sizes = []
+    filterPath = "filter-" + os.path.basename(path)
+    filterPath = os.path.join(os.path.dirname(path), filterPath)
+    print(filterPath)
+
+    with open(path, "r") as resultFile:
+        reader = csv.reader(resultFile)
+
+        for line in reader:
+            name = line[0]
+            typee = line[1]
+            sizee = int(line[2])
+            print(name, typee, sizee)
+
+            if sizee >= minObjectSize and sizee <= maxObjectSize:
+                names.append(name)
+                types.append(typee)
+                sizes.append(sizee)
+
+    with open(filterPath, "w", newline="") as filterFile:
+        writer = csv.writer(filterFile)
+        for i in range(len(names)):
+            writer.writerow([names[i], types[i], sizes[i]])
 
 
 if __name__ == "__main__":
@@ -189,10 +221,15 @@ if __name__ == "__main__":
 
     detailedInfoPath = r"F:\Coding\Python\ali-trace\results\dal09.csv"
     # getDetailedInfo(detailedInfoPath)
-    plotCDF(detailedInfoPath)
+    # plotCDF(detailedInfoPath)
+    # getFilterTraces(detailedInfoPath, 16 * 1024, 2 * 1024 * 1024 * 1024)
+
+    filterPath = r"F:\Coding\Python\ali-trace\results\filter-dal09.csv"
+    plotCDF(filterPath)
 
     # testPath=r"./test.csv"
     # plotCDF(testPath)
+    # getFilterTraces(testPath, 16*1024, 2*1024*1024*1024)
 
     # with open(r"F:\Coding\Python\ali-trace\data_centers\dal09\prod-dal09-logstash-2017.06.20-0.json","r") as f:
     #     data=json.load(f)

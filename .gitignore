@@ -1,5 +1,5 @@
 .idea/
 data_centers/
-RawYCSBTraces/
-results/
-filterResults/
+RawYCSBTraces/*.txt
+results/*.csv
+clients/
