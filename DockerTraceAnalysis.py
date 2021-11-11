@@ -102,10 +102,10 @@ def plotCDF(path):
     data = pd.read_csv(path, header=None)
     data.columns = ['Name', 'Type', 'Size']
 
-    # # 将size转换成MB
-    # data['Size'] /= 1024 * 1024
-    # 将size转换成KB
-    data['Size'] /= 1024
+    # 将size转换成MB
+    data['Size'] /= 1024 * 1024
+    # # 将size转换成KB
+    # data['Size'] /= 1024
     # print(data)
 
     # 获取数据的总数
@@ -120,9 +120,10 @@ def plotCDF(path):
     getRequestNum = len(getRecord['Size'])
     print(requestNum, putRequestNum, getRequestNum)
 
-    avgPutSize = sum(putRecord['Size']) / (putRequestNum * 1024 * 1024)
-    avgGetSize = sum(getRecord['Size']) / (getRequestNum * 1024 * 1024)
-    print("avg object size (MB)", avgPutSize, avgGetSize)
+    # 由于上面已经将data表的size转换成KB或者MB，所以这里不能再除1024了
+    avgPutSize = sum(putRecord['Size']) / (putRequestNum)
+    avgGetSize = sum(getRecord['Size']) / (getRequestNum)
+    print("avg object size (same with xlabel)", avgPutSize, avgGetSize)
 
     putDf = DataFrame(putRecord)
     getDf = DataFrame(getRecord)
@@ -177,11 +178,11 @@ def plotCDF(path):
     # 图的标题
     ax1.set_title("CDF")
     # 横轴名
-    ax1.set_xlabel("Object Size(KB)")
+    ax1.set_xlabel("Object Size(MB)")
     # 纵轴名
     ax1.set_ylabel("P")
     # 横轴的界限
-    ax1.set_xlim(-100, 2048)
+    ax1.set_xlim(-1, 5)
     plt.legend()
     # 图片显示
     plt.show()
@@ -215,6 +216,50 @@ def getFilterTraces(path, minObjectSize, maxObjectSize):
             writer.writerow([names[i], types[i], sizes[i]])
 
 
+def getWarmRequest(path):
+    putNames=set()
+    repeatGetNames=set()
+    warmRequests={}
+
+    warmPath="warm-"+os.path.basename(path)
+    warmPath=os.path.join(os.path.dirname(path), warmPath)
+    print("warmPath", warmPath)
+
+    print("Finding warm requests......")
+    with open(path,"r") as file:
+        reader=csv.reader(file)
+
+        for line in reader:
+            name=line[0]
+            typee=line[1]
+            sizee=int(line[2])
+
+            if typee=="GET":
+                if name not in putNames:
+                    if name not in repeatGetNames:
+                        warmRequests[name]=[]
+                        repeatGetNames.add(name)
+                    warmRequests[name].append([name, typee, sizee])
+            else:
+                putNames.add(name)
+
+    avgSize=0
+    print("Storing results......")
+    with open(warmPath, "w", newline="") as warmFile:
+        writer=csv.writer(warmFile)
+        for name in repeatGetNames:
+            sizeList=[]
+            for line in warmRequests[name]:
+                sizeList.append(line[2])
+
+            warmSize=max(sizeList)
+            writer.writerow([name, "PUT", warmSize])
+            avgSize+=warmSize/(1024*1024)
+
+    print("warmFile all object size (MB)", avgSize)
+    print("warmFile avg object size (MB)", avgSize/len(repeatGetNames))
+
+
 if __name__ == "__main__":
     path = r"./data_centers"
     # get_filelist(path)
@@ -225,7 +270,8 @@ if __name__ == "__main__":
     # getFilterTraces(detailedInfoPath, 16 * 1024, 2 * 1024 * 1024 * 1024)
 
     filterPath = r"F:\Coding\Python\ali-trace\results\filter-dal09.csv"
-    plotCDF(filterPath)
+    # plotCDF(filterPath)
+    getWarmRequest(filterPath)
 
     # testPath=r"./test.csv"
     # plotCDF(testPath)
