@@ -69,8 +69,8 @@ def getSplitIBMResults(warmPath, testPath, basedir, clientNum):
 
 
 if __name__ == "__main__":
-    ycsbWarmPath = r"./RawYCSBTraces/warm.txt"
-    ycsbTestPath = r"./RawYCSBTraces/test.txt"
+    ycsbWarmPath = r"./rawYCSBTraces/warm.txt"
+    ycsbTestPath = r"./rawYCSBTraces/test.txt"
     basedir = r"./clients/"
     clientNum = 6
 

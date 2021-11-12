@@ -7,35 +7,39 @@ import numpy as np
 from pandas import DataFrame, Series
 
 
-def get_filelist(dir):
+def getZoneFileList(dir, subRoot):
+    print("Start zone", subRoot, "...")
+    names = []
+    types = []
+    sizes = []
+
+    for fileName in os.listdir(os.path.join(dir, subRoot)):
+        jfilePath = os.path.join(dir, subRoot, fileName)
+        print("Processing ", jfilePath)
+
+        with open(jfilePath, "r") as jfile:
+            jList = json.load(jfile)
+
+            for jrecord in jList:
+                # print(jrecord)
+                if jrecord["http.request.method"] in ["PUT", "GET"]:
+                    names.append(jrecord["host"] + jrecord["http.request.uri"])
+                    types.append(jrecord["http.request.method"])
+                    sizes.append(jrecord["http.response.written"])
+
+    with open(subRoot + ".csv", "w", newline="") as resultFile:
+        writer = csv.writer(resultFile)
+        for i in range(len(names)):
+            writer.writerow([names[i], types[i], sizes[i]])
+
+    print("Zone", subRoot, "Finished!")
+
+
+def getFileList(dir):
     print(os.listdir(dir))
 
     for subRoot in os.listdir(dir):
-        print("Start zone", subRoot, "...")
-        names = []
-        types = []
-        sizes = []
-
-        for fileName in os.listdir(os.path.join(dir, subRoot)):
-            jfilePath = os.path.join(dir, subRoot, fileName)
-            print("Processing ", jfilePath)
-
-            with open(jfilePath, "r") as jfile:
-                jList = json.load(jfile)
-
-                for jrecord in jList:
-                    # print(jrecord)
-                    if jrecord["http.request.method"] in ["PUT", "GET"]:
-                        names.append(jrecord["host"] + jrecord["http.request.uri"])
-                        types.append(jrecord["http.request.method"])
-                        sizes.append(jrecord["http.response.written"])
-
-        with open(subRoot + ".csv", "w", newline="") as resultFile:
-            writer = csv.writer(resultFile)
-            for i in range(len(names)):
-                writer.writerow([names[i], types[i], sizes[i]])
-
-        print("Zone", subRoot, "Finished!")
+        getZoneFileList(dir, subRoot)
 
 
 def getDetailedInfo(path):
@@ -182,7 +186,7 @@ def plotCDF(path):
     # 纵轴名
     ax1.set_ylabel("P")
     # 横轴的界限
-    ax1.set_xlim(-1, 5)
+    ax1.set_xlim(-0.25, 3)
     plt.legend()
     # 图片显示
     plt.show()
@@ -262,16 +266,19 @@ def getWarmRequest(path):
 
 if __name__ == "__main__":
     path = r"./data_centers"
-    # get_filelist(path)
+    # getFileList(path)
 
-    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\dal09.csv"
+    subRoot=r"subDal09_6h"
+    # getZoneFileList(path, subRoot)
+
+    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\subDal09_6h.csv"
     # getDetailedInfo(detailedInfoPath)
-    # plotCDF(detailedInfoPath)
+    plotCDF(detailedInfoPath)
     # getFilterTraces(detailedInfoPath, 16 * 1024, 2 * 1024 * 1024 * 1024)
 
-    filterPath = r"F:\Coding\Python\ali-trace\results\filter-dal09.csv"
+    # filterPath = r"F:\Coding\Python\ali-trace\results\filter-dal09.csv"
     # plotCDF(filterPath)
-    getWarmRequest(filterPath)
+    # getWarmRequest(filterPath)
 
     # testPath=r"./test.csv"
     # plotCDF(testPath)
