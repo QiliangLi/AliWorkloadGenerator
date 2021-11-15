@@ -186,7 +186,7 @@ def plotCDF(path):
     # 纵轴名
     ax1.set_ylabel("P")
     # 横轴的界限
-    ax1.set_xlim(-0.25, 3)
+    # ax1.set_xlim(-1, 16)
     plt.legend()
     # 图片显示
     plt.show()
@@ -264,6 +264,29 @@ def getWarmRequest(path):
     print("warmFile avg object size (MB)", avgSize/len(repeatGetNames))
 
 
+# 去除request中object name中的所有的"/"
+# 去除所有重复的Put
+def eraseDuplicatedPut(path):
+    requests=[]
+    nameSet=set()
+    with open(path, "r") as csvFile:
+        reader=csv.reader(csvFile)
+        for line in reader:
+            line[0]=line[0].replace('/','')
+            if line[1]=="PUT" and line[0] not in nameSet:
+                nameSet.add(line[0])
+                requests.append(line)
+            elif line[1]=="GET":
+                requests.append(line)
+            else:
+                print(line)
+
+    with open(path, "w", newline="") as csvFile:
+        writer=csv.writer(csvFile)
+        for line in requests:
+            writer.writerow(line)
+
+
 if __name__ == "__main__":
     path = r"./data_centers"
     # getFileList(path)
@@ -273,18 +296,19 @@ if __name__ == "__main__":
 
     detailedInfoPath = r"F:\Coding\Python\ali-trace\results\subDal09_6h.csv"
     # getDetailedInfo(detailedInfoPath)
-    plotCDF(detailedInfoPath)
+    # plotCDF(detailedInfoPath)
     # getFilterTraces(detailedInfoPath, 16 * 1024, 2 * 1024 * 1024 * 1024)
 
-    # filterPath = r"F:\Coding\Python\ali-trace\results\filter-dal09.csv"
+    filterPath = r"F:\Coding\Python\ali-trace\results\filter-subDal09_6h.csv"
     # plotCDF(filterPath)
     # getWarmRequest(filterPath)
+
+    warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-subDal09_6h.csv"
+
+    # eraseDuplicatedPut(filterPath)
+    eraseDuplicatedPut(warmPath)
 
     # testPath=r"./test.csv"
     # plotCDF(testPath)
     # getFilterTraces(testPath, 16*1024, 2*1024*1024*1024)
 
-    # with open(r"F:\Coding\Python\ali-trace\data_centers\dal09\prod-dal09-logstash-2017.06.20-0.json","r") as f:
-    #     data=json.load(f)
-    #
-    #     print(type(data[0]))
