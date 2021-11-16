@@ -287,6 +287,26 @@ def eraseDuplicatedPut(path):
             writer.writerow(line)
 
 
+# requestSize=requestSize-requestSize%16KB
+def getModifiedRequestSizes(path, mods):
+    fileName="mod16k_"+os.path.basename(path)
+    fileName=os.path.join(os.path.dirname(path), fileName)
+
+    requests=[]
+    with open(path, "r") as csvfile:
+        reader=csv.reader(csvfile)
+        for line in reader:
+            requestSize=int(line[-1])
+            requestSize=requestSize-requestSize%mods
+            line[-1]=requestSize
+            requests.append(line)
+
+    with open(fileName, "w", newline="") as csvfile:
+        writer=csv.writer(csvfile)
+        for line in requests:
+            writer.writerow(line)
+
+
 if __name__ == "__main__":
     path = r"./data_centers"
     # getFileList(path)
@@ -306,7 +326,10 @@ if __name__ == "__main__":
     warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-subDal09_6h.csv"
 
     # eraseDuplicatedPut(filterPath)
-    eraseDuplicatedPut(warmPath)
+    # eraseDuplicatedPut(warmPath)
+
+    getModifiedRequestSizes(filterPath, 16*1024)
+    getModifiedRequestSizes(warmPath, 16*1024)
 
     # testPath=r"./test.csv"
     # plotCDF(testPath)
