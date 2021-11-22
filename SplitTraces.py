@@ -35,6 +35,30 @@ def splitYCSBTraces(path, basedir, clientNum):
         clientIndex += 1
 
 
+def copyYCSBTraces(path, basedir, clientNum):
+    file = open(path, "r")
+    reader = file.readlines()
+
+    types = []
+    objectNames = []
+    for line in reader:
+        info = line.split(" ")
+        types.append(info[0])
+        objectNames.append(info[1])
+
+    fileName = os.path.basename(path)
+    for clientIndex in range(clientNum):
+        with open(os.path.join(basedir, "client" + str(clientIndex), fileName), "w", newline="") as copyFile:
+            for i in range(len(types)):
+                copyFile.write(types[i].strip() + " " + str(clientIndex) + objectNames[i].strip() + "\n")
+
+
+def getCopyYCSBTraces(warmPath, testPath, basedir, clientNum):
+    createDirs(basedir, clientNum)
+    copyYCSBTraces(warmPath, basedir, clientNum)
+    copyYCSBTraces(testPath, basedir, clientNum)
+
+
 def getSplitYCSBResults(warmPath, testPath, basedir, clientNum):
     createDirs(basedir, clientNum)
     splitYCSBTraces(warmPath, basedir, clientNum)
@@ -69,8 +93,8 @@ def getSplitIBMResults(warmPath, testPath, basedir, clientNum):
 
 
 if __name__ == "__main__":
-    ycsbWarmPath = r"./rawYCSBTraces/warm.txt"
-    ycsbTestPath = r"./rawYCSBTraces/test.txt"
+    ycsbWarmPath = r"./rawYCSBTraces/warm5k.txt"
+    ycsbTestPath = r"./rawYCSBTraces/test5k.txt"
     basedir = r"./clients/"
     clientNum = 6
 
@@ -78,4 +102,5 @@ if __name__ == "__main__":
     ibmTestPath = r"./results/filter-dal09.csv"
 
     # getSplitYCSBResults(ycsbWarmPath, ycsbTestPath, basedir, clientNum)
-    getSplitIBMResults(ibmWarmPath, ibmTestPath, basedir, clientNum)
+    # getSplitIBMResults(ibmWarmPath, ibmTestPath, basedir, clientNum)
+    getCopyYCSBTraces(ycsbWarmPath, ycsbTestPath, basedir, clientNum)
