@@ -1,17 +1,5 @@
 
 client no 0 node 14
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  replicasYCSB 1048576 1048576 1 1048576 false
-Got 0 Exception!
-getDegradeReplicasYCSBRequestsInfo requestList.size() 5000
-requestList.size() 5000
 Request 0 (us) 637.887 type R
 Request 1 (us) 360.609 type R
 Request 2 (us) 581.184 type I
@@ -5012,26 +5000,7 @@ Request 4996 (us) 189.912 type R
 Request 4997 (us) 190.97 type R
 Request 4998 (us) 191.443 type R
 Request 4999 (us) 191.224 type R
-Read request number 2533
-Avg. read request latency (us) 193.95617844453218
-Read iops 5155.8037904215635
-Write request number 2467
-Avg. write request latency (us) 496.71139035265503
-Write iops 2013.241531042846
-All iops 2912.602130393702
 client no 1 node 16
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  replicasYCSB 1048576 1048576 1 1048576 false
-Got 0 Exception!
-getDegradeReplicasYCSBRequestsInfo requestList.size() 5000
-requestList.size() 5000
 Request 0 (us) 1403.433 type R
 Request 1 (us) 558.91 type R
 Request 2 (us) 646.848 type I
@@ -10032,26 +10001,7 @@ Request 4996 (us) 198.997 type R
 Request 4997 (us) 200.759 type R
 Request 4998 (us) 191.229 type R
 Request 4999 (us) 195.978 type R
-Read request number 2533
-Avg. read request latency (us) 210.28148440584286
-Read iops 4755.530439712904
-Write request number 2467
-Avg. write request latency (us) 499.3157681394406
-Write iops 2002.740677960598
-All iops 2833.7361961625547
 client no 2 node 17
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  replicasYCSB 1048576 1048576 1 1048576 false
-Got 0 Exception!
-getDegradeReplicasYCSBRequestsInfo requestList.size() 5000
-requestList.size() 5000
 Request 0 (us) 1415.374 type R
 Request 1 (us) 519.683 type R
 Request 2 (us) 579.665 type I
@@ -15052,26 +15002,7 @@ Request 4996 (us) 193.758 type R
 Request 4997 (us) 190.03 type R
 Request 4998 (us) 189.702 type R
 Request 4999 (us) 200.281 type R
-Read request number 2533
-Avg. read request latency (us) 212.23489932885906
-Read iops 4711.7604275369185
-Write request number 2467
-Avg. write request latency (us) 498.4223753546818
-Write iops 2006.3304728010878
-All iops 2829.3361415437653
 client no 3 node 18
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  replicasYCSB 1048576 1048576 1 1048576 false
-Got 0 Exception!
-getDegradeReplicasYCSBRequestsInfo requestList.size() 5000
-requestList.size() 5000
 Request 0 (us) 1418.676 type R
 Request 1 (us) 500.729 type R
 Request 2 (us) 608.07 type I
@@ -20072,27 +20003,7 @@ Request 4996 (us) 199.658 type R
 Request 4997 (us) 192.366 type R
 Request 4998 (us) 192.564 type R
 Request 4999 (us) 190.284 type R
-Read request number 2533
-Avg. read request latency (us) 211.6261350177655
-Read iops 4725.314290298088
-Write request number 2467
-Avg. write request latency (us) 498.41953790028373
-Write iops 2006.3418946471252
-All iops 2831.818310537196
 client no 4 node 7
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  replicasYCSB 1048576 1048576 1 1048576 false
-Got 1 Exception!
-objectName 4user3733291959739925381: 
-getDegradeReplicasYCSBRequestsInfo requestList.size() 4999
-requestList.size() 4999
 Request 0 (us) 941.132 type R
 Request 1 (us) 503.619 type R
 Request 2 (us) 575.454 type I
@@ -25092,26 +25003,7 @@ Request 4995 (us) 189.069 type R
 Request 4996 (us) 189.599 type R
 Request 4997 (us) 189.136 type R
 Request 4998 (us) 189.233 type R
-Read request number 2533
-Avg. read request latency (us) 190.1531780497434
-Read iops 5258.9181535446305
-Write request number 2466
-Avg. write request latency (us) 495.8410381184104
-Write iops 2016.7753838906592
-All iops 2932.9935074002497
 client no 5 node 3
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  replicasYCSB 1048576 1048576 1 1048576 false
-Got 0 Exception!
-getDegradeReplicasYCSBRequestsInfo requestList.size() 5000
-requestList.size() 5000
 Request 0 (us) 1731.507 type R
 Request 1 (us) 751.349 type R
 Request 2 (us) 718.562 type I
@@ -30112,10 +30004,3 @@ Request 4996 (us) 199.929 type R
 Request 4997 (us) 189.714 type R
 Request 4998 (us) 196.046 type R
 Request 4999 (us) 199.209 type R
-Read request number 2533
-Avg. read request latency (us) 213.89656533754442
-Read iops 4675.15688445921
-Write request number 2467
-Avg. write request latency (us) 499.4588569112282
-Write iops 2002.166917580032
-All iops 2818.5448980109527

@@ -1,20 +1,5 @@
 
 client no 0 node 14
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  monECYCSB 1048576 1048576 64 32768 false
-pipelineEncodingSize has changed to 262144
-CrailConstants.REPLICATION_FACTOR has changed to 5
-Got 0 Exception!
-getDegradeErasureCodingYCSBRequestsInfo requestList.size() 5000
-Hello world
-
 Request 0 (us) 4885.432 type R
 Request 1 (us) 1187.441 type R
 Request 2 (us) 7495.679 type I
@@ -5015,29 +5000,7 @@ Request 4996 (us) 341.633 type R
 Request 4997 (us) 335.929 type R
 Request 4998 (us) 329.733 type R
 Request 4999 (us) 333.739 type R
-Read request number 2533
-Avg. read request latency (us) 313.9376233714963
-Read iops 3185.346150170271
-Write request number 2467
-Avg. write request latency (us) 404.7709768950142
-Write iops 2470.5328619926495
-All iops 2787.419150907528
 client no 1 node 16
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  monECYCSB 1048576 1048576 64 32768 false
-pipelineEncodingSize has changed to 262144
-CrailConstants.REPLICATION_FACTOR has changed to 5
-Got 0 Exception!
-getDegradeErasureCodingYCSBRequestsInfo requestList.size() 5000
-Hello world
-
 Request 0 (us) 4204.834 type R
 Request 1 (us) 989.87 type R
 Request 2 (us) 6658.215 type I
@@ -10038,29 +10001,7 @@ Request 4996 (us) 620.489 type R
 Request 4997 (us) 313.926 type R
 Request 4998 (us) 262.695 type R
 Request 4999 (us) 266.296 type R
-Read request number 2533
-Avg. read request latency (us) 356.73707066719305
-Read iops 2803.1849847556755
-Write request number 2467
-Avg. write request latency (us) 383.55735711390355
-Write iops 2607.171995147088
-All iops 2702.920397372545
 client no 2 node 17
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  monECYCSB 1048576 1048576 64 32768 false
-pipelineEncodingSize has changed to 262144
-CrailConstants.REPLICATION_FACTOR has changed to 5
-Got 0 Exception!
-getDegradeErasureCodingYCSBRequestsInfo requestList.size() 5000
-Hello world
-
 Request 0 (us) 3789.592 type R
 Request 1 (us) 1263.605 type R
 Request 2 (us) 3820.614 type I
@@ -15061,29 +15002,7 @@ Request 4996 (us) 283.638 type R
 Request 4997 (us) 280.559 type R
 Request 4998 (us) 280.942 type R
 Request 4999 (us) 284.844 type R
-Read request number 2533
-Avg. read request latency (us) 315.3012238452428
-Read iops 3171.5703091936725
-Write request number 2467
-Avg. write request latency (us) 434.74260235103367
-Write iops 2300.2116530382
-All iops 2672.1277832882993
 client no 3 node 18
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  monECYCSB 1048576 1048576 64 32768 false
-pipelineEncodingSize has changed to 262144
-CrailConstants.REPLICATION_FACTOR has changed to 5
-Got 0 Exception!
-getDegradeErasureCodingYCSBRequestsInfo requestList.size() 5000
-Hello world
-
 Request 0 (us) 4880.665 type R
 Request 1 (us) 889.781 type R
 Request 2 (us) 6844.196 type I
@@ -20084,31 +20003,7 @@ Request 4996 (us) 263.624 type R
 Request 4997 (us) 258.933 type R
 Request 4998 (us) 259.191 type R
 Request 4999 (us) 271.944 type R
-Read request number 2533
-Avg. read request latency (us) 292.6446900908014
-Read iops 3417.11308580286
-Write request number 2467
-Avg. write request latency (us) 416.08025942440213
-Write iops 2403.3824661217573
-All iops 2828.4718501996053
 client no 4 node 7
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  monECYCSB 1048576 1048576 64 32768 false
-pipelineEncodingSize has changed to 262144
-CrailConstants.REPLICATION_FACTOR has changed to 5
-Got 2 Exception!
-objectName 4user3733291959739925381: 
-objectName 4user1902316032383676113: 
-getDegradeErasureCodingYCSBRequestsInfo requestList.size() 4998
-Hello world
-
 Request 0 (us) 8918.821 type R
 Request 1 (us) 1180.529 type R
 Request 2 (us) 9298.961 type I
@@ -25107,29 +25002,7 @@ Request 4994 (us) 271.503 type R
 Request 4995 (us) 266.902 type R
 Request 4996 (us) 268.805 type R
 Request 4997 (us) 275.498 type R
-Read request number 2533
-Avg. read request latency (us) 300.60679036715356
-Read iops 3326.604827451253
-Write request number 2465
-Avg. write request latency (us) 438.4713995943205
-Write iops 2280.650461866414
-All iops 2712.958856714193
 client no 5 node 3
-LQL args REPLICATION_FACTOR: 2
-LQL args ERASURECODING_K: 4
-LQL args ERASURECODING_M: 2
-LQL args REDUNDANCY_TYPE: erasurecoding
-LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
-LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
-LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-subDal09_6h.csv
-LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-subDal09_6h.csv
-ycsbDegradeTest  monECYCSB 1048576 1048576 64 32768 false
-pipelineEncodingSize has changed to 262144
-CrailConstants.REPLICATION_FACTOR has changed to 5
-Got 0 Exception!
-getDegradeErasureCodingYCSBRequestsInfo requestList.size() 5000
-Hello world
-
 Request 0 (us) 4759.434 type R
 Request 1 (us) 849.213 type R
 Request 2 (us) 3781.812 type I
@@ -30130,10 +30003,3 @@ Request 4996 (us) 336.096 type R
 Request 4997 (us) 330.434 type R
 Request 4998 (us) 341.546 type R
 Request 4999 (us) 334.94 type R
-Read request number 2533
-Avg. read request latency (us) 303.03671535728387
-Read iops 3299.9301712368033
-Write request number 2467
-Avg. write request latency (us) 406.3169841913255
-Write iops 2461.132659739182
-All iops 2824.897060751106
