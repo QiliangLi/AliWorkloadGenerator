@@ -66,4 +66,3 @@ if __name__=="__main__":
 
     resultRoot=r"F:\Coding\Python\ali-trace\latencies"
     getBatchResultsProcessed(resultRoot)
-    
