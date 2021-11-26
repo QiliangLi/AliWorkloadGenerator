@@ -132,3 +132,13 @@ The trace contains 4 files.
 
 ![image-20211112140317658](pics/image-20211112140317658.png)
 
+#### 0706 first 6 hours
+
+|        Request Num         | 10309 |
+| :------------------------: | :---: |
+|      Put Request Num       |  310  |
+|      Get Request Num       | 9999  |
+| Avg. Put Request Size (MB) | 11.17 |
+| Avg. Get Request Size (MB) | 2.65  |
+| Requests Put Sum Size (GB) | 3.38  |
+|   Warm Put Sum Size (GB)   |       |

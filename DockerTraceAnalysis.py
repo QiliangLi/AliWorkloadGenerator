@@ -58,6 +58,9 @@ def getDetailedInfo(path):
     getGreaterThan1MRequestCounter = 0
     getGreaterThan1MSize = 0
 
+    maxSize=-1
+    largeSizeList=[]
+
     with open(path, "r") as resultFile:
         reader = csv.reader(resultFile)
 
@@ -65,7 +68,12 @@ def getDetailedInfo(path):
             name = line[0]
             typee = line[1]
             sizee = int(line[2])
+
+            maxSize=max(sizee, maxSize)
             print(name, typee, sizee)
+
+            if sizee > 1024*1024*1024:
+                largeSizeList.append(sizee)
 
             if typee == "PUT":
                 putCounter += 1
@@ -95,6 +103,10 @@ def getDetailedInfo(path):
 
     print("Get request num", getCounter, "sum size(GB)", getSize)
     print("Get size greater than 1M num", getGreaterThan1MRequestCounter)
+
+    print("Max object size ", maxSize)
+    print("Large object list ", largeSizeList)
+    print("Large object list len ", len(largeSizeList))
 
 
 def plotCDF(path):
@@ -207,12 +219,13 @@ def getFilterTraces(path, minObjectSize, maxObjectSize):
             name = line[0]
             typee = line[1]
             sizee = int(line[2])
-            print(name, typee, sizee)
 
             if sizee >= minObjectSize and sizee <= maxObjectSize:
                 names.append(name)
                 types.append(typee)
                 sizes.append(sizee)
+            elif sizee > maxObjectSize:
+                print(name, typee, sizee)
 
     with open(filterPath, "w", newline="") as filterFile:
         writer = csv.writer(filterFile)
@@ -311,25 +324,27 @@ if __name__ == "__main__":
     path = r"./data_centers"
     # getFileList(path)
 
-    subRoot=r"subDal09_6h"
+    subRoot=r"0706subDal09_6h"
     # getZoneFileList(path, subRoot)
 
-    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\subDal09_6h.csv"
+    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\0706subDal09_6h.csv"
     # getDetailedInfo(detailedInfoPath)
     # plotCDF(detailedInfoPath)
-    # getFilterTraces(detailedInfoPath, 16 * 1024, 2 * 1024 * 1024 * 1024)
+    # getFilterTraces(detailedInfoPath, 16 * 1024, 1024 * 1024 * 1024)
 
-    filterPath = r"F:\Coding\Python\ali-trace\results\filter-subDal09_6h.csv"
+    filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
     # plotCDF(filterPath)
-    # getWarmRequest(filterPath)
+    getWarmRequest(filterPath)
 
-    warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-subDal09_6h.csv"
+    warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
 
-    # eraseDuplicatedPut(filterPath)
-    # eraseDuplicatedPut(warmPath)
+    eraseDuplicatedPut(filterPath)
+    eraseDuplicatedPut(warmPath)
 
     getModifiedRequestSizes(filterPath, 16*1024)
     getModifiedRequestSizes(warmPath, 16*1024)
+
+    getDetailedInfo(r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-0706subDal09_6h.csv")
 
     # testPath=r"./test.csv"
     # plotCDF(testPath)
