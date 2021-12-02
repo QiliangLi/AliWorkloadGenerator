@@ -198,7 +198,7 @@ def plotCDF(path):
     # 纵轴名
     ax1.set_ylabel("P")
     # 横轴的界限
-    ax1.set_xlim(-0.2, 1)
+    # ax1.set_xlim(-0.2, 1)
     plt.legend()
     # 图片显示
     plt.show()
@@ -333,7 +333,7 @@ if __name__ == "__main__":
     # getFilterTraces(detailedInfoPath, 16 * 1024, 1024 * 1024 * 1024)
 
     filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
-    plotCDF(filterPath)
+    # plotCDF(filterPath)
     # getWarmRequest(filterPath)
 
     # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
@@ -346,7 +346,7 @@ if __name__ == "__main__":
     # 
     # getDetailedInfo(r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-0706subDal09_6h.csv")
 
-    # testPath=r"./test.csv"
-    # plotCDF(testPath)
-    # getFilterTraces(testPath, 16*1024, 2*1024*1024*1024)
+    testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"
+    # getDetailedInfo(testPath)
+    plotCDF(testPath)
 
