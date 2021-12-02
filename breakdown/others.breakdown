@@ -1,0 +1,6028 @@
+LQL args REPLICATION_FACTOR: 2
+LQL args ERASURECODING_K: 4
+LQL args ERASURECODING_M: 2
+LQL args REDUNDANCY_TYPE: erasurecoding
+LQL args YCSB_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/warm-test5k.txt
+LQL args YCSB_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/test5k.txt
+LQL args IBM_WARMFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_warm-filter-0706subDal09_6h.csv
+LQL args IBM_TESTFILEPATH: /home/hadoop/apache-crail-1.3-incubating-SNAPSHOT/conf/mod16k_filter-0706subDal09_6h.csv
+writeMonEC, filename /tmp1.dat, size 1048576, loop 1500, storageClass 0, locationClass 0, monECSubStripeNum 64, transferSize 16384
+Hello world
+
+Monec allocate buffer time(us) 3660.05
+dataBufferQueue.size(): 64, parityBufferQueue.size(): 32
+starting benchmark...
+CrailConstants.REPLICATION_FACTOR has changed to 5
+Start timing...
+execution time (us) 1375001.343
+ops 1500.0
+sumbytes 2.359296E9
+throughput (Mb/s) 13726.799683569472
+latency (us) 916.6675620000001
+final loop (us) 459.148
+Loop 0 (us) 609443.473
+Loop 1 (us) 8432.815
+Loop 2 (us) 8491.96
+Loop 3 (us) 4850.212
+Loop 4 (us) 101636.212
+Loop 5 (us) 1615.869
+Loop 6 (us) 1124.131
+Loop 7 (us) 1359.522
+Loop 8 (us) 1169.982
+Loop 9 (us) 1122.473
+Loop 10 (us) 943.208
+Loop 11 (us) 1888.609
+Loop 12 (us) 1352.799
+Loop 13 (us) 905.832
+Loop 14 (us) 2920.665
+Loop 15 (us) 1079.541
+Loop 16 (us) 947.854
+Loop 17 (us) 795.542
+Loop 18 (us) 811.307
+Loop 19 (us) 932.548
+Loop 20 (us) 1059.093
+Loop 21 (us) 741.991
+Loop 22 (us) 738.081
+Loop 23 (us) 759.717
+Loop 24 (us) 792.606
+Loop 25 (us) 683.529
+Loop 26 (us) 672.1
+Loop 27 (us) 755.853
+Loop 28 (us) 774.005
+Loop 29 (us) 643.688
+Loop 30 (us) 623.048
+Loop 31 (us) 707.714
+Loop 32 (us) 1179.397
+Loop 33 (us) 635.512
+Loop 34 (us) 627.428
+Loop 35 (us) 1166.024
+Loop 36 (us) 716.967
+Loop 37 (us) 627.134
+Loop 38 (us) 1138.968
+Loop 39 (us) 684.196
+Loop 40 (us) 704.469
+Loop 41 (us) 633.367
+Loop 42 (us) 589.961
+Loop 43 (us) 701.841
+Loop 44 (us) 697.304
+Loop 45 (us) 577.455
+Loop 46 (us) 1219.942
+Loop 47 (us) 670.397
+Loop 48 (us) 675.96
+Loop 49 (us) 632.03
+Loop 50 (us) 577.812
+Loop 51 (us) 647.115
+Loop 52 (us) 653.446
+Loop 53 (us) 564.129
+Loop 54 (us) 566.773
+Loop 55 (us) 696.187
+Loop 56 (us) 715.878
+Loop 57 (us) 640.119
+Loop 58 (us) 675.463
+Loop 59 (us) 650.965
+Loop 60 (us) 699.898
+Loop 61 (us) 543.284
+Loop 62 (us) 515.816
+Loop 63 (us) 812.593
+Loop 64 (us) 672.972
+Loop 65 (us) 546.273
+Loop 66 (us) 598.191
+Loop 67 (us) 825.95
+Loop 68 (us) 621.514
+Loop 69 (us) 554.619
+Loop 70 (us) 1222.378
+Loop 71 (us) 662.935
+Loop 72 (us) 657.976
+Loop 73 (us) 625.349
+Loop 74 (us) 681.706
+Loop 75 (us) 687.527
+Loop 76 (us) 580.435
+Loop 77 (us) 553.773
+Loop 78 (us) 650.364
+Loop 79 (us) 679.114
+Loop 80 (us) 647.447
+Loop 81 (us) 546.141
+Loop 82 (us) 587.185
+Loop 83 (us) 537.555
+Loop 84 (us) 873.172
+Loop 85 (us) 670.419
+Loop 86 (us) 600.349
+Loop 87 (us) 643.303
+Loop 88 (us) 713.82
+Loop 89 (us) 450.424
+Loop 90 (us) 466.212
+Loop 91 (us) 586.294
+Loop 92 (us) 603.319
+Loop 93 (us) 445.012
+Loop 94 (us) 500.685
+Loop 95 (us) 642.902
+Loop 96 (us) 454.624
+Loop 97 (us) 505.784
+Loop 98 (us) 388.774
+Loop 99 (us) 531.632
+Loop 100 (us) 534.93
+Loop 101 (us) 1105.051
+Loop 102 (us) 557.453
+Loop 103 (us) 454.838
+Loop 104 (us) 452.227
+Loop 105 (us) 851.885
+Loop 106 (us) 408.405
+Loop 107 (us) 461.746
+Loop 108 (us) 499.051
+Loop 109 (us) 400.839
+Loop 110 (us) 389.366
+Loop 111 (us) 431.289
+Loop 112 (us) 498.597
+Loop 113 (us) 361.957
+Loop 114 (us) 406.757
+Loop 115 (us) 430.146
+Loop 116 (us) 520.197
+Loop 117 (us) 381.203
+Loop 118 (us) 370.644
+Loop 119 (us) 496.38
+Loop 120 (us) 417.26
+Loop 121 (us) 444.013
+Loop 122 (us) 371.882
+Loop 123 (us) 434.387
+Loop 124 (us) 987.677
+Loop 125 (us) 361.075
+Loop 126 (us) 361.272
+Loop 127 (us) 414.866
+Loop 128 (us) 434.011
+Loop 129 (us) 499.067
+Loop 130 (us) 442.331
+Loop 131 (us) 526.898
+Loop 132 (us) 461.053
+Loop 133 (us) 376.642
+Loop 134 (us) 363.538
+Loop 135 (us) 500.926
+Loop 136 (us) 425.856
+Loop 137 (us) 356.203
+Loop 138 (us) 370.259
+Loop 139 (us) 405.458
+Loop 140 (us) 414.689
+Loop 141 (us) 356.622
+Loop 142 (us) 429.944
+Loop 143 (us) 411.492
+Loop 144 (us) 403.882
+Loop 145 (us) 358.319
+Loop 146 (us) 358.035
+Loop 147 (us) 915.729
+Loop 148 (us) 463.459
+Loop 149 (us) 369.094
+Loop 150 (us) 366.247
+Loop 151 (us) 419.405
+Loop 152 (us) 438.854
+Loop 153 (us) 355.345
+Loop 154 (us) 401.297
+Loop 155 (us) 480.473
+Loop 156 (us) 404.091
+Loop 157 (us) 471.746
+Loop 158 (us) 396.037
+Loop 159 (us) 417.797
+Loop 160 (us) 463.192
+Loop 161 (us) 399.275
+Loop 162 (us) 532.056
+Loop 163 (us) 490.395
+Loop 164 (us) 451.745
+Loop 165 (us) 373.136
+Loop 166 (us) 365.041
+Loop 167 (us) 423.531
+Loop 168 (us) 620.364
+Loop 169 (us) 1101.185
+Loop 170 (us) 353.302
+Loop 171 (us) 471.383
+Loop 172 (us) 621.364
+Loop 173 (us) 352.079
+Loop 174 (us) 338.223
+Loop 175 (us) 386.007
+Loop 176 (us) 420.823
+Loop 177 (us) 342.403
+Loop 178 (us) 354.594
+Loop 179 (us) 358.97
+Loop 180 (us) 357.199
+Loop 181 (us) 335.336
+Loop 182 (us) 333.585
+Loop 183 (us) 354.313
+Loop 184 (us) 348.183
+Loop 185 (us) 336.638
+Loop 186 (us) 343.169
+Loop 187 (us) 340.186
+Loop 188 (us) 362.152
+Loop 189 (us) 891.028
+Loop 190 (us) 342.447
+Loop 191 (us) 440.159
+Loop 192 (us) 427.894
+Loop 193 (us) 396.02
+Loop 194 (us) 447.385
+Loop 195 (us) 395.522
+Loop 196 (us) 381.719
+Loop 197 (us) 367.661
+Loop 198 (us) 347.357
+Loop 199 (us) 340.308
+Loop 200 (us) 356.533
+Loop 201 (us) 337.744
+Loop 202 (us) 333.96
+Loop 203 (us) 348.685
+Loop 204 (us) 354.34
+Loop 205 (us) 335.626
+Loop 206 (us) 335.212
+Loop 207 (us) 377.819
+Loop 208 (us) 890.405
+Loop 209 (us) 398.749
+Loop 210 (us) 395.384
+Loop 211 (us) 386.327
+Loop 212 (us) 374.794
+Loop 213 (us) 456.008
+Loop 214 (us) 479.975
+Loop 215 (us) 380.265
+Loop 216 (us) 464.689
+Loop 217 (us) 337.704
+Loop 218 (us) 333.973
+Loop 219 (us) 358.64
+Loop 220 (us) 365.229
+Loop 221 (us) 379.217
+Loop 222 (us) 340.942
+Loop 223 (us) 334.226
+Loop 224 (us) 346.998
+Loop 225 (us) 339.265
+Loop 226 (us) 337.636
+Loop 227 (us) 846.357
+Loop 228 (us) 347.673
+Loop 229 (us) 335.977
+Loop 230 (us) 333.207
+Loop 231 (us) 339.409
+Loop 232 (us) 416.158
+Loop 233 (us) 335.93
+Loop 234 (us) 335.285
+Loop 235 (us) 361.215
+Loop 236 (us) 364.203
+Loop 237 (us) 335.829
+Loop 238 (us) 333.763
+Loop 239 (us) 345.529
+Loop 240 (us) 347.822
+Loop 241 (us) 339.643
+Loop 242 (us) 341.613
+Loop 243 (us) 363.728
+Loop 244 (us) 425.173
+Loop 245 (us) 332.271
+Loop 246 (us) 333.299
+Loop 247 (us) 826.556
+Loop 248 (us) 425.494
+Loop 249 (us) 335.566
+Loop 250 (us) 336.468
+Loop 251 (us) 353.708
+Loop 252 (us) 375.359
+Loop 253 (us) 354.866
+Loop 254 (us) 337.784
+Loop 255 (us) 437.669
+Loop 256 (us) 1607.434
+Loop 257 (us) 761.884
+Loop 258 (us) 507.654
+Loop 259 (us) 567.11
+Loop 260 (us) 452.69
+Loop 261 (us) 347.406
+Loop 262 (us) 337.474
+Loop 263 (us) 406.036
+Loop 264 (us) 405.843
+Loop 265 (us) 348.037
+Loop 266 (us) 338.261
+Loop 267 (us) 871.989
+Loop 268 (us) 403.471
+Loop 269 (us) 334.611
+Loop 270 (us) 336.709
+Loop 271 (us) 401.372
+Loop 272 (us) 391.831
+Loop 273 (us) 337.717
+Loop 274 (us) 340.369
+Loop 275 (us) 377.619
+Loop 276 (us) 394.352
+Loop 277 (us) 335.336
+Loop 278 (us) 337.576
+Loop 279 (us) 373.279
+Loop 280 (us) 466.748
+Loop 281 (us) 435.0
+Loop 282 (us) 342.125
+Loop 283 (us) 375.131
+Loop 284 (us) 409.876
+Loop 285 (us) 389.723
+Loop 286 (us) 762.432
+Loop 287 (us) 495.535
+Loop 288 (us) 785.829
+Loop 289 (us) 502.945
+Loop 290 (us) 376.459
+Loop 291 (us) 391.738
+Loop 292 (us) 382.246
+Loop 293 (us) 357.339
+Loop 294 (us) 337.337
+Loop 295 (us) 331.716
+Loop 296 (us) 354.306
+Loop 297 (us) 331.638
+Loop 298 (us) 335.635
+Loop 299 (us) 331.59
+Loop 300 (us) 350.745
+Loop 301 (us) 332.936
+Loop 302 (us) 332.35
+Loop 303 (us) 339.367
+Loop 304 (us) 348.6
+Loop 305 (us) 337.795
+Loop 306 (us) 335.265
+Loop 307 (us) 777.85
+Loop 308 (us) 349.165
+Loop 309 (us) 337.326
+Loop 310 (us) 408.576
+Loop 311 (us) 333.724
+Loop 312 (us) 347.747
+Loop 313 (us) 410.962
+Loop 314 (us) 340.052
+Loop 315 (us) 329.91
+Loop 316 (us) 359.608
+Loop 317 (us) 331.241
+Loop 318 (us) 330.771
+Loop 319 (us) 335.646
+Loop 320 (us) 375.186
+Loop 321 (us) 336.708
+Loop 322 (us) 397.643
+Loop 323 (us) 331.296
+Loop 324 (us) 358.408
+Loop 325 (us) 335.497
+Loop 326 (us) 793.792
+Loop 327 (us) 334.392
+Loop 328 (us) 348.44
+Loop 329 (us) 337.539
+Loop 330 (us) 332.061
+Loop 331 (us) 410.842
+Loop 332 (us) 350.365
+Loop 333 (us) 334.564
+Loop 334 (us) 344.586
+Loop 335 (us) 331.198
+Loop 336 (us) 348.496
+Loop 337 (us) 332.486
+Loop 338 (us) 341.574
+Loop 339 (us) 335.73
+Loop 340 (us) 402.206
+Loop 341 (us) 339.419
+Loop 342 (us) 330.602
+Loop 343 (us) 349.799
+Loop 344 (us) 349.428
+Loop 345 (us) 787.161
+Loop 346 (us) 332.245
+Loop 347 (us) 340.907
+Loop 348 (us) 350.025
+Loop 349 (us) 344.245
+Loop 350 (us) 335.045
+Loop 351 (us) 330.228
+Loop 352 (us) 348.802
+Loop 353 (us) 333.227
+Loop 354 (us) 331.039
+Loop 355 (us) 335.978
+Loop 356 (us) 351.301
+Loop 357 (us) 336.114
+Loop 358 (us) 329.861
+Loop 359 (us) 332.49
+Loop 360 (us) 353.001
+Loop 361 (us) 343.196
+Loop 362 (us) 369.168
+Loop 363 (us) 777.594
+Loop 364 (us) 350.163
+Loop 365 (us) 354.102
+Loop 366 (us) 334.465
+Loop 367 (us) 330.886
+Loop 368 (us) 348.205
+Loop 369 (us) 333.142
+Loop 370 (us) 342.978
+Loop 371 (us) 331.289
+Loop 372 (us) 364.988
+Loop 373 (us) 333.463
+Loop 374 (us) 329.131
+Loop 375 (us) 332.112
+Loop 376 (us) 357.732
+Loop 377 (us) 344.445
+Loop 378 (us) 331.947
+Loop 379 (us) 330.696
+Loop 380 (us) 822.815
+Loop 381 (us) 342.213
+Loop 382 (us) 790.711
+Loop 383 (us) 792.121
+Loop 384 (us) 357.074
+Loop 385 (us) 340.175
+Loop 386 (us) 336.027
+Loop 387 (us) 336.848
+Loop 388 (us) 351.86
+Loop 389 (us) 334.659
+Loop 390 (us) 330.784
+Loop 391 (us) 339.643
+Loop 392 (us) 342.891
+Loop 393 (us) 335.508
+Loop 394 (us) 329.754
+Loop 395 (us) 342.052
+Loop 396 (us) 348.588
+Loop 397 (us) 333.022
+Loop 398 (us) 334.589
+Loop 399 (us) 330.771
+Loop 400 (us) 776.76
+Loop 401 (us) 336.674
+Loop 402 (us) 332.639
+Loop 403 (us) 330.795
+Loop 404 (us) 341.419
+Loop 405 (us) 336.646
+Loop 406 (us) 330.88
+Loop 407 (us) 337.133
+Loop 408 (us) 340.774
+Loop 409 (us) 400.726
+Loop 410 (us) 336.242
+Loop 411 (us) 384.597
+Loop 412 (us) 398.117
+Loop 413 (us) 335.122
+Loop 414 (us) 333.608
+Loop 415 (us) 332.3
+Loop 416 (us) 341.332
+Loop 417 (us) 752.937
+Loop 418 (us) 334.19
+Loop 419 (us) 331.958
+Loop 420 (us) 382.169
+Loop 421 (us) 334.673
+Loop 422 (us) 335.932
+Loop 423 (us) 335.924
+Loop 424 (us) 343.845
+Loop 425 (us) 332.218
+Loop 426 (us) 334.841
+Loop 427 (us) 334.626
+Loop 428 (us) 348.392
+Loop 429 (us) 334.859
+Loop 430 (us) 331.372
+Loop 431 (us) 332.865
+Loop 432 (us) 347.634
+Loop 433 (us) 340.831
+Loop 434 (us) 331.826
+Loop 435 (us) 756.744
+Loop 436 (us) 340.293
+Loop 437 (us) 330.691
+Loop 438 (us) 336.955
+Loop 439 (us) 332.309
+Loop 440 (us) 339.676
+Loop 441 (us) 330.855
+Loop 442 (us) 334.299
+Loop 443 (us) 334.248
+Loop 444 (us) 341.005
+Loop 445 (us) 331.932
+Loop 446 (us) 330.472
+Loop 447 (us) 330.525
+Loop 448 (us) 345.558
+Loop 449 (us) 336.833
+Loop 450 (us) 331.367
+Loop 451 (us) 330.84
+Loop 452 (us) 341.744
+Loop 453 (us) 753.717
+Loop 454 (us) 327.486
+Loop 455 (us) 332.198
+Loop 456 (us) 341.711
+Loop 457 (us) 334.549
+Loop 458 (us) 334.839
+Loop 459 (us) 335.093
+Loop 460 (us) 342.617
+Loop 461 (us) 337.055
+Loop 462 (us) 332.515
+Loop 463 (us) 335.598
+Loop 464 (us) 345.318
+Loop 465 (us) 332.674
+Loop 466 (us) 329.689
+Loop 467 (us) 332.371
+Loop 468 (us) 343.827
+Loop 469 (us) 333.262
+Loop 470 (us) 330.664
+Loop 471 (us) 760.413
+Loop 472 (us) 340.678
+Loop 473 (us) 330.889
+Loop 474 (us) 801.675
+Loop 475 (us) 462.084
+Loop 476 (us) 476.843
+Loop 477 (us) 462.659
+Loop 478 (us) 473.449
+Loop 479 (us) 464.071
+Loop 480 (us) 477.415
+Loop 481 (us) 473.01
+Loop 482 (us) 882.828
+Loop 483 (us) 457.078
+Loop 484 (us) 473.948
+Loop 485 (us) 466.531
+Loop 486 (us) 462.522
+Loop 487 (us) 517.477
+Loop 488 (us) 476.883
+Loop 489 (us) 465.939
+Loop 490 (us) 475.427
+Loop 491 (us) 458.201
+Loop 492 (us) 476.981
+Loop 493 (us) 895.637
+Loop 494 (us) 463.576
+Loop 495 (us) 463.657
+Loop 496 (us) 470.848
+Loop 497 (us) 461.697
+Loop 498 (us) 459.418
+Loop 499 (us) 466.592
+Loop 500 (us) 479.848
+Loop 501 (us) 462.615
+Loop 502 (us) 460.047
+Loop 503 (us) 460.461
+Loop 504 (us) 882.616
+Loop 505 (us) 468.033
+Loop 506 (us) 459.116
+Loop 507 (us) 458.804
+Loop 508 (us) 471.805
+Loop 509 (us) 463.612
+Loop 510 (us) 890.602
+Loop 511 (us) 909.673
+Loop 512 (us) 997.418
+Loop 513 (us) 1276.488
+Loop 514 (us) 876.565
+Loop 515 (us) 427.241
+Loop 516 (us) 369.775
+Loop 517 (us) 334.68
+Loop 518 (us) 325.858
+Loop 519 (us) 324.596
+Loop 520 (us) 364.357
+Loop 521 (us) 330.72
+Loop 522 (us) 327.037
+Loop 523 (us) 341.735
+Loop 524 (us) 377.309
+Loop 525 (us) 332.136
+Loop 526 (us) 326.44
+Loop 527 (us) 325.683
+Loop 528 (us) 370.253
+Loop 529 (us) 327.952
+Loop 530 (us) 327.839
+Loop 531 (us) 768.728
+Loop 532 (us) 359.542
+Loop 533 (us) 336.275
+Loop 534 (us) 328.169
+Loop 535 (us) 328.528
+Loop 536 (us) 357.715
+Loop 537 (us) 329.204
+Loop 538 (us) 328.564
+Loop 539 (us) 336.452
+Loop 540 (us) 353.173
+Loop 541 (us) 332.861
+Loop 542 (us) 329.613
+Loop 543 (us) 328.9
+Loop 544 (us) 348.578
+Loop 545 (us) 338.996
+Loop 546 (us) 327.764
+Loop 547 (us) 331.394
+Loop 548 (us) 370.2
+Loop 549 (us) 748.332
+Loop 550 (us) 328.291
+Loop 551 (us) 334.91
+Loop 552 (us) 354.602
+Loop 553 (us) 333.116
+Loop 554 (us) 330.574
+Loop 555 (us) 333.975
+Loop 556 (us) 363.418
+Loop 557 (us) 335.439
+Loop 558 (us) 331.335
+Loop 559 (us) 348.62
+Loop 560 (us) 347.623
+Loop 561 (us) 1027.703
+Loop 562 (us) 498.4
+Loop 563 (us) 461.729
+Loop 564 (us) 490.419
+Loop 565 (us) 391.0
+Loop 566 (us) 863.814
+Loop 567 (us) 435.069
+Loop 568 (us) 430.983
+Loop 569 (us) 388.779
+Loop 570 (us) 394.504
+Loop 571 (us) 404.022
+Loop 572 (us) 419.779
+Loop 573 (us) 385.1
+Loop 574 (us) 389.541
+Loop 575 (us) 405.057
+Loop 576 (us) 428.386
+Loop 577 (us) 387.941
+Loop 578 (us) 383.159
+Loop 579 (us) 396.036
+Loop 580 (us) 405.376
+Loop 581 (us) 372.687
+Loop 582 (us) 398.802
+Loop 583 (us) 334.866
+Loop 584 (us) 436.598
+Loop 585 (us) 337.739
+Loop 586 (us) 754.401
+Loop 587 (us) 335.273
+Loop 588 (us) 345.178
+Loop 589 (us) 371.169
+Loop 590 (us) 333.507
+Loop 591 (us) 329.401
+Loop 592 (us) 345.088
+Loop 593 (us) 332.546
+Loop 594 (us) 344.844
+Loop 595 (us) 330.128
+Loop 596 (us) 347.694
+Loop 597 (us) 336.228
+Loop 598 (us) 330.516
+Loop 599 (us) 330.39
+Loop 600 (us) 342.816
+Loop 601 (us) 330.307
+Loop 602 (us) 334.462
+Loop 603 (us) 329.74
+Loop 604 (us) 762.543
+Loop 605 (us) 336.726
+Loop 606 (us) 335.95
+Loop 607 (us) 394.044
+Loop 608 (us) 342.333
+Loop 609 (us) 333.864
+Loop 610 (us) 338.256
+Loop 611 (us) 332.827
+Loop 612 (us) 346.3
+Loop 613 (us) 334.068
+Loop 614 (us) 327.616
+Loop 615 (us) 329.552
+Loop 616 (us) 339.891
+Loop 617 (us) 330.252
+Loop 618 (us) 393.432
+Loop 619 (us) 356.704
+Loop 620 (us) 410.169
+Loop 621 (us) 437.985
+Loop 622 (us) 817.28
+Loop 623 (us) 334.028
+Loop 624 (us) 355.633
+Loop 625 (us) 332.887
+Loop 626 (us) 329.88
+Loop 627 (us) 329.606
+Loop 628 (us) 340.495
+Loop 629 (us) 336.381
+Loop 630 (us) 332.243
+Loop 631 (us) 331.531
+Loop 632 (us) 346.401
+Loop 633 (us) 333.658
+Loop 634 (us) 334.532
+Loop 635 (us) 330.042
+Loop 636 (us) 348.461
+Loop 637 (us) 333.237
+Loop 638 (us) 331.279
+Loop 639 (us) 335.471
+Loop 640 (us) 795.19
+Loop 641 (us) 330.295
+Loop 642 (us) 331.662
+Loop 643 (us) 334.866
+Loop 644 (us) 346.79
+Loop 645 (us) 333.175
+Loop 646 (us) 337.164
+Loop 647 (us) 334.161
+Loop 648 (us) 341.748
+Loop 649 (us) 331.228
+Loop 650 (us) 335.006
+Loop 651 (us) 331.261
+Loop 652 (us) 351.067
+Loop 653 (us) 332.087
+Loop 654 (us) 332.495
+Loop 655 (us) 335.291
+Loop 656 (us) 344.188
+Loop 657 (us) 330.228
+Loop 658 (us) 783.356
+Loop 659 (us) 352.067
+Loop 660 (us) 348.151
+Loop 661 (us) 333.587
+Loop 662 (us) 340.216
+Loop 663 (us) 331.891
+Loop 664 (us) 344.095
+Loop 665 (us) 342.658
+Loop 666 (us) 329.962
+Loop 667 (us) 332.785
+Loop 668 (us) 347.013
+Loop 669 (us) 332.422
+Loop 670 (us) 335.321
+Loop 671 (us) 334.701
+Loop 672 (us) 344.598
+Loop 673 (us) 334.5
+Loop 674 (us) 330.439
+Loop 675 (us) 335.519
+Loop 676 (us) 814.285
+Loop 677 (us) 335.131
+Loop 678 (us) 337.341
+Loop 679 (us) 337.239
+Loop 680 (us) 340.747
+Loop 681 (us) 337.042
+Loop 682 (us) 330.505
+Loop 683 (us) 337.264
+Loop 684 (us) 344.846
+Loop 685 (us) 333.455
+Loop 686 (us) 336.26
+Loop 687 (us) 347.051
+Loop 688 (us) 341.287
+Loop 689 (us) 332.134
+Loop 690 (us) 336.679
+Loop 691 (us) 335.219
+Loop 692 (us) 352.582
+Loop 693 (us) 757.346
+Loop 694 (us) 329.971
+Loop 695 (us) 332.072
+Loop 696 (us) 369.123
+Loop 697 (us) 336.499
+Loop 698 (us) 337.88
+Loop 699 (us) 330.719
+Loop 700 (us) 344.233
+Loop 701 (us) 336.145
+Loop 702 (us) 331.577
+Loop 703 (us) 329.853
+Loop 704 (us) 342.209
+Loop 705 (us) 362.983
+Loop 706 (us) 359.73
+Loop 707 (us) 352.87
+Loop 708 (us) 362.678
+Loop 709 (us) 354.156
+Loop 710 (us) 370.998
+Loop 711 (us) 355.558
+Loop 712 (us) 360.67
+Loop 713 (us) 824.575
+Loop 714 (us) 398.575
+Loop 715 (us) 350.141
+Loop 716 (us) 363.998
+Loop 717 (us) 357.848
+Loop 718 (us) 354.634
+Loop 719 (us) 349.396
+Loop 720 (us) 362.578
+Loop 721 (us) 354.02
+Loop 722 (us) 352.785
+Loop 723 (us) 348.595
+Loop 724 (us) 360.614
+Loop 725 (us) 353.752
+Loop 726 (us) 348.99
+Loop 727 (us) 357.171
+Loop 728 (us) 362.366
+Loop 729 (us) 361.851
+Loop 730 (us) 350.111
+Loop 731 (us) 350.402
+Loop 732 (us) 364.301
+Loop 733 (us) 358.522
+Loop 734 (us) 352.259
+Loop 735 (us) 350.615
+Loop 736 (us) 358.607
+Loop 737 (us) 801.744
+Loop 738 (us) 347.718
+Loop 739 (us) 350.626
+Loop 740 (us) 358.528
+Loop 741 (us) 355.674
+Loop 742 (us) 351.709
+Loop 743 (us) 409.321
+Loop 744 (us) 359.965
+Loop 745 (us) 355.589
+Loop 746 (us) 350.803
+Loop 747 (us) 349.785
+Loop 748 (us) 364.514
+Loop 749 (us) 353.71
+Loop 750 (us) 350.915
+Loop 751 (us) 414.995
+Loop 752 (us) 361.791
+Loop 753 (us) 357.812
+Loop 754 (us) 347.997
+Loop 755 (us) 349.187
+Loop 756 (us) 359.308
+Loop 757 (us) 350.411
+Loop 758 (us) 354.06
+Loop 759 (us) 350.928
+Loop 760 (us) 788.555
+Loop 761 (us) 348.521
+Loop 762 (us) 347.575
+Loop 763 (us) 352.731
+Loop 764 (us) 1233.724
+Loop 765 (us) 357.61
+Loop 766 (us) 349.632
+Loop 767 (us) 1028.884
+Loop 768 (us) 376.644
+Loop 769 (us) 351.671
+Loop 770 (us) 349.291
+Loop 771 (us) 350.343
+Loop 772 (us) 360.731
+Loop 773 (us) 357.142
+Loop 774 (us) 350.045
+Loop 775 (us) 397.401
+Loop 776 (us) 376.879
+Loop 777 (us) 424.314
+Loop 778 (us) 349.043
+Loop 779 (us) 354.997
+Loop 780 (us) 358.688
+Loop 781 (us) 778.604
+Loop 782 (us) 347.246
+Loop 783 (us) 348.927
+Loop 784 (us) 366.696
+Loop 785 (us) 347.882
+Loop 786 (us) 348.576
+Loop 787 (us) 349.2
+Loop 788 (us) 366.27
+Loop 789 (us) 354.505
+Loop 790 (us) 355.97
+Loop 791 (us) 361.339
+Loop 792 (us) 360.82
+Loop 793 (us) 351.228
+Loop 794 (us) 354.241
+Loop 795 (us) 351.564
+Loop 796 (us) 358.707
+Loop 797 (us) 351.199
+Loop 798 (us) 348.872
+Loop 799 (us) 359.188
+Loop 800 (us) 372.021
+Loop 801 (us) 352.697
+Loop 802 (us) 351.169
+Loop 803 (us) 348.52
+Loop 804 (us) 385.455
+Loop 805 (us) 818.958
+Loop 806 (us) 350.483
+Loop 807 (us) 355.461
+Loop 808 (us) 362.106
+Loop 809 (us) 352.206
+Loop 810 (us) 355.753
+Loop 811 (us) 350.508
+Loop 812 (us) 361.444
+Loop 813 (us) 350.304
+Loop 814 (us) 354.651
+Loop 815 (us) 353.936
+Loop 816 (us) 364.501
+Loop 817 (us) 351.46
+Loop 818 (us) 350.043
+Loop 819 (us) 351.983
+Loop 820 (us) 362.206
+Loop 821 (us) 351.007
+Loop 822 (us) 369.016
+Loop 823 (us) 350.356
+Loop 824 (us) 361.82
+Loop 825 (us) 354.654
+Loop 826 (us) 354.902
+Loop 827 (us) 349.888
+Loop 828 (us) 772.568
+Loop 829 (us) 352.09
+Loop 830 (us) 417.031
+Loop 831 (us) 350.882
+Loop 832 (us) 363.095
+Loop 833 (us) 352.048
+Loop 834 (us) 349.851
+Loop 835 (us) 354.995
+Loop 836 (us) 359.405
+Loop 837 (us) 356.832
+Loop 838 (us) 353.154
+Loop 839 (us) 349.733
+Loop 840 (us) 362.586
+Loop 841 (us) 351.731
+Loop 842 (us) 358.261
+Loop 843 (us) 350.393
+Loop 844 (us) 360.462
+Loop 845 (us) 2657.963
+Loop 846 (us) 354.269
+Loop 847 (us) 350.432
+Loop 848 (us) 358.614
+Loop 849 (us) 355.064
+Loop 850 (us) 347.913
+Loop 851 (us) 352.089
+Loop 852 (us) 848.238
+Loop 853 (us) 357.142
+Loop 854 (us) 350.723
+Loop 855 (us) 351.87
+Loop 856 (us) 363.736
+Loop 857 (us) 350.005
+Loop 858 (us) 349.422
+Loop 859 (us) 350.266
+Loop 860 (us) 359.129
+Loop 861 (us) 353.883
+Loop 862 (us) 354.428
+Loop 863 (us) 350.407
+Loop 864 (us) 360.933
+Loop 865 (us) 352.684
+Loop 866 (us) 357.885
+Loop 867 (us) 348.837
+Loop 868 (us) 359.434
+Loop 869 (us) 357.749
+Loop 870 (us) 352.467
+Loop 871 (us) 358.884
+Loop 872 (us) 361.1
+Loop 873 (us) 354.495
+Loop 874 (us) 352.773
+Loop 875 (us) 775.432
+Loop 876 (us) 365.448
+Loop 877 (us) 357.488
+Loop 878 (us) 350.61
+Loop 879 (us) 351.616
+Loop 880 (us) 358.348
+Loop 881 (us) 349.852
+Loop 882 (us) 357.889
+Loop 883 (us) 349.07
+Loop 884 (us) 364.021
+Loop 885 (us) 355.678
+Loop 886 (us) 404.297
+Loop 887 (us) 356.808
+Loop 888 (us) 361.769
+Loop 889 (us) 354.285
+Loop 890 (us) 349.752
+Loop 891 (us) 349.552
+Loop 892 (us) 368.273
+Loop 893 (us) 366.102
+Loop 894 (us) 350.838
+Loop 895 (us) 351.001
+Loop 896 (us) 360.639
+Loop 897 (us) 355.72
+Loop 898 (us) 354.008
+Loop 899 (us) 813.794
+Loop 900 (us) 366.969
+Loop 901 (us) 389.652
+Loop 902 (us) 354.142
+Loop 903 (us) 351.479
+Loop 904 (us) 359.618
+Loop 905 (us) 349.409
+Loop 906 (us) 351.221
+Loop 907 (us) 353.47
+Loop 908 (us) 432.933
+Loop 909 (us) 352.24
+Loop 910 (us) 354.678
+Loop 911 (us) 350.005
+Loop 912 (us) 361.574
+Loop 913 (us) 352.99
+Loop 914 (us) 348.575
+Loop 915 (us) 831.281
+Loop 916 (us) 362.722
+Loop 917 (us) 403.559
+Loop 918 (us) 356.237
+Loop 919 (us) 352.837
+Loop 920 (us) 365.302
+Loop 921 (us) 350.262
+Loop 922 (us) 784.562
+Loop 923 (us) 352.136
+Loop 924 (us) 370.503
+Loop 925 (us) 351.873
+Loop 926 (us) 354.339
+Loop 927 (us) 351.423
+Loop 928 (us) 364.625
+Loop 929 (us) 354.126
+Loop 930 (us) 348.63
+Loop 931 (us) 352.091
+Loop 932 (us) 358.8
+Loop 933 (us) 354.091
+Loop 934 (us) 350.386
+Loop 935 (us) 354.356
+Loop 936 (us) 360.548
+Loop 937 (us) 352.311
+Loop 938 (us) 356.234
+Loop 939 (us) 349.305
+Loop 940 (us) 358.323
+Loop 941 (us) 350.683
+Loop 942 (us) 350.091
+Loop 943 (us) 357.863
+Loop 944 (us) 362.011
+Loop 945 (us) 353.486
+Loop 946 (us) 811.434
+Loop 947 (us) 349.454
+Loop 948 (us) 357.905
+Loop 949 (us) 357.628
+Loop 950 (us) 351.864
+Loop 951 (us) 351.64
+Loop 952 (us) 364.128
+Loop 953 (us) 352.269
+Loop 954 (us) 356.633
+Loop 955 (us) 348.997
+Loop 956 (us) 359.168
+Loop 957 (us) 352.381
+Loop 958 (us) 353.735
+Loop 959 (us) 354.366
+Loop 960 (us) 359.157
+Loop 961 (us) 349.873
+Loop 962 (us) 353.772
+Loop 963 (us) 350.284
+Loop 964 (us) 361.651
+Loop 965 (us) 352.207
+Loop 966 (us) 348.903
+Loop 967 (us) 350.129
+Loop 968 (us) 358.153
+Loop 969 (us) 773.125
+Loop 970 (us) 343.226
+Loop 971 (us) 343.249
+Loop 972 (us) 349.34
+Loop 973 (us) 343.34
+Loop 974 (us) 347.47
+Loop 975 (us) 344.071
+Loop 976 (us) 353.596
+Loop 977 (us) 346.418
+Loop 978 (us) 342.862
+Loop 979 (us) 354.459
+Loop 980 (us) 354.609
+Loop 981 (us) 346.571
+Loop 982 (us) 342.064
+Loop 983 (us) 345.876
+Loop 984 (us) 350.781
+Loop 985 (us) 348.46
+Loop 986 (us) 799.196
+Loop 987 (us) 481.412
+Loop 988 (us) 485.228
+Loop 989 (us) 504.891
+Loop 990 (us) 913.823
+Loop 991 (us) 479.062
+Loop 992 (us) 1064.959
+Loop 993 (us) 506.421
+Loop 994 (us) 484.181
+Loop 995 (us) 470.7
+Loop 996 (us) 487.326
+Loop 997 (us) 475.741
+Loop 998 (us) 474.158
+Loop 999 (us) 470.997
+Loop 1000 (us) 485.271
+Loop 1001 (us) 483.833
+Loop 1002 (us) 457.43
+Loop 1003 (us) 455.362
+Loop 1004 (us) 463.399
+Loop 1005 (us) 457.594
+Loop 1006 (us) 886.937
+Loop 1007 (us) 459.524
+Loop 1008 (us) 467.103
+Loop 1009 (us) 459.086
+Loop 1010 (us) 459.042
+Loop 1011 (us) 457.047
+Loop 1012 (us) 498.842
+Loop 1013 (us) 711.779
+Loop 1014 (us) 476.007
+Loop 1015 (us) 454.356
+Loop 1016 (us) 467.459
+Loop 1017 (us) 458.629
+Loop 1018 (us) 458.126
+Loop 1019 (us) 461.403
+Loop 1020 (us) 479.724
+Loop 1021 (us) 456.756
+Loop 1022 (us) 814.425
+Loop 1023 (us) 898.148
+Loop 1024 (us) 840.087
+Loop 1025 (us) 800.159
+Loop 1026 (us) 801.364
+Loop 1027 (us) 372.039
+Loop 1028 (us) 343.904
+Loop 1029 (us) 341.835
+Loop 1030 (us) 337.011
+Loop 1031 (us) 336.387
+Loop 1032 (us) 343.096
+Loop 1033 (us) 384.737
+Loop 1034 (us) 336.247
+Loop 1035 (us) 339.649
+Loop 1036 (us) 345.545
+Loop 1037 (us) 338.569
+Loop 1038 (us) 334.779
+Loop 1039 (us) 336.669
+Loop 1040 (us) 348.657
+Loop 1041 (us) 336.076
+Loop 1042 (us) 334.185
+Loop 1043 (us) 347.962
+Loop 1044 (us) 745.705
+Loop 1045 (us) 333.36
+Loop 1046 (us) 336.142
+Loop 1047 (us) 335.799
+Loop 1048 (us) 342.836
+Loop 1049 (us) 337.392
+Loop 1050 (us) 397.557
+Loop 1051 (us) 337.128
+Loop 1052 (us) 343.16
+Loop 1053 (us) 335.488
+Loop 1054 (us) 336.699
+Loop 1055 (us) 334.435
+Loop 1056 (us) 351.595
+Loop 1057 (us) 334.995
+Loop 1058 (us) 338.093
+Loop 1059 (us) 336.554
+Loop 1060 (us) 346.741
+Loop 1061 (us) 337.271
+Loop 1062 (us) 341.641
+Loop 1063 (us) 339.258
+Loop 1064 (us) 346.572
+Loop 1065 (us) 347.047
+Loop 1066 (us) 707.592
+Loop 1067 (us) 342.177
+Loop 1068 (us) 347.407
+Loop 1069 (us) 344.828
+Loop 1070 (us) 344.075
+Loop 1071 (us) 341.058
+Loop 1072 (us) 353.568
+Loop 1073 (us) 342.143
+Loop 1074 (us) 340.621
+Loop 1075 (us) 343.609
+Loop 1076 (us) 347.54
+Loop 1077 (us) 341.858
+Loop 1078 (us) 339.746
+Loop 1079 (us) 340.911
+Loop 1080 (us) 355.169
+Loop 1081 (us) 341.012
+Loop 1082 (us) 344.27
+Loop 1083 (us) 344.747
+Loop 1084 (us) 349.171
+Loop 1085 (us) 351.91
+Loop 1086 (us) 341.178
+Loop 1087 (us) 345.995
+Loop 1088 (us) 349.543
+Loop 1089 (us) 768.706
+Loop 1090 (us) 343.535
+Loop 1091 (us) 338.844
+Loop 1092 (us) 348.504
+Loop 1093 (us) 345.669
+Loop 1094 (us) 338.525
+Loop 1095 (us) 342.369
+Loop 1096 (us) 353.327
+Loop 1097 (us) 343.197
+Loop 1098 (us) 341.385
+Loop 1099 (us) 339.181
+Loop 1100 (us) 347.827
+Loop 1101 (us) 346.434
+Loop 1102 (us) 340.825
+Loop 1103 (us) 344.583
+Loop 1104 (us) 349.976
+Loop 1105 (us) 341.122
+Loop 1106 (us) 344.881
+Loop 1107 (us) 356.037
+Loop 1108 (us) 351.893
+Loop 1109 (us) 340.48
+Loop 1110 (us) 343.093
+Loop 1111 (us) 722.215
+Loop 1112 (us) 346.326
+Loop 1113 (us) 339.947
+Loop 1114 (us) 340.218
+Loop 1115 (us) 338.734
+Loop 1116 (us) 371.282
+Loop 1117 (us) 346.507
+Loop 1118 (us) 348.18
+Loop 1119 (us) 338.781
+Loop 1120 (us) 353.312
+Loop 1121 (us) 345.741
+Loop 1122 (us) 340.474
+Loop 1123 (us) 346.052
+Loop 1124 (us) 348.881
+Loop 1125 (us) 346.401
+Loop 1126 (us) 337.812
+Loop 1127 (us) 345.078
+Loop 1128 (us) 348.051
+Loop 1129 (us) 340.9
+Loop 1130 (us) 340.204
+Loop 1131 (us) 343.325
+Loop 1132 (us) 355.751
+Loop 1133 (us) 710.422
+Loop 1134 (us) 345.951
+Loop 1135 (us) 341.778
+Loop 1136 (us) 348.22
+Loop 1137 (us) 345.202
+Loop 1138 (us) 337.82
+Loop 1139 (us) 339.135
+Loop 1140 (us) 348.496
+Loop 1141 (us) 341.503
+Loop 1142 (us) 341.828
+Loop 1143 (us) 340.757
+Loop 1144 (us) 352.426
+Loop 1145 (us) 347.531
+Loop 1146 (us) 341.48
+Loop 1147 (us) 351.704
+Loop 1148 (us) 348.736
+Loop 1149 (us) 344.703
+Loop 1150 (us) 338.843
+Loop 1151 (us) 341.729
+Loop 1152 (us) 356.123
+Loop 1153 (us) 340.236
+Loop 1154 (us) 339.089
+Loop 1155 (us) 339.92
+Loop 1156 (us) 751.756
+Loop 1157 (us) 343.883
+Loop 1158 (us) 343.963
+Loop 1159 (us) 338.503
+Loop 1160 (us) 349.447
+Loop 1161 (us) 342.258
+Loop 1162 (us) 342.672
+Loop 1163 (us) 345.208
+Loop 1164 (us) 349.535
+Loop 1165 (us) 345.636
+Loop 1166 (us) 339.893
+Loop 1167 (us) 339.733
+Loop 1168 (us) 358.545
+Loop 1169 (us) 340.554
+Loop 1170 (us) 340.2
+Loop 1171 (us) 342.357
+Loop 1172 (us) 346.377
+Loop 1173 (us) 349.633
+Loop 1174 (us) 341.023
+Loop 1175 (us) 342.669
+Loop 1176 (us) 348.553
+Loop 1177 (us) 343.166
+Loop 1178 (us) 344.057
+Loop 1179 (us) 790.922
+Loop 1180 (us) 352.702
+Loop 1181 (us) 343.673
+Loop 1182 (us) 340.334
+Loop 1183 (us) 346.029
+Loop 1184 (us) 350.414
+Loop 1185 (us) 394.399
+Loop 1186 (us) 339.193
+Loop 1187 (us) 339.247
+Loop 1188 (us) 346.986
+Loop 1189 (us) 350.468
+Loop 1190 (us) 338.943
+Loop 1191 (us) 339.219
+Loop 1192 (us) 350.022
+Loop 1193 (us) 340.999
+Loop 1194 (us) 344.872
+Loop 1195 (us) 340.977
+Loop 1196 (us) 352.812
+Loop 1197 (us) 344.025
+Loop 1198 (us) 340.471
+Loop 1199 (us) 345.941
+Loop 1200 (us) 347.782
+Loop 1201 (us) 737.493
+Loop 1202 (us) 346.921
+Loop 1203 (us) 340.84
+Loop 1204 (us) 350.966
+Loop 1205 (us) 340.023
+Loop 1206 (us) 340.458
+Loop 1207 (us) 341.637
+Loop 1208 (us) 348.214
+Loop 1209 (us) 345.194
+Loop 1210 (us) 345.101
+Loop 1211 (us) 344.016
+Loop 1212 (us) 345.956
+Loop 1213 (us) 341.842
+Loop 1214 (us) 343.452
+Loop 1215 (us) 342.881
+Loop 1216 (us) 349.865
+Loop 1217 (us) 341.286
+Loop 1218 (us) 339.49
+Loop 1219 (us) 352.089
+Loop 1220 (us) 349.426
+Loop 1221 (us) 342.916
+Loop 1222 (us) 339.862
+Loop 1223 (us) 341.082
+Loop 1224 (us) 788.157
+Loop 1225 (us) 344.739
+Loop 1226 (us) 343.255
+Loop 1227 (us) 348.587
+Loop 1228 (us) 347.27
+Loop 1229 (us) 341.916
+Loop 1230 (us) 344.366
+Loop 1231 (us) 342.908
+Loop 1232 (us) 346.545
+Loop 1233 (us) 338.938
+Loop 1234 (us) 341.386
+Loop 1235 (us) 344.963
+Loop 1236 (us) 347.753
+Loop 1237 (us) 338.826
+Loop 1238 (us) 339.454
+Loop 1239 (us) 341.115
+Loop 1240 (us) 354.57
+Loop 1241 (us) 340.508
+Loop 1242 (us) 344.153
+Loop 1243 (us) 340.915
+Loop 1244 (us) 347.851
+Loop 1245 (us) 346.315
+Loop 1246 (us) 726.14
+Loop 1247 (us) 337.786
+Loop 1248 (us) 346.689
+Loop 1249 (us) 340.707
+Loop 1250 (us) 343.145
+Loop 1251 (us) 339.573
+Loop 1252 (us) 349.391
+Loop 1253 (us) 348.656
+Loop 1254 (us) 338.552
+Loop 1255 (us) 344.067
+Loop 1256 (us) 351.56
+Loop 1257 (us) 340.098
+Loop 1258 (us) 347.036
+Loop 1259 (us) 339.782
+Loop 1260 (us) 348.447
+Loop 1261 (us) 344.776
+Loop 1262 (us) 340.963
+Loop 1263 (us) 339.421
+Loop 1264 (us) 346.739
+Loop 1265 (us) 340.443
+Loop 1266 (us) 341.389
+Loop 1267 (us) 345.635
+Loop 1268 (us) 347.389
+Loop 1269 (us) 774.231
+Loop 1270 (us) 342.277
+Loop 1271 (us) 348.468
+Loop 1272 (us) 347.091
+Loop 1273 (us) 346.478
+Loop 1274 (us) 340.394
+Loop 1275 (us) 339.356
+Loop 1276 (us) 352.174
+Loop 1277 (us) 342.271
+Loop 1278 (us) 339.989
+Loop 1279 (us) 341.35
+Loop 1280 (us) 347.942
+Loop 1281 (us) 344.4
+Loop 1282 (us) 340.107
+Loop 1283 (us) 344.552
+Loop 1284 (us) 348.364
+Loop 1285 (us) 342.275
+Loop 1286 (us) 342.417
+Loop 1287 (us) 344.562
+Loop 1288 (us) 346.982
+Loop 1289 (us) 346.67
+Loop 1290 (us) 344.492
+Loop 1291 (us) 727.208
+Loop 1292 (us) 350.661
+Loop 1293 (us) 342.43
+Loop 1294 (us) 339.321
+Loop 1295 (us) 342.169
+Loop 1296 (us) 349.887
+Loop 1297 (us) 343.802
+Loop 1298 (us) 340.199
+Loop 1299 (us) 338.522
+Loop 1300 (us) 346.718
+Loop 1301 (us) 338.97
+Loop 1302 (us) 345.252
+Loop 1303 (us) 341.106
+Loop 1304 (us) 354.584
+Loop 1305 (us) 342.789
+Loop 1306 (us) 340.64
+Loop 1307 (us) 344.421
+Loop 1308 (us) 350.383
+Loop 1309 (us) 341.836
+Loop 1310 (us) 345.277
+Loop 1311 (us) 341.513
+Loop 1312 (us) 351.255
+Loop 1313 (us) 340.133
+Loop 1314 (us) 731.009
+Loop 1315 (us) 336.09
+Loop 1316 (us) 346.615
+Loop 1317 (us) 343.026
+Loop 1318 (us) 344.332
+Loop 1319 (us) 340.054
+Loop 1320 (us) 381.816
+Loop 1321 (us) 343.383
+Loop 1322 (us) 339.526
+Loop 1323 (us) 345.896
+Loop 1324 (us) 347.371
+Loop 1325 (us) 340.562
+Loop 1326 (us) 340.807
+Loop 1327 (us) 339.933
+Loop 1328 (us) 356.509
+Loop 1329 (us) 339.387
+Loop 1330 (us) 340.274
+Loop 1331 (us) 340.181
+Loop 1332 (us) 351.11
+Loop 1333 (us) 344.935
+Loop 1334 (us) 340.113
+Loop 1335 (us) 344.703
+Loop 1336 (us) 348.01
+Loop 1337 (us) 778.32
+Loop 1338 (us) 369.818
+Loop 1339 (us) 341.045
+Loop 1340 (us) 348.801
+Loop 1341 (us) 342.519
+Loop 1342 (us) 341.275
+Loop 1343 (us) 344.707
+Loop 1344 (us) 348.81
+Loop 1345 (us) 340.479
+Loop 1346 (us) 339.012
+Loop 1347 (us) 340.997
+Loop 1348 (us) 349.883
+Loop 1349 (us) 341.711
+Loop 1350 (us) 340.22
+Loop 1351 (us) 345.012
+Loop 1352 (us) 472.773
+Loop 1353 (us) 355.204
+Loop 1354 (us) 338.709
+Loop 1355 (us) 343.168
+Loop 1356 (us) 348.777
+Loop 1357 (us) 340.167
+Loop 1358 (us) 340.08
+Loop 1359 (us) 764.702
+Loop 1360 (us) 350.801
+Loop 1361 (us) 339.88
+Loop 1362 (us) 339.383
+Loop 1363 (us) 341.296
+Loop 1364 (us) 347.673
+Loop 1365 (us) 347.987
+Loop 1366 (us) 345.56
+Loop 1367 (us) 340.342
+Loop 1368 (us) 351.603
+Loop 1369 (us) 342.139
+Loop 1370 (us) 388.627
+Loop 1371 (us) 341.187
+Loop 1372 (us) 347.448
+Loop 1373 (us) 342.341
+Loop 1374 (us) 341.478
+Loop 1375 (us) 343.855
+Loop 1376 (us) 347.19
+Loop 1377 (us) 341.126
+Loop 1378 (us) 338.789
+Loop 1379 (us) 340.828
+Loop 1380 (us) 352.553
+Loop 1381 (us) 744.632
+Loop 1382 (us) 342.134
+Loop 1383 (us) 344.602
+Loop 1384 (us) 346.398
+Loop 1385 (us) 340.603
+Loop 1386 (us) 344.566
+Loop 1387 (us) 373.509
+Loop 1388 (us) 353.556
+Loop 1389 (us) 343.514
+Loop 1390 (us) 343.853
+Loop 1391 (us) 346.327
+Loop 1392 (us) 347.169
+Loop 1393 (us) 342.358
+Loop 1394 (us) 345.996
+Loop 1395 (us) 340.635
+Loop 1396 (us) 350.226
+Loop 1397 (us) 343.025
+Loop 1398 (us) 389.4
+Loop 1399 (us) 342.322
+Loop 1400 (us) 349.937
+Loop 1401 (us) 346.788
+Loop 1402 (us) 342.764
+Loop 1403 (us) 340.327
+Loop 1404 (us) 761.383
+Loop 1405 (us) 337.48
+Loop 1406 (us) 344.938
+Loop 1407 (us) 340.164
+Loop 1408 (us) 380.178
+Loop 1409 (us) 341.115
+Loop 1410 (us) 341.221
+Loop 1411 (us) 494.847
+Loop 1412 (us) 367.688
+Loop 1413 (us) 780.14
+Loop 1414 (us) 343.705
+Loop 1415 (us) 397.106
+Loop 1416 (us) 352.492
+Loop 1417 (us) 340.953
+Loop 1418 (us) 345.983
+Loop 1419 (us) 342.903
+Loop 1420 (us) 348.656
+Loop 1421 (us) 339.169
+Loop 1422 (us) 337.705
+Loop 1423 (us) 348.223
+Loop 1424 (us) 349.491
+Loop 1425 (us) 338.867
+Loop 1426 (us) 787.048
+Loop 1427 (us) 342.887
+Loop 1428 (us) 356.964
+Loop 1429 (us) 338.77
+Loop 1430 (us) 455.972
+Loop 1431 (us) 353.397
+Loop 1432 (us) 456.0
+Loop 1433 (us) 355.091
+Loop 1434 (us) 336.818
+Loop 1435 (us) 344.417
+Loop 1436 (us) 347.058
+Loop 1437 (us) 342.347
+Loop 1438 (us) 339.922
+Loop 1439 (us) 341.907
+Loop 1440 (us) 351.564
+Loop 1441 (us) 340.382
+Loop 1442 (us) 344.95
+Loop 1443 (us) 339.124
+Loop 1444 (us) 354.274
+Loop 1445 (us) 349.677
+Loop 1446 (us) 340.049
+Loop 1447 (us) 720.185
+Loop 1448 (us) 345.085
+Loop 1449 (us) 342.968
+Loop 1450 (us) 341.029
+Loop 1451 (us) 347.578
+Loop 1452 (us) 349.013
+Loop 1453 (us) 341.652
+Loop 1454 (us) 342.545
+Loop 1455 (us) 343.84
+Loop 1456 (us) 352.463
+Loop 1457 (us) 342.204
+Loop 1458 (us) 340.278
+Loop 1459 (us) 345.442
+Loop 1460 (us) 348.238
+Loop 1461 (us) 351.598
+Loop 1462 (us) 340.334
+Loop 1463 (us) 341.669
+Loop 1464 (us) 347.232
+Loop 1465 (us) 342.182
+Loop 1466 (us) 347.893
+Loop 1467 (us) 340.513
+Loop 1468 (us) 349.13
+Loop 1469 (us) 908.271
+Loop 1470 (us) 352.685
+Loop 1471 (us) 339.109
+Loop 1472 (us) 358.654
+Loop 1473 (us) 346.516
+Loop 1474 (us) 340.238
+Loop 1475 (us) 343.718
+Loop 1476 (us) 349.069
+Loop 1477 (us) 348.705
+Loop 1478 (us) 341.194
+Loop 1479 (us) 341.314
+Loop 1480 (us) 348.685
+Loop 1481 (us) 340.852
+Loop 1482 (us) 342.875
+Loop 1483 (us) 340.304
+Loop 1484 (us) 350.914
+Loop 1485 (us) 343.217
+Loop 1486 (us) 341.969
+Loop 1487 (us) 342.708
+Loop 1488 (us) 352.131
+Loop 1489 (us) 340.566
+Loop 1490 (us) 345.618
+Loop 1491 (us) 339.034
+Loop 1492 (us) 744.074
+Loop 1493 (us) 343.619
+Loop 1494 (us) 342.196
+Loop 1495 (us) 340.474
+Loop 1496 (us) 346.488
+Loop 1497 (us) 345.022
+Loop 1498 (us) 789.879
+Loop 1499 (us) 459.148
+Warmup times 500
+avgLoopLatency(us) 387.888538
+iops 2578.0601952203083
+Loop 0 encoding (us) 600530.588
+Loop 1 encoding (us) 5627.98
+Loop 2 encoding (us) 6314.023
+Loop 3 encoding (us) 3171.681
+Loop 4 encoding (us) 101089.513
+Loop 5 encoding (us) 1149.004
+Loop 6 encoding (us) 786.401
+Loop 7 encoding (us) 841.855
+Loop 8 encoding (us) 885.406
+Loop 9 encoding (us) 746.427
+Loop 10 encoding (us) 668.393
+Loop 11 encoding (us) 837.452
+Loop 12 encoding (us) 1088.26
+Loop 13 encoding (us) 647.413
+Loop 14 encoding (us) 2620.356
+Loop 15 encoding (us) 599.847
+Loop 16 encoding (us) 708.712
+Loop 17 encoding (us) 550.109
+Loop 18 encoding (us) 549.02
+Loop 19 encoding (us) 548.766
+Loop 20 encoding (us) 741.876
+Loop 21 encoding (us) 480.85
+Loop 22 encoding (us) 472.012
+Loop 23 encoding (us) 456.601
+Loop 24 encoding (us) 596.106
+Loop 25 encoding (us) 465.885
+Loop 26 encoding (us) 463.672
+Loop 27 encoding (us) 460.683
+Loop 28 encoding (us) 567.98
+Loop 29 encoding (us) 444.913
+Loop 30 encoding (us) 437.868
+Loop 31 encoding (us) 443.687
+Loop 32 encoding (us) 982.554
+Loop 33 encoding (us) 448.294
+Loop 34 encoding (us) 449.175
+Loop 35 encoding (us) 466.657
+Loop 36 encoding (us) 541.347
+Loop 37 encoding (us) 453.976
+Loop 38 encoding (us) 973.282
+Loop 39 encoding (us) 408.281
+Loop 40 encoding (us) 536.395
+Loop 41 encoding (us) 452.939
+Loop 42 encoding (us) 420.483
+Loop 43 encoding (us) 442.404
+Loop 44 encoding (us) 522.671
+Loop 45 encoding (us) 409.699
+Loop 46 encoding (us) 1037.514
+Loop 47 encoding (us) 430.087
+Loop 48 encoding (us) 494.453
+Loop 49 encoding (us) 452.811
+Loop 50 encoding (us) 419.989
+Loop 51 encoding (us) 390.35
+Loop 52 encoding (us) 484.237
+Loop 53 encoding (us) 399.91
+Loop 54 encoding (us) 383.615
+Loop 55 encoding (us) 455.558
+Loop 56 encoding (us) 520.372
+Loop 57 encoding (us) 479.931
+Loop 58 encoding (us) 511.178
+Loop 59 encoding (us) 375.461
+Loop 60 encoding (us) 545.819
+Loop 61 encoding (us) 382.618
+Loop 62 encoding (us) 367.622
+Loop 63 encoding (us) 592.832
+Loop 64 encoding (us) 459.809
+Loop 65 encoding (us) 397.806
+Loop 66 encoding (us) 423.396
+Loop 67 encoding (us) 401.538
+Loop 68 encoding (us) 474.479
+Loop 69 encoding (us) 411.54
+Loop 70 encoding (us) 1082.677
+Loop 71 encoding (us) 452.421
+Loop 72 encoding (us) 517.712
+Loop 73 encoding (us) 487.121
+Loop 74 encoding (us) 542.009
+Loop 75 encoding (us) 423.571
+Loop 76 encoding (us) 452.491
+Loop 77 encoding (us) 419.396
+Loop 78 encoding (us) 465.85
+Loop 79 encoding (us) 468.673
+Loop 80 encoding (us) 524.275
+Loop 81 encoding (us) 420.832
+Loop 82 encoding (us) 468.151
+Loop 83 encoding (us) 333.926
+Loop 84 encoding (us) 659.924
+Loop 85 encoding (us) 475.639
+Loop 86 encoding (us) 398.711
+Loop 87 encoding (us) 371.596
+Loop 88 encoding (us) 566.228
+Loop 89 encoding (us) 313.821
+Loop 90 encoding (us) 301.489
+Loop 91 encoding (us) 325.433
+Loop 92 encoding (us) 491.293
+Loop 93 encoding (us) 333.869
+Loop 94 encoding (us) 391.589
+Loop 95 encoding (us) 424.039
+Loop 96 encoding (us) 348.954
+Loop 97 encoding (us) 398.929
+Loop 98 encoding (us) 285.353
+Loop 99 encoding (us) 329.361
+Loop 100 encoding (us) 428.765
+Loop 101 encoding (us) 988.357
+Loop 102 encoding (us) 420.375
+Loop 103 encoding (us) 292.238
+Loop 104 encoding (us) 348.87
+Loop 105 encoding (us) 366.528
+Loop 106 encoding (us) 297.157
+Loop 107 encoding (us) 294.929
+Loop 108 encoding (us) 404.208
+Loop 109 encoding (us) 296.63
+Loop 110 encoding (us) 286.721
+Loop 111 encoding (us) 288.099
+Loop 112 encoding (us) 410.49
+Loop 113 encoding (us) 274.118
+Loop 114 encoding (us) 305.257
+Loop 115 encoding (us) 287.233
+Loop 116 encoding (us) 433.465
+Loop 117 encoding (us) 293.321
+Loop 118 encoding (us) 284.226
+Loop 119 encoding (us) 354.925
+Loop 120 encoding (us) 331.378
+Loop 121 encoding (us) 357.554
+Loop 122 encoding (us) 277.855
+Loop 123 encoding (us) 274.406
+Loop 124 encoding (us) 903.385
+Loop 125 encoding (us) 274.317
+Loop 126 encoding (us) 276.419
+Loop 127 encoding (us) 278.19
+Loop 128 encoding (us) 348.249
+Loop 129 encoding (us) 414.276
+Loop 130 encoding (us) 357.718
+Loop 131 encoding (us) 369.241
+Loop 132 encoding (us) 355.192
+Loop 133 encoding (us) 293.758
+Loop 134 encoding (us) 276.911
+Loop 135 encoding (us) 329.979
+Loop 136 encoding (us) 343.027
+Loop 137 encoding (us) 274.489
+Loop 138 encoding (us) 289.07
+Loop 139 encoding (us) 271.194
+Loop 140 encoding (us) 323.882
+Loop 141 encoding (us) 276.621
+Loop 142 encoding (us) 347.789
+Loop 143 encoding (us) 277.587
+Loop 144 encoding (us) 322.368
+Loop 145 encoding (us) 278.513
+Loop 146 encoding (us) 271.138
+Loop 147 encoding (us) 783.907
+Loop 148 encoding (us) 381.894
+Loop 149 encoding (us) 287.117
+Loop 150 encoding (us) 287.552
+Loop 151 encoding (us) 275.201
+Loop 152 encoding (us) 359.104
+Loop 153 encoding (us) 274.115
+Loop 154 encoding (us) 320.03
+Loop 155 encoding (us) 347.982
+Loop 156 encoding (us) 322.827
+Loop 157 encoding (us) 389.969
+Loop 158 encoding (us) 317.306
+Loop 159 encoding (us) 272.002
+Loop 160 encoding (us) 379.089
+Loop 161 encoding (us) 315.798
+Loop 162 encoding (us) 445.425
+Loop 163 encoding (us) 343.763
+Loop 164 encoding (us) 364.456
+Loop 165 encoding (us) 282.317
+Loop 166 encoding (us) 265.691
+Loop 167 encoding (us) 270.239
+Loop 168 encoding (us) 521.88
+Loop 169 encoding (us) 985.931
+Loop 170 encoding (us) 266.586
+Loop 171 encoding (us) 270.564
+Loop 172 encoding (us) 536.197
+Loop 173 encoding (us) 267.749
+Loop 174 encoding (us) 259.331
+Loop 175 encoding (us) 248.364
+Loop 176 encoding (us) 337.496
+Loop 177 encoding (us) 255.754
+Loop 178 encoding (us) 269.093
+Loop 179 encoding (us) 247.557
+Loop 180 encoding (us) 272.02
+Loop 181 encoding (us) 248.301
+Loop 182 encoding (us) 246.487
+Loop 183 encoding (us) 266.644
+Loop 184 encoding (us) 265.486
+Loop 185 encoding (us) 254.134
+Loop 186 encoding (us) 270.339
+Loop 187 encoding (us) 250.666
+Loop 188 encoding (us) 283.997
+Loop 189 encoding (us) 830.201
+Loop 190 encoding (us) 257.311
+Loop 191 encoding (us) 343.577
+Loop 192 encoding (us) 346.719
+Loop 193 encoding (us) 311.235
+Loop 194 encoding (us) 370.644
+Loop 195 encoding (us) 306.233
+Loop 196 encoding (us) 297.904
+Loop 197 encoding (us) 282.368
+Loop 198 encoding (us) 262.297
+Loop 199 encoding (us) 247.502
+Loop 200 encoding (us) 273.604
+Loop 201 encoding (us) 254.03
+Loop 202 encoding (us) 253.693
+Loop 203 encoding (us) 258.937
+Loop 204 encoding (us) 270.633
+Loop 205 encoding (us) 256.68
+Loop 206 encoding (us) 260.866
+Loop 207 encoding (us) 260.199
+Loop 208 encoding (us) 805.357
+Loop 209 encoding (us) 319.747
+Loop 210 encoding (us) 310.938
+Loop 211 encoding (us) 256.45
+Loop 212 encoding (us) 312.716
+Loop 213 encoding (us) 394.133
+Loop 214 encoding (us) 403.319
+Loop 215 encoding (us) 281.416
+Loop 216 encoding (us) 390.999
+Loop 217 encoding (us) 253.454
+Loop 218 encoding (us) 247.993
+Loop 219 encoding (us) 255.138
+Loop 220 encoding (us) 282.504
+Loop 221 encoding (us) 294.505
+Loop 222 encoding (us) 255.878
+Loop 223 encoding (us) 248.195
+Loop 224 encoding (us) 266.41
+Loop 225 encoding (us) 256.784
+Loop 226 encoding (us) 255.774
+Loop 227 encoding (us) 759.671
+Loop 228 encoding (us) 266.339
+Loop 229 encoding (us) 271.383
+Loop 230 encoding (us) 250.019
+Loop 231 encoding (us) 254.049
+Loop 232 encoding (us) 340.74
+Loop 233 encoding (us) 256.013
+Loop 234 encoding (us) 253.528
+Loop 235 encoding (us) 275.708
+Loop 236 encoding (us) 283.861
+Loop 237 encoding (us) 253.73
+Loop 238 encoding (us) 253.234
+Loop 239 encoding (us) 260.103
+Loop 240 encoding (us) 269.014
+Loop 241 encoding (us) 259.999
+Loop 242 encoding (us) 251.869
+Loop 243 encoding (us) 279.052
+Loop 244 encoding (us) 350.836
+Loop 245 encoding (us) 248.091
+Loop 246 encoding (us) 253.881
+Loop 247 encoding (us) 738.157
+Loop 248 encoding (us) 344.591
+Loop 249 encoding (us) 251.005
+Loop 250 encoding (us) 259.91
+Loop 251 encoding (us) 248.993
+Loop 252 encoding (us) 294.177
+Loop 253 encoding (us) 272.093
+Loop 254 encoding (us) 255.426
+Loop 255 encoding (us) 296.894
+Loop 256 encoding (us) 1524.875
+Loop 257 encoding (us) 682.99
+Loop 258 encoding (us) 440.827
+Loop 259 encoding (us) 340.498
+Loop 260 encoding (us) 389.75
+Loop 261 encoding (us) 281.501
+Loop 262 encoding (us) 271.874
+Loop 263 encoding (us) 282.148
+Loop 264 encoding (us) 343.554
+Loop 265 encoding (us) 286.604
+Loop 266 encoding (us) 277.154
+Loop 267 encoding (us) 748.691
+Loop 268 encoding (us) 341.648
+Loop 269 encoding (us) 269.173
+Loop 270 encoding (us) 275.698
+Loop 271 encoding (us) 280.82
+Loop 272 encoding (us) 326.478
+Loop 273 encoding (us) 272.847
+Loop 274 encoding (us) 268.927
+Loop 275 encoding (us) 265.532
+Loop 276 encoding (us) 329.302
+Loop 277 encoding (us) 267.82
+Loop 278 encoding (us) 276.12
+Loop 279 encoding (us) 271.091
+Loop 280 encoding (us) 392.18
+Loop 281 encoding (us) 359.199
+Loop 282 encoding (us) 266.341
+Loop 283 encoding (us) 274.249
+Loop 284 encoding (us) 291.284
+Loop 285 encoding (us) 280.192
+Loop 286 encoding (us) 704.209
+Loop 287 encoding (us) 244.138
+Loop 288 encoding (us) 707.974
+Loop 289 encoding (us) 433.828
+Loop 290 encoding (us) 315.326
+Loop 291 encoding (us) 267.8
+Loop 292 encoding (us) 314.317
+Loop 293 encoding (us) 249.677
+Loop 294 encoding (us) 229.652
+Loop 295 encoding (us) 223.227
+Loop 296 encoding (us) 252.502
+Loop 297 encoding (us) 223.502
+Loop 298 encoding (us) 239.85
+Loop 299 encoding (us) 222.521
+Loop 300 encoding (us) 247.482
+Loop 301 encoding (us) 222.809
+Loop 302 encoding (us) 223.031
+Loop 303 encoding (us) 228.331
+Loop 304 encoding (us) 245.544
+Loop 305 encoding (us) 228.812
+Loop 306 encoding (us) 238.8
+Loop 307 encoding (us) 700.241
+Loop 308 encoding (us) 248.995
+Loop 309 encoding (us) 232.013
+Loop 310 encoding (us) 299.555
+Loop 311 encoding (us) 223.648
+Loop 312 encoding (us) 232.066
+Loop 313 encoding (us) 300.46
+Loop 314 encoding (us) 231.879
+Loop 315 encoding (us) 228.105
+Loop 316 encoding (us) 256.835
+Loop 317 encoding (us) 224.928
+Loop 318 encoding (us) 230.005
+Loop 319 encoding (us) 229.254
+Loop 320 encoding (us) 257.449
+Loop 321 encoding (us) 240.714
+Loop 322 encoding (us) 291.13
+Loop 323 encoding (us) 222.694
+Loop 324 encoding (us) 241.454
+Loop 325 encoding (us) 227.361
+Loop 326 encoding (us) 682.546
+Loop 327 encoding (us) 226.247
+Loop 328 encoding (us) 231.676
+Loop 329 encoding (us) 228.185
+Loop 330 encoding (us) 224.773
+Loop 331 encoding (us) 301.747
+Loop 332 encoding (us) 230.843
+Loop 333 encoding (us) 223.814
+Loop 334 encoding (us) 235.918
+Loop 335 encoding (us) 222.195
+Loop 336 encoding (us) 229.832
+Loop 337 encoding (us) 264.036
+Loop 338 encoding (us) 227.851
+Loop 339 encoding (us) 226.621
+Loop 340 encoding (us) 278.101
+Loop 341 encoding (us) 228.006
+Loop 342 encoding (us) 227.396
+Loop 343 encoding (us) 240.659
+Loop 344 encoding (us) 222.315
+Loop 345 encoding (us) 683.842
+Loop 346 encoding (us) 224.288
+Loop 347 encoding (us) 231.174
+Loop 348 encoding (us) 225.642
+Loop 349 encoding (us) 232.632
+Loop 350 encoding (us) 226.4
+Loop 351 encoding (us) 221.229
+Loop 352 encoding (us) 224.873
+Loop 353 encoding (us) 221.894
+Loop 354 encoding (us) 220.7
+Loop 355 encoding (us) 227.957
+Loop 356 encoding (us) 226.08
+Loop 357 encoding (us) 263.148
+Loop 358 encoding (us) 224.591
+Loop 359 encoding (us) 224.577
+Loop 360 encoding (us) 227.372
+Loop 361 encoding (us) 240.103
+Loop 362 encoding (us) 260.5
+Loop 363 encoding (us) 223.807
+Loop 364 encoding (us) 225.305
+Loop 365 encoding (us) 244.919
+Loop 366 encoding (us) 228.238
+Loop 367 encoding (us) 224.482
+Loop 368 encoding (us) 223.0
+Loop 369 encoding (us) 224.705
+Loop 370 encoding (us) 228.238
+Loop 371 encoding (us) 222.333
+Loop 372 encoding (us) 239.407
+Loop 373 encoding (us) 224.237
+Loop 374 encoding (us) 223.459
+Loop 375 encoding (us) 224.129
+Loop 376 encoding (us) 233.203
+Loop 377 encoding (us) 240.225
+Loop 378 encoding (us) 222.659
+Loop 379 encoding (us) 222.26
+Loop 380 encoding (us) 689.888
+Loop 381 encoding (us) 230.224
+Loop 382 encoding (us) 664.5
+Loop 383 encoding (us) 251.816
+Loop 384 encoding (us) 230.568
+Loop 385 encoding (us) 229.83
+Loop 386 encoding (us) 227.339
+Loop 387 encoding (us) 227.111
+Loop 388 encoding (us) 230.093
+Loop 389 encoding (us) 222.805
+Loop 390 encoding (us) 222.526
+Loop 391 encoding (us) 230.523
+Loop 392 encoding (us) 221.633
+Loop 393 encoding (us) 222.442
+Loop 394 encoding (us) 221.094
+Loop 395 encoding (us) 235.175
+Loop 396 encoding (us) 250.111
+Loop 397 encoding (us) 225.493
+Loop 398 encoding (us) 223.319
+Loop 399 encoding (us) 227.633
+Loop 400 encoding (us) 693.584
+Loop 401 encoding (us) 236.827
+Loop 402 encoding (us) 226.278
+Loop 403 encoding (us) 222.611
+Loop 404 encoding (us) 228.154
+Loop 405 encoding (us) 228.248
+Loop 406 encoding (us) 223.115
+Loop 407 encoding (us) 234.738
+Loop 408 encoding (us) 223.404
+Loop 409 encoding (us) 293.182
+Loop 410 encoding (us) 229.92
+Loop 411 encoding (us) 276.541
+Loop 412 encoding (us) 279.768
+Loop 413 encoding (us) 225.491
+Loop 414 encoding (us) 226.2
+Loop 415 encoding (us) 236.773
+Loop 416 encoding (us) 221.918
+Loop 417 encoding (us) 695.966
+Loop 418 encoding (us) 226.763
+Loop 419 encoding (us) 223.342
+Loop 420 encoding (us) 264.36
+Loop 421 encoding (us) 224.379
+Loop 422 encoding (us) 227.735
+Loop 423 encoding (us) 226.716
+Loop 424 encoding (us) 223.889
+Loop 425 encoding (us) 221.376
+Loop 426 encoding (us) 226.112
+Loop 427 encoding (us) 225.781
+Loop 428 encoding (us) 221.835
+Loop 429 encoding (us) 222.816
+Loop 430 encoding (us) 223.331
+Loop 431 encoding (us) 223.348
+Loop 432 encoding (us) 226.186
+Loop 433 encoding (us) 232.484
+Loop 434 encoding (us) 221.575
+Loop 435 encoding (us) 691.181
+Loop 436 encoding (us) 225.003
+Loop 437 encoding (us) 223.952
+Loop 438 encoding (us) 228.841
+Loop 439 encoding (us) 228.112
+Loop 440 encoding (us) 222.12
+Loop 441 encoding (us) 221.635
+Loop 442 encoding (us) 231.186
+Loop 443 encoding (us) 228.154
+Loop 444 encoding (us) 223.386
+Loop 445 encoding (us) 227.47
+Loop 446 encoding (us) 223.939
+Loop 447 encoding (us) 223.385
+Loop 448 encoding (us) 246.673
+Loop 449 encoding (us) 229.314
+Loop 450 encoding (us) 222.585
+Loop 451 encoding (us) 227.33
+Loop 452 encoding (us) 224.108
+Loop 453 encoding (us) 697.268
+Loop 454 encoding (us) 223.266
+Loop 455 encoding (us) 222.969
+Loop 456 encoding (us) 223.767
+Loop 457 encoding (us) 225.3
+Loop 458 encoding (us) 226.227
+Loop 459 encoding (us) 226.767
+Loop 460 encoding (us) 232.954
+Loop 461 encoding (us) 223.293
+Loop 462 encoding (us) 224.576
+Loop 463 encoding (us) 227.23
+Loop 464 encoding (us) 226.291
+Loop 465 encoding (us) 223.862
+Loop 466 encoding (us) 220.869
+Loop 467 encoding (us) 221.702
+Loop 468 encoding (us) 225.58
+Loop 469 encoding (us) 222.344
+Loop 470 encoding (us) 226.889
+Loop 471 encoding (us) 223.912
+Loop 472 encoding (us) 226.167
+Loop 473 encoding (us) 222.005
+Loop 474 encoding (us) 693.91
+Loop 475 encoding (us) 355.24
+Loop 476 encoding (us) 357.426
+Loop 477 encoding (us) 353.778
+Loop 478 encoding (us) 372.363
+Loop 479 encoding (us) 355.933
+Loop 480 encoding (us) 364.86
+Loop 481 encoding (us) 363.804
+Loop 482 encoding (us) 821.785
+Loop 483 encoding (us) 352.068
+Loop 484 encoding (us) 355.334
+Loop 485 encoding (us) 392.775
+Loop 486 encoding (us) 355.078
+Loop 487 encoding (us) 411.313
+Loop 488 encoding (us) 358.518
+Loop 489 encoding (us) 360.021
+Loop 490 encoding (us) 371.213
+Loop 491 encoding (us) 353.571
+Loop 492 encoding (us) 359.205
+Loop 493 encoding (us) 810.231
+Loop 494 encoding (us) 360.18
+Loop 495 encoding (us) 364.932
+Loop 496 encoding (us) 353.085
+Loop 497 encoding (us) 359.371
+Loop 498 encoding (us) 354.951
+Loop 499 encoding (us) 359.83
+Loop 500 encoding (us) 360.048
+Loop 501 encoding (us) 354.973
+Loop 502 encoding (us) 353.889
+Loop 503 encoding (us) 353.734
+Loop 504 encoding (us) 824.784
+Loop 505 encoding (us) 362.591
+Loop 506 encoding (us) 353.482
+Loop 507 encoding (us) 357.373
+Loop 508 encoding (us) 354.399
+Loop 509 encoding (us) 359.333
+Loop 510 encoding (us) 782.945
+Loop 511 encoding (us) 800.694
+Loop 512 encoding (us) 864.451
+Loop 513 encoding (us) 1161.038
+Loop 514 encoding (us) 772.803
+Loop 515 encoding (us) 318.883
+Loop 516 encoding (us) 236.332
+Loop 517 encoding (us) 222.667
+Loop 518 encoding (us) 218.017
+Loop 519 encoding (us) 216.413
+Loop 520 encoding (us) 230.967
+Loop 521 encoding (us) 219.539
+Loop 522 encoding (us) 217.839
+Loop 523 encoding (us) 219.837
+Loop 524 encoding (us) 238.943
+Loop 525 encoding (us) 220.578
+Loop 526 encoding (us) 219.544
+Loop 527 encoding (us) 216.989
+Loop 528 encoding (us) 256.374
+Loop 529 encoding (us) 220.474
+Loop 530 encoding (us) 217.571
+Loop 531 encoding (us) 666.74
+Loop 532 encoding (us) 225.63
+Loop 533 encoding (us) 224.602
+Loop 534 encoding (us) 220.715
+Loop 535 encoding (us) 219.948
+Loop 536 encoding (us) 225.329
+Loop 537 encoding (us) 220.627
+Loop 538 encoding (us) 221.91
+Loop 539 encoding (us) 228.759
+Loop 540 encoding (us) 221.764
+Loop 541 encoding (us) 221.405
+Loop 542 encoding (us) 223.153
+Loop 543 encoding (us) 221.5
+Loop 544 encoding (us) 217.638
+Loop 545 encoding (us) 229.877
+Loop 546 encoding (us) 220.824
+Loop 547 encoding (us) 223.393
+Loop 548 encoding (us) 233.839
+Loop 549 encoding (us) 685.686
+Loop 550 encoding (us) 222.902
+Loop 551 encoding (us) 226.404
+Loop 552 encoding (us) 228.954
+Loop 553 encoding (us) 224.081
+Loop 554 encoding (us) 222.887
+Loop 555 encoding (us) 239.404
+Loop 556 encoding (us) 230.781
+Loop 557 encoding (us) 223.441
+Loop 558 encoding (us) 228.212
+Loop 559 encoding (us) 240.192
+Loop 560 encoding (us) 224.019
+Loop 561 encoding (us) 948.336
+Loop 562 encoding (us) 429.084
+Loop 563 encoding (us) 370.73
+Loop 564 encoding (us) 425.246
+Loop 565 encoding (us) 327.604
+Loop 566 encoding (us) 799.766
+Loop 567 encoding (us) 347.333
+Loop 568 encoding (us) 367.409
+Loop 569 encoding (us) 325.266
+Loop 570 encoding (us) 330.258
+Loop 571 encoding (us) 322.245
+Loop 572 encoding (us) 356.429
+Loop 573 encoding (us) 321.795
+Loop 574 encoding (us) 325.899
+Loop 575 encoding (us) 322.822
+Loop 576 encoding (us) 364.776
+Loop 577 encoding (us) 324.405
+Loop 578 encoding (us) 319.098
+Loop 579 encoding (us) 318.375
+Loop 580 encoding (us) 342.749
+Loop 581 encoding (us) 310.362
+Loop 582 encoding (us) 270.126
+Loop 583 encoding (us) 226.17
+Loop 584 encoding (us) 302.177
+Loop 585 encoding (us) 228.841
+Loop 586 encoding (us) 697.029
+Loop 587 encoding (us) 227.342
+Loop 588 encoding (us) 224.737
+Loop 589 encoding (us) 267.841
+Loop 590 encoding (us) 228.859
+Loop 591 encoding (us) 222.761
+Loop 592 encoding (us) 232.316
+Loop 593 encoding (us) 224.777
+Loop 594 encoding (us) 235.99
+Loop 595 encoding (us) 226.841
+Loop 596 encoding (us) 227.815
+Loop 597 encoding (us) 227.472
+Loop 598 encoding (us) 237.313
+Loop 599 encoding (us) 223.283
+Loop 600 encoding (us) 222.542
+Loop 601 encoding (us) 228.509
+Loop 602 encoding (us) 225.495
+Loop 603 encoding (us) 222.531
+Loop 604 encoding (us) 679.907
+Loop 605 encoding (us) 229.039
+Loop 606 encoding (us) 226.741
+Loop 607 encoding (us) 285.617
+Loop 608 encoding (us) 224.945
+Loop 609 encoding (us) 221.441
+Loop 610 encoding (us) 222.703
+Loop 611 encoding (us) 224.241
+Loop 612 encoding (us) 225.447
+Loop 613 encoding (us) 261.617
+Loop 614 encoding (us) 240.92
+Loop 615 encoding (us) 223.408
+Loop 616 encoding (us) 222.956
+Loop 617 encoding (us) 230.357
+Loop 618 encoding (us) 229.375
+Loop 619 encoding (us) 227.592
+Loop 620 encoding (us) 332.311
+Loop 621 encoding (us) 296.076
+Loop 622 encoding (us) 692.146
+Loop 623 encoding (us) 227.496
+Loop 624 encoding (us) 234.292
+Loop 625 encoding (us) 225.169
+Loop 626 encoding (us) 223.529
+Loop 627 encoding (us) 222.96
+Loop 628 encoding (us) 223.328
+Loop 629 encoding (us) 228.994
+Loop 630 encoding (us) 224.64
+Loop 631 encoding (us) 223.727
+Loop 632 encoding (us) 223.271
+Loop 633 encoding (us) 223.578
+Loop 634 encoding (us) 226.68
+Loop 635 encoding (us) 226.532
+Loop 636 encoding (us) 229.548
+Loop 637 encoding (us) 222.247
+Loop 638 encoding (us) 228.67
+Loop 639 encoding (us) 227.113
+Loop 640 encoding (us) 684.556
+Loop 641 encoding (us) 223.205
+Loop 642 encoding (us) 223.896
+Loop 643 encoding (us) 226.099
+Loop 644 encoding (us) 227.478
+Loop 645 encoding (us) 223.039
+Loop 646 encoding (us) 223.526
+Loop 647 encoding (us) 223.957
+Loop 648 encoding (us) 222.506
+Loop 649 encoding (us) 221.65
+Loop 650 encoding (us) 225.258
+Loop 651 encoding (us) 223.625
+Loop 652 encoding (us) 230.475
+Loop 653 encoding (us) 223.004
+Loop 654 encoding (us) 223.829
+Loop 655 encoding (us) 226.074
+Loop 656 encoding (us) 255.934
+Loop 657 encoding (us) 223.743
+Loop 658 encoding (us) 659.824
+Loop 659 encoding (us) 249.536
+Loop 660 encoding (us) 230.286
+Loop 661 encoding (us) 224.083
+Loop 662 encoding (us) 240.032
+Loop 663 encoding (us) 224.249
+Loop 664 encoding (us) 223.093
+Loop 665 encoding (us) 234.807
+Loop 666 encoding (us) 224.659
+Loop 667 encoding (us) 226.539
+Loop 668 encoding (us) 227.52
+Loop 669 encoding (us) 223.251
+Loop 670 encoding (us) 229.404
+Loop 671 encoding (us) 222.198
+Loop 672 encoding (us) 224.276
+Loop 673 encoding (us) 223.809
+Loop 674 encoding (us) 222.922
+Loop 675 encoding (us) 226.885
+Loop 676 encoding (us) 695.514
+Loop 677 encoding (us) 226.375
+Loop 678 encoding (us) 247.84
+Loop 679 encoding (us) 230.953
+Loop 680 encoding (us) 221.519
+Loop 681 encoding (us) 233.868
+Loop 682 encoding (us) 222.786
+Loop 683 encoding (us) 227.899
+Loop 684 encoding (us) 227.084
+Loop 685 encoding (us) 221.511
+Loop 686 encoding (us) 226.891
+Loop 687 encoding (us) 238.452
+Loop 688 encoding (us) 222.097
+Loop 689 encoding (us) 222.867
+Loop 690 encoding (us) 227.268
+Loop 691 encoding (us) 226.882
+Loop 692 encoding (us) 221.185
+Loop 693 encoding (us) 226.681
+Loop 694 encoding (us) 223.032
+Loop 695 encoding (us) 222.644
+Loop 696 encoding (us) 229.653
+Loop 697 encoding (us) 228.66
+Loop 698 encoding (us) 229.973
+Loop 699 encoding (us) 223.592
+Loop 700 encoding (us) 230.228
+Loop 701 encoding (us) 228.148
+Loop 702 encoding (us) 225.508
+Loop 703 encoding (us) 240.84
+Loop 704 encoding (us) 223.251
+Loop 705 encoding (us) 230.855
+Loop 706 encoding (us) 233.111
+Loop 707 encoding (us) 225.506
+Loop 708 encoding (us) 225.118
+Loop 709 encoding (us) 224.145
+Loop 710 encoding (us) 247.06
+Loop 711 encoding (us) 233.63
+Loop 712 encoding (us) 223.738
+Loop 713 encoding (us) 275.065
+Loop 714 encoding (us) 274.718
+Loop 715 encoding (us) 228.907
+Loop 716 encoding (us) 226.905
+Loop 717 encoding (us) 228.751
+Loop 718 encoding (us) 235.668
+Loop 719 encoding (us) 231.912
+Loop 720 encoding (us) 225.395
+Loop 721 encoding (us) 224.155
+Loop 722 encoding (us) 226.304
+Loop 723 encoding (us) 225.287
+Loop 724 encoding (us) 222.579
+Loop 725 encoding (us) 222.61
+Loop 726 encoding (us) 240.441
+Loop 727 encoding (us) 230.003
+Loop 728 encoding (us) 221.813
+Loop 729 encoding (us) 227.693
+Loop 730 encoding (us) 222.637
+Loop 731 encoding (us) 222.397
+Loop 732 encoding (us) 226.395
+Loop 733 encoding (us) 228.149
+Loop 734 encoding (us) 230.368
+Loop 735 encoding (us) 222.023
+Loop 736 encoding (us) 223.838
+Loop 737 encoding (us) 687.646
+Loop 738 encoding (us) 223.087
+Loop 739 encoding (us) 223.401
+Loop 740 encoding (us) 222.048
+Loop 741 encoding (us) 277.704
+Loop 742 encoding (us) 228.345
+Loop 743 encoding (us) 281.556
+Loop 744 encoding (us) 225.827
+Loop 745 encoding (us) 229.288
+Loop 746 encoding (us) 230.003
+Loop 747 encoding (us) 222.793
+Loop 748 encoding (us) 228.079
+Loop 749 encoding (us) 235.234
+Loop 750 encoding (us) 224.782
+Loop 751 encoding (us) 290.35
+Loop 752 encoding (us) 224.331
+Loop 753 encoding (us) 231.301
+Loop 754 encoding (us) 229.238
+Loop 755 encoding (us) 223.558
+Loop 756 encoding (us) 223.975
+Loop 757 encoding (us) 228.937
+Loop 758 encoding (us) 230.244
+Loop 759 encoding (us) 224.531
+Loop 760 encoding (us) 697.256
+Loop 761 encoding (us) 229.286
+Loop 762 encoding (us) 223.931
+Loop 763 encoding (us) 227.026
+Loop 764 encoding (us) 1090.293
+Loop 765 encoding (us) 226.716
+Loop 766 encoding (us) 222.547
+Loop 767 encoding (us) 230.109
+Loop 768 encoding (us) 236.641
+Loop 769 encoding (us) 223.321
+Loop 770 encoding (us) 222.568
+Loop 771 encoding (us) 222.759
+Loop 772 encoding (us) 223.579
+Loop 773 encoding (us) 231.785
+Loop 774 encoding (us) 225.136
+Loop 775 encoding (us) 269.191
+Loop 776 encoding (us) 241.186
+Loop 777 encoding (us) 295.837
+Loop 778 encoding (us) 227.299
+Loop 779 encoding (us) 228.761
+Loop 780 encoding (us) 220.277
+Loop 781 encoding (us) 692.582
+Loop 782 encoding (us) 223.636
+Loop 783 encoding (us) 221.759
+Loop 784 encoding (us) 261.637
+Loop 785 encoding (us) 228.839
+Loop 786 encoding (us) 223.142
+Loop 787 encoding (us) 223.913
+Loop 788 encoding (us) 236.453
+Loop 789 encoding (us) 227.758
+Loop 790 encoding (us) 228.137
+Loop 791 encoding (us) 235.746
+Loop 792 encoding (us) 223.604
+Loop 793 encoding (us) 223.689
+Loop 794 encoding (us) 230.005
+Loop 795 encoding (us) 225.721
+Loop 796 encoding (us) 228.602
+Loop 797 encoding (us) 223.774
+Loop 798 encoding (us) 224.542
+Loop 799 encoding (us) 233.083
+Loop 800 encoding (us) 236.123
+Loop 801 encoding (us) 225.657
+Loop 802 encoding (us) 225.551
+Loop 803 encoding (us) 222.475
+Loop 804 encoding (us) 251.524
+Loop 805 encoding (us) 675.056
+Loop 806 encoding (us) 224.332
+Loop 807 encoding (us) 227.341
+Loop 808 encoding (us) 230.362
+Loop 809 encoding (us) 222.906
+Loop 810 encoding (us) 227.798
+Loop 811 encoding (us) 226.728
+Loop 812 encoding (us) 224.962
+Loop 813 encoding (us) 221.959
+Loop 814 encoding (us) 227.47
+Loop 815 encoding (us) 227.053
+Loop 816 encoding (us) 228.617
+Loop 817 encoding (us) 223.047
+Loop 818 encoding (us) 222.761
+Loop 819 encoding (us) 228.908
+Loop 820 encoding (us) 227.113
+Loop 821 encoding (us) 225.141
+Loop 822 encoding (us) 243.218
+Loop 823 encoding (us) 222.152
+Loop 824 encoding (us) 226.386
+Loop 825 encoding (us) 226.668
+Loop 826 encoding (us) 227.973
+Loop 827 encoding (us) 230.381
+Loop 828 encoding (us) 691.206
+Loop 829 encoding (us) 228.533
+Loop 830 encoding (us) 291.841
+Loop 831 encoding (us) 231.041
+Loop 832 encoding (us) 225.005
+Loop 833 encoding (us) 223.746
+Loop 834 encoding (us) 229.564
+Loop 835 encoding (us) 229.617
+Loop 836 encoding (us) 224.425
+Loop 837 encoding (us) 228.438
+Loop 838 encoding (us) 229.263
+Loop 839 encoding (us) 224.101
+Loop 840 encoding (us) 228.369
+Loop 841 encoding (us) 224.509
+Loop 842 encoding (us) 257.266
+Loop 843 encoding (us) 226.058
+Loop 844 encoding (us) 223.479
+Loop 845 encoding (us) 2535.426
+Loop 846 encoding (us) 229.074
+Loop 847 encoding (us) 223.763
+Loop 848 encoding (us) 219.807
+Loop 849 encoding (us) 228.278
+Loop 850 encoding (us) 221.203
+Loop 851 encoding (us) 224.884
+Loop 852 encoding (us) 708.159
+Loop 853 encoding (us) 228.708
+Loop 854 encoding (us) 224.308
+Loop 855 encoding (us) 224.112
+Loop 856 encoding (us) 230.842
+Loop 857 encoding (us) 223.366
+Loop 858 encoding (us) 222.821
+Loop 859 encoding (us) 228.691
+Loop 860 encoding (us) 223.416
+Loop 861 encoding (us) 225.75
+Loop 862 encoding (us) 223.273
+Loop 863 encoding (us) 222.618
+Loop 864 encoding (us) 225.875
+Loop 865 encoding (us) 222.989
+Loop 866 encoding (us) 229.5
+Loop 867 encoding (us) 227.7
+Loop 868 encoding (us) 221.499
+Loop 869 encoding (us) 266.612
+Loop 870 encoding (us) 227.855
+Loop 871 encoding (us) 233.433
+Loop 872 encoding (us) 224.374
+Loop 873 encoding (us) 226.353
+Loop 874 encoding (us) 225.501
+Loop 875 encoding (us) 689.932
+Loop 876 encoding (us) 230.279
+Loop 877 encoding (us) 229.7
+Loop 878 encoding (us) 224.273
+Loop 879 encoding (us) 225.076
+Loop 880 encoding (us) 222.956
+Loop 881 encoding (us) 224.448
+Loop 882 encoding (us) 235.284
+Loop 883 encoding (us) 223.439
+Loop 884 encoding (us) 228.655
+Loop 885 encoding (us) 227.893
+Loop 886 encoding (us) 279.18
+Loop 887 encoding (us) 230.554
+Loop 888 encoding (us) 224.968
+Loop 889 encoding (us) 227.4
+Loop 890 encoding (us) 227.902
+Loop 891 encoding (us) 223.19
+Loop 892 encoding (us) 230.165
+Loop 893 encoding (us) 238.361
+Loop 894 encoding (us) 222.515
+Loop 895 encoding (us) 222.845
+Loop 896 encoding (us) 223.752
+Loop 897 encoding (us) 227.643
+Loop 898 encoding (us) 232.152
+Loop 899 encoding (us) 670.287
+Loop 900 encoding (us) 226.111
+Loop 901 encoding (us) 261.204
+Loop 902 encoding (us) 232.167
+Loop 903 encoding (us) 224.075
+Loop 904 encoding (us) 223.049
+Loop 905 encoding (us) 226.309
+Loop 906 encoding (us) 225.254
+Loop 907 encoding (us) 228.336
+Loop 908 encoding (us) 294.563
+Loop 909 encoding (us) 224.593
+Loop 910 encoding (us) 229.014
+Loop 911 encoding (us) 221.707
+Loop 912 encoding (us) 257.442
+Loop 913 encoding (us) 234.678
+Loop 914 encoding (us) 223.804
+Loop 915 encoding (us) 705.848
+Loop 916 encoding (us) 226.155
+Loop 917 encoding (us) 279.719
+Loop 918 encoding (us) 230.27
+Loop 919 encoding (us) 226.594
+Loop 920 encoding (us) 225.406
+Loop 921 encoding (us) 224.72
+Loop 922 encoding (us) 685.334
+Loop 923 encoding (us) 228.046
+Loop 924 encoding (us) 234.317
+Loop 925 encoding (us) 224.24
+Loop 926 encoding (us) 224.735
+Loop 927 encoding (us) 223.407
+Loop 928 encoding (us) 227.767
+Loop 929 encoding (us) 229.451
+Loop 930 encoding (us) 222.697
+Loop 931 encoding (us) 226.924
+Loop 932 encoding (us) 228.163
+Loop 933 encoding (us) 227.49
+Loop 934 encoding (us) 226.219
+Loop 935 encoding (us) 228.512
+Loop 936 encoding (us) 223.21
+Loop 937 encoding (us) 223.696
+Loop 938 encoding (us) 229.099
+Loop 939 encoding (us) 222.187
+Loop 940 encoding (us) 227.52
+Loop 941 encoding (us) 222.191
+Loop 942 encoding (us) 224.044
+Loop 943 encoding (us) 229.242
+Loop 944 encoding (us) 227.029
+Loop 945 encoding (us) 222.207
+Loop 946 encoding (us) 680.122
+Loop 947 encoding (us) 227.709
+Loop 948 encoding (us) 221.994
+Loop 949 encoding (us) 230.379
+Loop 950 encoding (us) 226.931
+Loop 951 encoding (us) 222.83
+Loop 952 encoding (us) 228.181
+Loop 953 encoding (us) 223.925
+Loop 954 encoding (us) 229.77
+Loop 955 encoding (us) 229.711
+Loop 956 encoding (us) 224.585
+Loop 957 encoding (us) 224.45
+Loop 958 encoding (us) 229.496
+Loop 959 encoding (us) 229.383
+Loop 960 encoding (us) 224.927
+Loop 961 encoding (us) 224.637
+Loop 962 encoding (us) 227.364
+Loop 963 encoding (us) 229.026
+Loop 964 encoding (us) 228.93
+Loop 965 encoding (us) 224.352
+Loop 966 encoding (us) 228.602
+Loop 967 encoding (us) 225.795
+Loop 968 encoding (us) 223.654
+Loop 969 encoding (us) 231.997
+Loop 970 encoding (us) 220.108
+Loop 971 encoding (us) 220.879
+Loop 972 encoding (us) 219.787
+Loop 973 encoding (us) 224.632
+Loop 974 encoding (us) 226.274
+Loop 975 encoding (us) 220.695
+Loop 976 encoding (us) 225.016
+Loop 977 encoding (us) 224.567
+Loop 978 encoding (us) 218.966
+Loop 979 encoding (us) 225.531
+Loop 980 encoding (us) 223.51
+Loop 981 encoding (us) 220.974
+Loop 982 encoding (us) 220.447
+Loop 983 encoding (us) 223.158
+Loop 984 encoding (us) 234.357
+Loop 985 encoding (us) 224.876
+Loop 986 encoding (us) 676.169
+Loop 987 encoding (us) 359.924
+Loop 988 encoding (us) 355.18
+Loop 989 encoding (us) 350.298
+Loop 990 encoding (us) 777.244
+Loop 991 encoding (us) 363.684
+Loop 992 encoding (us) 996.557
+Loop 993 encoding (us) 412.137
+Loop 994 encoding (us) 362.973
+Loop 995 encoding (us) 348.552
+Loop 996 encoding (us) 355.276
+Loop 997 encoding (us) 390.703
+Loop 998 encoding (us) 354.967
+Loop 999 encoding (us) 349.171
+Loop 1000 encoding (us) 355.712
+Loop 1001 encoding (us) 366.621
+Loop 1002 encoding (us) 321.988
+Loop 1003 encoding (us) 315.383
+Loop 1004 encoding (us) 322.368
+Loop 1005 encoding (us) 316.912
+Loop 1006 encoding (us) 745.729
+Loop 1007 encoding (us) 321.447
+Loop 1008 encoding (us) 319.578
+Loop 1009 encoding (us) 318.311
+Loop 1010 encoding (us) 314.811
+Loop 1011 encoding (us) 315.777
+Loop 1012 encoding (us) 333.053
+Loop 1013 encoding (us) 644.204
+Loop 1014 encoding (us) 384.897
+Loop 1015 encoding (us) 316.453
+Loop 1016 encoding (us) 315.953
+Loop 1017 encoding (us) 315.631
+Loop 1018 encoding (us) 319.033
+Loop 1019 encoding (us) 315.96
+Loop 1020 encoding (us) 317.209
+Loop 1021 encoding (us) 315.785
+Loop 1022 encoding (us) 670.472
+Loop 1023 encoding (us) 756.862
+Loop 1024 encoding (us) 683.419
+Loop 1025 encoding (us) 658.088
+Loop 1026 encoding (us) 669.748
+Loop 1027 encoding (us) 232.097
+Loop 1028 encoding (us) 193.221
+Loop 1029 encoding (us) 199.058
+Loop 1030 encoding (us) 195.608
+Loop 1031 encoding (us) 194.018
+Loop 1032 encoding (us) 194.374
+Loop 1033 encoding (us) 242.554
+Loop 1034 encoding (us) 193.485
+Loop 1035 encoding (us) 194.6
+Loop 1036 encoding (us) 192.541
+Loop 1037 encoding (us) 201.01
+Loop 1038 encoding (us) 194.663
+Loop 1039 encoding (us) 192.596
+Loop 1040 encoding (us) 231.98
+Loop 1041 encoding (us) 197.51
+Loop 1042 encoding (us) 194.369
+Loop 1043 encoding (us) 210.429
+Loop 1044 encoding (us) 624.21
+Loop 1045 encoding (us) 194.269
+Loop 1046 encoding (us) 194.446
+Loop 1047 encoding (us) 194.485
+Loop 1048 encoding (us) 194.527
+Loop 1049 encoding (us) 195.506
+Loop 1050 encoding (us) 265.535
+Loop 1051 encoding (us) 196.183
+Loop 1052 encoding (us) 193.97
+Loop 1053 encoding (us) 198.53
+Loop 1054 encoding (us) 196.331
+Loop 1055 encoding (us) 193.169
+Loop 1056 encoding (us) 200.539
+Loop 1057 encoding (us) 193.843
+Loop 1058 encoding (us) 195.251
+Loop 1059 encoding (us) 194.997
+Loop 1060 encoding (us) 196.861
+Loop 1061 encoding (us) 195.219
+Loop 1062 encoding (us) 201.711
+Loop 1063 encoding (us) 197.195
+Loop 1064 encoding (us) 199.708
+Loop 1065 encoding (us) 201.75
+Loop 1066 encoding (us) 195.738
+Loop 1067 encoding (us) 198.385
+Loop 1068 encoding (us) 197.438
+Loop 1069 encoding (us) 201.645
+Loop 1070 encoding (us) 202.568
+Loop 1071 encoding (us) 196.718
+Loop 1072 encoding (us) 202.913
+Loop 1073 encoding (us) 199.355
+Loop 1074 encoding (us) 197.415
+Loop 1075 encoding (us) 201.672
+Loop 1076 encoding (us) 196.561
+Loop 1077 encoding (us) 206.913
+Loop 1078 encoding (us) 198.402
+Loop 1079 encoding (us) 197.489
+Loop 1080 encoding (us) 209.84
+Loop 1081 encoding (us) 197.564
+Loop 1082 encoding (us) 200.668
+Loop 1083 encoding (us) 204.435
+Loop 1084 encoding (us) 199.271
+Loop 1085 encoding (us) 206.103
+Loop 1086 encoding (us) 200.909
+Loop 1087 encoding (us) 205.52
+Loop 1088 encoding (us) 199.203
+Loop 1089 encoding (us) 618.872
+Loop 1090 encoding (us) 213.858
+Loop 1091 encoding (us) 199.007
+Loop 1092 encoding (us) 199.409
+Loop 1093 encoding (us) 202.447
+Loop 1094 encoding (us) 199.022
+Loop 1095 encoding (us) 199.886
+Loop 1096 encoding (us) 203.544
+Loop 1097 encoding (us) 198.47
+Loop 1098 encoding (us) 198.352
+Loop 1099 encoding (us) 197.644
+Loop 1100 encoding (us) 198.326
+Loop 1101 encoding (us) 208.017
+Loop 1102 encoding (us) 201.043
+Loop 1103 encoding (us) 202.698
+Loop 1104 encoding (us) 205.363
+Loop 1105 encoding (us) 199.443
+Loop 1106 encoding (us) 202.807
+Loop 1107 encoding (us) 211.45
+Loop 1108 encoding (us) 197.773
+Loop 1109 encoding (us) 197.65
+Loop 1110 encoding (us) 200.261
+Loop 1111 encoding (us) 642.527
+Loop 1112 encoding (us) 197.736
+Loop 1113 encoding (us) 197.269
+Loop 1114 encoding (us) 212.208
+Loop 1115 encoding (us) 198.323
+Loop 1116 encoding (us) 206.673
+Loop 1117 encoding (us) 204.953
+Loop 1118 encoding (us) 207.31
+Loop 1119 encoding (us) 196.328
+Loop 1120 encoding (us) 199.917
+Loop 1121 encoding (us) 200.912
+Loop 1122 encoding (us) 197.925
+Loop 1123 encoding (us) 201.896
+Loop 1124 encoding (us) 197.541
+Loop 1125 encoding (us) 240.423
+Loop 1126 encoding (us) 199.852
+Loop 1127 encoding (us) 202.254
+Loop 1128 encoding (us) 204.312
+Loop 1129 encoding (us) 199.769
+Loop 1130 encoding (us) 200.505
+Loop 1131 encoding (us) 207.993
+Loop 1132 encoding (us) 204.342
+Loop 1133 encoding (us) 199.237
+Loop 1134 encoding (us) 203.491
+Loop 1135 encoding (us) 200.592
+Loop 1136 encoding (us) 199.514
+Loop 1137 encoding (us) 204.385
+Loop 1138 encoding (us) 202.692
+Loop 1139 encoding (us) 198.176
+Loop 1140 encoding (us) 199.526
+Loop 1141 encoding (us) 205.117
+Loop 1142 encoding (us) 203.25
+Loop 1143 encoding (us) 199.006
+Loop 1144 encoding (us) 202.466
+Loop 1145 encoding (us) 203.499
+Loop 1146 encoding (us) 199.007
+Loop 1147 encoding (us) 202.716
+Loop 1148 encoding (us) 198.508
+Loop 1149 encoding (us) 201.699
+Loop 1150 encoding (us) 198.075
+Loop 1151 encoding (us) 196.901
+Loop 1152 encoding (us) 206.273
+Loop 1153 encoding (us) 199.462
+Loop 1154 encoding (us) 198.383
+Loop 1155 encoding (us) 201.345
+Loop 1156 encoding (us) 620.531
+Loop 1157 encoding (us) 202.832
+Loop 1158 encoding (us) 202.15
+Loop 1159 encoding (us) 196.9
+Loop 1160 encoding (us) 199.066
+Loop 1161 encoding (us) 198.041
+Loop 1162 encoding (us) 197.414
+Loop 1163 encoding (us) 204.567
+Loop 1164 encoding (us) 197.424
+Loop 1165 encoding (us) 209.787
+Loop 1166 encoding (us) 197.888
+Loop 1167 encoding (us) 196.656
+Loop 1168 encoding (us) 239.887
+Loop 1169 encoding (us) 200.256
+Loop 1170 encoding (us) 199.162
+Loop 1171 encoding (us) 201.984
+Loop 1172 encoding (us) 199.731
+Loop 1173 encoding (us) 207.333
+Loop 1174 encoding (us) 198.821
+Loop 1175 encoding (us) 198.064
+Loop 1176 encoding (us) 198.891
+Loop 1177 encoding (us) 200.48
+Loop 1178 encoding (us) 205.077
+Loop 1179 encoding (us) 197.741
+Loop 1180 encoding (us) 203.955
+Loop 1181 encoding (us) 197.738
+Loop 1182 encoding (us) 198.38
+Loop 1183 encoding (us) 202.355
+Loop 1184 encoding (us) 197.728
+Loop 1185 encoding (us) 250.519
+Loop 1186 encoding (us) 202.029
+Loop 1187 encoding (us) 197.579
+Loop 1188 encoding (us) 197.786
+Loop 1189 encoding (us) 211.707
+Loop 1190 encoding (us) 199.228
+Loop 1191 encoding (us) 197.506
+Loop 1192 encoding (us) 200.68
+Loop 1193 encoding (us) 197.182
+Loop 1194 encoding (us) 201.387
+Loop 1195 encoding (us) 196.554
+Loop 1196 encoding (us) 201.346
+Loop 1197 encoding (us) 198.648
+Loop 1198 encoding (us) 198.542
+Loop 1199 encoding (us) 202.968
+Loop 1200 encoding (us) 203.353
+Loop 1201 encoding (us) 637.429
+Loop 1202 encoding (us) 206.316
+Loop 1203 encoding (us) 196.92
+Loop 1204 encoding (us) 201.596
+Loop 1205 encoding (us) 200.21
+Loop 1206 encoding (us) 199.503
+Loop 1207 encoding (us) 198.348
+Loop 1208 encoding (us) 200.312
+Loop 1209 encoding (us) 200.573
+Loop 1210 encoding (us) 210.904
+Loop 1211 encoding (us) 202.854
+Loop 1212 encoding (us) 198.347
+Loop 1213 encoding (us) 204.748
+Loop 1214 encoding (us) 204.32
+Loop 1215 encoding (us) 202.26
+Loop 1216 encoding (us) 202.353
+Loop 1217 encoding (us) 199.207
+Loop 1218 encoding (us) 197.922
+Loop 1219 encoding (us) 201.955
+Loop 1220 encoding (us) 200.772
+Loop 1221 encoding (us) 198.863
+Loop 1222 encoding (us) 200.334
+Loop 1223 encoding (us) 198.54
+Loop 1224 encoding (us) 622.843
+Loop 1225 encoding (us) 203.037
+Loop 1226 encoding (us) 201.423
+Loop 1227 encoding (us) 205.413
+Loop 1228 encoding (us) 198.761
+Loop 1229 encoding (us) 198.612
+Loop 1230 encoding (us) 202.389
+Loop 1231 encoding (us) 199.485
+Loop 1232 encoding (us) 197.401
+Loop 1233 encoding (us) 197.741
+Loop 1234 encoding (us) 213.047
+Loop 1235 encoding (us) 200.921
+Loop 1236 encoding (us) 199.885
+Loop 1237 encoding (us) 202.572
+Loop 1238 encoding (us) 199.684
+Loop 1239 encoding (us) 198.222
+Loop 1240 encoding (us) 205.508
+Loop 1241 encoding (us) 197.606
+Loop 1242 encoding (us) 201.069
+Loop 1243 encoding (us) 197.242
+Loop 1244 encoding (us) 197.184
+Loop 1245 encoding (us) 203.69
+Loop 1246 encoding (us) 637.45
+Loop 1247 encoding (us) 202.492
+Loop 1248 encoding (us) 199.708
+Loop 1249 encoding (us) 196.514
+Loop 1250 encoding (us) 205.47
+Loop 1251 encoding (us) 198.588
+Loop 1252 encoding (us) 197.885
+Loop 1253 encoding (us) 238.862
+Loop 1254 encoding (us) 199.771
+Loop 1255 encoding (us) 202.118
+Loop 1256 encoding (us) 203.745
+Loop 1257 encoding (us) 199.23
+Loop 1258 encoding (us) 204.605
+Loop 1259 encoding (us) 198.85
+Loop 1260 encoding (us) 200.383
+Loop 1261 encoding (us) 209.126
+Loop 1262 encoding (us) 200.148
+Loop 1263 encoding (us) 199.301
+Loop 1264 encoding (us) 203.154
+Loop 1265 encoding (us) 199.536
+Loop 1266 encoding (us) 201.807
+Loop 1267 encoding (us) 203.028
+Loop 1268 encoding (us) 197.579
+Loop 1269 encoding (us) 610.612
+Loop 1270 encoding (us) 200.326
+Loop 1271 encoding (us) 208.495
+Loop 1272 encoding (us) 198.207
+Loop 1273 encoding (us) 202.685
+Loop 1274 encoding (us) 209.531
+Loop 1275 encoding (us) 198.428
+Loop 1276 encoding (us) 203.612
+Loop 1277 encoding (us) 200.415
+Loop 1278 encoding (us) 198.153
+Loop 1279 encoding (us) 197.588
+Loop 1280 encoding (us) 197.138
+Loop 1281 encoding (us) 201.58
+Loop 1282 encoding (us) 197.026
+Loop 1283 encoding (us) 203.245
+Loop 1284 encoding (us) 197.765
+Loop 1285 encoding (us) 205.758
+Loop 1286 encoding (us) 199.791
+Loop 1287 encoding (us) 202.779
+Loop 1288 encoding (us) 202.728
+Loop 1289 encoding (us) 202.47
+Loop 1290 encoding (us) 199.874
+Loop 1291 encoding (us) 213.911
+Loop 1292 encoding (us) 206.349
+Loop 1293 encoding (us) 200.012
+Loop 1294 encoding (us) 198.522
+Loop 1295 encoding (us) 197.339
+Loop 1296 encoding (us) 229.079
+Loop 1297 encoding (us) 204.711
+Loop 1298 encoding (us) 205.034
+Loop 1299 encoding (us) 198.856
+Loop 1300 encoding (us) 199.419
+Loop 1301 encoding (us) 202.143
+Loop 1302 encoding (us) 203.854
+Loop 1303 encoding (us) 199.626
+Loop 1304 encoding (us) 206.037
+Loop 1305 encoding (us) 200.606
+Loop 1306 encoding (us) 200.222
+Loop 1307 encoding (us) 202.934
+Loop 1308 encoding (us) 200.613
+Loop 1309 encoding (us) 198.348
+Loop 1310 encoding (us) 203.954
+Loop 1311 encoding (us) 198.487
+Loop 1312 encoding (us) 207.117
+Loop 1313 encoding (us) 198.392
+Loop 1314 encoding (us) 625.481
+Loop 1315 encoding (us) 197.26
+Loop 1316 encoding (us) 197.961
+Loop 1317 encoding (us) 197.689
+Loop 1318 encoding (us) 204.336
+Loop 1319 encoding (us) 197.409
+Loop 1320 encoding (us) 231.083
+Loop 1321 encoding (us) 199.206
+Loop 1322 encoding (us) 213.852
+Loop 1323 encoding (us) 202.478
+Loop 1324 encoding (us) 197.154
+Loop 1325 encoding (us) 202.663
+Loop 1326 encoding (us) 199.552
+Loop 1327 encoding (us) 197.737
+Loop 1328 encoding (us) 207.473
+Loop 1329 encoding (us) 197.914
+Loop 1330 encoding (us) 197.572
+Loop 1331 encoding (us) 197.44
+Loop 1332 encoding (us) 198.689
+Loop 1333 encoding (us) 204.528
+Loop 1334 encoding (us) 197.723
+Loop 1335 encoding (us) 202.438
+Loop 1336 encoding (us) 203.245
+Loop 1337 encoding (us) 616.457
+Loop 1338 encoding (us) 226.153
+Loop 1339 encoding (us) 200.434
+Loop 1340 encoding (us) 198.724
+Loop 1341 encoding (us) 199.8
+Loop 1342 encoding (us) 199.712
+Loop 1343 encoding (us) 202.456
+Loop 1344 encoding (us) 200.009
+Loop 1345 encoding (us) 199.401
+Loop 1346 encoding (us) 212.374
+Loop 1347 encoding (us) 198.757
+Loop 1348 encoding (us) 203.327
+Loop 1349 encoding (us) 203.32
+Loop 1350 encoding (us) 200.23
+Loop 1351 encoding (us) 203.115
+Loop 1352 encoding (us) 407.169
+Loop 1353 encoding (us) 266.957
+Loop 1354 encoding (us) 215.252
+Loop 1355 encoding (us) 202.099
+Loop 1356 encoding (us) 198.669
+Loop 1357 encoding (us) 202.988
+Loop 1358 encoding (us) 200.491
+Loop 1359 encoding (us) 617.686
+Loop 1360 encoding (us) 201.618
+Loop 1361 encoding (us) 198.295
+Loop 1362 encoding (us) 197.36
+Loop 1363 encoding (us) 198.22
+Loop 1364 encoding (us) 197.856
+Loop 1365 encoding (us) 205.985
+Loop 1366 encoding (us) 204.216
+Loop 1367 encoding (us) 203.779
+Loop 1368 encoding (us) 198.615
+Loop 1369 encoding (us) 198.155
+Loop 1370 encoding (us) 243.194
+Loop 1371 encoding (us) 199.07
+Loop 1372 encoding (us) 197.363
+Loop 1373 encoding (us) 199.089
+Loop 1374 encoding (us) 198.356
+Loop 1375 encoding (us) 200.979
+Loop 1376 encoding (us) 199.469
+Loop 1377 encoding (us) 197.6
+Loop 1378 encoding (us) 208.266
+Loop 1379 encoding (us) 198.342
+Loop 1380 encoding (us) 202.223
+Loop 1381 encoding (us) 678.785
+Loop 1382 encoding (us) 205.35
+Loop 1383 encoding (us) 198.545
+Loop 1384 encoding (us) 198.0
+Loop 1385 encoding (us) 198.344
+Loop 1386 encoding (us) 203.259
+Loop 1387 encoding (us) 231.143
+Loop 1388 encoding (us) 205.784
+Loop 1389 encoding (us) 199.149
+Loop 1390 encoding (us) 199.686
+Loop 1391 encoding (us) 208.46
+Loop 1392 encoding (us) 198.728
+Loop 1393 encoding (us) 201.781
+Loop 1394 encoding (us) 205.963
+Loop 1395 encoding (us) 199.636
+Loop 1396 encoding (us) 202.598
+Loop 1397 encoding (us) 202.431
+Loop 1398 encoding (us) 249.239
+Loop 1399 encoding (us) 204.735
+Loop 1400 encoding (us) 200.075
+Loop 1401 encoding (us) 202.724
+Loop 1402 encoding (us) 211.519
+Loop 1403 encoding (us) 197.752
+Loop 1404 encoding (us) 623.671
+Loop 1405 encoding (us) 196.605
+Loop 1406 encoding (us) 202.499
+Loop 1407 encoding (us) 197.114
+Loop 1408 encoding (us) 229.438
+Loop 1409 encoding (us) 207.881
+Loop 1410 encoding (us) 198.409
+Loop 1411 encoding (us) 414.243
+Loop 1412 encoding (us) 269.157
+Loop 1413 encoding (us) 646.022
+Loop 1414 encoding (us) 199.691
+Loop 1415 encoding (us) 253.257
+Loop 1416 encoding (us) 205.088
+Loop 1417 encoding (us) 198.728
+Loop 1418 encoding (us) 204.223
+Loop 1419 encoding (us) 200.654
+Loop 1420 encoding (us) 197.263
+Loop 1421 encoding (us) 199.401
+Loop 1422 encoding (us) 198.075
+Loop 1423 encoding (us) 204.377
+Loop 1424 encoding (us) 245.772
+Loop 1425 encoding (us) 200.402
+Loop 1426 encoding (us) 614.897
+Loop 1427 encoding (us) 199.855
+Loop 1428 encoding (us) 208.745
+Loop 1429 encoding (us) 198.07
+Loop 1430 encoding (us) 390.249
+Loop 1431 encoding (us) 263.847
+Loop 1432 encoding (us) 390.592
+Loop 1433 encoding (us) 261.726
+Loop 1434 encoding (us) 200.476
+Loop 1435 encoding (us) 202.631
+Loop 1436 encoding (us) 205.201
+Loop 1437 encoding (us) 199.355
+Loop 1438 encoding (us) 199.379
+Loop 1439 encoding (us) 208.951
+Loop 1440 encoding (us) 203.947
+Loop 1441 encoding (us) 198.603
+Loop 1442 encoding (us) 202.628
+Loop 1443 encoding (us) 198.077
+Loop 1444 encoding (us) 204.628
+Loop 1445 encoding (us) 201.931
+Loop 1446 encoding (us) 198.825
+Loop 1447 encoding (us) 641.584
+Loop 1448 encoding (us) 196.799
+Loop 1449 encoding (us) 203.322
+Loop 1450 encoding (us) 197.92
+Loop 1451 encoding (us) 204.957
+Loop 1452 encoding (us) 203.037
+Loop 1453 encoding (us) 198.297
+Loop 1454 encoding (us) 200.56
+Loop 1455 encoding (us) 202.049
+Loop 1456 encoding (us) 202.737
+Loop 1457 encoding (us) 197.637
+Loop 1458 encoding (us) 197.701
+Loop 1459 encoding (us) 202.602
+Loop 1460 encoding (us) 197.335
+Loop 1461 encoding (us) 205.544
+Loop 1462 encoding (us) 197.998
+Loop 1463 encoding (us) 214.675
+Loop 1464 encoding (us) 199.057
+Loop 1465 encoding (us) 196.859
+Loop 1466 encoding (us) 208.815
+Loop 1467 encoding (us) 199.087
+Loop 1468 encoding (us) 201.169
+Loop 1469 encoding (us) 398.842
+Loop 1470 encoding (us) 267.956
+Loop 1471 encoding (us) 200.09
+Loop 1472 encoding (us) 204.21
+Loop 1473 encoding (us) 202.466
+Loop 1474 encoding (us) 200.202
+Loop 1475 encoding (us) 202.975
+Loop 1476 encoding (us) 201.419
+Loop 1477 encoding (us) 205.815
+Loop 1478 encoding (us) 199.279
+Loop 1479 encoding (us) 198.456
+Loop 1480 encoding (us) 198.175
+Loop 1481 encoding (us) 203.569
+Loop 1482 encoding (us) 202.23
+Loop 1483 encoding (us) 199.331
+Loop 1484 encoding (us) 203.687
+Loop 1485 encoding (us) 199.41
+Loop 1486 encoding (us) 199.249
+Loop 1487 encoding (us) 201.904
+Loop 1488 encoding (us) 202.663
+Loop 1489 encoding (us) 197.532
+Loop 1490 encoding (us) 203.131
+Loop 1491 encoding (us) 196.687
+Loop 1492 encoding (us) 622.608
+Loop 1493 encoding (us) 202.517
+Loop 1494 encoding (us) 209.391
+Loop 1495 encoding (us) 198.131
+Loop 1496 encoding (us) 196.833
+Loop 1497 encoding (us) 202.784
+Loop 1498 encoding (us) 645.48
+Loop 1499 encoding (us) 317.206
+Encoding avg latency (us) 254.5888970000003
+Loop 0 merge (us) 418.555
+Loop 1 merge (us) 184.37
+Loop 2 merge (us) 236.101
+Loop 3 merge (us) 172.026
+Loop 4 merge (us) 41.24
+Loop 5 merge (us) 31.592
+Loop 6 merge (us) 27.672
+Loop 7 merge (us) 27.314
+Loop 8 merge (us) 28.823
+Loop 9 merge (us) 27.05
+Loop 10 merge (us) 26.899
+Loop 11 merge (us) 27.24
+Loop 12 merge (us) 27.347
+Loop 13 merge (us) 45.098
+Loop 14 merge (us) 26.197
+Loop 15 merge (us) 24.536
+Loop 16 merge (us) 35.084
+Loop 17 merge (us) 24.282
+Loop 18 merge (us) 25.722
+Loop 19 merge (us) 24.939
+Loop 20 merge (us) 25.282
+Loop 21 merge (us) 24.159
+Loop 22 merge (us) 37.479
+Loop 23 merge (us) 22.889
+Loop 24 merge (us) 26.362
+Loop 25 merge (us) 25.54
+Loop 26 merge (us) 22.474
+Loop 27 merge (us) 23.588
+Loop 28 merge (us) 23.269
+Loop 29 merge (us) 22.502
+Loop 30 merge (us) 22.467
+Loop 31 merge (us) 22.256
+Loop 32 merge (us) 44.97
+Loop 33 merge (us) 24.815
+Loop 34 merge (us) 22.595
+Loop 35 merge (us) 26.169
+Loop 36 merge (us) 22.807
+Loop 37 merge (us) 21.054
+Loop 38 merge (us) 18.982
+Loop 39 merge (us) 18.584
+Loop 40 merge (us) 18.941
+Loop 41 merge (us) 18.186
+Loop 42 merge (us) 18.349
+Loop 43 merge (us) 18.699
+Loop 44 merge (us) 18.873
+Loop 45 merge (us) 18.401
+Loop 46 merge (us) 19.664
+Loop 47 merge (us) 18.516
+Loop 48 merge (us) 18.563
+Loop 49 merge (us) 17.684
+Loop 50 merge (us) 17.64
+Loop 51 merge (us) 17.461
+Loop 52 merge (us) 17.745
+Loop 53 merge (us) 17.306
+Loop 54 merge (us) 16.901
+Loop 55 merge (us) 17.817
+Loop 56 merge (us) 18.01
+Loop 57 merge (us) 28.081
+Loop 58 merge (us) 17.477
+Loop 59 merge (us) 17.322
+Loop 60 merge (us) 18.032
+Loop 61 merge (us) 17.303
+Loop 62 merge (us) 19.242
+Loop 63 merge (us) 17.215
+Loop 64 merge (us) 20.219
+Loop 65 merge (us) 16.57
+Loop 66 merge (us) 16.806
+Loop 67 merge (us) 27.511
+Loop 68 merge (us) 19.394
+Loop 69 merge (us) 16.586
+Loop 70 merge (us) 16.279
+Loop 71 merge (us) 15.749
+Loop 72 merge (us) 15.202
+Loop 73 merge (us) 14.65
+Loop 74 merge (us) 16.525
+Loop 75 merge (us) 14.571
+Loop 76 merge (us) 20.162
+Loop 77 merge (us) 14.917
+Loop 78 merge (us) 14.754
+Loop 79 merge (us) 14.551
+Loop 80 merge (us) 14.641
+Loop 81 merge (us) 14.162
+Loop 82 merge (us) 14.146
+Loop 83 merge (us) 13.998
+Loop 84 merge (us) 17.395
+Loop 85 merge (us) 14.324
+Loop 86 merge (us) 20.264
+Loop 87 merge (us) 14.107
+Loop 88 merge (us) 15.111
+Loop 89 merge (us) 14.064
+Loop 90 merge (us) 14.106
+Loop 91 merge (us) 14.374
+Loop 92 merge (us) 14.654
+Loop 93 merge (us) 16.222
+Loop 94 merge (us) 13.481
+Loop 95 merge (us) 13.779
+Loop 96 merge (us) 14.294
+Loop 97 merge (us) 13.607
+Loop 98 merge (us) 13.603
+Loop 99 merge (us) 13.947
+Loop 100 merge (us) 14.235
+Loop 101 merge (us) 13.965
+Loop 102 merge (us) 13.824
+Loop 103 merge (us) 15.846
+Loop 104 merge (us) 14.39
+Loop 105 merge (us) 13.831
+Loop 106 merge (us) 13.828
+Loop 107 merge (us) 13.684
+Loop 108 merge (us) 14.39
+Loop 109 merge (us) 13.99
+Loop 110 merge (us) 13.791
+Loop 111 merge (us) 15.818
+Loop 112 merge (us) 14.131
+Loop 113 merge (us) 13.631
+Loop 114 merge (us) 13.733
+Loop 115 merge (us) 24.408
+Loop 116 merge (us) 14.506
+Loop 117 merge (us) 13.489
+Loop 118 merge (us) 15.345
+Loop 119 merge (us) 13.72
+Loop 120 merge (us) 14.149
+Loop 121 merge (us) 13.782
+Loop 122 merge (us) 13.742
+Loop 123 merge (us) 13.753
+Loop 124 merge (us) 14.184
+Loop 125 merge (us) 13.695
+Loop 126 merge (us) 13.565
+Loop 127 merge (us) 13.94
+Loop 128 merge (us) 13.871
+Loop 129 merge (us) 13.834
+Loop 130 merge (us) 13.748
+Loop 131 merge (us) 13.613
+Loop 132 merge (us) 13.919
+Loop 133 merge (us) 13.784
+Loop 134 merge (us) 13.706
+Loop 135 merge (us) 13.546
+Loop 136 merge (us) 14.213
+Loop 137 merge (us) 14.058
+Loop 138 merge (us) 13.913
+Loop 139 merge (us) 13.879
+Loop 140 merge (us) 13.982
+Loop 141 merge (us) 13.658
+Loop 142 merge (us) 13.716
+Loop 143 merge (us) 13.625
+Loop 144 merge (us) 14.07
+Loop 145 merge (us) 13.787
+Loop 146 merge (us) 15.484
+Loop 147 merge (us) 13.697
+Loop 148 merge (us) 13.965
+Loop 149 merge (us) 13.91
+Loop 150 merge (us) 13.482
+Loop 151 merge (us) 13.73
+Loop 152 merge (us) 14.479
+Loop 153 merge (us) 13.965
+Loop 154 merge (us) 13.779
+Loop 155 merge (us) 13.77
+Loop 156 merge (us) 20.269
+Loop 157 merge (us) 14.115
+Loop 158 merge (us) 15.548
+Loop 159 merge (us) 13.857
+Loop 160 merge (us) 14.261
+Loop 161 merge (us) 13.859
+Loop 162 merge (us) 13.821
+Loop 163 merge (us) 13.608
+Loop 164 merge (us) 13.782
+Loop 165 merge (us) 13.518
+Loop 166 merge (us) 13.514
+Loop 167 merge (us) 13.532
+Loop 168 merge (us) 50.735
+Loop 169 merge (us) 6.059
+Loop 170 merge (us) 5.938
+Loop 171 merge (us) 5.877
+Loop 172 merge (us) 6.044
+Loop 173 merge (us) 5.962
+Loop 174 merge (us) 5.937
+Loop 175 merge (us) 5.773
+Loop 176 merge (us) 5.893
+Loop 177 merge (us) 5.871
+Loop 178 merge (us) 5.849
+Loop 179 merge (us) 5.704
+Loop 180 merge (us) 5.864
+Loop 181 merge (us) 5.695
+Loop 182 merge (us) 5.709
+Loop 183 merge (us) 5.638
+Loop 184 merge (us) 5.878
+Loop 185 merge (us) 5.807
+Loop 186 merge (us) 5.797
+Loop 187 merge (us) 5.732
+Loop 188 merge (us) 5.909
+Loop 189 merge (us) 5.824
+Loop 190 merge (us) 5.974
+Loop 191 merge (us) 5.836
+Loop 192 merge (us) 5.865
+Loop 193 merge (us) 5.875
+Loop 194 merge (us) 5.84
+Loop 195 merge (us) 5.977
+Loop 196 merge (us) 5.951
+Loop 197 merge (us) 5.807
+Loop 198 merge (us) 5.754
+Loop 199 merge (us) 5.764
+Loop 200 merge (us) 5.909
+Loop 201 merge (us) 6.11
+Loop 202 merge (us) 5.957
+Loop 203 merge (us) 5.828
+Loop 204 merge (us) 5.843
+Loop 205 merge (us) 5.924
+Loop 206 merge (us) 5.994
+Loop 207 merge (us) 5.979
+Loop 208 merge (us) 5.922
+Loop 209 merge (us) 5.933
+Loop 210 merge (us) 5.874
+Loop 211 merge (us) 5.81
+Loop 212 merge (us) 5.815
+Loop 213 merge (us) 5.789
+Loop 214 merge (us) 7.302
+Loop 215 merge (us) 5.672
+Loop 216 merge (us) 11.816
+Loop 217 merge (us) 5.806
+Loop 218 merge (us) 5.769
+Loop 219 merge (us) 5.725
+Loop 220 merge (us) 5.94
+Loop 221 merge (us) 5.751
+Loop 222 merge (us) 5.822
+Loop 223 merge (us) 5.887
+Loop 224 merge (us) 5.913
+Loop 225 merge (us) 5.76
+Loop 226 merge (us) 5.782
+Loop 227 merge (us) 6.436
+Loop 228 merge (us) 6.176
+Loop 229 merge (us) 5.726
+Loop 230 merge (us) 5.728
+Loop 231 merge (us) 5.86
+Loop 232 merge (us) 5.925
+Loop 233 merge (us) 5.976
+Loop 234 merge (us) 5.875
+Loop 235 merge (us) 5.896
+Loop 236 merge (us) 5.923
+Loop 237 merge (us) 5.896
+Loop 238 merge (us) 5.786
+Loop 239 merge (us) 5.925
+Loop 240 merge (us) 5.884
+Loop 241 merge (us) 5.82
+Loop 242 merge (us) 5.992
+Loop 243 merge (us) 5.799
+Loop 244 merge (us) 26.488
+Loop 245 merge (us) 5.802
+Loop 246 merge (us) 5.787
+Loop 247 merge (us) 5.795
+Loop 248 merge (us) 5.854
+Loop 249 merge (us) 5.808
+Loop 250 merge (us) 5.843
+Loop 251 merge (us) 5.754
+Loop 252 merge (us) 5.9
+Loop 253 merge (us) 5.781
+Loop 254 merge (us) 5.84
+Loop 255 merge (us) 5.899
+Loop 256 merge (us) 6.9
+Loop 257 merge (us) 6.43
+Loop 258 merge (us) 6.096
+Loop 259 merge (us) 5.987
+Loop 260 merge (us) 6.114
+Loop 261 merge (us) 5.78
+Loop 262 merge (us) 5.792
+Loop 263 merge (us) 5.796
+Loop 264 merge (us) 5.8
+Loop 265 merge (us) 5.776
+Loop 266 merge (us) 6.077
+Loop 267 merge (us) 5.776
+Loop 268 merge (us) 6.041
+Loop 269 merge (us) 5.748
+Loop 270 merge (us) 7.311
+Loop 271 merge (us) 5.859
+Loop 272 merge (us) 5.933
+Loop 273 merge (us) 5.803
+Loop 274 merge (us) 5.834
+Loop 275 merge (us) 5.821
+Loop 276 merge (us) 5.827
+Loop 277 merge (us) 5.836
+Loop 278 merge (us) 5.873
+Loop 279 merge (us) 5.687
+Loop 280 merge (us) 5.756
+Loop 281 merge (us) 5.74
+Loop 282 merge (us) 5.653
+Loop 283 merge (us) 5.777
+Loop 284 merge (us) 5.735
+Loop 285 merge (us) 5.666
+Loop 286 merge (us) 5.634
+Loop 287 merge (us) 5.591
+Loop 288 merge (us) 6.218
+Loop 289 merge (us) 5.788
+Loop 290 merge (us) 5.694
+Loop 291 merge (us) 5.736
+Loop 292 merge (us) 5.816
+Loop 293 merge (us) 5.601
+Loop 294 merge (us) 5.704
+Loop 295 merge (us) 5.67
+Loop 296 merge (us) 5.73
+Loop 297 merge (us) 5.707
+Loop 298 merge (us) 5.637
+Loop 299 merge (us) 5.739
+Loop 300 merge (us) 5.726
+Loop 301 merge (us) 5.656
+Loop 302 merge (us) 5.656
+Loop 303 merge (us) 5.662
+Loop 304 merge (us) 5.898
+Loop 305 merge (us) 5.781
+Loop 306 merge (us) 5.691
+Loop 307 merge (us) 5.653
+Loop 308 merge (us) 5.677
+Loop 309 merge (us) 5.756
+Loop 310 merge (us) 5.692
+Loop 311 merge (us) 5.633
+Loop 312 merge (us) 5.674
+Loop 313 merge (us) 5.778
+Loop 314 merge (us) 5.618
+Loop 315 merge (us) 5.66
+Loop 316 merge (us) 5.651
+Loop 317 merge (us) 5.715
+Loop 318 merge (us) 5.642
+Loop 319 merge (us) 5.709
+Loop 320 merge (us) 5.722
+Loop 321 merge (us) 5.7
+Loop 322 merge (us) 5.705
+Loop 323 merge (us) 5.616
+Loop 324 merge (us) 5.724
+Loop 325 merge (us) 5.664
+Loop 326 merge (us) 5.825
+Loop 327 merge (us) 5.749
+Loop 328 merge (us) 5.792
+Loop 329 merge (us) 5.698
+Loop 330 merge (us) 5.696
+Loop 331 merge (us) 5.606
+Loop 332 merge (us) 5.854
+Loop 333 merge (us) 5.774
+Loop 334 merge (us) 5.654
+Loop 335 merge (us) 5.699
+Loop 336 merge (us) 5.731
+Loop 337 merge (us) 5.631
+Loop 338 merge (us) 5.621
+Loop 339 merge (us) 5.679
+Loop 340 merge (us) 5.641
+Loop 341 merge (us) 5.543
+Loop 342 merge (us) 5.67
+Loop 343 merge (us) 5.732
+Loop 344 merge (us) 5.524
+Loop 345 merge (us) 5.639
+Loop 346 merge (us) 5.596
+Loop 347 merge (us) 5.727
+Loop 348 merge (us) 5.734
+Loop 349 merge (us) 5.731
+Loop 350 merge (us) 5.539
+Loop 351 merge (us) 5.705
+Loop 352 merge (us) 5.69
+Loop 353 merge (us) 5.672
+Loop 354 merge (us) 5.711
+Loop 355 merge (us) 5.656
+Loop 356 merge (us) 5.602
+Loop 357 merge (us) 5.69
+Loop 358 merge (us) 5.627
+Loop 359 merge (us) 5.647
+Loop 360 merge (us) 5.758
+Loop 361 merge (us) 5.597
+Loop 362 merge (us) 5.634
+Loop 363 merge (us) 5.701
+Loop 364 merge (us) 5.73
+Loop 365 merge (us) 5.732
+Loop 366 merge (us) 5.632
+Loop 367 merge (us) 5.697
+Loop 368 merge (us) 5.666
+Loop 369 merge (us) 5.618
+Loop 370 merge (us) 5.648
+Loop 371 merge (us) 5.704
+Loop 372 merge (us) 5.821
+Loop 373 merge (us) 5.64
+Loop 374 merge (us) 5.67
+Loop 375 merge (us) 5.722
+Loop 376 merge (us) 5.737
+Loop 377 merge (us) 5.56
+Loop 378 merge (us) 5.665
+Loop 379 merge (us) 5.652
+Loop 380 merge (us) 5.853
+Loop 381 merge (us) 5.606
+Loop 382 merge (us) 5.712
+Loop 383 merge (us) 5.651
+Loop 384 merge (us) 5.797
+Loop 385 merge (us) 5.66
+Loop 386 merge (us) 5.684
+Loop 387 merge (us) 5.57
+Loop 388 merge (us) 5.753
+Loop 389 merge (us) 5.634
+Loop 390 merge (us) 5.72
+Loop 391 merge (us) 5.649
+Loop 392 merge (us) 5.701
+Loop 393 merge (us) 5.698
+Loop 394 merge (us) 5.627
+Loop 395 merge (us) 5.617
+Loop 396 merge (us) 7.578
+Loop 397 merge (us) 5.721
+Loop 398 merge (us) 5.654
+Loop 399 merge (us) 5.741
+Loop 400 merge (us) 5.662
+Loop 401 merge (us) 5.617
+Loop 402 merge (us) 5.659
+Loop 403 merge (us) 5.61
+Loop 404 merge (us) 8.983
+Loop 405 merge (us) 5.576
+Loop 406 merge (us) 5.562
+Loop 407 merge (us) 5.844
+Loop 408 merge (us) 5.697
+Loop 409 merge (us) 5.796
+Loop 410 merge (us) 5.58
+Loop 411 merge (us) 5.733
+Loop 412 merge (us) 5.867
+Loop 413 merge (us) 5.698
+Loop 414 merge (us) 5.751
+Loop 415 merge (us) 5.586
+Loop 416 merge (us) 5.633
+Loop 417 merge (us) 5.631
+Loop 418 merge (us) 5.639
+Loop 419 merge (us) 5.71
+Loop 420 merge (us) 5.819
+Loop 421 merge (us) 5.621
+Loop 422 merge (us) 5.785
+Loop 423 merge (us) 5.56
+Loop 424 merge (us) 5.687
+Loop 425 merge (us) 5.725
+Loop 426 merge (us) 5.763
+Loop 427 merge (us) 5.681
+Loop 428 merge (us) 5.566
+Loop 429 merge (us) 5.694
+Loop 430 merge (us) 5.692
+Loop 431 merge (us) 5.673
+Loop 432 merge (us) 5.643
+Loop 433 merge (us) 5.717
+Loop 434 merge (us) 5.639
+Loop 435 merge (us) 5.661
+Loop 436 merge (us) 5.678
+Loop 437 merge (us) 5.675
+Loop 438 merge (us) 5.593
+Loop 439 merge (us) 5.685
+Loop 440 merge (us) 5.84
+Loop 441 merge (us) 5.702
+Loop 442 merge (us) 5.655
+Loop 443 merge (us) 5.626
+Loop 444 merge (us) 5.685
+Loop 445 merge (us) 5.627
+Loop 446 merge (us) 5.688
+Loop 447 merge (us) 5.693
+Loop 448 merge (us) 5.666
+Loop 449 merge (us) 5.706
+Loop 450 merge (us) 5.558
+Loop 451 merge (us) 5.714
+Loop 452 merge (us) 5.677
+Loop 453 merge (us) 5.615
+Loop 454 merge (us) 5.752
+Loop 455 merge (us) 5.638
+Loop 456 merge (us) 5.531
+Loop 457 merge (us) 5.634
+Loop 458 merge (us) 5.628
+Loop 459 merge (us) 5.608
+Loop 460 merge (us) 5.805
+Loop 461 merge (us) 5.617
+Loop 462 merge (us) 5.638
+Loop 463 merge (us) 5.658
+Loop 464 merge (us) 5.652
+Loop 465 merge (us) 5.646
+Loop 466 merge (us) 5.636
+Loop 467 merge (us) 5.589
+Loop 468 merge (us) 5.683
+Loop 469 merge (us) 5.609
+Loop 470 merge (us) 5.678
+Loop 471 merge (us) 5.727
+Loop 472 merge (us) 5.698
+Loop 473 merge (us) 5.61
+Loop 474 merge (us) 5.82
+Loop 475 merge (us) 5.629
+Loop 476 merge (us) 6.007
+Loop 477 merge (us) 5.782
+Loop 478 merge (us) 5.681
+Loop 479 merge (us) 5.694
+Loop 480 merge (us) 5.706
+Loop 481 merge (us) 5.673
+Loop 482 merge (us) 5.729
+Loop 483 merge (us) 5.745
+Loop 484 merge (us) 5.637
+Loop 485 merge (us) 5.652
+Loop 486 merge (us) 5.623
+Loop 487 merge (us) 5.691
+Loop 488 merge (us) 5.686
+Loop 489 merge (us) 5.608
+Loop 490 merge (us) 5.795
+Loop 491 merge (us) 5.633
+Loop 492 merge (us) 5.782
+Loop 493 merge (us) 5.857
+Loop 494 merge (us) 5.683
+Loop 495 merge (us) 5.718
+Loop 496 merge (us) 5.764
+Loop 497 merge (us) 5.84
+Loop 498 merge (us) 5.723
+Loop 499 merge (us) 5.735
+Loop 500 merge (us) 5.683
+Loop 501 merge (us) 5.791
+Loop 502 merge (us) 5.628
+Loop 503 merge (us) 5.792
+Loop 504 merge (us) 5.719
+Loop 505 merge (us) 5.733
+Loop 506 merge (us) 5.783
+Loop 507 merge (us) 5.703
+Loop 508 merge (us) 5.696
+Loop 509 merge (us) 5.678
+Loop 510 merge (us) 5.846
+Loop 511 merge (us) 5.768
+Loop 512 merge (us) 5.846
+Loop 513 merge (us) 5.689
+Loop 514 merge (us) 5.768
+Loop 515 merge (us) 5.723
+Loop 516 merge (us) 5.653
+Loop 517 merge (us) 5.583
+Loop 518 merge (us) 5.651
+Loop 519 merge (us) 5.536
+Loop 520 merge (us) 5.639
+Loop 521 merge (us) 5.881
+Loop 522 merge (us) 5.638
+Loop 523 merge (us) 5.634
+Loop 524 merge (us) 5.731
+Loop 525 merge (us) 5.703
+Loop 526 merge (us) 5.649
+Loop 527 merge (us) 5.579
+Loop 528 merge (us) 5.741
+Loop 529 merge (us) 5.662
+Loop 530 merge (us) 5.63
+Loop 531 merge (us) 5.632
+Loop 532 merge (us) 5.737
+Loop 533 merge (us) 5.849
+Loop 534 merge (us) 5.678
+Loop 535 merge (us) 5.673
+Loop 536 merge (us) 5.739
+Loop 537 merge (us) 5.656
+Loop 538 merge (us) 5.608
+Loop 539 merge (us) 5.646
+Loop 540 merge (us) 5.822
+Loop 541 merge (us) 5.658
+Loop 542 merge (us) 5.638
+Loop 543 merge (us) 5.741
+Loop 544 merge (us) 5.748
+Loop 545 merge (us) 5.691
+Loop 546 merge (us) 5.634
+Loop 547 merge (us) 5.68
+Loop 548 merge (us) 5.761
+Loop 549 merge (us) 5.714
+Loop 550 merge (us) 5.662
+Loop 551 merge (us) 5.669
+Loop 552 merge (us) 5.693
+Loop 553 merge (us) 5.595
+Loop 554 merge (us) 5.63
+Loop 555 merge (us) 5.68
+Loop 556 merge (us) 5.771
+Loop 557 merge (us) 5.65
+Loop 558 merge (us) 5.792
+Loop 559 merge (us) 5.702
+Loop 560 merge (us) 5.566
+Loop 561 merge (us) 6.295
+Loop 562 merge (us) 5.895
+Loop 563 merge (us) 5.855
+Loop 564 merge (us) 5.852
+Loop 565 merge (us) 5.762
+Loop 566 merge (us) 5.832
+Loop 567 merge (us) 5.778
+Loop 568 merge (us) 5.795
+Loop 569 merge (us) 5.694
+Loop 570 merge (us) 5.64
+Loop 571 merge (us) 5.583
+Loop 572 merge (us) 5.726
+Loop 573 merge (us) 5.632
+Loop 574 merge (us) 5.707
+Loop 575 merge (us) 5.535
+Loop 576 merge (us) 5.816
+Loop 577 merge (us) 5.675
+Loop 578 merge (us) 5.623
+Loop 579 merge (us) 5.642
+Loop 580 merge (us) 5.711
+Loop 581 merge (us) 5.627
+Loop 582 merge (us) 5.688
+Loop 583 merge (us) 5.596
+Loop 584 merge (us) 5.68
+Loop 585 merge (us) 5.643
+Loop 586 merge (us) 5.667
+Loop 587 merge (us) 5.784
+Loop 588 merge (us) 5.698
+Loop 589 merge (us) 5.668
+Loop 590 merge (us) 5.767
+Loop 591 merge (us) 5.608
+Loop 592 merge (us) 5.687
+Loop 593 merge (us) 5.593
+Loop 594 merge (us) 5.741
+Loop 595 merge (us) 5.62
+Loop 596 merge (us) 5.685
+Loop 597 merge (us) 5.663
+Loop 598 merge (us) 5.641
+Loop 599 merge (us) 5.764
+Loop 600 merge (us) 5.62
+Loop 601 merge (us) 5.723
+Loop 602 merge (us) 5.698
+Loop 603 merge (us) 5.646
+Loop 604 merge (us) 10.233
+Loop 605 merge (us) 5.84
+Loop 606 merge (us) 5.694
+Loop 607 merge (us) 5.661
+Loop 608 merge (us) 5.565
+Loop 609 merge (us) 5.625
+Loop 610 merge (us) 5.716
+Loop 611 merge (us) 5.611
+Loop 612 merge (us) 5.807
+Loop 613 merge (us) 5.577
+Loop 614 merge (us) 5.699
+Loop 615 merge (us) 5.696
+Loop 616 merge (us) 5.683
+Loop 617 merge (us) 5.754
+Loop 618 merge (us) 5.669
+Loop 619 merge (us) 14.601
+Loop 620 merge (us) 13.95
+Loop 621 merge (us) 36.354
+Loop 622 merge (us) 5.626
+Loop 623 merge (us) 5.545
+Loop 624 merge (us) 5.46
+Loop 625 merge (us) 5.383
+Loop 626 merge (us) 5.49
+Loop 627 merge (us) 5.457
+Loop 628 merge (us) 5.568
+Loop 629 merge (us) 5.458
+Loop 630 merge (us) 5.468
+Loop 631 merge (us) 5.593
+Loop 632 merge (us) 5.52
+Loop 633 merge (us) 5.503
+Loop 634 merge (us) 5.494
+Loop 635 merge (us) 5.648
+Loop 636 merge (us) 5.506
+Loop 637 merge (us) 5.444
+Loop 638 merge (us) 5.608
+Loop 639 merge (us) 5.449
+Loop 640 merge (us) 5.608
+Loop 641 merge (us) 5.426
+Loop 642 merge (us) 5.512
+Loop 643 merge (us) 5.506
+Loop 644 merge (us) 5.477
+Loop 645 merge (us) 5.435
+Loop 646 merge (us) 5.416
+Loop 647 merge (us) 5.465
+Loop 648 merge (us) 5.501
+Loop 649 merge (us) 5.483
+Loop 650 merge (us) 5.489
+Loop 651 merge (us) 5.458
+Loop 652 merge (us) 5.503
+Loop 653 merge (us) 5.615
+Loop 654 merge (us) 5.537
+Loop 655 merge (us) 5.46
+Loop 656 merge (us) 5.551
+Loop 657 merge (us) 5.413
+Loop 658 merge (us) 5.484
+Loop 659 merge (us) 5.501
+Loop 660 merge (us) 5.489
+Loop 661 merge (us) 5.487
+Loop 662 merge (us) 5.556
+Loop 663 merge (us) 5.507
+Loop 664 merge (us) 5.462
+Loop 665 merge (us) 5.531
+Loop 666 merge (us) 5.652
+Loop 667 merge (us) 5.444
+Loop 668 merge (us) 5.464
+Loop 669 merge (us) 5.603
+Loop 670 merge (us) 5.451
+Loop 671 merge (us) 5.485
+Loop 672 merge (us) 5.614
+Loop 673 merge (us) 5.462
+Loop 674 merge (us) 5.455
+Loop 675 merge (us) 5.498
+Loop 676 merge (us) 5.418
+Loop 677 merge (us) 7.581
+Loop 678 merge (us) 5.474
+Loop 679 merge (us) 5.506
+Loop 680 merge (us) 5.494
+Loop 681 merge (us) 5.439
+Loop 682 merge (us) 5.723
+Loop 683 merge (us) 5.51
+Loop 684 merge (us) 5.471
+Loop 685 merge (us) 5.499
+Loop 686 merge (us) 5.467
+Loop 687 merge (us) 5.473
+Loop 688 merge (us) 5.487
+Loop 689 merge (us) 5.494
+Loop 690 merge (us) 5.448
+Loop 691 merge (us) 5.491
+Loop 692 merge (us) 5.597
+Loop 693 merge (us) 5.483
+Loop 694 merge (us) 5.503
+Loop 695 merge (us) 5.518
+Loop 696 merge (us) 5.651
+Loop 697 merge (us) 5.501
+Loop 698 merge (us) 5.449
+Loop 699 merge (us) 5.44
+Loop 700 merge (us) 5.576
+Loop 701 merge (us) 5.467
+Loop 702 merge (us) 5.533
+Loop 703 merge (us) 5.619
+Loop 704 merge (us) 5.47
+Loop 705 merge (us) 14.147
+Loop 706 merge (us) 13.898
+Loop 707 merge (us) 13.767
+Loop 708 merge (us) 13.572
+Loop 709 merge (us) 13.537
+Loop 710 merge (us) 13.6
+Loop 711 merge (us) 13.75
+Loop 712 merge (us) 13.632
+Loop 713 merge (us) 13.605
+Loop 714 merge (us) 13.601
+Loop 715 merge (us) 13.684
+Loop 716 merge (us) 13.698
+Loop 717 merge (us) 13.78
+Loop 718 merge (us) 13.672
+Loop 719 merge (us) 13.952
+Loop 720 merge (us) 13.791
+Loop 721 merge (us) 13.644
+Loop 722 merge (us) 13.653
+Loop 723 merge (us) 13.698
+Loop 724 merge (us) 13.672
+Loop 725 merge (us) 13.547
+Loop 726 merge (us) 13.829
+Loop 727 merge (us) 13.622
+Loop 728 merge (us) 13.555
+Loop 729 merge (us) 13.67
+Loop 730 merge (us) 13.655
+Loop 731 merge (us) 13.536
+Loop 732 merge (us) 13.719
+Loop 733 merge (us) 13.677
+Loop 734 merge (us) 13.614
+Loop 735 merge (us) 13.576
+Loop 736 merge (us) 13.559
+Loop 737 merge (us) 13.673
+Loop 738 merge (us) 13.693
+Loop 739 merge (us) 13.545
+Loop 740 merge (us) 13.704
+Loop 741 merge (us) 13.927
+Loop 742 merge (us) 13.575
+Loop 743 merge (us) 13.758
+Loop 744 merge (us) 13.662
+Loop 745 merge (us) 13.703
+Loop 746 merge (us) 13.666
+Loop 747 merge (us) 13.624
+Loop 748 merge (us) 13.692
+Loop 749 merge (us) 13.668
+Loop 750 merge (us) 13.645
+Loop 751 merge (us) 13.686
+Loop 752 merge (us) 13.702
+Loop 753 merge (us) 13.716
+Loop 754 merge (us) 15.049
+Loop 755 merge (us) 13.553
+Loop 756 merge (us) 15.129
+Loop 757 merge (us) 13.658
+Loop 758 merge (us) 15.289
+Loop 759 merge (us) 13.571
+Loop 760 merge (us) 13.689
+Loop 761 merge (us) 13.699
+Loop 762 merge (us) 13.62
+Loop 763 merge (us) 13.658
+Loop 764 merge (us) 14.135
+Loop 765 merge (us) 13.804
+Loop 766 merge (us) 13.64
+Loop 767 merge (us) 13.793
+Loop 768 merge (us) 14.104
+Loop 769 merge (us) 13.631
+Loop 770 merge (us) 13.819
+Loop 771 merge (us) 13.631
+Loop 772 merge (us) 13.766
+Loop 773 merge (us) 13.783
+Loop 774 merge (us) 13.513
+Loop 775 merge (us) 13.615
+Loop 776 merge (us) 13.776
+Loop 777 merge (us) 13.686
+Loop 778 merge (us) 15.177
+Loop 779 merge (us) 13.645
+Loop 780 merge (us) 13.77
+Loop 781 merge (us) 13.621
+Loop 782 merge (us) 13.492
+Loop 783 merge (us) 13.626
+Loop 784 merge (us) 14.81
+Loop 785 merge (us) 16.601
+Loop 786 merge (us) 14.549
+Loop 787 merge (us) 13.308
+Loop 788 merge (us) 18.057
+Loop 789 merge (us) 13.301
+Loop 790 merge (us) 13.652
+Loop 791 merge (us) 13.672
+Loop 792 merge (us) 13.798
+Loop 793 merge (us) 13.637
+Loop 794 merge (us) 13.663
+Loop 795 merge (us) 13.521
+Loop 796 merge (us) 18.675
+Loop 797 merge (us) 13.587
+Loop 798 merge (us) 13.454
+Loop 799 merge (us) 13.648
+Loop 800 merge (us) 13.959
+Loop 801 merge (us) 13.655
+Loop 802 merge (us) 13.643
+Loop 803 merge (us) 13.651
+Loop 804 merge (us) 13.894
+Loop 805 merge (us) 13.748
+Loop 806 merge (us) 13.461
+Loop 807 merge (us) 13.704
+Loop 808 merge (us) 13.726
+Loop 809 merge (us) 13.811
+Loop 810 merge (us) 13.647
+Loop 811 merge (us) 13.854
+Loop 812 merge (us) 13.729
+Loop 813 merge (us) 13.989
+Loop 814 merge (us) 13.705
+Loop 815 merge (us) 13.534
+Loop 816 merge (us) 13.6
+Loop 817 merge (us) 13.74
+Loop 818 merge (us) 13.649
+Loop 819 merge (us) 15.389
+Loop 820 merge (us) 13.825
+Loop 821 merge (us) 13.592
+Loop 822 merge (us) 13.645
+Loop 823 merge (us) 15.225
+Loop 824 merge (us) 13.609
+Loop 825 merge (us) 13.679
+Loop 826 merge (us) 13.655
+Loop 827 merge (us) 15.143
+Loop 828 merge (us) 13.898
+Loop 829 merge (us) 15.302
+Loop 830 merge (us) 13.516
+Loop 831 merge (us) 15.113
+Loop 832 merge (us) 13.674
+Loop 833 merge (us) 15.288
+Loop 834 merge (us) 13.708
+Loop 835 merge (us) 13.608
+Loop 836 merge (us) 13.669
+Loop 837 merge (us) 13.666
+Loop 838 merge (us) 13.794
+Loop 839 merge (us) 13.599
+Loop 840 merge (us) 13.76
+Loop 841 merge (us) 15.092
+Loop 842 merge (us) 13.753
+Loop 843 merge (us) 15.243
+Loop 844 merge (us) 13.423
+Loop 845 merge (us) 15.556
+Loop 846 merge (us) 13.319
+Loop 847 merge (us) 13.469
+Loop 848 merge (us) 13.501
+Loop 849 merge (us) 15.176
+Loop 850 merge (us) 13.646
+Loop 851 merge (us) 15.083
+Loop 852 merge (us) 13.546
+Loop 853 merge (us) 13.354
+Loop 854 merge (us) 13.303
+Loop 855 merge (us) 13.356
+Loop 856 merge (us) 13.682
+Loop 857 merge (us) 13.722
+Loop 858 merge (us) 13.701
+Loop 859 merge (us) 13.713
+Loop 860 merge (us) 13.84
+Loop 861 merge (us) 13.731
+Loop 862 merge (us) 13.934
+Loop 863 merge (us) 13.7
+Loop 864 merge (us) 13.823
+Loop 865 merge (us) 13.97
+Loop 866 merge (us) 13.894
+Loop 867 merge (us) 13.604
+Loop 868 merge (us) 13.989
+Loop 869 merge (us) 13.699
+Loop 870 merge (us) 13.754
+Loop 871 merge (us) 13.399
+Loop 872 merge (us) 13.991
+Loop 873 merge (us) 13.84
+Loop 874 merge (us) 13.575
+Loop 875 merge (us) 13.777
+Loop 876 merge (us) 13.831
+Loop 877 merge (us) 13.698
+Loop 878 merge (us) 13.593
+Loop 879 merge (us) 13.487
+Loop 880 merge (us) 13.909
+Loop 881 merge (us) 13.701
+Loop 882 merge (us) 13.723
+Loop 883 merge (us) 13.569
+Loop 884 merge (us) 13.776
+Loop 885 merge (us) 13.608
+Loop 886 merge (us) 13.568
+Loop 887 merge (us) 13.943
+Loop 888 merge (us) 13.794
+Loop 889 merge (us) 13.42
+Loop 890 merge (us) 13.374
+Loop 891 merge (us) 13.604
+Loop 892 merge (us) 13.686
+Loop 893 merge (us) 13.434
+Loop 894 merge (us) 13.27
+Loop 895 merge (us) 13.24
+Loop 896 merge (us) 13.335
+Loop 897 merge (us) 13.305
+Loop 898 merge (us) 13.585
+Loop 899 merge (us) 13.601
+Loop 900 merge (us) 13.414
+Loop 901 merge (us) 13.664
+Loop 902 merge (us) 13.737
+Loop 903 merge (us) 13.691
+Loop 904 merge (us) 13.843
+Loop 905 merge (us) 13.918
+Loop 906 merge (us) 13.775
+Loop 907 merge (us) 13.972
+Loop 908 merge (us) 13.895
+Loop 909 merge (us) 13.921
+Loop 910 merge (us) 15.269
+Loop 911 merge (us) 13.813
+Loop 912 merge (us) 15.256
+Loop 913 merge (us) 13.924
+Loop 914 merge (us) 13.711
+Loop 915 merge (us) 13.801
+Loop 916 merge (us) 14.025
+Loop 917 merge (us) 13.718
+Loop 918 merge (us) 13.758
+Loop 919 merge (us) 13.532
+Loop 920 merge (us) 13.87
+Loop 921 merge (us) 13.855
+Loop 922 merge (us) 13.669
+Loop 923 merge (us) 13.658
+Loop 924 merge (us) 13.66
+Loop 925 merge (us) 13.793
+Loop 926 merge (us) 13.821
+Loop 927 merge (us) 13.622
+Loop 928 merge (us) 15.592
+Loop 929 merge (us) 13.764
+Loop 930 merge (us) 15.234
+Loop 931 merge (us) 13.711
+Loop 932 merge (us) 15.522
+Loop 933 merge (us) 13.572
+Loop 934 merge (us) 14.982
+Loop 935 merge (us) 13.864
+Loop 936 merge (us) 13.686
+Loop 937 merge (us) 13.879
+Loop 938 merge (us) 13.451
+Loop 939 merge (us) 13.527
+Loop 940 merge (us) 13.955
+Loop 941 merge (us) 13.754
+Loop 942 merge (us) 13.864
+Loop 943 merge (us) 13.851
+Loop 944 merge (us) 13.829
+Loop 945 merge (us) 13.813
+Loop 946 merge (us) 13.864
+Loop 947 merge (us) 13.823
+Loop 948 merge (us) 13.645
+Loop 949 merge (us) 13.848
+Loop 950 merge (us) 13.952
+Loop 951 merge (us) 13.797
+Loop 952 merge (us) 13.66
+Loop 953 merge (us) 15.11
+Loop 954 merge (us) 13.644
+Loop 955 merge (us) 13.351
+Loop 956 merge (us) 13.549
+Loop 957 merge (us) 13.513
+Loop 958 merge (us) 13.586
+Loop 959 merge (us) 15.267
+Loop 960 merge (us) 13.789
+Loop 961 merge (us) 13.845
+Loop 962 merge (us) 13.685
+Loop 963 merge (us) 13.593
+Loop 964 merge (us) 13.684
+Loop 965 merge (us) 13.811
+Loop 966 merge (us) 13.726
+Loop 967 merge (us) 13.894
+Loop 968 merge (us) 13.975
+Loop 969 merge (us) 13.689
+Loop 970 merge (us) 12.173
+Loop 971 merge (us) 13.491
+Loop 972 merge (us) 12.066
+Loop 973 merge (us) 13.156
+Loop 974 merge (us) 11.884
+Loop 975 merge (us) 13.085
+Loop 976 merge (us) 11.875
+Loop 977 merge (us) 11.752
+Loop 978 merge (us) 11.818
+Loop 979 merge (us) 11.945
+Loop 980 merge (us) 11.987
+Loop 981 merge (us) 12.163
+Loop 982 merge (us) 12.102
+Loop 983 merge (us) 12.182
+Loop 984 merge (us) 12.31
+Loop 985 merge (us) 12.123
+Loop 986 merge (us) 12.244
+Loop 987 merge (us) 12.268
+Loop 988 merge (us) 12.048
+Loop 989 merge (us) 12.141
+Loop 990 merge (us) 14.221
+Loop 991 merge (us) 12.355
+Loop 992 merge (us) 12.909
+Loop 993 merge (us) 12.306
+Loop 994 merge (us) 12.081
+Loop 995 merge (us) 12.182
+Loop 996 merge (us) 12.102
+Loop 997 merge (us) 12.148
+Loop 998 merge (us) 12.121
+Loop 999 merge (us) 12.054
+Loop 1000 merge (us) 12.1
+Loop 1001 merge (us) 12.097
+Loop 1002 merge (us) 12.089
+Loop 1003 merge (us) 11.925
+Loop 1004 merge (us) 12.118
+Loop 1005 merge (us) 11.891
+Loop 1006 merge (us) 13.898
+Loop 1007 merge (us) 12.006
+Loop 1008 merge (us) 11.951
+Loop 1009 merge (us) 11.946
+Loop 1010 merge (us) 11.996
+Loop 1011 merge (us) 11.979
+Loop 1012 merge (us) 12.109
+Loop 1013 merge (us) 12.68
+Loop 1014 merge (us) 12.23
+Loop 1015 merge (us) 12.072
+Loop 1016 merge (us) 12.068
+Loop 1017 merge (us) 11.975
+Loop 1018 merge (us) 11.922
+Loop 1019 merge (us) 12.003
+Loop 1020 merge (us) 12.246
+Loop 1021 merge (us) 13.84
+Loop 1022 merge (us) 12.149
+Loop 1023 merge (us) 11.982
+Loop 1024 merge (us) 12.255
+Loop 1025 merge (us) 11.967
+Loop 1026 merge (us) 12.172
+Loop 1027 merge (us) 13.878
+Loop 1028 merge (us) 12.182
+Loop 1029 merge (us) 13.636
+Loop 1030 merge (us) 12.042
+Loop 1031 merge (us) 11.943
+Loop 1032 merge (us) 12.151
+Loop 1033 merge (us) 11.899
+Loop 1034 merge (us) 12.061
+Loop 1035 merge (us) 12.08
+Loop 1036 merge (us) 11.991
+Loop 1037 merge (us) 15.041
+Loop 1038 merge (us) 11.944
+Loop 1039 merge (us) 12.184
+Loop 1040 merge (us) 13.851
+Loop 1041 merge (us) 11.82
+Loop 1042 merge (us) 11.833
+Loop 1043 merge (us) 12.047
+Loop 1044 merge (us) 13.273
+Loop 1045 merge (us) 11.94
+Loop 1046 merge (us) 12.998
+Loop 1047 merge (us) 11.802
+Loop 1048 merge (us) 11.992
+Loop 1049 merge (us) 12.165
+Loop 1050 merge (us) 12.04
+Loop 1051 merge (us) 12.076
+Loop 1052 merge (us) 12.041
+Loop 1053 merge (us) 12.189
+Loop 1054 merge (us) 11.965
+Loop 1055 merge (us) 12.083
+Loop 1056 merge (us) 12.293
+Loop 1057 merge (us) 13.214
+Loop 1058 merge (us) 11.682
+Loop 1059 merge (us) 12.965
+Loop 1060 merge (us) 11.755
+Loop 1061 merge (us) 12.931
+Loop 1062 merge (us) 11.725
+Loop 1063 merge (us) 11.619
+Loop 1064 merge (us) 12.066
+Loop 1065 merge (us) 11.996
+Loop 1066 merge (us) 11.934
+Loop 1067 merge (us) 12.004
+Loop 1068 merge (us) 11.999
+Loop 1069 merge (us) 12.038
+Loop 1070 merge (us) 12.003
+Loop 1071 merge (us) 11.951
+Loop 1072 merge (us) 12.104
+Loop 1073 merge (us) 12.204
+Loop 1074 merge (us) 12.011
+Loop 1075 merge (us) 11.995
+Loop 1076 merge (us) 12.056
+Loop 1077 merge (us) 12.079
+Loop 1078 merge (us) 11.861
+Loop 1079 merge (us) 11.932
+Loop 1080 merge (us) 12.159
+Loop 1081 merge (us) 11.975
+Loop 1082 merge (us) 11.968
+Loop 1083 merge (us) 11.934
+Loop 1084 merge (us) 12.013
+Loop 1085 merge (us) 13.497
+Loop 1086 merge (us) 12.026
+Loop 1087 merge (us) 13.436
+Loop 1088 merge (us) 12.043
+Loop 1089 merge (us) 12.104
+Loop 1090 merge (us) 12.009
+Loop 1091 merge (us) 12.001
+Loop 1092 merge (us) 12.121
+Loop 1093 merge (us) 11.976
+Loop 1094 merge (us) 12.091
+Loop 1095 merge (us) 12.035
+Loop 1096 merge (us) 12.072
+Loop 1097 merge (us) 12.106
+Loop 1098 merge (us) 11.934
+Loop 1099 merge (us) 11.897
+Loop 1100 merge (us) 13.379
+Loop 1101 merge (us) 11.993
+Loop 1102 merge (us) 11.963
+Loop 1103 merge (us) 11.933
+Loop 1104 merge (us) 12.062
+Loop 1105 merge (us) 12.006
+Loop 1106 merge (us) 12.014
+Loop 1107 merge (us) 11.932
+Loop 1108 merge (us) 12.008
+Loop 1109 merge (us) 12.073
+Loop 1110 merge (us) 11.89
+Loop 1111 merge (us) 12.083
+Loop 1112 merge (us) 12.002
+Loop 1113 merge (us) 12.031
+Loop 1114 merge (us) 11.968
+Loop 1115 merge (us) 12.072
+Loop 1116 merge (us) 12.178
+Loop 1117 merge (us) 11.894
+Loop 1118 merge (us) 11.891
+Loop 1119 merge (us) 12.016
+Loop 1120 merge (us) 12.119
+Loop 1121 merge (us) 11.948
+Loop 1122 merge (us) 12.073
+Loop 1123 merge (us) 12.059
+Loop 1124 merge (us) 12.064
+Loop 1125 merge (us) 12.238
+Loop 1126 merge (us) 12.031
+Loop 1127 merge (us) 11.962
+Loop 1128 merge (us) 17.709
+Loop 1129 merge (us) 11.968
+Loop 1130 merge (us) 11.842
+Loop 1131 merge (us) 15.679
+Loop 1132 merge (us) 12.074
+Loop 1133 merge (us) 11.987
+Loop 1134 merge (us) 11.928
+Loop 1135 merge (us) 11.983
+Loop 1136 merge (us) 12.054
+Loop 1137 merge (us) 11.983
+Loop 1138 merge (us) 12.048
+Loop 1139 merge (us) 13.236
+Loop 1140 merge (us) 11.914
+Loop 1141 merge (us) 12.047
+Loop 1142 merge (us) 11.953
+Loop 1143 merge (us) 11.841
+Loop 1144 merge (us) 12.001
+Loop 1145 merge (us) 11.858
+Loop 1146 merge (us) 12.039
+Loop 1147 merge (us) 11.914
+Loop 1148 merge (us) 12.104
+Loop 1149 merge (us) 11.932
+Loop 1150 merge (us) 12.001
+Loop 1151 merge (us) 11.959
+Loop 1152 merge (us) 12.106
+Loop 1153 merge (us) 11.895
+Loop 1154 merge (us) 13.366
+Loop 1155 merge (us) 11.983
+Loop 1156 merge (us) 11.998
+Loop 1157 merge (us) 11.97
+Loop 1158 merge (us) 11.971
+Loop 1159 merge (us) 11.898
+Loop 1160 merge (us) 11.982
+Loop 1161 merge (us) 11.781
+Loop 1162 merge (us) 11.777
+Loop 1163 merge (us) 11.656
+Loop 1164 merge (us) 11.815
+Loop 1165 merge (us) 11.765
+Loop 1166 merge (us) 11.636
+Loop 1167 merge (us) 11.62
+Loop 1168 merge (us) 11.88
+Loop 1169 merge (us) 13.191
+Loop 1170 merge (us) 11.671
+Loop 1171 merge (us) 11.854
+Loop 1172 merge (us) 11.96
+Loop 1173 merge (us) 11.895
+Loop 1174 merge (us) 11.941
+Loop 1175 merge (us) 11.927
+Loop 1176 merge (us) 11.898
+Loop 1177 merge (us) 11.958
+Loop 1178 merge (us) 12.0
+Loop 1179 merge (us) 12.006
+Loop 1180 merge (us) 12.0
+Loop 1181 merge (us) 11.998
+Loop 1182 merge (us) 13.522
+Loop 1183 merge (us) 11.938
+Loop 1184 merge (us) 12.078
+Loop 1185 merge (us) 11.969
+Loop 1186 merge (us) 12.108
+Loop 1187 merge (us) 13.444
+Loop 1188 merge (us) 11.935
+Loop 1189 merge (us) 11.912
+Loop 1190 merge (us) 11.916
+Loop 1191 merge (us) 11.864
+Loop 1192 merge (us) 11.984
+Loop 1193 merge (us) 12.004
+Loop 1194 merge (us) 11.893
+Loop 1195 merge (us) 11.988
+Loop 1196 merge (us) 12.009
+Loop 1197 merge (us) 11.99
+Loop 1198 merge (us) 12.025
+Loop 1199 merge (us) 11.874
+Loop 1200 merge (us) 12.019
+Loop 1201 merge (us) 12.132
+Loop 1202 merge (us) 13.411
+Loop 1203 merge (us) 11.988
+Loop 1204 merge (us) 13.405
+Loop 1205 merge (us) 12.097
+Loop 1206 merge (us) 11.951
+Loop 1207 merge (us) 12.056
+Loop 1208 merge (us) 11.976
+Loop 1209 merge (us) 11.994
+Loop 1210 merge (us) 15.18
+Loop 1211 merge (us) 11.881
+Loop 1212 merge (us) 12.065
+Loop 1213 merge (us) 12.136
+Loop 1214 merge (us) 11.941
+Loop 1215 merge (us) 12.039
+Loop 1216 merge (us) 12.008
+Loop 1217 merge (us) 11.863
+Loop 1218 merge (us) 11.932
+Loop 1219 merge (us) 11.979
+Loop 1220 merge (us) 11.875
+Loop 1221 merge (us) 11.945
+Loop 1222 merge (us) 11.949
+Loop 1223 merge (us) 11.909
+Loop 1224 merge (us) 12.095
+Loop 1225 merge (us) 11.959
+Loop 1226 merge (us) 11.881
+Loop 1227 merge (us) 11.975
+Loop 1228 merge (us) 13.336
+Loop 1229 merge (us) 12.078
+Loop 1230 merge (us) 13.295
+Loop 1231 merge (us) 11.935
+Loop 1232 merge (us) 12.191
+Loop 1233 merge (us) 11.902
+Loop 1234 merge (us) 12.172
+Loop 1235 merge (us) 11.969
+Loop 1236 merge (us) 12.062
+Loop 1237 merge (us) 12.14
+Loop 1238 merge (us) 11.974
+Loop 1239 merge (us) 11.986
+Loop 1240 merge (us) 12.011
+Loop 1241 merge (us) 12.033
+Loop 1242 merge (us) 11.941
+Loop 1243 merge (us) 11.979
+Loop 1244 merge (us) 11.974
+Loop 1245 merge (us) 11.994
+Loop 1246 merge (us) 11.947
+Loop 1247 merge (us) 16.003
+Loop 1248 merge (us) 12.028
+Loop 1249 merge (us) 11.947
+Loop 1250 merge (us) 12.06
+Loop 1251 merge (us) 11.973
+Loop 1252 merge (us) 13.304
+Loop 1253 merge (us) 12.064
+Loop 1254 merge (us) 11.907
+Loop 1255 merge (us) 11.914
+Loop 1256 merge (us) 12.013
+Loop 1257 merge (us) 11.974
+Loop 1258 merge (us) 11.963
+Loop 1259 merge (us) 11.885
+Loop 1260 merge (us) 11.977
+Loop 1261 merge (us) 12.119
+Loop 1262 merge (us) 11.849
+Loop 1263 merge (us) 13.298
+Loop 1264 merge (us) 12.219
+Loop 1265 merge (us) 13.471
+Loop 1266 merge (us) 12.04
+Loop 1267 merge (us) 11.933
+Loop 1268 merge (us) 12.054
+Loop 1269 merge (us) 12.059
+Loop 1270 merge (us) 11.979
+Loop 1271 merge (us) 12.021
+Loop 1272 merge (us) 11.964
+Loop 1273 merge (us) 11.916
+Loop 1274 merge (us) 11.98
+Loop 1275 merge (us) 12.043
+Loop 1276 merge (us) 13.12
+Loop 1277 merge (us) 12.11
+Loop 1278 merge (us) 13.198
+Loop 1279 merge (us) 11.962
+Loop 1280 merge (us) 11.965
+Loop 1281 merge (us) 11.917
+Loop 1282 merge (us) 11.975
+Loop 1283 merge (us) 11.916
+Loop 1284 merge (us) 12.072
+Loop 1285 merge (us) 12.087
+Loop 1286 merge (us) 12.001
+Loop 1287 merge (us) 13.173
+Loop 1288 merge (us) 12.121
+Loop 1289 merge (us) 13.348
+Loop 1290 merge (us) 11.868
+Loop 1291 merge (us) 12.036
+Loop 1292 merge (us) 12.172
+Loop 1293 merge (us) 11.915
+Loop 1294 merge (us) 11.878
+Loop 1295 merge (us) 12.009
+Loop 1296 merge (us) 12.042
+Loop 1297 merge (us) 11.875
+Loop 1298 merge (us) 13.272
+Loop 1299 merge (us) 11.975
+Loop 1300 merge (us) 12.058
+Loop 1301 merge (us) 11.971
+Loop 1302 merge (us) 11.981
+Loop 1303 merge (us) 11.884
+Loop 1304 merge (us) 11.895
+Loop 1305 merge (us) 12.028
+Loop 1306 merge (us) 11.948
+Loop 1307 merge (us) 11.886
+Loop 1308 merge (us) 12.002
+Loop 1309 merge (us) 11.839
+Loop 1310 merge (us) 11.994
+Loop 1311 merge (us) 11.948
+Loop 1312 merge (us) 12.018
+Loop 1313 merge (us) 13.274
+Loop 1314 merge (us) 12.17
+Loop 1315 merge (us) 11.978
+Loop 1316 merge (us) 12.037
+Loop 1317 merge (us) 11.955
+Loop 1318 merge (us) 12.071
+Loop 1319 merge (us) 11.992
+Loop 1320 merge (us) 11.964
+Loop 1321 merge (us) 11.993
+Loop 1322 merge (us) 12.171
+Loop 1323 merge (us) 12.039
+Loop 1324 merge (us) 12.074
+Loop 1325 merge (us) 12.038
+Loop 1326 merge (us) 11.908
+Loop 1327 merge (us) 11.923
+Loop 1328 merge (us) 13.309
+Loop 1329 merge (us) 11.935
+Loop 1330 merge (us) 11.839
+Loop 1331 merge (us) 11.96
+Loop 1332 merge (us) 12.048
+Loop 1333 merge (us) 11.958
+Loop 1334 merge (us) 11.918
+Loop 1335 merge (us) 11.999
+Loop 1336 merge (us) 12.103
+Loop 1337 merge (us) 12.047
+Loop 1338 merge (us) 11.916
+Loop 1339 merge (us) 12.044
+Loop 1340 merge (us) 12.137
+Loop 1341 merge (us) 12.039
+Loop 1342 merge (us) 11.883
+Loop 1343 merge (us) 13.197
+Loop 1344 merge (us) 12.006
+Loop 1345 merge (us) 11.911
+Loop 1346 merge (us) 12.038
+Loop 1347 merge (us) 11.954
+Loop 1348 merge (us) 11.89
+Loop 1349 merge (us) 12.167
+Loop 1350 merge (us) 11.989
+Loop 1351 merge (us) 11.981
+Loop 1352 merge (us) 12.483
+Loop 1353 merge (us) 13.446
+Loop 1354 merge (us) 12.067
+Loop 1355 merge (us) 11.936
+Loop 1356 merge (us) 12.118
+Loop 1357 merge (us) 12.131
+Loop 1358 merge (us) 13.388
+Loop 1359 merge (us) 12.07
+Loop 1360 merge (us) 13.344
+Loop 1361 merge (us) 11.949
+Loop 1362 merge (us) 11.951
+Loop 1363 merge (us) 12.273
+Loop 1364 merge (us) 12.093
+Loop 1365 merge (us) 11.994
+Loop 1366 merge (us) 11.932
+Loop 1367 merge (us) 12.034
+Loop 1368 merge (us) 12.092
+Loop 1369 merge (us) 11.998
+Loop 1370 merge (us) 11.889
+Loop 1371 merge (us) 11.887
+Loop 1372 merge (us) 11.964
+Loop 1373 merge (us) 13.316
+Loop 1374 merge (us) 11.931
+Loop 1375 merge (us) 12.958
+Loop 1376 merge (us) 11.745
+Loop 1377 merge (us) 11.744
+Loop 1378 merge (us) 11.939
+Loop 1379 merge (us) 11.989
+Loop 1380 merge (us) 12.005
+Loop 1381 merge (us) 458.904
+Loop 1382 merge (us) 12.068
+Loop 1383 merge (us) 12.016
+Loop 1384 merge (us) 12.178
+Loop 1385 merge (us) 12.009
+Loop 1386 merge (us) 12.03
+Loop 1387 merge (us) 11.894
+Loop 1388 merge (us) 12.109
+Loop 1389 merge (us) 11.917
+Loop 1390 merge (us) 12.132
+Loop 1391 merge (us) 12.096
+Loop 1392 merge (us) 12.114
+Loop 1393 merge (us) 13.24
+Loop 1394 merge (us) 11.941
+Loop 1395 merge (us) 12.059
+Loop 1396 merge (us) 12.014
+Loop 1397 merge (us) 11.965
+Loop 1398 merge (us) 11.957
+Loop 1399 merge (us) 12.025
+Loop 1400 merge (us) 11.909
+Loop 1401 merge (us) 12.008
+Loop 1402 merge (us) 11.979
+Loop 1403 merge (us) 12.027
+Loop 1404 merge (us) 12.031
+Loop 1405 merge (us) 11.994
+Loop 1406 merge (us) 12.003
+Loop 1407 merge (us) 11.972
+Loop 1408 merge (us) 11.932
+Loop 1409 merge (us) 12.066
+Loop 1410 merge (us) 11.942
+Loop 1411 merge (us) 12.534
+Loop 1412 merge (us) 13.577
+Loop 1413 merge (us) 12.348
+Loop 1414 merge (us) 11.931
+Loop 1415 merge (us) 13.204
+Loop 1416 merge (us) 11.989
+Loop 1417 merge (us) 13.199
+Loop 1418 merge (us) 11.673
+Loop 1419 merge (us) 12.919
+Loop 1420 merge (us) 11.762
+Loop 1421 merge (us) 11.653
+Loop 1422 merge (us) 11.792
+Loop 1423 merge (us) 11.804
+Loop 1424 merge (us) 12.171
+Loop 1425 merge (us) 11.959
+Loop 1426 merge (us) 11.911
+Loop 1427 merge (us) 12.0
+Loop 1428 merge (us) 12.06
+Loop 1429 merge (us) 11.925
+Loop 1430 merge (us) 12.54
+Loop 1431 merge (us) 12.418
+Loop 1432 merge (us) 12.344
+Loop 1433 merge (us) 13.362
+Loop 1434 merge (us) 11.878
+Loop 1435 merge (us) 11.884
+Loop 1436 merge (us) 12.095
+Loop 1437 merge (us) 11.923
+Loop 1438 merge (us) 11.977
+Loop 1439 merge (us) 12.018
+Loop 1440 merge (us) 12.138
+Loop 1441 merge (us) 12.017
+Loop 1442 merge (us) 13.307
+Loop 1443 merge (us) 11.964
+Loop 1444 merge (us) 13.282
+Loop 1445 merge (us) 11.925
+Loop 1446 merge (us) 11.955
+Loop 1447 merge (us) 12.003
+Loop 1448 merge (us) 11.927
+Loop 1449 merge (us) 12.053
+Loop 1450 merge (us) 12.134
+Loop 1451 merge (us) 11.989
+Loop 1452 merge (us) 11.993
+Loop 1453 merge (us) 11.943
+Loop 1454 merge (us) 11.939
+Loop 1455 merge (us) 11.929
+Loop 1456 merge (us) 12.135
+Loop 1457 merge (us) 11.952
+Loop 1458 merge (us) 11.91
+Loop 1459 merge (us) 11.884
+Loop 1460 merge (us) 12.135
+Loop 1461 merge (us) 13.383
+Loop 1462 merge (us) 11.901
+Loop 1463 merge (us) 12.1
+Loop 1464 merge (us) 12.084
+Loop 1465 merge (us) 11.91
+Loop 1466 merge (us) 12.124
+Loop 1467 merge (us) 11.921
+Loop 1468 merge (us) 12.003
+Loop 1469 merge (us) 12.536
+Loop 1470 merge (us) 12.23
+Loop 1471 merge (us) 11.909
+Loop 1472 merge (us) 11.949
+Loop 1473 merge (us) 12.087
+Loop 1474 merge (us) 11.934
+Loop 1475 merge (us) 11.899
+Loop 1476 merge (us) 12.068
+Loop 1477 merge (us) 11.997
+Loop 1478 merge (us) 12.062
+Loop 1479 merge (us) 11.966
+Loop 1480 merge (us) 12.023
+Loop 1481 merge (us) 11.97
+Loop 1482 merge (us) 12.023
+Loop 1483 merge (us) 11.656
+Loop 1484 merge (us) 11.833
+Loop 1485 merge (us) 11.824
+Loop 1486 merge (us) 11.978
+Loop 1487 merge (us) 11.951
+Loop 1488 merge (us) 11.987
+Loop 1489 merge (us) 12.045
+Loop 1490 merge (us) 11.884
+Loop 1491 merge (us) 12.047
+Loop 1492 merge (us) 12.163
+Loop 1493 merge (us) 12.025
+Loop 1494 merge (us) 11.982
+Loop 1495 merge (us) 11.878
+Loop 1496 merge (us) 12.014
+Loop 1497 merge (us) 11.926
+Loop 1498 merge (us) 12.717
+Loop 1499 merge (us) 12.019
+Merge avg latency (us) 11.782297999999997
+Loop 0 transfer (us) 22122.822
+Loop 1 transfer (us) 7533.435
+Loop 2 transfer (us) 6360.945
+Loop 3 transfer (us) 4137.591
+Loop 4 transfer (us) 1564.061
+Loop 5 transfer (us) 1280.579
+Loop 6 transfer (us) 873.927
+Loop 7 transfer (us) 1101.223
+Loop 8 transfer (us) 764.783
+Loop 9 transfer (us) 851.034
+Loop 10 transfer (us) 726.248
+Loop 11 transfer (us) 810.047
+Loop 12 transfer (us) 980.235
+Loop 13 transfer (us) 711.118
+Loop 14 transfer (us) 2743.349
+Loop 15 transfer (us) 835.703
+Loop 16 transfer (us) 595.904
+Loop 17 transfer (us) 556.71
+Loop 18 transfer (us) 610.06
+Loop 19 transfer (us) 721.164
+Loop 20 transfer (us) 624.209
+Loop 21 transfer (us) 531.385
+Loop 22 transfer (us) 531.685
+Loop 23 transfer (us) 569.191
+Loop 24 transfer (us) 515.415
+Loop 25 transfer (us) 508.525
+Loop 26 transfer (us) 477.306
+Loop 27 transfer (us) 569.437
+Loop 28 transfer (us) 486.644
+Loop 29 transfer (us) 462.015
+Loop 30 transfer (us) 446.091
+Loop 31 transfer (us) 539.315
+Loop 32 transfer (us) 476.553
+Loop 33 transfer (us) 442.007
+Loop 34 transfer (us) 462.063
+Loop 35 transfer (us) 981.57
+Loop 36 transfer (us) 459.854
+Loop 37 transfer (us) 438.144
+Loop 38 transfer (us) 979.126
+Loop 39 transfer (us) 525.023
+Loop 40 transfer (us) 435.836
+Loop 41 transfer (us) 422.55
+Loop 42 transfer (us) 417.559
+Loop 43 transfer (us) 485.65
+Loop 44 transfer (us) 419.723
+Loop 45 transfer (us) 423.649
+Loop 46 transfer (us) 1025.899
+Loop 47 transfer (us) 507.415
+Loop 48 transfer (us) 426.503
+Loop 49 transfer (us) 436.259
+Loop 50 transfer (us) 403.22
+Loop 51 transfer (us) 487.889
+Loop 52 transfer (us) 401.339
+Loop 53 transfer (us) 403.655
+Loop 54 transfer (us) 414.013
+Loop 55 transfer (us) 539.853
+Loop 56 transfer (us) 433.242
+Loop 57 transfer (us) 410.053
+Loop 58 transfer (us) 387.245
+Loop 59 transfer (us) 499.148
+Loop 60 transfer (us) 378.342
+Loop 61 transfer (us) 387.903
+Loop 62 transfer (us) 370.965
+Loop 63 transfer (us) 441.084
+Loop 64 transfer (us) 453.653
+Loop 65 transfer (us) 347.385
+Loop 66 transfer (us) 449.689
+Loop 67 transfer (us) 652.751
+Loop 68 transfer (us) 363.097
+Loop 69 transfer (us) 342.604
+Loop 70 transfer (us) 340.284
+Loop 71 transfer (us) 419.114
+Loop 72 transfer (us) 357.038
+Loop 73 transfer (us) 353.792
+Loop 74 transfer (us) 338.738
+Loop 75 transfer (us) 473.378
+Loop 76 transfer (us) 333.346
+Loop 77 transfer (us) 364.269
+Loop 78 transfer (us) 398.917
+Loop 79 transfer (us) 417.732
+Loop 80 transfer (us) 337.358
+Loop 81 transfer (us) 311.075
+Loop 82 transfer (us) 309.193
+Loop 83 transfer (us) 392.075
+Loop 84 transfer (us) 407.525
+Loop 85 transfer (us) 387.086
+Loop 86 transfer (us) 376.695
+Loop 87 transfer (us) 451.416
+Loop 88 transfer (us) 330.265
+Loop 89 transfer (us) 303.278
+Loop 90 transfer (us) 292.542
+Loop 91 transfer (us) 457.206
+Loop 92 transfer (us) 291.025
+Loop 93 transfer (us) 293.659
+Loop 94 transfer (us) 277.175
+Loop 95 transfer (us) 368.381
+Loop 96 transfer (us) 263.879
+Loop 97 transfer (us) 262.088
+Loop 98 transfer (us) 256.529
+Loop 99 transfer (us) 318.781
+Loop 100 transfer (us) 258.936
+Loop 101 transfer (us) 809.017
+Loop 102 transfer (us) 293.158
+Loop 103 transfer (us) 316.453
+Loop 104 transfer (us) 269.563
+Loop 105 transfer (us) 621.988
+Loop 106 transfer (us) 268.345
+Loop 107 transfer (us) 321.676
+Loop 108 transfer (us) 254.774
+Loop 109 transfer (us) 253.005
+Loop 110 transfer (us) 247.362
+Loop 111 transfer (us) 302.535
+Loop 112 transfer (us) 244.41
+Loop 113 transfer (us) 240.258
+Loop 114 transfer (us) 250.291
+Loop 115 transfer (us) 308.337
+Loop 116 transfer (us) 249.784
+Loop 117 transfer (us) 239.834
+Loop 118 transfer (us) 240.085
+Loop 119 transfer (us) 294.632
+Loop 120 transfer (us) 245.534
+Loop 121 transfer (us) 242.154
+Loop 122 transfer (us) 242.082
+Loop 123 transfer (us) 312.574
+Loop 124 transfer (us) 778.726
+Loop 125 transfer (us) 239.391
+Loop 126 transfer (us) 239.393
+Loop 127 transfer (us) 297.907
+Loop 128 transfer (us) 261.967
+Loop 129 transfer (us) 355.473
+Loop 130 transfer (us) 302.664
+Loop 131 transfer (us) 391.832
+Loop 132 transfer (us) 259.787
+Loop 133 transfer (us) 246.702
+Loop 134 transfer (us) 241.647
+Loop 135 transfer (us) 327.921
+Loop 136 transfer (us) 241.434
+Loop 137 transfer (us) 239.763
+Loop 138 transfer (us) 244.272
+Loop 139 transfer (us) 291.917
+Loop 140 transfer (us) 248.934
+Loop 141 transfer (us) 239.097
+Loop 142 transfer (us) 239.515
+Loop 143 transfer (us) 298.471
+Loop 144 transfer (us) 240.61
+Loop 145 transfer (us) 240.932
+Loop 146 transfer (us) 245.088
+Loop 147 transfer (us) 803.659
+Loop 148 transfer (us) 240.932
+Loop 149 transfer (us) 245.115
+Loop 150 transfer (us) 249.927
+Loop 151 transfer (us) 300.813
+Loop 152 transfer (us) 242.435
+Loop 153 transfer (us) 240.07
+Loop 154 transfer (us) 238.961
+Loop 155 transfer (us) 289.584
+Loop 156 transfer (us) 249.261
+Loop 157 transfer (us) 302.595
+Loop 158 transfer (us) 244.732
+Loop 159 transfer (us) 302.311
+Loop 160 transfer (us) 244.294
+Loop 161 transfer (us) 240.382
+Loop 162 transfer (us) 239.943
+Loop 163 transfer (us) 291.638
+Loop 164 transfer (us) 239.13
+Loop 165 transfer (us) 239.907
+Loop 166 transfer (us) 249.764
+Loop 167 transfer (us) 308.201
+Loop 168 transfer (us) 286.601
+Loop 169 transfer (us) 783.962
+Loop 170 transfer (us) 238.405
+Loop 171 transfer (us) 354.705
+Loop 172 transfer (us) 237.809
+Loop 173 transfer (us) 239.711
+Loop 174 transfer (us) 239.462
+Loop 175 transfer (us) 290.709
+Loop 176 transfer (us) 237.471
+Loop 177 transfer (us) 238.675
+Loop 178 transfer (us) 239.205
+Loop 179 transfer (us) 263.449
+Loop 180 transfer (us) 237.802
+Loop 181 transfer (us) 238.941
+Loop 182 transfer (us) 239.533
+Loop 183 transfer (us) 239.584
+Loop 184 transfer (us) 237.069
+Loop 185 transfer (us) 241.229
+Loop 186 transfer (us) 239.389
+Loop 187 transfer (us) 243.041
+Loop 188 transfer (us) 237.003
+Loop 189 transfer (us) 739.072
+Loop 190 transfer (us) 238.084
+Loop 191 transfer (us) 250.139
+Loop 192 transfer (us) 237.658
+Loop 193 transfer (us) 238.589
+Loop 194 transfer (us) 238.837
+Loop 195 transfer (us) 243.331
+Loop 196 transfer (us) 238.973
+Loop 197 transfer (us) 239.381
+Loop 198 transfer (us) 238.33
+Loop 199 transfer (us) 245.203
+Loop 200 transfer (us) 238.122
+Loop 201 transfer (us) 239.21
+Loop 202 transfer (us) 238.155
+Loop 203 transfer (us) 243.639
+Loop 204 transfer (us) 238.467
+Loop 205 transfer (us) 237.736
+Loop 206 transfer (us) 239.05
+Loop 207 transfer (us) 271.508
+Loop 208 transfer (us) 239.027
+Loop 209 transfer (us) 238.492
+Loop 210 transfer (us) 239.025
+Loop 211 transfer (us) 283.878
+Loop 212 transfer (us) 256.436
+Loop 213 transfer (us) 322.115
+Loop 214 transfer (us) 240.909
+Loop 215 transfer (us) 252.247
+Loop 216 transfer (us) 237.323
+Loop 217 transfer (us) 238.692
+Loop 218 transfer (us) 239.32
+Loop 219 transfer (us) 260.128
+Loop 220 transfer (us) 237.031
+Loop 221 transfer (us) 238.662
+Loop 222 transfer (us) 239.145
+Loop 223 transfer (us) 240.217
+Loop 224 transfer (us) 237.249
+Loop 225 transfer (us) 238.85
+Loop 226 transfer (us) 238.795
+Loop 227 transfer (us) 243.19
+Loop 228 transfer (us) 237.752
+Loop 229 transfer (us) 238.955
+Loop 230 transfer (us) 238.428
+Loop 231 transfer (us) 240.268
+Loop 232 transfer (us) 237.116
+Loop 233 transfer (us) 237.891
+Loop 234 transfer (us) 238.711
+Loop 235 transfer (us) 243.111
+Loop 236 transfer (us) 237.421
+Loop 237 transfer (us) 238.859
+Loop 238 transfer (us) 238.587
+Loop 239 transfer (us) 241.893
+Loop 240 transfer (us) 237.617
+Loop 241 transfer (us) 237.809
+Loop 242 transfer (us) 247.546
+Loop 243 transfer (us) 246.101
+Loop 244 transfer (us) 251.555
+Loop 245 transfer (us) 237.902
+Loop 246 transfer (us) 239.417
+Loop 247 transfer (us) 728.662
+Loop 248 transfer (us) 236.798
+Loop 249 transfer (us) 237.466
+Loop 250 transfer (us) 237.801
+Loop 251 transfer (us) 260.862
+Loop 252 transfer (us) 248.324
+Loop 253 transfer (us) 238.844
+Loop 254 transfer (us) 238.812
+Loop 255 transfer (us) 295.575
+Loop 256 transfer (us) 613.977
+Loop 257 transfer (us) 571.23
+Loop 258 transfer (us) 350.747
+Loop 259 transfer (us) 455.847
+Loop 260 transfer (us) 239.185
+Loop 261 transfer (us) 238.108
+Loop 262 transfer (us) 238.273
+Loop 263 transfer (us) 295.82
+Loop 264 transfer (us) 237.638
+Loop 265 transfer (us) 252.447
+Loop 266 transfer (us) 240.526
+Loop 267 transfer (us) 773.195
+Loop 268 transfer (us) 248.873
+Loop 269 transfer (us) 238.636
+Loop 270 transfer (us) 240.745
+Loop 271 transfer (us) 308.242
+Loop 272 transfer (us) 238.013
+Loop 273 transfer (us) 238.157
+Loop 274 transfer (us) 244.18
+Loop 275 transfer (us) 281.879
+Loop 276 transfer (us) 239.061
+Loop 277 transfer (us) 238.804
+Loop 278 transfer (us) 239.783
+Loop 279 transfer (us) 273.029
+Loop 280 transfer (us) 246.912
+Loop 281 transfer (us) 238.952
+Loop 282 transfer (us) 239.079
+Loop 283 transfer (us) 262.683
+Loop 284 transfer (us) 240.152
+Loop 285 transfer (us) 243.352
+Loop 286 transfer (us) 668.152
+Loop 287 transfer (us) 361.057
+Loop 288 transfer (us) 475.395
+Loop 289 transfer (us) 382.979
+Loop 290 transfer (us) 258.824
+Loop 291 transfer (us) 298.219
+Loop 292 transfer (us) 238.126
+Loop 293 transfer (us) 238.83
+Loop 294 transfer (us) 242.484
+Loop 295 transfer (us) 241.443
+Loop 296 transfer (us) 235.211
+Loop 297 transfer (us) 240.714
+Loop 298 transfer (us) 242.906
+Loop 299 transfer (us) 241.417
+Loop 300 transfer (us) 237.479
+Loop 301 transfer (us) 242.258
+Loop 302 transfer (us) 241.982
+Loop 303 transfer (us) 242.899
+Loop 304 transfer (us) 237.929
+Loop 305 transfer (us) 247.812
+Loop 306 transfer (us) 242.023
+Loop 307 transfer (us) 684.15
+Loop 308 transfer (us) 237.995
+Loop 309 transfer (us) 240.6
+Loop 310 transfer (us) 242.966
+Loop 311 transfer (us) 242.864
+Loop 312 transfer (us) 236.732
+Loop 313 transfer (us) 242.438
+Loop 314 transfer (us) 241.104
+Loop 315 transfer (us) 241.374
+Loop 316 transfer (us) 248.481
+Loop 317 transfer (us) 240.534
+Loop 318 transfer (us) 241.607
+Loop 319 transfer (us) 240.814
+Loop 320 transfer (us) 238.301
+Loop 321 transfer (us) 244.485
+Loop 322 transfer (us) 241.026
+Loop 323 transfer (us) 243.171
+Loop 324 transfer (us) 237.408
+Loop 325 transfer (us) 241.982
+Loop 326 transfer (us) 705.609
+Loop 327 transfer (us) 242.584
+Loop 328 transfer (us) 237.587
+Loop 329 transfer (us) 243.458
+Loop 330 transfer (us) 241.72
+Loop 331 transfer (us) 243.172
+Loop 332 transfer (us) 237.084
+Loop 333 transfer (us) 243.788
+Loop 334 transfer (us) 243.604
+Loop 335 transfer (us) 243.569
+Loop 336 transfer (us) 237.829
+Loop 337 transfer (us) 243.6
+Loop 338 transfer (us) 241.95
+Loop 339 transfer (us) 241.757
+Loop 340 transfer (us) 237.023
+Loop 341 transfer (us) 244.43
+Loop 342 transfer (us) 242.831
+Loop 343 transfer (us) 242.618
+Loop 344 transfer (us) 238.915
+Loop 345 transfer (us) 694.373
+Loop 346 transfer (us) 241.625
+Loop 347 transfer (us) 243.03
+Loop 348 transfer (us) 237.355
+Loop 349 transfer (us) 244.975
+Loop 350 transfer (us) 242.972
+Loop 351 transfer (us) 242.345
+Loop 352 transfer (us) 236.81
+Loop 353 transfer (us) 244.853
+Loop 354 transfer (us) 244.018
+Loop 355 transfer (us) 242.702
+Loop 356 transfer (us) 237.731
+Loop 357 transfer (us) 245.988
+Loop 358 transfer (us) 241.383
+Loop 359 transfer (us) 242.697
+Loop 360 transfer (us) 238.084
+Loop 361 transfer (us) 243.956
+Loop 362 transfer (us) 244.191
+Loop 363 transfer (us) 688.673
+Loop 364 transfer (us) 237.714
+Loop 365 transfer (us) 243.998
+Loop 366 transfer (us) 241.949
+Loop 367 transfer (us) 242.6
+Loop 368 transfer (us) 238.057
+Loop 369 transfer (us) 244.205
+Loop 370 transfer (us) 249.987
+Loop 371 transfer (us) 243.433
+Loop 372 transfer (us) 238.29
+Loop 373 transfer (us) 243.679
+Loop 374 transfer (us) 241.543
+Loop 375 transfer (us) 242.819
+Loop 376 transfer (us) 237.612
+Loop 377 transfer (us) 244.011
+Loop 378 transfer (us) 241.557
+Loop 379 transfer (us) 242.057
+Loop 380 transfer (us) 239.619
+Loop 381 transfer (us) 245.055
+Loop 382 transfer (us) 698.745
+Loop 383 transfer (us) 693.176
+Loop 384 transfer (us) 244.962
+Loop 385 transfer (us) 244.9
+Loop 386 transfer (us) 243.271
+Loop 387 transfer (us) 243.668
+Loop 388 transfer (us) 240.525
+Loop 389 transfer (us) 245.538
+Loop 390 transfer (us) 243.061
+Loop 391 transfer (us) 243.618
+Loop 392 transfer (us) 240.397
+Loop 393 transfer (us) 246.887
+Loop 394 transfer (us) 242.678
+Loop 395 transfer (us) 242.101
+Loop 396 transfer (us) 240.819
+Loop 397 transfer (us) 242.431
+Loop 398 transfer (us) 243.146
+Loop 399 transfer (us) 242.887
+Loop 400 transfer (us) 657.101
+Loop 401 transfer (us) 241.891
+Loop 402 transfer (us) 241.777
+Loop 403 transfer (us) 243.626
+Loop 404 transfer (us) 240.914
+Loop 405 transfer (us) 244.127
+Loop 406 transfer (us) 243.929
+Loop 407 transfer (us) 242.619
+Loop 408 transfer (us) 239.021
+Loop 409 transfer (us) 243.823
+Loop 410 transfer (us) 243.511
+Loop 411 transfer (us) 243.148
+Loop 412 transfer (us) 241.224
+Loop 413 transfer (us) 245.042
+Loop 414 transfer (us) 243.982
+Loop 415 transfer (us) 244.658
+Loop 416 transfer (us) 241.609
+Loop 417 transfer (us) 661.509
+Loop 418 transfer (us) 242.661
+Loop 419 transfer (us) 243.899
+Loop 420 transfer (us) 241.053
+Loop 421 transfer (us) 244.853
+Loop 422 transfer (us) 244.313
+Loop 423 transfer (us) 244.654
+Loop 424 transfer (us) 240.548
+Loop 425 transfer (us) 244.645
+Loop 426 transfer (us) 243.657
+Loop 427 transfer (us) 243.019
+Loop 428 transfer (us) 245.476
+Loop 429 transfer (us) 245.908
+Loop 430 transfer (us) 243.01
+Loop 431 transfer (us) 243.88
+Loop 432 transfer (us) 240.934
+Loop 433 transfer (us) 243.201
+Loop 434 transfer (us) 242.559
+Loop 435 transfer (us) 669.488
+Loop 436 transfer (us) 241.02
+Loop 437 transfer (us) 243.688
+Loop 438 transfer (us) 243.542
+Loop 439 transfer (us) 243.541
+Loop 440 transfer (us) 238.817
+Loop 441 transfer (us) 242.753
+Loop 442 transfer (us) 242.435
+Loop 443 transfer (us) 242.088
+Loop 444 transfer (us) 240.568
+Loop 445 transfer (us) 244.651
+Loop 446 transfer (us) 243.118
+Loop 447 transfer (us) 243.683
+Loop 448 transfer (us) 239.717
+Loop 449 transfer (us) 242.356
+Loop 450 transfer (us) 244.16
+Loop 451 transfer (us) 243.3
+Loop 452 transfer (us) 240.978
+Loop 453 transfer (us) 661.872
+Loop 454 transfer (us) 240.714
+Loop 455 transfer (us) 245.001
+Loop 456 transfer (us) 240.406
+Loop 457 transfer (us) 244.501
+Loop 458 transfer (us) 243.682
+Loop 459 transfer (us) 243.068
+Loop 460 transfer (us) 240.451
+Loop 461 transfer (us) 248.58
+Loop 462 transfer (us) 244.246
+Loop 463 transfer (us) 243.602
+Loop 464 transfer (us) 240.418
+Loop 465 transfer (us) 244.013
+Loop 466 transfer (us) 243.91
+Loop 467 transfer (us) 244.067
+Loop 468 transfer (us) 239.573
+Loop 469 transfer (us) 245.489
+Loop 470 transfer (us) 243.396
+Loop 471 transfer (us) 671.32
+Loop 472 transfer (us) 238.875
+Loop 473 transfer (us) 242.598
+Loop 474 transfer (us) 241.644
+Loop 475 transfer (us) 242.032
+Loop 476 transfer (us) 240.93
+Loop 477 transfer (us) 244.07
+Loop 478 transfer (us) 250.801
+Loop 479 transfer (us) 242.943
+Loop 480 transfer (us) 241.115
+Loop 481 transfer (us) 243.626
+Loop 482 transfer (us) 665.156
+Loop 483 transfer (us) 241.026
+Loop 484 transfer (us) 239.057
+Loop 485 transfer (us) 246.7
+Loop 486 transfer (us) 240.773
+Loop 487 transfer (us) 242.673
+Loop 488 transfer (us) 241.028
+Loop 489 transfer (us) 242.597
+Loop 490 transfer (us) 241.798
+Loop 491 transfer (us) 241.064
+Loop 492 transfer (us) 240.567
+Loop 493 transfer (us) 676.391
+Loop 494 transfer (us) 240.874
+Loop 495 transfer (us) 241.96
+Loop 496 transfer (us) 240.335
+Loop 497 transfer (us) 244.656
+Loop 498 transfer (us) 240.896
+Loop 499 transfer (us) 242.62
+Loop 500 transfer (us) 240.019
+Loop 501 transfer (us) 243.261
+Loop 502 transfer (us) 243.234
+Loop 503 transfer (us) 242.786
+Loop 504 transfer (us) 646.336
+Loop 505 transfer (us) 241.709
+Loop 506 transfer (us) 241.848
+Loop 507 transfer (us) 241.556
+Loop 508 transfer (us) 239.652
+Loop 509 transfer (us) 244.581
+Loop 510 transfer (us) 242.915
+Loop 511 transfer (us) 243.238
+Loop 512 transfer (us) 237.234
+Loop 513 transfer (us) 245.022
+Loop 514 transfer (us) 242.285
+Loop 515 transfer (us) 242.883
+Loop 516 transfer (us) 237.915
+Loop 517 transfer (us) 243.914
+Loop 518 transfer (us) 242.988
+Loop 519 transfer (us) 243.402
+Loop 520 transfer (us) 236.364
+Loop 521 transfer (us) 245.221
+Loop 522 transfer (us) 243.312
+Loop 523 transfer (us) 253.601
+Loop 524 transfer (us) 242.301
+Loop 525 transfer (us) 246.939
+Loop 526 transfer (us) 243.296
+Loop 527 transfer (us) 242.593
+Loop 528 transfer (us) 236.898
+Loop 529 transfer (us) 243.45
+Loop 530 transfer (us) 245.373
+Loop 531 transfer (us) 685.66
+Loop 532 transfer (us) 236.867
+Loop 533 transfer (us) 252.794
+Loop 534 transfer (us) 243.3
+Loop 535 transfer (us) 243.604
+Loop 536 transfer (us) 236.98
+Loop 537 transfer (us) 245.059
+Loop 538 transfer (us) 244.288
+Loop 539 transfer (us) 243.402
+Loop 540 transfer (us) 237.519
+Loop 541 transfer (us) 246.792
+Loop 542 transfer (us) 242.97
+Loop 543 transfer (us) 243.216
+Loop 544 transfer (us) 237.049
+Loop 545 transfer (us) 244.955
+Loop 546 transfer (us) 242.925
+Loop 547 transfer (us) 243.326
+Loop 548 transfer (us) 237.249
+Loop 549 transfer (us) 659.638
+Loop 550 transfer (us) 241.915
+Loop 551 transfer (us) 244.068
+Loop 552 transfer (us) 237.202
+Loop 553 transfer (us) 244.202
+Loop 554 transfer (us) 242.827
+Loop 555 transfer (us) 245.456
+Loop 556 transfer (us) 237.138
+Loop 557 transfer (us) 246.396
+Loop 558 transfer (us) 244.311
+Loop 559 transfer (us) 243.291
+Loop 560 transfer (us) 236.493
+Loop 561 transfer (us) 438.214
+Loop 562 transfer (us) 377.782
+Loop 563 transfer (us) 354.964
+Loop 564 transfer (us) 300.78
+Loop 565 transfer (us) 288.684
+Loop 566 transfer (us) 762.498
+Loop 567 transfer (us) 337.062
+Loop 568 transfer (us) 288.564
+Loop 569 transfer (us) 290.763
+Loop 570 transfer (us) 288.227
+Loop 571 transfer (us) 301.743
+Loop 572 transfer (us) 291.046
+Loop 573 transfer (us) 285.56
+Loop 574 transfer (us) 286.765
+Loop 575 transfer (us) 304.409
+Loop 576 transfer (us) 290.15
+Loop 577 transfer (us) 290.346
+Loop 578 transfer (us) 286.143
+Loop 579 transfer (us) 299.018
+Loop 580 transfer (us) 276.503
+Loop 581 transfer (us) 272.189
+Loop 582 transfer (us) 238.867
+Loop 583 transfer (us) 244.665
+Loop 584 transfer (us) 238.679
+Loop 585 transfer (us) 244.166
+Loop 586 transfer (us) 664.531
+Loop 587 transfer (us) 243.18
+Loop 588 transfer (us) 240.604
+Loop 589 transfer (us) 244.317
+Loop 590 transfer (us) 241.173
+Loop 591 transfer (us) 242.458
+Loop 592 transfer (us) 239.801
+Loop 593 transfer (us) 243.47
+Loop 594 transfer (us) 243.863
+Loop 595 transfer (us) 243.774
+Loop 596 transfer (us) 239.884
+Loop 597 transfer (us) 243.593
+Loop 598 transfer (us) 244.158
+Loop 599 transfer (us) 241.671
+Loop 600 transfer (us) 239.368
+Loop 601 transfer (us) 242.729
+Loop 602 transfer (us) 243.582
+Loop 603 transfer (us) 242.728
+Loop 604 transfer (us) 660.315
+Loop 605 transfer (us) 241.822
+Loop 606 transfer (us) 244.19
+Loop 607 transfer (us) 242.287
+Loop 608 transfer (us) 238.771
+Loop 609 transfer (us) 246.376
+Loop 610 transfer (us) 250.311
+Loop 611 transfer (us) 244.264
+Loop 612 transfer (us) 240.034
+Loop 613 transfer (us) 244.34
+Loop 614 transfer (us) 241.042
+Loop 615 transfer (us) 242.17
+Loop 616 transfer (us) 239.071
+Loop 617 transfer (us) 242.382
+Loop 618 transfer (us) 300.791
+Loop 619 transfer (us) 242.507
+Loop 620 transfer (us) 242.777
+Loop 621 transfer (us) 241.051
+Loop 622 transfer (us) 663.14
+Loop 623 transfer (us) 241.297
+Loop 624 transfer (us) 238.687
+Loop 625 transfer (us) 244.005
+Loop 626 transfer (us) 243.129
+Loop 627 transfer (us) 242.294
+Loop 628 transfer (us) 238.9
+Loop 629 transfer (us) 242.868
+Loop 630 transfer (us) 244.599
+Loop 631 transfer (us) 243.544
+Loop 632 transfer (us) 240.364
+Loop 633 transfer (us) 245.244
+Loop 634 transfer (us) 244.0
+Loop 635 transfer (us) 243.482
+Loop 636 transfer (us) 239.459
+Loop 637 transfer (us) 244.45
+Loop 638 transfer (us) 244.388
+Loop 639 transfer (us) 243.618
+Loop 640 transfer (us) 690.693
+Loop 641 transfer (us) 242.017
+Loop 642 transfer (us) 242.569
+Loop 643 transfer (us) 243.183
+Loop 644 transfer (us) 239.956
+Loop 645 transfer (us) 244.667
+Loop 646 transfer (us) 243.835
+Loop 647 transfer (us) 245.073
+Loop 648 transfer (us) 239.46
+Loop 649 transfer (us) 243.882
+Loop 650 transfer (us) 244.466
+Loop 651 transfer (us) 243.747
+Loop 652 transfer (us) 239.469
+Loop 653 transfer (us) 244.769
+Loop 654 transfer (us) 243.708
+Loop 655 transfer (us) 243.344
+Loop 656 transfer (us) 240.359
+Loop 657 transfer (us) 242.383
+Loop 658 transfer (us) 696.757
+Loop 659 transfer (us) 243.602
+Loop 660 transfer (us) 239.568
+Loop 661 transfer (us) 245.086
+Loop 662 transfer (us) 247.761
+Loop 663 transfer (us) 243.132
+Loop 664 transfer (us) 239.205
+Loop 665 transfer (us) 243.992
+Loop 666 transfer (us) 242.965
+Loop 667 transfer (us) 241.678
+Loop 668 transfer (us) 239.602
+Loop 669 transfer (us) 244.401
+Loop 670 transfer (us) 242.74
+Loop 671 transfer (us) 243.852
+Loop 672 transfer (us) 240.742
+Loop 673 transfer (us) 246.24
+Loop 674 transfer (us) 243.681
+Loop 675 transfer (us) 243.644
+Loop 676 transfer (us) 239.619
+Loop 677 transfer (us) 243.365
+Loop 678 transfer (us) 244.292
+Loop 679 transfer (us) 241.656
+Loop 680 transfer (us) 239.081
+Loop 681 transfer (us) 244.344
+Loop 682 transfer (us) 242.629
+Loop 683 transfer (us) 243.479
+Loop 684 transfer (us) 237.77
+Loop 685 transfer (us) 246.212
+Loop 686 transfer (us) 244.659
+Loop 687 transfer (us) 243.794
+Loop 688 transfer (us) 239.822
+Loop 689 transfer (us) 244.308
+Loop 690 transfer (us) 244.326
+Loop 691 transfer (us) 242.637
+Loop 692 transfer (us) 239.994
+Loop 693 transfer (us) 662.543
+Loop 694 transfer (us) 242.695
+Loop 695 transfer (us) 243.665
+Loop 696 transfer (us) 240.58
+Loop 697 transfer (us) 246.591
+Loop 698 transfer (us) 242.42
+Loop 699 transfer (us) 243.555
+Loop 700 transfer (us) 239.861
+Loop 701 transfer (us) 244.113
+Loop 702 transfer (us) 243.47
+Loop 703 transfer (us) 243.298
+Loop 704 transfer (us) 239.01
+Loop 705 transfer (us) 245.07
+Loop 706 transfer (us) 243.145
+Loop 707 transfer (us) 242.792
+Loop 708 transfer (us) 240.121
+Loop 709 transfer (us) 245.088
+Loop 710 transfer (us) 242.538
+Loop 711 transfer (us) 243.869
+Loop 712 transfer (us) 240.174
+Loop 713 transfer (us) 664.294
+Loop 714 transfer (us) 242.173
+Loop 715 transfer (us) 243.239
+Loop 716 transfer (us) 239.991
+Loop 717 transfer (us) 245.434
+Loop 718 transfer (us) 244.781
+Loop 719 transfer (us) 242.551
+Loop 720 transfer (us) 239.759
+Loop 721 transfer (us) 246.18
+Loop 722 transfer (us) 242.613
+Loop 723 transfer (us) 243.317
+Loop 724 transfer (us) 240.599
+Loop 725 transfer (us) 244.423
+Loop 726 transfer (us) 241.942
+Loop 727 transfer (us) 242.006
+Loop 728 transfer (us) 240.019
+Loop 729 transfer (us) 244.461
+Loop 730 transfer (us) 243.584
+Loop 731 transfer (us) 242.888
+Loop 732 transfer (us) 240.998
+Loop 733 transfer (us) 245.339
+Loop 734 transfer (us) 243.872
+Loop 735 transfer (us) 242.902
+Loop 736 transfer (us) 239.655
+Loop 737 transfer (us) 684.651
+Loop 738 transfer (us) 241.113
+Loop 739 transfer (us) 242.508
+Loop 740 transfer (us) 239.45
+Loop 741 transfer (us) 247.182
+Loop 742 transfer (us) 241.725
+Loop 743 transfer (us) 243.566
+Loop 744 transfer (us) 238.298
+Loop 745 transfer (us) 243.643
+Loop 746 transfer (us) 244.115
+Loop 747 transfer (us) 243.619
+Loop 748 transfer (us) 240.614
+Loop 749 transfer (us) 247.073
+Loop 750 transfer (us) 244.023
+Loop 751 transfer (us) 243.24
+Loop 752 transfer (us) 241.202
+Loop 753 transfer (us) 244.377
+Loop 754 transfer (us) 242.49
+Loop 755 transfer (us) 242.62
+Loop 756 transfer (us) 239.623
+Loop 757 transfer (us) 244.421
+Loop 758 transfer (us) 241.854
+Loop 759 transfer (us) 243.032
+Loop 760 transfer (us) 659.596
+Loop 761 transfer (us) 241.308
+Loop 762 transfer (us) 241.281
+Loop 763 transfer (us) 242.428
+Loop 764 transfer (us) 240.16
+Loop 765 transfer (us) 245.807
+Loop 766 transfer (us) 244.433
+Loop 767 transfer (us) 920.982
+Loop 768 transfer (us) 240.701
+Loop 769 transfer (us) 244.889
+Loop 770 transfer (us) 243.241
+Loop 771 transfer (us) 243.596
+Loop 772 transfer (us) 238.782
+Loop 773 transfer (us) 244.682
+Loop 774 transfer (us) 242.305
+Loop 775 transfer (us) 242.93
+Loop 776 transfer (us) 240.623
+Loop 777 transfer (us) 243.907
+Loop 778 transfer (us) 243.043
+Loop 779 transfer (us) 243.734
+Loop 780 transfer (us) 241.452
+Loop 781 transfer (us) 670.031
+Loop 782 transfer (us) 240.837
+Loop 783 transfer (us) 243.032
+Loop 784 transfer (us) 240.116
+Loop 785 transfer (us) 241.556
+Loop 786 transfer (us) 243.04
+Loop 787 transfer (us) 243.32
+Loop 788 transfer (us) 241.452
+Loop 789 transfer (us) 244.222
+Loop 790 transfer (us) 245.149
+Loop 791 transfer (us) 242.391
+Loop 792 transfer (us) 240.388
+Loop 793 transfer (us) 245.076
+Loop 794 transfer (us) 243.577
+Loop 795 transfer (us) 243.552
+Loop 796 transfer (us) 241.281
+Loop 797 transfer (us) 243.737
+Loop 798 transfer (us) 242.593
+Loop 799 transfer (us) 242.819
+Loop 800 transfer (us) 240.133
+Loop 801 transfer (us) 244.473
+Loop 802 transfer (us) 243.083
+Loop 803 transfer (us) 242.868
+Loop 804 transfer (us) 241.132
+Loop 805 transfer (us) 240.565
+Loop 806 transfer (us) 244.715
+Loop 807 transfer (us) 243.719
+Loop 808 transfer (us) 240.816
+Loop 809 transfer (us) 243.537
+Loop 810 transfer (us) 244.377
+Loop 811 transfer (us) 243.346
+Loop 812 transfer (us) 241.769
+Loop 813 transfer (us) 243.976
+Loop 814 transfer (us) 244.089
+Loop 815 transfer (us) 242.756
+Loop 816 transfer (us) 240.672
+Loop 817 transfer (us) 244.638
+Loop 818 transfer (us) 243.845
+Loop 819 transfer (us) 243.612
+Loop 820 transfer (us) 239.629
+Loop 821 transfer (us) 244.998
+Loop 822 transfer (us) 242.71
+Loop 823 transfer (us) 243.834
+Loop 824 transfer (us) 240.003
+Loop 825 transfer (us) 243.203
+Loop 826 transfer (us) 242.618
+Loop 827 transfer (us) 242.97
+Loop 828 transfer (us) 653.037
+Loop 829 transfer (us) 241.374
+Loop 830 transfer (us) 243.641
+Loop 831 transfer (us) 244.337
+Loop 832 transfer (us) 240.45
+Loop 833 transfer (us) 245.463
+Loop 834 transfer (us) 243.177
+Loop 835 transfer (us) 242.998
+Loop 836 transfer (us) 241.035
+Loop 837 transfer (us) 245.355
+Loop 838 transfer (us) 242.519
+Loop 839 transfer (us) 243.622
+Loop 840 transfer (us) 240.109
+Loop 841 transfer (us) 244.848
+Loop 842 transfer (us) 243.431
+Loop 843 transfer (us) 241.543
+Loop 844 transfer (us) 242.23
+Loop 845 transfer (us) 242.82
+Loop 846 transfer (us) 242.783
+Loop 847 transfer (us) 244.162
+Loop 848 transfer (us) 240.327
+Loop 849 transfer (us) 244.539
+Loop 850 transfer (us) 243.44
+Loop 851 transfer (us) 243.235
+Loop 852 transfer (us) 239.622
+Loop 853 transfer (us) 244.772
+Loop 854 transfer (us) 243.364
+Loop 855 transfer (us) 244.437
+Loop 856 transfer (us) 239.336
+Loop 857 transfer (us) 242.781
+Loop 858 transfer (us) 243.244
+Loop 859 transfer (us) 242.865
+Loop 860 transfer (us) 240.554
+Loop 861 transfer (us) 244.965
+Loop 862 transfer (us) 242.576
+Loop 863 transfer (us) 243.696
+Loop 864 transfer (us) 240.298
+Loop 865 transfer (us) 245.443
+Loop 866 transfer (us) 243.663
+Loop 867 transfer (us) 243.02
+Loop 868 transfer (us) 240.641
+Loop 869 transfer (us) 244.845
+Loop 870 transfer (us) 241.206
+Loop 871 transfer (us) 243.207
+Loop 872 transfer (us) 241.839
+Loop 873 transfer (us) 245.973
+Loop 874 transfer (us) 244.213
+Loop 875 transfer (us) 669.867
+Loop 876 transfer (us) 239.227
+Loop 877 transfer (us) 244.865
+Loop 878 transfer (us) 242.398
+Loop 879 transfer (us) 245.144
+Loop 880 transfer (us) 240.003
+Loop 881 transfer (us) 243.355
+Loop 882 transfer (us) 243.471
+Loop 883 transfer (us) 243.349
+Loop 884 transfer (us) 240.185
+Loop 885 transfer (us) 245.004
+Loop 886 transfer (us) 242.984
+Loop 887 transfer (us) 243.664
+Loop 888 transfer (us) 239.952
+Loop 889 transfer (us) 243.746
+Loop 890 transfer (us) 242.409
+Loop 891 transfer (us) 242.973
+Loop 892 transfer (us) 242.58
+Loop 893 transfer (us) 243.322
+Loop 894 transfer (us) 243.679
+Loop 895 transfer (us) 244.953
+Loop 896 transfer (us) 239.699
+Loop 897 transfer (us) 244.459
+Loop 898 transfer (us) 243.165
+Loop 899 transfer (us) 243.194
+Loop 900 transfer (us) 241.636
+Loop 901 transfer (us) 244.342
+Loop 902 transfer (us) 243.382
+Loop 903 transfer (us) 243.473
+Loop 904 transfer (us) 240.993
+Loop 905 transfer (us) 243.194
+Loop 906 transfer (us) 242.098
+Loop 907 transfer (us) 242.8
+Loop 908 transfer (us) 241.743
+Loop 909 transfer (us) 245.226
+Loop 910 transfer (us) 248.877
+Loop 911 transfer (us) 243.424
+Loop 912 transfer (us) 240.984
+Loop 913 transfer (us) 240.991
+Loop 914 transfer (us) 241.785
+Loop 915 transfer (us) 243.629
+Loop 916 transfer (us) 241.248
+Loop 917 transfer (us) 245.088
+Loop 918 transfer (us) 242.425
+Loop 919 transfer (us) 243.459
+Loop 920 transfer (us) 239.801
+Loop 921 transfer (us) 243.114
+Loop 922 transfer (us) 676.953
+Loop 923 transfer (us) 241.39
+Loop 924 transfer (us) 242.149
+Loop 925 transfer (us) 244.599
+Loop 926 transfer (us) 246.988
+Loop 927 transfer (us) 244.568
+Loop 928 transfer (us) 242.159
+Loop 929 transfer (us) 246.044
+Loop 930 transfer (us) 242.739
+Loop 931 transfer (us) 242.075
+Loop 932 transfer (us) 240.489
+Loop 933 transfer (us) 243.205
+Loop 934 transfer (us) 241.948
+Loop 935 transfer (us) 242.751
+Loop 936 transfer (us) 241.008
+Loop 937 transfer (us) 244.836
+Loop 938 transfer (us) 243.858
+Loop 939 transfer (us) 242.627
+Loop 940 transfer (us) 240.852
+Loop 941 transfer (us) 244.047
+Loop 942 transfer (us) 243.235
+Loop 943 transfer (us) 243.052
+Loop 944 transfer (us) 239.999
+Loop 945 transfer (us) 245.321
+Loop 946 transfer (us) 701.778
+Loop 947 transfer (us) 242.031
+Loop 948 transfer (us) 239.748
+Loop 949 transfer (us) 246.028
+Loop 950 transfer (us) 242.141
+Loop 951 transfer (us) 244.495
+Loop 952 transfer (us) 241.111
+Loop 953 transfer (us) 243.901
+Loop 954 transfer (us) 242.498
+Loop 955 transfer (us) 242.498
+Loop 956 transfer (us) 240.554
+Loop 957 transfer (us) 245.827
+Loop 958 transfer (us) 242.68
+Loop 959 transfer (us) 243.611
+Loop 960 transfer (us) 240.411
+Loop 961 transfer (us) 243.653
+Loop 962 transfer (us) 244.078
+Loop 963 transfer (us) 243.712
+Loop 964 transfer (us) 240.071
+Loop 965 transfer (us) 245.135
+Loop 966 transfer (us) 243.107
+Loop 967 transfer (us) 242.13
+Loop 968 transfer (us) 239.974
+Loop 969 transfer (us) 657.848
+Loop 970 transfer (us) 242.951
+Loop 971 transfer (us) 243.505
+Loop 972 transfer (us) 240.28
+Loop 973 transfer (us) 243.974
+Loop 974 transfer (us) 243.569
+Loop 975 transfer (us) 244.544
+Loop 976 transfer (us) 240.521
+Loop 977 transfer (us) 243.082
+Loop 978 transfer (us) 244.794
+Loop 979 transfer (us) 243.287
+Loop 980 transfer (us) 241.013
+Loop 981 transfer (us) 244.387
+Loop 982 transfer (us) 243.055
+Loop 983 transfer (us) 243.496
+Loop 984 transfer (us) 241.091
+Loop 985 transfer (us) 244.235
+Loop 986 transfer (us) 243.188
+Loop 987 transfer (us) 242.656
+Loop 988 transfer (us) 240.278
+Loop 989 transfer (us) 243.792
+Loop 990 transfer (us) 675.222
+Loop 991 transfer (us) 251.412
+Loop 992 transfer (us) 335.949
+Loop 993 transfer (us) 255.947
+Loop 994 transfer (us) 241.831
+Loop 995 transfer (us) 243.927
+Loop 996 transfer (us) 242.499
+Loop 997 transfer (us) 245.751
+Loop 998 transfer (us) 242.544
+Loop 999 transfer (us) 244.426
+Loop 1000 transfer (us) 243.826
+Loop 1001 transfer (us) 254.482
+Loop 1002 transfer (us) 245.845
+Loop 1003 transfer (us) 245.561
+Loop 1004 transfer (us) 242.854
+Loop 1005 transfer (us) 246.292
+Loop 1006 transfer (us) 671.305
+Loop 1007 transfer (us) 245.897
+Loop 1008 transfer (us) 244.976
+Loop 1009 transfer (us) 245.647
+Loop 1010 transfer (us) 245.224
+Loop 1011 transfer (us) 247.265
+Loop 1012 transfer (us) 250.063
+Loop 1013 transfer (us) 360.45
+Loop 1014 transfer (us) 248.131
+Loop 1015 transfer (us) 243.291
+Loop 1016 transfer (us) 245.529
+Loop 1017 transfer (us) 246.458
+Loop 1018 transfer (us) 244.797
+Loop 1019 transfer (us) 250.207
+Loop 1020 transfer (us) 244.247
+Loop 1021 transfer (us) 245.188
+Loop 1022 transfer (us) 244.436
+Loop 1023 transfer (us) 245.766
+Loop 1024 transfer (us) 239.123
+Loop 1025 transfer (us) 246.616
+Loop 1026 transfer (us) 246.266
+Loop 1027 transfer (us) 244.021
+Loop 1028 transfer (us) 238.516
+Loop 1029 transfer (us) 246.478
+Loop 1030 transfer (us) 245.94
+Loop 1031 transfer (us) 246.554
+Loop 1032 transfer (us) 238.404
+Loop 1033 transfer (us) 245.943
+Loop 1034 transfer (us) 246.113
+Loop 1035 transfer (us) 248.404
+Loop 1036 transfer (us) 241.242
+Loop 1037 transfer (us) 246.485
+Loop 1038 transfer (us) 244.74
+Loop 1039 transfer (us) 246.857
+Loop 1040 transfer (us) 240.363
+Loop 1041 transfer (us) 243.311
+Loop 1042 transfer (us) 244.793
+Loop 1043 transfer (us) 246.017
+Loop 1044 transfer (us) 641.315
+Loop 1045 transfer (us) 243.796
+Loop 1046 transfer (us) 247.076
+Loop 1047 transfer (us) 246.088
+Loop 1048 transfer (us) 238.572
+Loop 1049 transfer (us) 246.853
+Loop 1050 transfer (us) 246.834
+Loop 1051 transfer (us) 245.632
+Loop 1052 transfer (us) 239.211
+Loop 1053 transfer (us) 242.849
+Loop 1054 transfer (us) 246.243
+Loop 1055 transfer (us) 245.934
+Loop 1056 transfer (us) 240.34
+Loop 1057 transfer (us) 245.874
+Loop 1058 transfer (us) 247.819
+Loop 1059 transfer (us) 246.175
+Loop 1060 transfer (us) 239.982
+Loop 1061 transfer (us) 246.261
+Loop 1062 transfer (us) 245.163
+Loop 1063 transfer (us) 246.288
+Loop 1064 transfer (us) 239.814
+Loop 1065 transfer (us) 247.183
+Loop 1066 transfer (us) 615.849
+Loop 1067 transfer (us) 245.872
+Loop 1068 transfer (us) 239.493
+Loop 1069 transfer (us) 245.76
+Loop 1070 transfer (us) 247.25
+Loop 1071 transfer (us) 247.851
+Loop 1072 transfer (us) 239.626
+Loop 1073 transfer (us) 246.645
+Loop 1074 transfer (us) 247.058
+Loop 1075 transfer (us) 246.26
+Loop 1076 transfer (us) 239.837
+Loop 1077 transfer (us) 246.79
+Loop 1078 transfer (us) 245.586
+Loop 1079 transfer (us) 246.875
+Loop 1080 transfer (us) 239.706
+Loop 1081 transfer (us) 245.949
+Loop 1082 transfer (us) 245.885
+Loop 1083 transfer (us) 245.704
+Loop 1084 transfer (us) 240.598
+Loop 1085 transfer (us) 250.467
+Loop 1086 transfer (us) 246.224
+Loop 1087 transfer (us) 246.266
+Loop 1088 transfer (us) 240.278
+Loop 1089 transfer (us) 669.595
+Loop 1090 transfer (us) 246.261
+Loop 1091 transfer (us) 244.729
+Loop 1092 transfer (us) 240.579
+Loop 1093 transfer (us) 246.995
+Loop 1094 transfer (us) 245.257
+Loop 1095 transfer (us) 246.437
+Loop 1096 transfer (us) 238.225
+Loop 1097 transfer (us) 247.674
+Loop 1098 transfer (us) 247.296
+Loop 1099 transfer (us) 245.703
+Loop 1100 transfer (us) 239.731
+Loop 1101 transfer (us) 246.9
+Loop 1102 transfer (us) 245.249
+Loop 1103 transfer (us) 246.133
+Loop 1104 transfer (us) 239.914
+Loop 1105 transfer (us) 246.122
+Loop 1106 transfer (us) 246.164
+Loop 1107 transfer (us) 246.496
+Loop 1108 transfer (us) 239.432
+Loop 1109 transfer (us) 246.294
+Loop 1110 transfer (us) 246.244
+Loop 1111 transfer (us) 623.766
+Loop 1112 transfer (us) 237.688
+Loop 1113 transfer (us) 246.338
+Loop 1114 transfer (us) 246.85
+Loop 1115 transfer (us) 244.37
+Loop 1116 transfer (us) 239.035
+Loop 1117 transfer (us) 245.995
+Loop 1118 transfer (us) 245.002
+Loop 1119 transfer (us) 245.809
+Loop 1120 transfer (us) 240.362
+Loop 1121 transfer (us) 247.721
+Loop 1122 transfer (us) 246.557
+Loop 1123 transfer (us) 247.737
+Loop 1124 transfer (us) 240.593
+Loop 1125 transfer (us) 246.497
+Loop 1126 transfer (us) 243.573
+Loop 1127 transfer (us) 247.876
+Loop 1128 transfer (us) 239.886
+Loop 1129 transfer (us) 246.206
+Loop 1130 transfer (us) 245.933
+Loop 1131 transfer (us) 246.051
+Loop 1132 transfer (us) 240.61
+Loop 1133 transfer (us) 615.965
+Loop 1134 transfer (us) 246.422
+Loop 1135 transfer (us) 247.049
+Loop 1136 transfer (us) 239.388
+Loop 1137 transfer (us) 246.562
+Loop 1138 transfer (us) 244.43
+Loop 1139 transfer (us) 245.668
+Loop 1140 transfer (us) 239.861
+Loop 1141 transfer (us) 246.002
+Loop 1142 transfer (us) 244.162
+Loop 1143 transfer (us) 245.592
+Loop 1144 transfer (us) 240.483
+Loop 1145 transfer (us) 246.516
+Loop 1146 transfer (us) 247.446
+Loop 1147 transfer (us) 246.793
+Loop 1148 transfer (us) 241.056
+Loop 1149 transfer (us) 246.066
+Loop 1150 transfer (us) 245.073
+Loop 1151 transfer (us) 248.79
+Loop 1152 transfer (us) 241.591
+Loop 1153 transfer (us) 244.585
+Loop 1154 transfer (us) 244.372
+Loop 1155 transfer (us) 246.755
+Loop 1156 transfer (us) 647.336
+Loop 1157 transfer (us) 244.61
+Loop 1158 transfer (us) 246.254
+Loop 1159 transfer (us) 245.153
+Loop 1160 transfer (us) 243.688
+Loop 1161 transfer (us) 247.361
+Loop 1162 transfer (us) 246.856
+Loop 1163 transfer (us) 245.365
+Loop 1164 transfer (us) 245.004
+Loop 1165 transfer (us) 246.914
+Loop 1166 transfer (us) 246.051
+Loop 1167 transfer (us) 245.718
+Loop 1168 transfer (us) 242.868
+Loop 1169 transfer (us) 243.968
+Loop 1170 transfer (us) 245.505
+Loop 1171 transfer (us) 244.763
+Loop 1172 transfer (us) 243.513
+Loop 1173 transfer (us) 245.22
+Loop 1174 transfer (us) 247.258
+Loop 1175 transfer (us) 247.099
+Loop 1176 transfer (us) 245.765
+Loop 1177 transfer (us) 247.467
+Loop 1178 transfer (us) 244.418
+Loop 1179 transfer (us) 246.826
+Loop 1180 transfer (us) 244.713
+Loop 1181 transfer (us) 245.832
+Loop 1182 transfer (us) 245.638
+Loop 1183 transfer (us) 247.703
+Loop 1184 transfer (us) 246.207
+Loop 1185 transfer (us) 247.787
+Loop 1186 transfer (us) 245.813
+Loop 1187 transfer (us) 245.748
+Loop 1188 transfer (us) 244.111
+Loop 1189 transfer (us) 243.752
+Loop 1190 transfer (us) 245.257
+Loop 1191 transfer (us) 245.524
+Loop 1192 transfer (us) 243.092
+Loop 1193 transfer (us) 247.164
+Loop 1194 transfer (us) 247.047
+Loop 1195 transfer (us) 246.312
+Loop 1196 transfer (us) 246.404
+Loop 1197 transfer (us) 246.7
+Loop 1198 transfer (us) 246.62
+Loop 1199 transfer (us) 246.801
+Loop 1200 transfer (us) 244.885
+Loop 1201 transfer (us) 642.909
+Loop 1202 transfer (us) 245.006
+Loop 1203 transfer (us) 247.764
+Loop 1204 transfer (us) 243.658
+Loop 1205 transfer (us) 245.382
+Loop 1206 transfer (us) 245.651
+Loop 1207 transfer (us) 246.83
+Loop 1208 transfer (us) 242.139
+Loop 1209 transfer (us) 247.302
+Loop 1210 transfer (us) 246.739
+Loop 1211 transfer (us) 246.367
+Loop 1212 transfer (us) 243.699
+Loop 1213 transfer (us) 247.409
+Loop 1214 transfer (us) 245.054
+Loop 1215 transfer (us) 246.912
+Loop 1216 transfer (us) 244.104
+Loop 1217 transfer (us) 246.41
+Loop 1218 transfer (us) 246.286
+Loop 1219 transfer (us) 248.685
+Loop 1220 transfer (us) 245.485
+Loop 1221 transfer (us) 247.505
+Loop 1222 transfer (us) 245.644
+Loop 1223 transfer (us) 246.968
+Loop 1224 transfer (us) 686.044
+Loop 1225 transfer (us) 246.403
+Loop 1226 transfer (us) 245.865
+Loop 1227 transfer (us) 247.057
+Loop 1228 transfer (us) 244.532
+Loop 1229 transfer (us) 247.655
+Loop 1230 transfer (us) 245.627
+Loop 1231 transfer (us) 247.881
+Loop 1232 transfer (us) 244.163
+Loop 1233 transfer (us) 245.827
+Loop 1234 transfer (us) 245.221
+Loop 1235 transfer (us) 247.158
+Loop 1236 transfer (us) 243.086
+Loop 1237 transfer (us) 245.262
+Loop 1238 transfer (us) 244.288
+Loop 1239 transfer (us) 246.768
+Loop 1240 transfer (us) 243.69
+Loop 1241 transfer (us) 246.652
+Loop 1242 transfer (us) 246.438
+Loop 1243 transfer (us) 247.398
+Loop 1244 transfer (us) 245.48
+Loop 1245 transfer (us) 245.005
+Loop 1246 transfer (us) 633.117
+Loop 1247 transfer (us) 242.621
+Loop 1248 transfer (us) 243.532
+Loop 1249 transfer (us) 245.87
+Loop 1250 transfer (us) 245.627
+Loop 1251 transfer (us) 245.847
+Loop 1252 transfer (us) 245.581
+Loop 1253 transfer (us) 246.23
+Loop 1254 transfer (us) 244.634
+Loop 1255 transfer (us) 246.435
+Loop 1256 transfer (us) 242.661
+Loop 1257 transfer (us) 245.909
+Loop 1258 transfer (us) 246.797
+Loop 1259 transfer (us) 245.89
+Loop 1260 transfer (us) 244.24
+Loop 1261 transfer (us) 245.62
+Loop 1262 transfer (us) 245.99
+Loop 1263 transfer (us) 245.815
+Loop 1264 transfer (us) 244.495
+Loop 1265 transfer (us) 245.849
+Loop 1266 transfer (us) 244.337
+Loop 1267 transfer (us) 245.596
+Loop 1268 transfer (us) 245.587
+Loop 1269 transfer (us) 678.949
+Loop 1270 transfer (us) 247.412
+Loop 1271 transfer (us) 247.768
+Loop 1272 transfer (us) 244.331
+Loop 1273 transfer (us) 246.655
+Loop 1274 transfer (us) 245.564
+Loop 1275 transfer (us) 244.896
+Loop 1276 transfer (us) 244.225
+Loop 1277 transfer (us) 244.441
+Loop 1278 transfer (us) 245.938
+Loop 1279 transfer (us) 247.216
+Loop 1280 transfer (us) 245.145
+Loop 1281 transfer (us) 246.864
+Loop 1282 transfer (us) 245.256
+Loop 1283 transfer (us) 245.188
+Loop 1284 transfer (us) 243.592
+Loop 1285 transfer (us) 245.847
+Loop 1286 transfer (us) 245.263
+Loop 1287 transfer (us) 245.718
+Loop 1288 transfer (us) 243.05
+Loop 1289 transfer (us) 247.114
+Loop 1290 transfer (us) 247.827
+Loop 1291 transfer (us) 618.155
+Loop 1292 transfer (us) 242.876
+Loop 1293 transfer (us) 247.146
+Loop 1294 transfer (us) 244.78
+Loop 1295 transfer (us) 246.776
+Loop 1296 transfer (us) 243.616
+Loop 1297 transfer (us) 244.08
+Loop 1298 transfer (us) 244.688
+Loop 1299 transfer (us) 244.487
+Loop 1300 transfer (us) 243.965
+Loop 1301 transfer (us) 245.918
+Loop 1302 transfer (us) 246.621
+Loop 1303 transfer (us) 245.965
+Loop 1304 transfer (us) 243.981
+Loop 1305 transfer (us) 246.913
+Loop 1306 transfer (us) 244.858
+Loop 1307 transfer (us) 245.765
+Loop 1308 transfer (us) 244.465
+Loop 1309 transfer (us) 247.533
+Loop 1310 transfer (us) 246.326
+Loop 1311 transfer (us) 247.305
+Loop 1312 transfer (us) 242.987
+Loop 1313 transfer (us) 245.786
+Loop 1314 transfer (us) 636.858
+Loop 1315 transfer (us) 243.214
+Loop 1316 transfer (us) 244.261
+Loop 1317 transfer (us) 245.352
+Loop 1318 transfer (us) 245.02
+Loop 1319 transfer (us) 246.962
+Loop 1320 transfer (us) 243.415
+Loop 1321 transfer (us) 245.499
+Loop 1322 transfer (us) 245.438
+Loop 1323 transfer (us) 245.012
+Loop 1324 transfer (us) 245.128
+Loop 1325 transfer (us) 245.978
+Loop 1326 transfer (us) 245.881
+Loop 1327 transfer (us) 245.636
+Loop 1328 transfer (us) 243.425
+Loop 1329 transfer (us) 245.14
+Loop 1330 transfer (us) 245.682
+Loop 1331 transfer (us) 246.967
+Loop 1332 transfer (us) 247.04
+Loop 1333 transfer (us) 246.201
+Loop 1334 transfer (us) 245.806
+Loop 1335 transfer (us) 245.281
+Loop 1336 transfer (us) 244.34
+Loop 1337 transfer (us) 679.138
+Loop 1338 transfer (us) 245.888
+Loop 1339 transfer (us) 246.065
+Loop 1340 transfer (us) 246.141
+Loop 1341 transfer (us) 247.776
+Loop 1342 transfer (us) 247.38
+Loop 1343 transfer (us) 247.607
+Loop 1344 transfer (us) 244.3
+Loop 1345 transfer (us) 245.35
+Loop 1346 transfer (us) 245.152
+Loop 1347 transfer (us) 245.516
+Loop 1348 transfer (us) 242.477
+Loop 1349 transfer (us) 246.319
+Loop 1350 transfer (us) 245.289
+Loop 1351 transfer (us) 246.781
+Loop 1352 transfer (us) 317.839
+Loop 1353 transfer (us) 244.019
+Loop 1354 transfer (us) 243.033
+Loop 1355 transfer (us) 243.483
+Loop 1356 transfer (us) 245.491
+Loop 1357 transfer (us) 245.943
+Loop 1358 transfer (us) 244.546
+Loop 1359 transfer (us) 670.148
+Loop 1360 transfer (us) 243.943
+Loop 1361 transfer (us) 245.867
+Loop 1362 transfer (us) 245.514
+Loop 1363 transfer (us) 246.1
+Loop 1364 transfer (us) 244.31
+Loop 1365 transfer (us) 245.405
+Loop 1366 transfer (us) 245.73
+Loop 1367 transfer (us) 245.722
+Loop 1368 transfer (us) 242.657
+Loop 1369 transfer (us) 247.457
+Loop 1370 transfer (us) 247.365
+Loop 1371 transfer (us) 246.897
+Loop 1372 transfer (us) 244.722
+Loop 1373 transfer (us) 246.729
+Loop 1374 transfer (us) 246.717
+Loop 1375 transfer (us) 246.333
+Loop 1376 transfer (us) 244.01
+Loop 1377 transfer (us) 246.068
+Loop 1378 transfer (us) 244.851
+Loop 1379 transfer (us) 245.382
+Loop 1380 transfer (us) 244.805
+Loop 1381 transfer (us) 646.549
+Loop 1382 transfer (us) 242.534
+Loop 1383 transfer (us) 246.277
+Loop 1384 transfer (us) 244.012
+Loop 1385 transfer (us) 246.755
+Loop 1386 transfer (us) 246.93
+Loop 1387 transfer (us) 247.074
+Loop 1388 transfer (us) 246.559
+Loop 1389 transfer (us) 248.826
+Loop 1390 transfer (us) 248.047
+Loop 1391 transfer (us) 247.933
+Loop 1392 transfer (us) 243.886
+Loop 1393 transfer (us) 245.76
+Loop 1394 transfer (us) 244.507
+Loop 1395 transfer (us) 245.646
+Loop 1396 transfer (us) 243.04
+Loop 1397 transfer (us) 244.952
+Loop 1398 transfer (us) 244.825
+Loop 1399 transfer (us) 245.314
+Loop 1400 transfer (us) 245.062
+Loop 1401 transfer (us) 246.895
+Loop 1402 transfer (us) 247.881
+Loop 1403 transfer (us) 246.201
+Loop 1404 transfer (us) 658.797
+Loop 1405 transfer (us) 243.917
+Loop 1406 transfer (us) 245.445
+Loop 1407 transfer (us) 246.787
+Loop 1408 transfer (us) 244.8
+Loop 1409 transfer (us) 247.059
+Loop 1410 transfer (us) 245.302
+Loop 1411 transfer (us) 360.761
+Loop 1412 transfer (us) 244.877
+Loop 1413 transfer (us) 242.947
+Loop 1414 transfer (us) 245.667
+Loop 1415 transfer (us) 247.095
+Loop 1416 transfer (us) 242.378
+Loop 1417 transfer (us) 245.779
+Loop 1418 transfer (us) 245.33
+Loop 1419 transfer (us) 247.036
+Loop 1420 transfer (us) 245.065
+Loop 1421 transfer (us) 244.626
+Loop 1422 transfer (us) 243.824
+Loop 1423 transfer (us) 245.335
+Loop 1424 transfer (us) 244.342
+Loop 1425 transfer (us) 242.621
+Loop 1426 transfer (us) 244.768
+Loop 1427 transfer (us) 247.852
+Loop 1428 transfer (us) 244.537
+Loop 1429 transfer (us) 245.12
+Loop 1430 transfer (us) 326.507
+Loop 1431 transfer (us) 242.632
+Loop 1432 transfer (us) 319.53
+Loop 1433 transfer (us) 242.202
+Loop 1434 transfer (us) 242.032
+Loop 1435 transfer (us) 245.835
+Loop 1436 transfer (us) 243.145
+Loop 1437 transfer (us) 246.571
+Loop 1438 transfer (us) 245.924
+Loop 1439 transfer (us) 246.644
+Loop 1440 transfer (us) 242.837
+Loop 1441 transfer (us) 246.076
+Loop 1442 transfer (us) 246.61
+Loop 1443 transfer (us) 245.359
+Loop 1444 transfer (us) 245.124
+Loop 1445 transfer (us) 247.363
+Loop 1446 transfer (us) 246.138
+Loop 1447 transfer (us) 624.399
+Loop 1448 transfer (us) 242.058
+Loop 1449 transfer (us) 248.62
+Loop 1450 transfer (us) 247.053
+Loop 1451 transfer (us) 245.828
+Loop 1452 transfer (us) 242.386
+Loop 1453 transfer (us) 246.414
+Loop 1454 transfer (us) 244.835
+Loop 1455 transfer (us) 245.514
+Loop 1456 transfer (us) 243.605
+Loop 1457 transfer (us) 247.617
+Loop 1458 transfer (us) 246.228
+Loop 1459 transfer (us) 246.362
+Loop 1460 transfer (us) 245.296
+Loop 1461 transfer (us) 247.219
+Loop 1462 transfer (us) 247.059
+Loop 1463 transfer (us) 246.421
+Loop 1464 transfer (us) 244.105
+Loop 1465 transfer (us) 246.763
+Loop 1466 transfer (us) 247.332
+Loop 1467 transfer (us) 246.377
+Loop 1468 transfer (us) 244.259
+Loop 1469 transfer (us) 769.996
+Loop 1470 transfer (us) 243.627
+Loop 1471 transfer (us) 243.262
+Loop 1472 transfer (us) 250.159
+Loop 1473 transfer (us) 246.818
+Loop 1474 transfer (us) 244.667
+Loop 1475 transfer (us) 245.425
+Loop 1476 transfer (us) 244.286
+Loop 1477 transfer (us) 247.091
+Loop 1478 transfer (us) 247.244
+Loop 1479 transfer (us) 247.601
+Loop 1480 transfer (us) 245.17
+Loop 1481 transfer (us) 246.52
+Loop 1482 transfer (us) 244.94
+Loop 1483 transfer (us) 244.936
+Loop 1484 transfer (us) 246.296
+Loop 1485 transfer (us) 247.847
+Loop 1486 transfer (us) 246.103
+Loop 1487 transfer (us) 245.075
+Loop 1488 transfer (us) 244.443
+Loop 1489 transfer (us) 247.274
+Loop 1490 transfer (us) 246.372
+Loop 1491 transfer (us) 245.793
+Loop 1492 transfer (us) 641.35
+Loop 1493 transfer (us) 244.089
+Loop 1494 transfer (us) 247.51
+Loop 1495 transfer (us) 245.785
+Loop 1496 transfer (us) 243.885
+Loop 1497 transfer (us) 246.326
+Loop 1498 transfer (us) 247.741
+Loop 1499 transfer (us) 246.945
+Transfer avg latency (us) 263.45236000000006
