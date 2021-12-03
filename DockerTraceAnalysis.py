@@ -347,6 +347,6 @@ if __name__ == "__main__":
     # getDetailedInfo(r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-0706subDal09_6h.csv")
 
     testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"
-    # getDetailedInfo(testPath)
-    plotCDF(testPath)
+    getDetailedInfo(testPath)
+    # plotCDF(testPath)
 
