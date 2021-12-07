@@ -56,7 +56,7 @@ def getBatchResultsProcessed(rootdir):
     fileList=os.listdir(rootdir)
 
     for file in fileList:
-        if ".log" in file:
+        if ".log" in file and "ycsb" in file and "processed" not in file:
             print("Processing", file)
             getProcessedResult(os.path.join(rootdir,file))
 
