@@ -348,5 +348,5 @@ if __name__ == "__main__":
 
     testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"
     getDetailedInfo(testPath)
-    # plotCDF(testPath)
+    plotCDF(testPath)
 

@@ -43,7 +43,7 @@ def getProcessedResult(path):
     for line in reader:
         if "Request " in line and "type" in line:
             latency=re.findall(r"\d+\.?\d*", line)[-1]
-            typee=line.strip("type ")[0].strip()
+            typee=line.split("type ")[1].strip()
             presults.append([latency, typee])
 
     with open(processedPath, "w", newline="") as csvfile:

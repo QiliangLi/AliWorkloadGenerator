@@ -32,7 +32,7 @@ def getProcessedResult(path, tracePath):
     for line in reader:
         if "Request " in line and "type" in line:
             latency = re.findall(r"\d+\.?\d*", line)[-1]
-            typee = line.strip("type ")[0].strip()
+            typee = line.split("type ")[1].strip()
             presults.append([latency, typee])
 
     with open(processedPath, "w", newline="") as csvfile:
@@ -97,7 +97,7 @@ def getResultsProcessedAnalysised(rootdir, suffient, lowwerBound, upperBound):
 
 
 if __name__ == "__main__":
-    resultRoot = r"./latencies"
+    resultRoot = r"./latencies/repeat64pipe"
     tracePath = r"./results/mod16k_filter-0706subDal09_6h.csv"
     getBatchResultsProcessed(resultRoot, tracePath)
 
