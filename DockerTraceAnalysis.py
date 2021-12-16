@@ -328,8 +328,8 @@ if __name__ == "__main__":
     # getZoneFileList(path, subRoot)
 
     detailedInfoPath = r"F:\Coding\Python\ali-trace\results\0706subDal09_6h.csv"
-    # getDetailedInfo(detailedInfoPath)
-    # plotCDF(detailedInfoPath)
+    getDetailedInfo(detailedInfoPath)
+    plotCDF(detailedInfoPath)
     # getFilterTraces(detailedInfoPath, 16 * 1024, 1024 * 1024 * 1024)
 
     filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
@@ -346,7 +346,7 @@ if __name__ == "__main__":
     # 
     # getDetailedInfo(r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-0706subDal09_6h.csv")
 
-    testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"
-    getDetailedInfo(testPath)
-    plotCDF(testPath)
+    # testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"
+    # getDetailedInfo(testPath)
+    # plotCDF(testPath)
 
