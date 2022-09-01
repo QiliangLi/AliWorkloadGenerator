@@ -56,8 +56,8 @@ def getDetailedInfo(path):
     putGreaterThan1MRequestCounter = 0
     getGreaterThan1MRequestCounter = 0
 
-    maxSize=-1
-    largeSizeList=[]
+    maxSize = -1
+    largeSizeList = []
 
     with open(path, "r") as resultFile:
         reader = csv.reader(resultFile)
@@ -67,10 +67,10 @@ def getDetailedInfo(path):
             typee = line[1]
             sizee = int(line[2])
 
-            maxSize=max(sizee, maxSize)
+            maxSize = max(sizee, maxSize)
             print(name, typee, sizee)
 
-            if sizee > 1024*1024*1024:
+            if sizee > 1024 * 1024 * 1024:
                 largeSizeList.append(sizee)
 
             if typee == "PUT":
@@ -206,7 +206,8 @@ def getFilterTraces(path, minObjectSize, maxObjectSize):
     names = []
     types = []
     sizes = []
-    filterPath = "filter-" + os.path.basename(path)
+    filterPath = "filter-" + str(int(minObjectSize / 1024)) + "KB-" + str(
+        int(maxObjectSize / 1024 / 1024)) + "MB-" + os.path.basename(path)
     filterPath = os.path.join(os.path.dirname(path), filterPath)
     print(filterPath)
 
@@ -232,88 +233,93 @@ def getFilterTraces(path, minObjectSize, maxObjectSize):
 
 
 def getWarmRequest(path):
-    putNames=set()
-    repeatGetNames=set()
-    warmRequests={}
+    putNames = set()
+    repeatGetNames = set()
+    warmRequests = {}
 
-    warmPath="warm-"+os.path.basename(path)
-    warmPath=os.path.join(os.path.dirname(path), warmPath)
+    warmPath = "warm-" + os.path.basename(path)
+    warmPath = os.path.join(os.path.dirname(path), warmPath)
     print("warmPath", warmPath)
 
     print("Finding warm requests......")
-    with open(path,"r") as file:
-        reader=csv.reader(file)
+    with open(path, "r") as file:
+        reader = csv.reader(file)
 
         for line in reader:
-            name=line[0]
-            typee=line[1]
-            sizee=int(line[2])
+            name = line[0]
+            typee = line[1]
+            sizee = int(line[2])
 
-            if typee=="GET":
+            if typee == "GET":
                 if name not in putNames:
                     if name not in repeatGetNames:
-                        warmRequests[name]=[]
+                        warmRequests[name] = []
                         repeatGetNames.add(name)
                     warmRequests[name].append([name, typee, sizee])
             else:
                 putNames.add(name)
 
-    avgSize=0
+    avgSize = 0
     print("Storing results......")
     with open(warmPath, "w", newline="") as warmFile:
-        writer=csv.writer(warmFile)
+        writer = csv.writer(warmFile)
         for name in repeatGetNames:
-            sizeList=[]
+            sizeList = []
             for line in warmRequests[name]:
                 sizeList.append(line[2])
 
-            warmSize=max(sizeList)
+            warmSize = max(sizeList)
             writer.writerow([name, "PUT", warmSize])
-            avgSize+=warmSize/(1024*1024)
+            avgSize += warmSize / (1024 * 1024)
 
     print("warmFile all object size (MB)", avgSize)
-    print("warmFile avg object size (MB)", avgSize/len(repeatGetNames))
+    print("warmFile avg object size (MB)", avgSize / len(repeatGetNames))
 
 
 # 去除request中object name中的所有的"/"
 # 去除所有重复的Put
 def eraseDuplicatedPut(path):
-    requests=[]
-    nameSet=set()
+    requests = []
+    nameSet = set()
     with open(path, "r") as csvFile:
-        reader=csv.reader(csvFile)
+        reader = csv.reader(csvFile)
         for line in reader:
-            line[0]=line[0].replace('/','')
-            if line[1]=="PUT" and line[0] not in nameSet:
+            line[0] = line[0].replace('/', '')
+            if line[1] == "PUT" and line[0] not in nameSet:
                 nameSet.add(line[0])
                 requests.append(line)
-            elif line[1]=="GET":
+            elif line[1] == "GET":
                 requests.append(line)
             else:
                 print(line)
 
     with open(path, "w", newline="") as csvFile:
-        writer=csv.writer(csvFile)
+        writer = csv.writer(csvFile)
         for line in requests:
             writer.writerow(line)
 
 
-# requestSize=requestSize-requestSize%16KB
-def getModifiedRequestSizes(path, mods):
-    fileName="mod16k_"+os.path.basename(path)
-    fileName=os.path.join(os.path.dirname(path), fileName)
+# 如果requestSize>mods, requestSize=requestSize-requestSize%mods
+# 如果requestSize<mods, requestSize=requestSize-requestSize%k
+# mods: coding的子条带blocksize*k
+def getModifiedRequestSizes(path, mods, k):
+    fileName = "mod" + str(int(mods / 1024)) + "k_" + os.path.basename(path)
+    fileName = os.path.join(os.path.dirname(path), fileName)
 
-    requests=[]
+    requests = []
     with open(path, "r") as csvfile:
-        reader=csv.reader(csvfile)
+        reader = csv.reader(csvfile)
         for line in reader:
-            requestSize=int(line[-1])
-            requestSize=requestSize-requestSize%mods
-            line[-1]=requestSize
+            requestSize = int(line[-1])
+            if requestSize >= mods:
+                requestSize = requestSize - requestSize % mods
+            else:
+                requestSize = requestSize - requestSize % k
+            line[-1] = requestSize
             requests.append(line)
 
     with open(fileName, "w", newline="") as csvfile:
-        writer=csv.writer(csvfile)
+        writer = csv.writer(csvfile)
         for line in requests:
             writer.writerow(line)
 
@@ -322,29 +328,34 @@ if __name__ == "__main__":
     path = r"./data_centers"
     # getFileList(path)
 
-    subRoot=r"0706subDal09_6h"
+    subRoot = r"0706subDal09_6h"
     # getZoneFileList(path, subRoot)
 
     detailedInfoPath = r"F:\Coding\Python\ali-trace\results\0706subDal09_6h.csv"
-    getDetailedInfo(detailedInfoPath)
-    plotCDF(detailedInfoPath)
-    # getFilterTraces(detailedInfoPath, 16 * 1024, 1024 * 1024 * 1024)
+    # getDetailedInfo(detailedInfoPath)
+    # plotCDF(detailedInfoPath)
+    # getFilterTraces(detailedInfoPath, 1 * 1024, 1024 * 1024 * 1024)
 
-    filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
+    # filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
+    # getDetailedInfo(filterPath)
     # plotCDF(filterPath)
+
+    filterPath = r"F:\Coding\Python\ali-trace\results\filter-1KB-1024MB-0706subDal09_6h.csv"
+    # getDetailedInfo(filterPath)
+    # plotCDF(filterPath)
+
     # getWarmRequest(filterPath)
 
     # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
-    #
+    warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-1KB-1024MB-0706subDal09_6h.csv"
+
     # eraseDuplicatedPut(filterPath)
     # eraseDuplicatedPut(warmPath)
-    #
-    # getModifiedRequestSizes(filterPath, 16*1024)
-    # getModifiedRequestSizes(warmPath, 16*1024)
-    #
-    # getDetailedInfo(r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-0706subDal09_6h.csv")
 
-    # testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"
-    # getDetailedInfo(testPath)
-    # plotCDF(testPath)
+    # getModifiedRequestSizes(filterPath, 16 * 1024, 4)
+    # getModifiedRequestSizes(warmPath, 16 * 1024, 4)
 
+    warmModPath = r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-1KB-1024MB-0706subDal09_6h.csv"
+    testModPath = r"F:\Coding\Python\ali-trace\results\mod16k_filter-1KB-1024MB-0706subDal09_6h.csv"
+    getDetailedInfo(testModPath)
+    plotCDF(testModPath)
