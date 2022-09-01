@@ -54,9 +54,7 @@ def getDetailedInfo(path):
     getSize = 0
 
     putGreaterThan1MRequestCounter = 0
-    putGreaterThan1MSize = 0
     getGreaterThan1MRequestCounter = 0
-    getGreaterThan1MSize = 0
 
     maxSize=-1
     largeSizeList=[]
@@ -337,13 +335,13 @@ if __name__ == "__main__":
     # getWarmRequest(filterPath)
 
     # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
-    # 
+    #
     # eraseDuplicatedPut(filterPath)
     # eraseDuplicatedPut(warmPath)
-    # 
+    #
     # getModifiedRequestSizes(filterPath, 16*1024)
     # getModifiedRequestSizes(warmPath, 16*1024)
-    # 
+    #
     # getDetailedInfo(r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-0706subDal09_6h.csv")
 
     # testPath=r"./results/mod16k_filter-0706subDal09_6h.csv"

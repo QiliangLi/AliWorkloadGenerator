@@ -2,6 +2,7 @@ import os
 import math
 
 
+# 在指定目录下创建多个从0开始编号的client文件夹
 def createDirs(basedir, clientNum):
     # mkdir for every client
     for i in range(clientNum):
@@ -10,6 +11,8 @@ def createDirs(basedir, clientNum):
             os.makedirs(os.path.join(basedir, "client" + str(i)))
 
 
+# 将一个完整的trace按照client的数量进行等距切分，并保存到各个子client文件夹里
+# 存在bug：可能导致read request执行失效，因为对应的write request被分到了另一个client且尚未执行
 def splitYCSBTraces(path, basedir, clientNum):
     file = open(path, "r")
     reader = file.readlines()
@@ -35,6 +38,7 @@ def splitYCSBTraces(path, basedir, clientNum):
         clientIndex += 1
 
 
+# 将相同的ycsb trace copy到各个子client下，同时对trace中的filename加上client编号的前缀
 def copyYCSBTraces(path, basedir, clientNum):
     file = open(path, "r")
     reader = file.readlines()

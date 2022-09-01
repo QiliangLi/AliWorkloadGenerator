@@ -13,6 +13,7 @@ def getTraceInfos(tracePath):
     return sizeList
 
 
+# # 将crail里输出的log结果转换成csv格式：latency,type,requestSize
 def getProcessedResult(path, tracePath):
     sizeList = getTraceInfos(tracePath)
 
@@ -80,9 +81,9 @@ def getResultsProcessedAnalysised(rootdir, suffient, lowwerBound, upperBound):
                     schemesMapper[sche] = getFileProcessedAnalysised(os.path.join(rootdir, file), lowwerBound,
                                                                      upperBound)
 
-    baseList=schemesMapper["64kpipe"]
+    baseList = schemesMapper["64kpipe"]
     for record in baseList:
-        record=record.reverse()
+        record = record.reverse()
     # print(baseList)
 
     for sche in schemesList:
@@ -102,5 +103,3 @@ if __name__ == "__main__":
     getBatchResultsProcessed(resultRoot, tracePath)
 
     # getResultsProcessedAnalysised(resultRoot, "repeat0", 16*1024, 256*1024)
-
-
