@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from pandas import DataFrame, Series
+import random
 
 
 def getZoneFileList(dir, subRoot):
@@ -278,7 +279,7 @@ def getWarmRequest(path):
 
 # 去除request中object name中的所有的"/"
 # 去除所有重复的Put
-def eraseDuplicatedPut(path):
+def eraseWarmDuplicatedPut(path):
     requests = []
     nameSet = set()
     with open(path, "r") as csvFile:
@@ -294,6 +295,28 @@ def eraseDuplicatedPut(path):
                 print(line)
 
     with open(path, "w", newline="") as csvFile:
+        writer = csv.writer(csvFile)
+        for line in requests:
+            writer.writerow(line)
+
+
+def eraseTestDuplicatedPut(warmPath, testPath):
+    requests=[]
+    warmNameSet=set()
+    with open(warmPath, "r") as csvFile:
+        reader = csv.reader(csvFile)
+        for line in reader:
+            warmNameSet.add(line[0])
+
+    with open(testPath, "r") as csvFile:
+        reader = csv.reader(csvFile)
+        for line in reader:
+            if line[1] == "PUT" and line[0] in warmNameSet:
+                print(line)
+                continue
+            requests.append(line)
+
+    with open(testPath, "w", newline="") as csvFile:
         writer = csv.writer(csvFile)
         for line in requests:
             writer.writerow(line)
@@ -316,6 +339,27 @@ def getModifiedRequestSizes(path, mods, k):
             else:
                 requestSize = requestSize - requestSize % k
             line[-1] = requestSize
+            requests.append(line)
+
+    with open(fileName, "w", newline="") as csvfile:
+        writer = csv.writer(csvfile)
+        for line in requests:
+            writer.writerow(line)
+
+
+def getRandomIsDegradeRead(path, possibility):
+    fileName=str(possibility)+"-"+os.path.basename(path)
+    fileName=os.path.join(os.path.dirname(path), fileName)
+
+    requests = []
+    with open(path, "r") as csvfile:
+        reader = csv.reader(csvfile)
+        for line in reader:
+            typee = line[1]
+            flag=False
+            if typee == "GET" and random.random() < possibility:
+                flag=True
+            line.append(flag)
             requests.append(line)
 
     with open(fileName, "w", newline="") as csvfile:
@@ -349,13 +393,19 @@ if __name__ == "__main__":
     # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
     warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-1KB-1024MB-0706subDal09_6h.csv"
 
-    # eraseDuplicatedPut(filterPath)
-    # eraseDuplicatedPut(warmPath)
+    # eraseWarmDuplicatedPut(filterPath)
+    # eraseWarmDuplicatedPut(warmPath)
+    # eraseTestDuplicatedPut(warmPath, filterPath)
 
     # getModifiedRequestSizes(filterPath, 16 * 1024, 4)
     # getModifiedRequestSizes(warmPath, 16 * 1024, 4)
 
     warmModPath = r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-1KB-1024MB-0706subDal09_6h.csv"
     testModPath = r"F:\Coding\Python\ali-trace\results\mod16k_filter-1KB-1024MB-0706subDal09_6h.csv"
-    getDetailedInfo(testModPath)
-    plotCDF(testModPath)
+    # # getDetailedInfo(testModPath)
+    # # plotCDF(testModPath)
+
+    for pos in np.arange(1.0, 1.1, 0.25):
+        getRandomIsDegradeRead(warmModPath, pos)
+    for pos in np.arange(0.25, 1.1, 0.25):
+        getRandomIsDegradeRead(testModPath, pos)
