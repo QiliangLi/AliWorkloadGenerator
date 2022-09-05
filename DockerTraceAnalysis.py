@@ -301,8 +301,8 @@ def eraseWarmDuplicatedPut(path):
 
 
 def eraseTestDuplicatedPut(warmPath, testPath):
-    requests=[]
-    warmNameSet=set()
+    requests = []
+    warmNameSet = set()
     with open(warmPath, "r") as csvFile:
         reader = csv.reader(csvFile)
         for line in reader:
@@ -348,21 +348,44 @@ def getModifiedRequestSizes(path, mods, k):
 
 
 def getRandomIsDegradeRead(path, possibility):
-    fileName=str(possibility)+"-"+os.path.basename(path)
-    fileName=os.path.join(os.path.dirname(path), fileName)
+    fileName = str(possibility) + "-" + os.path.basename(path)
+    fileName = os.path.join(os.path.dirname(path), fileName)
 
     requests = []
     with open(path, "r") as csvfile:
         reader = csv.reader(csvfile)
         for line in reader:
             typee = line[1]
-            flag=False
+            flag = False
             if typee == "GET" and random.random() < possibility:
-                flag=True
+                flag = True
             line.append(flag)
             requests.append(line)
 
     with open(fileName, "w", newline="") as csvfile:
+        writer = csv.writer(csvfile)
+        for line in requests:
+            writer.writerow(line)
+
+    return fileName
+
+
+def fillReadInWarm(path, possibility):
+    putRequests = []
+    getRequests = []
+    with open(path, "r") as csvfile:
+        reader = csv.reader(csvfile)
+        for line in reader:
+            putRequests.append(line)
+            typee = line[1]
+            flag = False
+            if typee == "PUT" and random.random() < possibility:
+                flag = True
+            record = [line[0], "GET", line[2], flag]
+            getRequests.append(record)
+
+    requests = putRequests + getRequests
+    with open(path, "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
         for line in requests:
             writer.writerow(line)
@@ -405,7 +428,8 @@ if __name__ == "__main__":
     # # getDetailedInfo(testModPath)
     # # plotCDF(testModPath)
 
-    for pos in np.arange(1.0, 1.1, 0.25):
-        getRandomIsDegradeRead(warmModPath, pos)
-    for pos in np.arange(0.25, 1.1, 0.25):
-        getRandomIsDegradeRead(testModPath, pos)
+    for pos in np.arange(0.5, 1.1, 0.5):
+        tmpfile = getRandomIsDegradeRead(warmModPath, pos)
+        fillReadInWarm(tmpfile, pos)
+    # for pos in np.arange(0.25, 1.1, 0.25):
+    #     getRandomIsDegradeRead(testModPath, pos)
