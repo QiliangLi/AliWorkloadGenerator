@@ -1,10 +1,14 @@
 import os
 import re
 import csv
+import random
+import numpy as np
 
 
 # 根据YCSB的test.txt生成warm.text
+# 消除原始test.txt的第三列乱值
 def getYCSBWarmFile(path):
+    testList = []
     putNames = set()
     warmNames = set()
 
@@ -21,6 +25,7 @@ def getYCSBWarmFile(path):
         info = line.split(" ")
         typee = info[0].strip()
         name = info[1].strip()
+        testList.append([typee, name])
 
         if typee == "R":
             if name not in putNames:
@@ -32,6 +37,112 @@ def getYCSBWarmFile(path):
     with open(warmPath, "w", newline="") as warmFile:
         for name in warmNames:
             warmFile.write("I " + name.strip() + "\n")
+
+    with open(path, "w", newline="") as testFile:
+        for line in testList:
+            testFile.write(line[0] + " " + line[1].strip() + "\n")
+
+    return warmPath
+
+
+def eraseWarmDuplicatedPut(path):
+    requests = []
+    nameSet = set()
+
+    file = open(path, "r")
+    reader = file.readlines()
+
+    for line in reader:
+        info = line.split(" ")
+        typee = info[0].strip()
+        name = info[1].strip()
+        if typee == "I" and name not in nameSet:
+            nameSet.add(name)
+            requests.append(info)
+        elif typee == "R":
+            requests.append(info)
+        else:
+            print(line)
+
+    with open(path, "w", newline="") as writer:
+        for line in requests:
+            writer.write(line[0] + " " + line[1].strip() + "\n")
+
+
+def eraseTestDuplicatedPut(warmPath, testPath):
+    requests = []
+    warmNameSet = set()
+
+    file = open(warmPath, "r")
+    reader = file.readlines()
+    for line in reader:
+        info = line.split(" ")
+        typee = info[0].strip()
+        name = info[1].strip()
+        warmNameSet.add(name)
+
+    file = open(testPath, "r")
+    reader = file.readlines()
+    for line in reader:
+        info = line.split(" ")
+        typee = info[0].strip()
+        name = info[1].strip()
+        if typee == "I" and name in warmNameSet:
+            print(info)
+            continue
+        requests.append(info)
+
+    with open(testPath, "w", newline="") as writer:
+        for line in requests:
+            writer.write(line[0] + " " + line[1].strip() + "\n")
+
+
+def getRandomIsDegradeRead(path, possibility):
+    fileName = str(possibility) + "-" + os.path.basename(path)
+    fileName = os.path.join(os.path.dirname(path), fileName)
+
+    requests = []
+    file = open(path, "r")
+    reader = file.readlines()
+    for line in reader:
+        info = line.split(" ")
+        typee = info[0].strip()
+        name = info[1].strip()
+        flag = False
+        if typee == "R" and random.random() < possibility:
+            flag = True
+        info.append(flag)
+        requests.append(info)
+
+    with open(fileName, "w", newline="") as writer:
+        for line in requests:
+            writer.write(line[0].strip() + " " + line[1].strip() + " " + str(line[2]) + "\n")
+
+    return fileName
+
+
+def fillReadInWarm(path, possibility):
+    putRequests = []
+    getRequests = []
+
+    file = open(path, "r")
+    reader = file.readlines()
+    for line in reader:
+        info = line.split(" ")
+        typee = info[0].strip()
+        name = info[1].strip()
+        putRequests.append(info)
+        flag = False
+        if typee == "I" and random.random() < possibility:
+            flag = True
+        record = ["R", name, flag]
+        getRequests.append(record)
+
+    requests = putRequests + getRequests
+
+    with open(path, "w", newline="") as writer:
+        for line in requests:
+            writer.write(line[0].strip() + " " + line[1].strip() + " " + str(line[2]).strip() + "\n")
 
 
 # 将crail里输出的log结果转换成csv格式：latency,type
@@ -64,8 +175,18 @@ def getBatchResultsProcessed(rootdir):
 
 
 if __name__ == "__main__":
-    # path=r"./rawYCSBTraces/test5k.txt"
-    # getYCSBWarmFile(path)
+    testPath = r"./rawYCSBTraces/test2w.txt"
+    warmPath = getYCSBWarmFile(testPath)
 
-    resultRoot = r"F:\Coding\Python\ali-trace\latencies"
-    getBatchResultsProcessed(resultRoot)
+    eraseWarmDuplicatedPut(testPath)
+    eraseWarmDuplicatedPut(warmPath)
+    eraseTestDuplicatedPut(warmPath, testPath)
+
+    for pos in np.arange(0, 1.1, 2):
+        tmpfile = getRandomIsDegradeRead(warmPath, pos)
+        fillReadInWarm(tmpfile, pos)
+    for pos in np.arange(0, 1.1, 2):
+        getRandomIsDegradeRead(testPath, pos)
+
+    # resultRoot = r"F:\Coding\Python\ali-trace\latencies"
+    # getBatchResultsProcessed(resultRoot)

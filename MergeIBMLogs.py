@@ -24,8 +24,7 @@ def mergeLogs(mergePath, subList):
 
 
 if __name__=="__main__":
-    tracePath=r"F:\Coding\Python\ali-trace\results\mod16k_filter-1KB-1024MB-0706subDal09_6h.csv"
-    rootdir=r"F:\Coding\Python\ali-trace\latencies"
+    rootdir=r"F:\Coding\Python\ali-trace\latencies\0808subDal09"
     schemeList=["replicas", "nativeec", "microec"]
     # degradePossList=[0.25, 0.5, 0.75, 1.0]
     degradePossList=[0.5, 1.0]

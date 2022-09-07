@@ -8,7 +8,7 @@ from pandas import DataFrame, Series
 import random
 
 
-def getZoneFileList(dir, subRoot):
+def getZoneFileList(dir, subRoot, saveRoot=r"./results"):
     print("Start zone", subRoot, "...")
     names = []
     types = []
@@ -28,12 +28,13 @@ def getZoneFileList(dir, subRoot):
                     types.append(jrecord["http.request.method"])
                     sizes.append(jrecord["http.response.written"])
 
-    with open(subRoot + ".csv", "w", newline="") as resultFile:
+    with open(os.path.join(saveRoot, subRoot + ".csv"), "w", newline="") as resultFile:
         writer = csv.writer(resultFile)
         for i in range(len(names)):
             writer.writerow([names[i], types[i], sizes[i]])
 
     print("Zone", subRoot, "Finished!")
+    return os.path.join(saveRoot, subRoot + ".csv")
 
 
 def getFileList(dir):
@@ -232,6 +233,8 @@ def getFilterTraces(path, minObjectSize, maxObjectSize):
         for i in range(len(names)):
             writer.writerow([names[i], types[i], sizes[i]])
 
+    return filterPath
+
 
 def getWarmRequest(path):
     putNames = set()
@@ -275,6 +278,8 @@ def getWarmRequest(path):
 
     print("warmFile all object size (MB)", avgSize)
     print("warmFile avg object size (MB)", avgSize / len(repeatGetNames))
+
+    return warmPath
 
 
 # 去除request中object name中的所有的"/"
@@ -345,6 +350,8 @@ def getModifiedRequestSizes(path, mods, k):
         writer = csv.writer(csvfile)
         for line in requests:
             writer.writerow(line)
+
+    return fileName
 
 
 def getRandomIsDegradeRead(path, possibility):
