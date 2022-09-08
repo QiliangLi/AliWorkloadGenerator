@@ -2,7 +2,7 @@ import csv
 import os
 
 
-rate=0.05
+rate=0.03
 
 
 def saveLatencies(latencies, savePath):
