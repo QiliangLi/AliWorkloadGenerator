@@ -22,8 +22,12 @@ def mergeSubLogs(pathList, savePath):
 
 
 if __name__=="__main__":
-    saveRootdir=r"F:\Coding\Python\ali-trace\latencies"
-    rootdirList=[r"F:\Coding\Python\ali-trace\latencies\0706subDal09_6h", r"F:\Coding\Python\ali-trace\latencies\0808subDal09", r"F:\Coding\Python\ali-trace\latencies\0811subDal09"]
+    # saveRootdir=r"F:\Coding\Python\ali-trace\latencies"
+    # rootdirList=[r"F:\Coding\Python\ali-trace\latencies\0706subDal09_6h", r"F:\Coding\Python\ali-trace\latencies\0808subDal09", r"F:\Coding\Python\ali-trace\latencies\0811subDal09"]
+    saveRootdir = r"F:\Coding\Python\ali-trace\latencies\optimal-ibm"
+    rootdirList = [r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0706subDal09_6h",
+                   r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0808subDal09",
+                   r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0811subDal09"]
     degradePossList=[0.5, 1.0]
 
     pathList=[]
