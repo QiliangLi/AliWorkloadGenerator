@@ -405,38 +405,40 @@ if __name__ == "__main__":
     subRoot = r"0706subDal09_6h"
     # getZoneFileList(path, subRoot)
 
-    detailedInfoPath = r"F:\Coding\Python\ali-trace\results\0706subDal09_6h.csv"
+    # detailedInfoPath = r"F:\Coding\Python\ali-trace\results\0706subDal09_6h.csv"
     # getDetailedInfo(detailedInfoPath)
     # plotCDF(detailedInfoPath)
-    # getFilterTraces(detailedInfoPath, 1 * 1024, 1024 * 1024 * 1024)
+    # # getFilterTraces(detailedInfoPath, 1 * 1024, 1024 * 1024 * 1024)
+    #
+    # # filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
+    # # getDetailedInfo(filterPath)
+    # # plotCDF(filterPath)
 
-    # filterPath = r"F:\Coding\Python\ali-trace\results\filter-0706subDal09_6h.csv"
-    # getDetailedInfo(filterPath)
-    # plotCDF(filterPath)
+    # filterPath = r"F:\Coding\Python\ali-trace\results\filter-1KB-1024MB-0706subDal09_6h.csv"
+    # filterPath = r"F:\Coding\Python\ali-trace\results\filter-1KB-1024MB-0808subDal09.csv"
+    filterPath = r"F:\Coding\Python\ali-trace\results\filter-1KB-1024MB-0811subDal09.csv"
+    getDetailedInfo(filterPath)
+    plotCDF(filterPath)
 
-    filterPath = r"F:\Coding\Python\ali-trace\results\filter-1KB-1024MB-0706subDal09_6h.csv"
-    # getDetailedInfo(filterPath)
-    # plotCDF(filterPath)
-
-    # getWarmRequest(filterPath)
-
-    # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
-    warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-1KB-1024MB-0706subDal09_6h.csv"
-
-    # eraseWarmDuplicatedPut(filterPath)
-    # eraseWarmDuplicatedPut(warmPath)
-    # eraseTestDuplicatedPut(warmPath, filterPath)
-
-    # getModifiedRequestSizes(filterPath, 16 * 1024, 4)
-    # getModifiedRequestSizes(warmPath, 16 * 1024, 4)
-
-    warmModPath = r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-1KB-1024MB-0706subDal09_6h.csv"
-    testModPath = r"F:\Coding\Python\ali-trace\results\mod16k_filter-1KB-1024MB-0706subDal09_6h.csv"
-    # # getDetailedInfo(testModPath)
-    # # plotCDF(testModPath)
-
-    for pos in np.arange(0.5, 1.1, 0.5):
-        tmpfile = getRandomIsDegradeRead(warmModPath, pos)
-        fillReadInWarm(tmpfile, pos)
-    # for pos in np.arange(0.25, 1.1, 0.25):
-    #     getRandomIsDegradeRead(testModPath, pos)
+    # # getWarmRequest(filterPath)
+    #
+    # # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-0706subDal09_6h.csv"
+    # warmPath = r"F:\Coding\Python\ali-trace\results\warm-filter-1KB-1024MB-0706subDal09_6h.csv"
+    #
+    # # eraseWarmDuplicatedPut(filterPath)
+    # # eraseWarmDuplicatedPut(warmPath)
+    # # eraseTestDuplicatedPut(warmPath, filterPath)
+    #
+    # # getModifiedRequestSizes(filterPath, 16 * 1024, 4)
+    # # getModifiedRequestSizes(warmPath, 16 * 1024, 4)
+    #
+    # warmModPath = r"F:\Coding\Python\ali-trace\results\mod16k_warm-filter-1KB-1024MB-0706subDal09_6h.csv"
+    # testModPath = r"F:\Coding\Python\ali-trace\results\mod16k_filter-1KB-1024MB-0706subDal09_6h.csv"
+    # # # getDetailedInfo(testModPath)
+    # # # plotCDF(testModPath)
+    #
+    # for pos in np.arange(0.5, 1.1, 0.5):
+    #     tmpfile = getRandomIsDegradeRead(warmModPath, pos)
+    #     fillReadInWarm(tmpfile, pos)
+    # # for pos in np.arange(0.25, 1.1, 0.25):
+    # #     getRandomIsDegradeRead(testModPath, pos)

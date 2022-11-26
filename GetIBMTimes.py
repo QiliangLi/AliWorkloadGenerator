@@ -44,15 +44,33 @@ def getTimes(path, bound = 3, ratio = 0.05):
     getBoundNum(path, data, bound)
 
 
+def getTimesWithLatency(path, ratio = 0.05):
+    data = pd.read_csv(path)
+    data["NativeecTimes"] = data[["replicas", "nativeec"]].apply(lambda x: round(x["nativeec"] / x["replicas"], 2),
+                                                                 axis=1)
+    data["MicroecTimes"] = data[["replicas", "microec"]].apply(lambda x: round(x["microec"] / x["replicas"], 2), axis=1)
+
+    data = optimizeResults(data, ratio)
+
+    data.sort_values("Size", inplace=True)
+    # print(data.to_string())
+    savePath = os.path.join(os.path.dirname(path), "optimized" + str(ratio) + "." + os.path.basename(path))
+    data.to_csv(savePath, index=False)
+
+
 if __name__ == "__main__":
     degradePossList = [0.5, 1.0]
     bound = 3
-    ratio = 0.1
+    ratio = 0.05
 
-    rootdir=r"F:\Coding\Python\ali-trace\latencies"
-    # rootdir=r"F:\Coding\Python\ali-trace\latencies\optimal-ibm"
+    rootdir = r"F:\Coding\Python\ali-trace\latencies"
     for poss in degradePossList:
-        getTimes(os.path.join(rootdir, "sum."+str(poss)+".ibm.csv"), bound, ratio)
+        getTimesWithLatency(os.path.join(rootdir, "sum." + str(poss) + ".ibm.csv"), ratio)
+
+    # rootdir=r"F:\Coding\Python\ali-trace\latencies"
+    # # rootdir=r"F:\Coding\Python\ali-trace\latencies\optimal-ibm"
+    # for poss in degradePossList:
+    #     getTimes(os.path.join(rootdir, "sum."+str(poss)+".ibm.csv"), bound, ratio)
 
     # rootdir = r"F:\Coding\Python\ali-trace\latencies\0706subDal09_6h"
     # for poss in degradePossList:

@@ -1,0 +1,15 @@
+65536.recovery.replicas.log,23256,30303
+65536.recovery.eccache.log,20000,28571
+65536.recovery.microec.log,17857,27027
+262144.recovery.replicas.log,9804,10417
+262144.recovery.eccache.log,7576,10417
+262144.recovery.microec.log,8403,10638
+1048576.recovery.replicas.log,2732,2857
+1048576.recovery.eccache.log,2506,3289
+1048576.recovery.microec.log,3906,4184
+4194304.recovery.replicas.log,766,772
+4194304.recovery.eccache.log,597,850
+4194304.recovery.microec.log,1032,1357
+16777216.recovery.replicas.log,194,194
+16777216.recovery.eccache.log,149,185
+16777216.recovery.microec.log,233,338

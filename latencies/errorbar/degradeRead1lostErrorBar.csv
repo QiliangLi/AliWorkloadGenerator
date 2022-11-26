@@ -1,0 +1,15 @@
+65536.degradeRead.replicas.log,16,18
+65536.degradeRead.eccache.log,27,42
+65536.degradeRead.microec.log,30,47
+262144.degradeRead.replicas.log,48,50
+262144.degradeRead.eccache.log,82,123
+262144.degradeRead.microec.log,78,87
+1048576.degradeRead.replicas.log,178,189
+1048576.degradeRead.eccache.log,264,377
+1048576.degradeRead.microec.log,205,231
+4194304.degradeRead.replicas.log,649,658
+4194304.degradeRead.eccache.log,1005,1490
+4194304.degradeRead.microec.log,708,873
+16777216.degradeRead.replicas.log,2574,2576
+16777216.degradeRead.eccache.log,4717,6017
+16777216.degradeRead.microec.log,2712,3411

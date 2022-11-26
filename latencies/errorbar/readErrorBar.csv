@@ -1,0 +1,15 @@
+65536.read.replicas.log,16,18
+65536.read.eccache.log,16,24
+65536.read.microec.log,15,21
+262144.read.replicas.log,48,52
+262144.read.eccache.log,45,53
+262144.read.microec.log,45,50
+1048576.read.replicas.log,175,185
+1048576.read.eccache.log,165,178
+1048576.read.microec.log,165,175
+4194304.read.replicas.log,647,655
+4194304.read.eccache.log,646,656
+4194304.read.microec.log,646,658
+16777216.read.replicas.log,2574,2582
+16777216.read.eccache.log,2574,2577
+16777216.read.microec.log,2574,2576
