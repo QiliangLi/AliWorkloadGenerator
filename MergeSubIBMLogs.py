@@ -14,7 +14,7 @@ def mergeSubLogs(pathList, savePath):
 
     with open(savePath, "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["No", "Size", "Type", "IsDegradeRead", "replicas", "nativeec", "microec"])
+        writer.writerow(["No", "Size", "Type", "IsDegradeRead", "replicas", "nativeec", "hydra", "microec"])
         index = 0
         for line in recordList:
             writer.writerow([index]+line)
@@ -22,13 +22,14 @@ def mergeSubLogs(pathList, savePath):
 
 
 if __name__=="__main__":
-    # saveRootdir=r"F:\Coding\Python\ali-trace\latencies"
-    # rootdirList=[r"F:\Coding\Python\ali-trace\latencies\0706subDal09_6h", r"F:\Coding\Python\ali-trace\latencies\0808subDal09", r"F:\Coding\Python\ali-trace\latencies\0811subDal09"]
-    saveRootdir = r"F:\Coding\Python\ali-trace\latencies\optimal-ibm"
-    rootdirList = [r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0706subDal09_6h",
-                   r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0808subDal09",
-                   r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0811subDal09"]
-    degradePossList=[0.5, 1.0]
+    saveRootdir=r"F:\Coding\Python\ali-trace\latencies"
+    rootdirList=[r"F:\Coding\Python\ali-trace\latencies\0706subDal09_6h", r"F:\Coding\Python\ali-trace\latencies\0808subDal09", r"F:\Coding\Python\ali-trace\latencies\0811subDal09"]
+    # saveRootdir = r"F:\Coding\Python\ali-trace\latencies\optimal-ibm"
+    # rootdirList = [r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0706subDal09_6h",
+    #                r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0808subDal09",
+    #                r"F:\Coding\Python\ali-trace\latencies\optimal-ibm\0811subDal09"]
+    # degradePossList=[0.5, 1.0]
+    degradePossList=[0.5]
 
     pathList=[]
     for poss in degradePossList:

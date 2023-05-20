@@ -28,6 +28,42 @@ def getErrorBarInfo(path, ratio):
     return round(avgLatency), round(latencyList[0]), round(latencyList[-1])
 
 
+def getWritePlotDataErrorBar(rootdir):
+    suffixList=[".replicas.log", ".rep1.log", ".eccache.log", ".microec.log", ".hydra.log"]
+    sizeList=[1024]
+    size = 64 * 1024
+    while size <= 64 * 1024 * 1024:
+        sizeList.append(size)
+        size = size * 4
+    print(sizeList)
+    records={}
+    standards={}
+
+    for size in sizeList:
+        records[size] = {}
+
+        for suffix in suffixList:
+            ratio = 0.0
+            if size >= sizeBound:
+                ratio = minRatio
+            else:
+                ratio = maxRatio
+
+            logPath = os.path.join(rootdir, str(size)+suffix)
+            avgLatency, minLatency, maxLatency = getErrorBarInfo(logPath, ratio)
+            records[size][suffix] = [avgLatency, minLatency, maxLatency]
+            if suffix==".replicas.log":
+                standards[size] = avgLatency
+
+    for i in range(len(sizeList)):
+        tmp=str(i)+"\t"+str(standards[sizeList[i]])
+        for suffix in suffixList:
+            ratioList=[round(x/standards[sizeList[i]],3) for x in records[sizeList[i]][suffix]]
+            tmp = tmp +" "+' '.join(str(ratio) for ratio in ratioList)
+
+        print(tmp)
+
+
 def getWriteErrorBar(rootdir):
     suffixList=[".rep1.log", ".replicas.log", ".eccache.log", ".microec.log"]
     sizeList=[1024]
@@ -152,7 +188,8 @@ if __name__=="__main__":
     recovery2lostRootdir = r"F:\Coding\Python\ali-trace\latencies\errorbar\recovery2lost"
     # getErrorBarInfo(path, ratio)
 
-    getWriteErrorBar(writeRootdir)
+    # getWriteErrorBar(writeRootdir)
+    getWritePlotDataErrorBar(writeRootdir)
     # getReadErrorBar(readRootdir)
     # getDegradeReadErrorBar(degradeReadRootdir)
     # getRecovery1lostErrorBar(recovery1lostRootdir)

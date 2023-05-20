@@ -69,7 +69,7 @@ def mergeLatencies(pathList, operation, poss):
 
 if __name__=="__main__":
     rootdir=r"F:\Coding\Python\ali-trace\latencies\ycsb"
-    schemeList = ["replicas", "nativeec", "microec"]
+    schemeList = ["replicas", "nativeec", "hydra", "microec"]
     degradePossList = [0.0]
     prefixList = ["n0", "n1", "n2", "n3"]
 
