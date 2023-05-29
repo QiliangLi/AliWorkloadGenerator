@@ -1,2023 +1,2021 @@
-writeECPipeline, filename /tmp1024eccache.dat, size 1024, encodingSplitSize 256, loop 1000, storageClass 0, locationClass 0, pureMonECSubStripeNum 1, isPureMonEC false
-MicroEC Coding Ready
-
+writeECPipeline, filename /tmp1024eccache3.dat, size 1024, encodingSplitSize 256, loop 1000, storageClass 0, locationClass 0, pureMonECSubStripeNum 1, isPureMonEC false
 starting benchmark...
 CrailConstants.REPLICATION_FACTOR has changed to 5
-replicas primary file /tmp1024eccache.dat capacity 0
-replicas slave file /tmp1024eccache.datLQL0 capacity 0
-replicas slave file /tmp1024eccache.datLQL1 capacity 0
-replicas slave file /tmp1024eccache.datLQL2 capacity 0
-replicas slave file /tmp1024eccache.datLQL3 capacity 0
-replicas slave file /tmp1024eccache.datLQL4 capacity 0
+replicas primary file /tmp1024eccache3.dat capacity 0
+replicas slave file /tmp1024eccache3.datLQL0 capacity 0
+replicas slave file /tmp1024eccache3.datLQL1 capacity 0
+replicas slave file /tmp1024eccache3.datLQL2 capacity 0
+replicas slave file /tmp1024eccache3.datLQL3 capacity 0
+replicas slave file /tmp1024eccache3.datLQL4 capacity 0
 ops 1000
-final loop (us) 20.36
-Loop 0 (us) 56.56
-Loop 1 (us) 52.364
-Loop 2 (us) 50.136
-Loop 3 (us) 59.535
-Loop 4 (us) 38.763
-Loop 5 (us) 44.799
-Loop 6 (us) 37.514
-Loop 7 (us) 56.818
-Loop 8 (us) 37.181
-Loop 9 (us) 36.968
-Loop 10 (us) 37.302
-Loop 11 (us) 35.882
-Loop 12 (us) 32.802
-Loop 13 (us) 31.805
-Loop 14 (us) 32.771
-Loop 15 (us) 32.561
-Loop 16 (us) 36.044
-Loop 17 (us) 32.683
-Loop 18 (us) 30.791
-Loop 19 (us) 34.423
-Loop 20 (us) 31.638
-Loop 21 (us) 33.736
-Loop 22 (us) 32.632
-Loop 23 (us) 29.917
-Loop 24 (us) 31.405
-Loop 25 (us) 32.35
-Loop 26 (us) 31.504
-Loop 27 (us) 34.686
-Loop 28 (us) 33.498
-Loop 29 (us) 33.187
-Loop 30 (us) 31.528
-Loop 31 (us) 31.118
-Loop 32 (us) 30.422
-Loop 33 (us) 31.135
-Loop 34 (us) 31.73
-Loop 35 (us) 31.089
-Loop 36 (us) 30.166
-Loop 37 (us) 41.466
-Loop 38 (us) 37.272
-Loop 39 (us) 28.8
-Loop 40 (us) 29.008
-Loop 41 (us) 40.202
-Loop 42 (us) 28.765
-Loop 43 (us) 28.605
-Loop 44 (us) 28.414
-Loop 45 (us) 28.61
-Loop 46 (us) 28.528
-Loop 47 (us) 30.53
-Loop 48 (us) 29.603
-Loop 49 (us) 29.491
-Loop 50 (us) 29.478
-Loop 51 (us) 29.055
-Loop 52 (us) 28.37
-Loop 53 (us) 29.006
-Loop 54 (us) 30.356
-Loop 55 (us) 29.128
-Loop 56 (us) 29.431
-Loop 57 (us) 35.293
-Loop 58 (us) 29.124
-Loop 59 (us) 29.073
-Loop 60 (us) 27.987
-Loop 61 (us) 34.88
-Loop 62 (us) 47.595
-Loop 63 (us) 29.808
-Loop 64 (us) 52.948
-Loop 65 (us) 56.544
-Loop 66 (us) 41.425
-Loop 67 (us) 30.819
-Loop 68 (us) 135.184
-Loop 69 (us) 45.975
-Loop 70 (us) 31.706
-Loop 71 (us) 27.083
-Loop 72 (us) 26.744
-Loop 73 (us) 28.132
-Loop 74 (us) 27.082
-Loop 75 (us) 26.684
-Loop 76 (us) 26.842
-Loop 77 (us) 26.732
-Loop 78 (us) 36.111
-Loop 79 (us) 28.122
-Loop 80 (us) 27.881
-Loop 81 (us) 108.662
-Loop 82 (us) 29.662
-Loop 83 (us) 26.952
-Loop 84 (us) 26.983
-Loop 85 (us) 27.12
-Loop 86 (us) 47.847
-Loop 87 (us) 29.689
-Loop 88 (us) 48.83
-Loop 89 (us) 53.047
-Loop 90 (us) 39.858
-Loop 91 (us) 28.33
-Loop 92 (us) 27.843
-Loop 93 (us) 27.936
-Loop 94 (us) 26.834
-Loop 95 (us) 36.279
-Loop 96 (us) 27.688
-Loop 97 (us) 27.464
-Loop 98 (us) 26.581
-Loop 99 (us) 35.197
-Loop 100 (us) 26.963
-Loop 101 (us) 26.812
-Loop 102 (us) 26.362
-Loop 103 (us) 26.671
-Loop 104 (us) 26.804
-Loop 105 (us) 36.264
-Loop 106 (us) 27.883
-Loop 107 (us) 26.87
-Loop 108 (us) 26.319
-Loop 109 (us) 30.155
-Loop 110 (us) 26.6
-Loop 111 (us) 27.654
-Loop 112 (us) 27.175
-Loop 113 (us) 27.384
-Loop 114 (us) 26.877
-Loop 115 (us) 26.398
-Loop 116 (us) 29.85
-Loop 117 (us) 26.81
-Loop 118 (us) 26.092
-Loop 119 (us) 26.411
-Loop 120 (us) 26.557
-Loop 121 (us) 27.435
-Loop 122 (us) 27.923
-Loop 123 (us) 27.291
-Loop 124 (us) 26.64
-Loop 125 (us) 26.976
-Loop 126 (us) 26.604
-Loop 127 (us) 28.993
-Loop 128 (us) 28.626
-Loop 129 (us) 27.725
-Loop 130 (us) 26.2
-Loop 131 (us) 26.959
-Loop 132 (us) 25.949
-Loop 133 (us) 26.595
-Loop 134 (us) 27.125
-Loop 135 (us) 26.518
-Loop 136 (us) 26.066
-Loop 137 (us) 28.8
-Loop 138 (us) 26.786
-Loop 139 (us) 26.214
-Loop 140 (us) 25.962
-Loop 141 (us) 26.165
-Loop 142 (us) 25.935
-Loop 143 (us) 25.971
-Loop 144 (us) 45.189
-Loop 145 (us) 37.343
-Loop 146 (us) 27.747
-Loop 147 (us) 26.19
-Loop 148 (us) 25.962
-Loop 149 (us) 25.826
-Loop 150 (us) 25.718
-Loop 151 (us) 27.612
-Loop 152 (us) 26.414
-Loop 153 (us) 26.5
-Loop 154 (us) 25.867
-Loop 155 (us) 25.678
-Loop 156 (us) 26.093
-Loop 157 (us) 27.171
-Loop 158 (us) 26.113
-Loop 159 (us) 25.605
-Loop 160 (us) 25.753
-Loop 161 (us) 26.381
-Loop 162 (us) 26.223
-Loop 163 (us) 26.136
-Loop 164 (us) 33.31
-Loop 165 (us) 26.941
-Loop 166 (us) 25.966
-Loop 167 (us) 26.163
-Loop 168 (us) 30.853
-Loop 169 (us) 27.002
-Loop 170 (us) 25.86
-Loop 171 (us) 25.821
-Loop 172 (us) 26.061
-Loop 173 (us) 25.61
-Loop 174 (us) 38.544
-Loop 175 (us) 26.854
-Loop 176 (us) 25.483
-Loop 177 (us) 27.123
-Loop 178 (us) 25.667
-Loop 179 (us) 37.261
-Loop 180 (us) 27.136
-Loop 181 (us) 25.489
-Loop 182 (us) 25.295
-Loop 183 (us) 25.428
-Loop 184 (us) 25.173
-Loop 185 (us) 25.814
-Loop 186 (us) 25.345
-Loop 187 (us) 24.73
-Loop 188 (us) 25.202
-Loop 189 (us) 25.086
-Loop 190 (us) 25.203
-Loop 191 (us) 24.896
-Loop 192 (us) 26.3
-Loop 193 (us) 26.556
-Loop 194 (us) 36.843
-Loop 195 (us) 28.714
-Loop 196 (us) 25.561
-Loop 197 (us) 26.639
-Loop 198 (us) 25.484
-Loop 199 (us) 25.481
-Loop 200 (us) 24.763
-Loop 201 (us) 26.012
-Loop 202 (us) 25.679
-Loop 203 (us) 25.542
-Loop 204 (us) 25.734
-Loop 205 (us) 25.379
-Loop 206 (us) 27.663
-Loop 207 (us) 24.703
-Loop 208 (us) 24.776
-Loop 209 (us) 28.445
-Loop 210 (us) 25.406
-Loop 211 (us) 24.862
-Loop 212 (us) 24.904
-Loop 213 (us) 24.723
-Loop 214 (us) 24.584
-Loop 215 (us) 24.958
-Loop 216 (us) 26.222
-Loop 217 (us) 25.549
-Loop 218 (us) 24.379
-Loop 219 (us) 24.807
-Loop 220 (us) 30.713
-Loop 221 (us) 25.279
-Loop 222 (us) 25.286
-Loop 223 (us) 24.682
-Loop 224 (us) 24.794
-Loop 225 (us) 25.909
-Loop 226 (us) 25.326
-Loop 227 (us) 25.124
-Loop 228 (us) 25.556
-Loop 229 (us) 24.983
-Loop 230 (us) 28.28
-Loop 231 (us) 24.84
-Loop 232 (us) 32.294
-Loop 233 (us) 26.101
-Loop 234 (us) 25.069
-Loop 235 (us) 25.356
-Loop 236 (us) 26.762
-Loop 237 (us) 24.63
-Loop 238 (us) 24.821
-Loop 239 (us) 25.363
-Loop 240 (us) 24.615
-Loop 241 (us) 25.246
-Loop 242 (us) 24.625
-Loop 243 (us) 24.415
-Loop 244 (us) 25.758
-Loop 245 (us) 24.723
-Loop 246 (us) 25.155
-Loop 247 (us) 25.206
-Loop 248 (us) 24.838
-Loop 249 (us) 25.629
-Loop 250 (us) 24.803
-Loop 251 (us) 24.577
-Loop 252 (us) 24.57
-Loop 253 (us) 24.718
-Loop 254 (us) 24.672
-Loop 255 (us) 48.538
-Loop 256 (us) 27.794
-Loop 257 (us) 25.799
-Loop 258 (us) 25.317
-Loop 259 (us) 24.403
-Loop 260 (us) 25.837
-Loop 261 (us) 24.96
-Loop 262 (us) 24.076
-Loop 263 (us) 24.087
-Loop 264 (us) 23.86
-Loop 265 (us) 26.498
-Loop 266 (us) 24.076
-Loop 267 (us) 29.704
-Loop 268 (us) 43.72
-Loop 269 (us) 25.687
-Loop 270 (us) 23.54
-Loop 271 (us) 23.576
-Loop 272 (us) 23.225
-Loop 273 (us) 24.138
-Loop 274 (us) 47.895
-Loop 275 (us) 23.701
-Loop 276 (us) 22.895
-Loop 277 (us) 22.961
-Loop 278 (us) 22.94
-Loop 279 (us) 50.618
-Loop 280 (us) 29.913
-Loop 281 (us) 24.06
-Loop 282 (us) 22.93
-Loop 283 (us) 23.121
-Loop 284 (us) 37.205
-Loop 285 (us) 24.249
-Loop 286 (us) 22.82
-Loop 287 (us) 22.79
-Loop 288 (us) 22.825
-Loop 289 (us) 23.533
-Loop 290 (us) 27.55
-Loop 291 (us) 23.161
-Loop 292 (us) 22.984
-Loop 293 (us) 23.404
-Loop 294 (us) 23.046
-Loop 295 (us) 22.874
-Loop 296 (us) 22.872
-Loop 297 (us) 23.061
-Loop 298 (us) 22.573
-Loop 299 (us) 24.243
-Loop 300 (us) 22.948
-Loop 301 (us) 22.549
-Loop 302 (us) 22.682
-Loop 303 (us) 23.671
-Loop 304 (us) 22.673
-Loop 305 (us) 23.057
-Loop 306 (us) 22.543
-Loop 307 (us) 22.661
-Loop 308 (us) 22.773
-Loop 309 (us) 22.83
-Loop 310 (us) 33.239
-Loop 311 (us) 24.038
-Loop 312 (us) 22.702
-Loop 313 (us) 23.181
-Loop 314 (us) 22.448
-Loop 315 (us) 23.255
-Loop 316 (us) 22.671
-Loop 317 (us) 23.404
-Loop 318 (us) 23.005
-Loop 319 (us) 22.702
-Loop 320 (us) 22.557
-Loop 321 (us) 23.427
-Loop 322 (us) 37.467
-Loop 323 (us) 23.808
-Loop 324 (us) 22.768
-Loop 325 (us) 21.935
-Loop 326 (us) 21.698
-Loop 327 (us) 22.222
-Loop 328 (us) 21.623
-Loop 329 (us) 22.656
-Loop 330 (us) 22.013
-Loop 331 (us) 22.024
-Loop 332 (us) 21.836
-Loop 333 (us) 22.697
-Loop 334 (us) 22.03
-Loop 335 (us) 22.006
-Loop 336 (us) 22.508
-Loop 337 (us) 22.618
-Loop 338 (us) 21.922
-Loop 339 (us) 22.352
-Loop 340 (us) 22.278
-Loop 341 (us) 22.268
-Loop 342 (us) 21.658
-Loop 343 (us) 21.986
-Loop 344 (us) 22.507
-Loop 345 (us) 23.039
-Loop 346 (us) 22.049
-Loop 347 (us) 21.948
-Loop 348 (us) 21.771
-Loop 349 (us) 22.155
-Loop 350 (us) 21.92
-Loop 351 (us) 21.878
-Loop 352 (us) 21.787
-Loop 353 (us) 22.525
-Loop 354 (us) 21.603
-Loop 355 (us) 21.973
-Loop 356 (us) 21.762
-Loop 357 (us) 21.763
-Loop 358 (us) 22.475
-Loop 359 (us) 22.158
-Loop 360 (us) 21.854
-Loop 361 (us) 22.536
-Loop 362 (us) 21.831
-Loop 363 (us) 22.19
-Loop 364 (us) 22.252
-Loop 365 (us) 21.74
-Loop 366 (us) 41.225
-Loop 367 (us) 22.579
-Loop 368 (us) 21.316
-Loop 369 (us) 27.907
-Loop 370 (us) 22.502
-Loop 371 (us) 21.377
-Loop 372 (us) 21.224
-Loop 373 (us) 21.21
-Loop 374 (us) 25.011
-Loop 375 (us) 21.142
-Loop 376 (us) 21.379
-Loop 377 (us) 24.461
-Loop 378 (us) 21.703
-Loop 379 (us) 21.495
-Loop 380 (us) 21.35
-Loop 381 (us) 22.302
-Loop 382 (us) 21.383
-Loop 383 (us) 21.526
-Loop 384 (us) 21.333
-Loop 385 (us) 24.028
-Loop 386 (us) 36.472
-Loop 387 (us) 23.119
-Loop 388 (us) 21.527
-Loop 389 (us) 21.157
-Loop 390 (us) 21.304
-Loop 391 (us) 21.292
-Loop 392 (us) 21.318
-Loop 393 (us) 24.401
-Loop 394 (us) 21.311
-Loop 395 (us) 21.329
-Loop 396 (us) 21.237
-Loop 397 (us) 20.907
-Loop 398 (us) 21.29
-Loop 399 (us) 20.886
-Loop 400 (us) 21.045
-Loop 401 (us) 24.258
-Loop 402 (us) 21.519
-Loop 403 (us) 21.082
-Loop 404 (us) 21.202
-Loop 405 (us) 21.991
-Loop 406 (us) 21.924
-Loop 407 (us) 25.169
-Loop 408 (us) 21.915
-Loop 409 (us) 23.692
-Loop 410 (us) 21.373
-Loop 411 (us) 21.672
-Loop 412 (us) 21.707
-Loop 413 (us) 21.182
-Loop 414 (us) 21.058
-Loop 415 (us) 20.943
-Loop 416 (us) 21.182
-Loop 417 (us) 24.251
-Loop 418 (us) 21.716
-Loop 419 (us) 21.098
-Loop 420 (us) 21.643
-Loop 421 (us) 21.104
-Loop 422 (us) 21.202
-Loop 423 (us) 21.0
-Loop 424 (us) 21.142
-Loop 425 (us) 23.473
-Loop 426 (us) 21.428
-Loop 427 (us) 21.21
-Loop 428 (us) 21.335
-Loop 429 (us) 26.103
-Loop 430 (us) 21.467
-Loop 431 (us) 23.004
-Loop 432 (us) 22.108
-Loop 433 (us) 23.991
-Loop 434 (us) 21.896
-Loop 435 (us) 21.27
-Loop 436 (us) 22.789
-Loop 437 (us) 21.567
-Loop 438 (us) 21.393
-Loop 439 (us) 21.275
-Loop 440 (us) 21.774
-Loop 441 (us) 27.619
-Loop 442 (us) 22.179
-Loop 443 (us) 21.29
-Loop 444 (us) 21.597
-Loop 445 (us) 20.926
-Loop 446 (us) 21.198
-Loop 447 (us) 39.064
-Loop 448 (us) 520.61
-Loop 449 (us) 24.914
-Loop 450 (us) 21.678
-Loop 451 (us) 21.085
-Loop 452 (us) 21.211
-Loop 453 (us) 20.891
-Loop 454 (us) 21.275
-Loop 455 (us) 20.845
-Loop 456 (us) 21.366
-Loop 457 (us) 25.78
-Loop 458 (us) 21.991
-Loop 459 (us) 21.118
-Loop 460 (us) 22.077
-Loop 461 (us) 21.164
-Loop 462 (us) 21.498
-Loop 463 (us) 20.958
-Loop 464 (us) 21.162
-Loop 465 (us) 23.679
-Loop 466 (us) 21.537
-Loop 467 (us) 21.226
-Loop 468 (us) 21.208
-Loop 469 (us) 21.053
-Loop 470 (us) 21.13
-Loop 471 (us) 21.289
-Loop 472 (us) 22.227
-Loop 473 (us) 23.686
-Loop 474 (us) 21.468
-Loop 475 (us) 21.091
-Loop 476 (us) 21.435
-Loop 477 (us) 21.173
-Loop 478 (us) 21.1
-Loop 479 (us) 21.169
-Loop 480 (us) 21.069
-Loop 481 (us) 23.613
-Loop 482 (us) 21.385
-Loop 483 (us) 21.527
-Loop 484 (us) 25.642
-Loop 485 (us) 21.541
-Loop 486 (us) 21.366
-Loop 487 (us) 21.087
-Loop 488 (us) 20.985
-Loop 489 (us) 23.917
-Loop 490 (us) 21.373
-Loop 491 (us) 21.379
-Loop 492 (us) 21.29
-Loop 493 (us) 21.926
-Loop 494 (us) 21.055
-Loop 495 (us) 21.053
-Loop 496 (us) 21.144
-Loop 497 (us) 24.182
-Loop 498 (us) 21.518
-Loop 499 (us) 21.171
-Loop 500 (us) 21.304
-Loop 501 (us) 21.085
-Loop 502 (us) 21.105
-Loop 503 (us) 20.927
-Loop 504 (us) 21.102
-Loop 505 (us) 23.528
-Loop 506 (us) 21.377
-Loop 507 (us) 21.043
-Loop 508 (us) 21.197
-Loop 509 (us) 21.727
-Loop 510 (us) 20.977
-Loop 511 (us) 21.148
-Loop 512 (us) 21.018
-Loop 513 (us) 24.111
-Loop 514 (us) 21.295
-Loop 515 (us) 21.361
-Loop 516 (us) 21.146
-Loop 517 (us) 21.028
-Loop 518 (us) 21.492
-Loop 519 (us) 21.117
-Loop 520 (us) 21.065
-Loop 521 (us) 27.752
-Loop 522 (us) 21.422
-Loop 523 (us) 21.366
-Loop 524 (us) 21.213
-Loop 525 (us) 21.251
-Loop 526 (us) 21.257
-Loop 527 (us) 21.057
-Loop 528 (us) 21.018
-Loop 529 (us) 23.699
-Loop 530 (us) 21.225
-Loop 531 (us) 20.998
-Loop 532 (us) 21.098
-Loop 533 (us) 21.04
-Loop 534 (us) 21.809
-Loop 535 (us) 21.335
-Loop 536 (us) 21.101
-Loop 537 (us) 23.774
-Loop 538 (us) 21.038
-Loop 539 (us) 21.066
-Loop 540 (us) 21.069
-Loop 541 (us) 21.224
-Loop 542 (us) 21.135
-Loop 543 (us) 20.963
-Loop 544 (us) 21.0
-Loop 545 (us) 23.651
-Loop 546 (us) 21.93
-Loop 547 (us) 21.47
-Loop 548 (us) 21.155
-Loop 549 (us) 22.15
-Loop 550 (us) 21.2
-Loop 551 (us) 21.323
-Loop 552 (us) 21.253
-Loop 553 (us) 23.522
-Loop 554 (us) 21.23
-Loop 555 (us) 20.904
-Loop 556 (us) 21.161
-Loop 557 (us) 21.036
-Loop 558 (us) 21.581
-Loop 559 (us) 21.484
-Loop 560 (us) 39.162
-Loop 561 (us) 31.277
-Loop 562 (us) 21.991
-Loop 563 (us) 20.898
-Loop 564 (us) 20.951
-Loop 565 (us) 21.184
-Loop 566 (us) 20.869
-Loop 567 (us) 21.064
-Loop 568 (us) 20.783
-Loop 569 (us) 23.495
-Loop 570 (us) 21.724
-Loop 571 (us) 23.693
-Loop 572 (us) 23.134
-Loop 573 (us) 21.754
-Loop 574 (us) 21.556
-Loop 575 (us) 21.189
-Loop 576 (us) 20.987
-Loop 577 (us) 24.845
-Loop 578 (us) 22.194
-Loop 579 (us) 23.312
-Loop 580 (us) 20.834
-Loop 581 (us) 20.739
-Loop 582 (us) 20.793
-Loop 583 (us) 21.023
-Loop 584 (us) 20.562
-Loop 585 (us) 20.963
-Loop 586 (us) 20.785
-Loop 587 (us) 20.782
-Loop 588 (us) 20.774
-Loop 589 (us) 20.561
-Loop 590 (us) 20.666
-Loop 591 (us) 20.597
-Loop 592 (us) 21.452
-Loop 593 (us) 20.889
-Loop 594 (us) 20.911
-Loop 595 (us) 20.742
-Loop 596 (us) 20.558
-Loop 597 (us) 21.694
-Loop 598 (us) 20.634
-Loop 599 (us) 20.918
-Loop 600 (us) 20.675
-Loop 601 (us) 22.328
-Loop 602 (us) 21.43
-Loop 603 (us) 20.94
-Loop 604 (us) 20.752
-Loop 605 (us) 20.805
-Loop 606 (us) 20.63
-Loop 607 (us) 20.557
-Loop 608 (us) 20.617
-Loop 609 (us) 20.52
-Loop 610 (us) 20.644
-Loop 611 (us) 20.658
-Loop 612 (us) 20.49
-Loop 613 (us) 20.677
-Loop 614 (us) 20.435
-Loop 615 (us) 20.655
-Loop 616 (us) 20.198
-Loop 617 (us) 20.699
-Loop 618 (us) 20.576
-Loop 619 (us) 20.832
-Loop 620 (us) 26.91
-Loop 621 (us) 25.601
-Loop 622 (us) 21.072
-Loop 623 (us) 20.728
-Loop 624 (us) 20.435
-Loop 625 (us) 20.703
-Loop 626 (us) 20.921
-Loop 627 (us) 20.703
-Loop 628 (us) 20.551
-Loop 629 (us) 20.809
-Loop 630 (us) 20.703
-Loop 631 (us) 20.972
-Loop 632 (us) 20.517
-Loop 633 (us) 20.697
-Loop 634 (us) 20.706
-Loop 635 (us) 20.706
-Loop 636 (us) 20.624
-Loop 637 (us) 20.874
-Loop 638 (us) 20.645
-Loop 639 (us) 20.789
-Loop 640 (us) 20.652
-Loop 641 (us) 20.735
-Loop 642 (us) 20.739
-Loop 643 (us) 25.988
-Loop 644 (us) 20.623
-Loop 645 (us) 20.624
-Loop 646 (us) 20.662
-Loop 647 (us) 20.863
-Loop 648 (us) 20.594
-Loop 649 (us) 20.637
-Loop 650 (us) 20.448
-Loop 651 (us) 20.608
-Loop 652 (us) 20.357
-Loop 653 (us) 20.519
-Loop 654 (us) 20.57
-Loop 655 (us) 20.534
-Loop 656 (us) 20.28
-Loop 657 (us) 20.383
-Loop 658 (us) 20.497
-Loop 659 (us) 20.572
-Loop 660 (us) 20.442
-Loop 661 (us) 20.762
-Loop 662 (us) 20.629
-Loop 663 (us) 22.051
-Loop 664 (us) 20.96
-Loop 665 (us) 20.663
-Loop 666 (us) 25.133
-Loop 667 (us) 20.846
-Loop 668 (us) 20.809
-Loop 669 (us) 20.681
-Loop 670 (us) 20.601
-Loop 671 (us) 20.783
-Loop 672 (us) 20.67
-Loop 673 (us) 20.709
-Loop 674 (us) 20.689
-Loop 675 (us) 20.805
-Loop 676 (us) 21.724
-Loop 677 (us) 20.836
-Loop 678 (us) 20.747
-Loop 679 (us) 20.821
-Loop 680 (us) 20.564
-Loop 681 (us) 20.61
-Loop 682 (us) 20.613
-Loop 683 (us) 20.604
-Loop 684 (us) 20.728
-Loop 685 (us) 23.344
-Loop 686 (us) 20.654
-Loop 687 (us) 20.679
-Loop 688 (us) 20.834
-Loop 689 (us) 24.47
-Loop 690 (us) 21.24
-Loop 691 (us) 20.77
-Loop 692 (us) 20.517
-Loop 693 (us) 20.668
-Loop 694 (us) 20.645
-Loop 695 (us) 20.727
-Loop 696 (us) 20.553
-Loop 697 (us) 20.692
-Loop 698 (us) 20.471
-Loop 699 (us) 20.577
-Loop 700 (us) 508.631
-Loop 701 (us) 27.867
-Loop 702 (us) 20.889
-Loop 703 (us) 20.647
-Loop 704 (us) 20.696
-Loop 705 (us) 20.524
-Loop 706 (us) 20.75
-Loop 707 (us) 20.614
-Loop 708 (us) 20.642
-Loop 709 (us) 20.494
-Loop 710 (us) 20.557
-Loop 711 (us) 20.481
-Loop 712 (us) 20.52
-Loop 713 (us) 20.664
-Loop 714 (us) 20.386
-Loop 715 (us) 20.306
-Loop 716 (us) 20.504
-Loop 717 (us) 20.249
-Loop 718 (us) 20.748
-Loop 719 (us) 20.422
-Loop 720 (us) 20.34
-Loop 721 (us) 20.354
-Loop 722 (us) 20.523
-Loop 723 (us) 20.65
-Loop 724 (us) 25.37
-Loop 725 (us) 20.97
-Loop 726 (us) 20.733
-Loop 727 (us) 20.594
-Loop 728 (us) 20.626
-Loop 729 (us) 20.433
-Loop 730 (us) 20.545
-Loop 731 (us) 20.467
-Loop 732 (us) 20.659
-Loop 733 (us) 20.812
-Loop 734 (us) 20.588
-Loop 735 (us) 20.4
-Loop 736 (us) 20.654
-Loop 737 (us) 20.149
-Loop 738 (us) 20.424
-Loop 739 (us) 20.373
-Loop 740 (us) 20.681
-Loop 741 (us) 20.619
-Loop 742 (us) 21.022
-Loop 743 (us) 20.622
-Loop 744 (us) 20.482
-Loop 745 (us) 20.375
-Loop 746 (us) 20.683
-Loop 747 (us) 20.464
-Loop 748 (us) 23.035
-Loop 749 (us) 20.942
-Loop 750 (us) 20.602
-Loop 751 (us) 20.513
-Loop 752 (us) 46.089
-Loop 753 (us) 23.037
-Loop 754 (us) 20.839
-Loop 755 (us) 20.397
-Loop 756 (us) 20.408
-Loop 757 (us) 20.51
-Loop 758 (us) 20.535
-Loop 759 (us) 20.34
-Loop 760 (us) 20.331
-Loop 761 (us) 20.298
-Loop 762 (us) 20.275
-Loop 763 (us) 20.284
-Loop 764 (us) 20.486
-Loop 765 (us) 20.405
-Loop 766 (us) 20.404
-Loop 767 (us) 20.353
-Loop 768 (us) 20.239
-Loop 769 (us) 20.124
-Loop 770 (us) 25.667
-Loop 771 (us) 20.407
-Loop 772 (us) 21.618
-Loop 773 (us) 20.34
-Loop 774 (us) 20.212
-Loop 775 (us) 20.389
-Loop 776 (us) 20.256
-Loop 777 (us) 20.356
-Loop 778 (us) 20.218
-Loop 779 (us) 20.107
-Loop 780 (us) 20.322
-Loop 781 (us) 20.307
-Loop 782 (us) 20.378
-Loop 783 (us) 20.455
-Loop 784 (us) 20.089
-Loop 785 (us) 20.176
-Loop 786 (us) 20.506
-Loop 787 (us) 20.439
-Loop 788 (us) 20.521
-Loop 789 (us) 20.322
-Loop 790 (us) 20.196
-Loop 791 (us) 20.282
-Loop 792 (us) 20.353
-Loop 793 (us) 75.137
-Loop 794 (us) 42.927
-Loop 795 (us) 23.94
-Loop 796 (us) 21.798
-Loop 797 (us) 21.24
-Loop 798 (us) 21.311
-Loop 799 (us) 24.537
-Loop 800 (us) 21.674
-Loop 801 (us) 21.273
-Loop 802 (us) 21.485
-Loop 803 (us) 21.337
-Loop 804 (us) 21.539
-Loop 805 (us) 22.075
-Loop 806 (us) 21.535
-Loop 807 (us) 21.578
-Loop 808 (us) 21.547
-Loop 809 (us) 21.791
-Loop 810 (us) 21.712
-Loop 811 (us) 21.43
-Loop 812 (us) 21.546
-Loop 813 (us) 21.443
-Loop 814 (us) 37.68
-Loop 815 (us) 24.144
-Loop 816 (us) 22.505
-Loop 817 (us) 21.663
-Loop 818 (us) 21.419
-Loop 819 (us) 36.31
-Loop 820 (us) 22.46
-Loop 821 (us) 20.762
-Loop 822 (us) 20.74
-Loop 823 (us) 20.551
-Loop 824 (us) 20.447
-Loop 825 (us) 20.603
-Loop 826 (us) 20.601
-Loop 827 (us) 29.241
-Loop 828 (us) 20.593
-Loop 829 (us) 40.791
-Loop 830 (us) 22.574
-Loop 831 (us) 20.53
-Loop 832 (us) 20.481
-Loop 833 (us) 20.3
-Loop 834 (us) 20.532
-Loop 835 (us) 20.36
-Loop 836 (us) 20.459
-Loop 837 (us) 20.291
-Loop 838 (us) 20.251
-Loop 839 (us) 20.42
-Loop 840 (us) 20.549
-Loop 841 (us) 20.504
-Loop 842 (us) 20.393
-Loop 843 (us) 20.936
-Loop 844 (us) 20.307
-Loop 845 (us) 20.466
-Loop 846 (us) 20.424
-Loop 847 (us) 20.331
-Loop 848 (us) 24.765
-Loop 849 (us) 20.775
-Loop 850 (us) 20.466
-Loop 851 (us) 20.202
-Loop 852 (us) 20.351
-Loop 853 (us) 20.371
-Loop 854 (us) 20.943
-Loop 855 (us) 20.353
-Loop 856 (us) 20.637
-Loop 857 (us) 20.308
-Loop 858 (us) 20.305
-Loop 859 (us) 20.309
-Loop 860 (us) 20.454
-Loop 861 (us) 20.344
-Loop 862 (us) 20.442
-Loop 863 (us) 20.336
-Loop 864 (us) 20.344
-Loop 865 (us) 20.3
-Loop 866 (us) 20.302
-Loop 867 (us) 20.311
-Loop 868 (us) 20.451
-Loop 869 (us) 20.329
-Loop 870 (us) 20.271
-Loop 871 (us) 23.863
-Loop 872 (us) 21.014
-Loop 873 (us) 20.415
-Loop 874 (us) 20.328
-Loop 875 (us) 20.202
-Loop 876 (us) 20.349
-Loop 877 (us) 20.291
-Loop 878 (us) 20.255
-Loop 879 (us) 20.269
-Loop 880 (us) 20.114
-Loop 881 (us) 20.413
-Loop 882 (us) 20.329
-Loop 883 (us) 20.193
-Loop 884 (us) 20.353
-Loop 885 (us) 20.265
-Loop 886 (us) 20.22
-Loop 887 (us) 20.1
-Loop 888 (us) 20.291
-Loop 889 (us) 20.313
-Loop 890 (us) 20.219
-Loop 891 (us) 20.287
-Loop 892 (us) 20.362
-Loop 893 (us) 20.34
-Loop 894 (us) 20.402
-Loop 895 (us) 21.199
-Loop 896 (us) 20.515
-Loop 897 (us) 20.402
-Loop 898 (us) 20.273
-Loop 899 (us) 20.273
-Loop 900 (us) 20.435
-Loop 901 (us) 20.481
-Loop 902 (us) 20.482
-Loop 903 (us) 20.444
-Loop 904 (us) 20.315
-Loop 905 (us) 20.326
-Loop 906 (us) 20.236
-Loop 907 (us) 20.404
-Loop 908 (us) 20.324
-Loop 909 (us) 20.48
-Loop 910 (us) 20.432
-Loop 911 (us) 20.322
-Loop 912 (us) 20.178
-Loop 913 (us) 21.064
-Loop 914 (us) 20.296
-Loop 915 (us) 20.313
-Loop 916 (us) 20.579
-Loop 917 (us) 20.572
-Loop 918 (us) 24.379
-Loop 919 (us) 22.422
-Loop 920 (us) 20.791
-Loop 921 (us) 20.322
-Loop 922 (us) 20.271
-Loop 923 (us) 20.304
-Loop 924 (us) 20.402
-Loop 925 (us) 20.47
-Loop 926 (us) 20.506
-Loop 927 (us) 20.491
-Loop 928 (us) 20.309
-Loop 929 (us) 20.351
-Loop 930 (us) 20.326
-Loop 931 (us) 20.461
-Loop 932 (us) 21.025
-Loop 933 (us) 20.559
-Loop 934 (us) 20.48
-Loop 935 (us) 20.497
-Loop 936 (us) 20.262
-Loop 937 (us) 20.627
-Loop 938 (us) 20.413
-Loop 939 (us) 20.65
-Loop 940 (us) 20.521
-Loop 941 (us) 24.211
-Loop 942 (us) 20.756
-Loop 943 (us) 21.386
-Loop 944 (us) 20.428
-Loop 945 (us) 20.497
-Loop 946 (us) 20.209
-Loop 947 (us) 20.515
-Loop 948 (us) 20.309
-Loop 949 (us) 20.462
-Loop 950 (us) 20.212
-Loop 951 (us) 20.428
-Loop 952 (us) 20.513
-Loop 953 (us) 20.486
-Loop 954 (us) 20.07
-Loop 955 (us) 20.674
-Loop 956 (us) 20.557
-Loop 957 (us) 489.718
-Loop 958 (us) 21.286
-Loop 959 (us) 20.466
-Loop 960 (us) 20.306
-Loop 961 (us) 20.599
-Loop 962 (us) 20.207
-Loop 963 (us) 20.575
-Loop 964 (us) 20.208
-Loop 965 (us) 20.577
-Loop 966 (us) 20.269
-Loop 967 (us) 20.625
-Loop 968 (us) 20.282
-Loop 969 (us) 20.446
-Loop 970 (us) 20.236
-Loop 971 (us) 20.566
-Loop 972 (us) 20.265
-Loop 973 (us) 20.611
-Loop 974 (us) 20.203
-Loop 975 (us) 20.467
-Loop 976 (us) 20.099
-Loop 977 (us) 24.147
-Loop 978 (us) 20.389
-Loop 979 (us) 20.754
-Loop 980 (us) 20.391
-Loop 981 (us) 20.703
-Loop 982 (us) 20.204
-Loop 983 (us) 20.562
-Loop 984 (us) 20.439
-Loop 985 (us) 21.581
-Loop 986 (us) 20.517
-Loop 987 (us) 20.663
-Loop 988 (us) 20.322
-Loop 989 (us) 20.502
-Loop 990 (us) 20.347
-Loop 991 (us) 20.324
-Loop 992 (us) 20.422
-Loop 993 (us) 20.428
-Loop 994 (us) 20.165
-Loop 995 (us) 20.487
-Loop 996 (us) 20.085
-Loop 997 (us) 20.244
-Loop 998 (us) 20.203
-Loop 999 (us) 20.36
+final loop (us) 20.776
+Loop 0 (us) 58.257
+Loop 1 (us) 46.806
+Loop 2 (us) 55.225
+Loop 3 (us) 42.601
+Loop 4 (us) 42.48
+Loop 5 (us) 44.816
+Loop 6 (us) 40.152
+Loop 7 (us) 39.484
+Loop 8 (us) 38.378
+Loop 9 (us) 43.286
+Loop 10 (us) 57.784
+Loop 11 (us) 43.019
+Loop 12 (us) 39.791
+Loop 13 (us) 54.186
+Loop 14 (us) 65.562
+Loop 15 (us) 36.068
+Loop 16 (us) 35.218
+Loop 17 (us) 39.056
+Loop 18 (us) 34.776
+Loop 19 (us) 34.231
+Loop 20 (us) 37.438
+Loop 21 (us) 34.841
+Loop 22 (us) 36.303
+Loop 23 (us) 37.487
+Loop 24 (us) 43.722
+Loop 25 (us) 38.273
+Loop 26 (us) 40.069
+Loop 27 (us) 40.433
+Loop 28 (us) 39.612
+Loop 29 (us) 38.218
+Loop 30 (us) 35.061
+Loop 31 (us) 35.1
+Loop 32 (us) 34.531
+Loop 33 (us) 40.044
+Loop 34 (us) 35.806
+Loop 35 (us) 33.715
+Loop 36 (us) 34.14
+Loop 37 (us) 33.595
+Loop 38 (us) 32.664
+Loop 39 (us) 32.619
+Loop 40 (us) 32.773
+Loop 41 (us) 33.686
+Loop 42 (us) 34.061
+Loop 43 (us) 32.953
+Loop 44 (us) 33.267
+Loop 45 (us) 33.44
+Loop 46 (us) 39.122
+Loop 47 (us) 33.921
+Loop 48 (us) 33.076
+Loop 49 (us) 33.25
+Loop 50 (us) 32.323
+Loop 51 (us) 33.11
+Loop 52 (us) 32.775
+Loop 53 (us) 32.347
+Loop 54 (us) 34.413
+Loop 55 (us) 33.043
+Loop 56 (us) 32.463
+Loop 57 (us) 35.592
+Loop 58 (us) 32.274
+Loop 59 (us) 32.224
+Loop 60 (us) 32.108
+Loop 61 (us) 45.034
+Loop 62 (us) 35.977
+Loop 63 (us) 33.276
+Loop 64 (us) 38.53
+Loop 65 (us) 41.535
+Loop 66 (us) 80.413
+Loop 67 (us) 42.455
+Loop 68 (us) 34.805
+Loop 69 (us) 64.231
+Loop 70 (us) 81.778
+Loop 71 (us) 41.334
+Loop 72 (us) 51.757
+Loop 73 (us) 41.384
+Loop 74 (us) 33.582
+Loop 75 (us) 35.193
+Loop 76 (us) 52.201
+Loop 77 (us) 32.871
+Loop 78 (us) 37.121
+Loop 79 (us) 33.125
+Loop 80 (us) 32.975
+Loop 81 (us) 34.213
+Loop 82 (us) 31.849
+Loop 83 (us) 32.561
+Loop 84 (us) 33.032
+Loop 85 (us) 32.547
+Loop 86 (us) 49.576
+Loop 87 (us) 44.46
+Loop 88 (us) 49.973
+Loop 89 (us) 34.624
+Loop 90 (us) 33.63
+Loop 91 (us) 32.866
+Loop 92 (us) 36.126
+Loop 93 (us) 31.841
+Loop 94 (us) 32.596
+Loop 95 (us) 32.779
+Loop 96 (us) 763.052
+Loop 97 (us) 33.245
+Loop 98 (us) 32.357
+Loop 99 (us) 31.65
+Loop 100 (us) 32.831
+Loop 101 (us) 30.469
+Loop 102 (us) 30.287
+Loop 103 (us) 31.659
+Loop 104 (us) 31.339
+Loop 105 (us) 31.579
+Loop 106 (us) 31.687
+Loop 107 (us) 30.338
+Loop 108 (us) 30.35
+Loop 109 (us) 30.178
+Loop 110 (us) 32.393
+Loop 111 (us) 30.675
+Loop 112 (us) 30.469
+Loop 113 (us) 30.905
+Loop 114 (us) 30.273
+Loop 115 (us) 30.025
+Loop 116 (us) 52.779
+Loop 117 (us) 33.224
+Loop 118 (us) 30.608
+Loop 119 (us) 30.417
+Loop 120 (us) 29.693
+Loop 121 (us) 37.857
+Loop 122 (us) 31.138
+Loop 123 (us) 30.54
+Loop 124 (us) 30.351
+Loop 125 (us) 29.912
+Loop 126 (us) 29.969
+Loop 127 (us) 32.423
+Loop 128 (us) 30.429
+Loop 129 (us) 30.644
+Loop 130 (us) 30.192
+Loop 131 (us) 29.804
+Loop 132 (us) 29.881
+Loop 133 (us) 36.139
+Loop 134 (us) 30.543
+Loop 135 (us) 29.826
+Loop 136 (us) 30.801
+Loop 137 (us) 30.373
+Loop 138 (us) 30.033
+Loop 139 (us) 29.935
+Loop 140 (us) 30.103
+Loop 141 (us) 29.879
+Loop 142 (us) 29.695
+Loop 143 (us) 29.762
+Loop 144 (us) 30.42
+Loop 145 (us) 37.065
+Loop 146 (us) 30.635
+Loop 147 (us) 29.512
+Loop 148 (us) 29.584
+Loop 149 (us) 29.879
+Loop 150 (us) 29.939
+Loop 151 (us) 32.005
+Loop 152 (us) 30.552
+Loop 153 (us) 30.254
+Loop 154 (us) 30.215
+Loop 155 (us) 30.054
+Loop 156 (us) 30.004
+Loop 157 (us) 35.06
+Loop 158 (us) 30.522
+Loop 159 (us) 29.68
+Loop 160 (us) 49.617
+Loop 161 (us) 35.694
+Loop 162 (us) 32.002
+Loop 163 (us) 29.765
+Loop 164 (us) 31.784
+Loop 165 (us) 30.344
+Loop 166 (us) 29.928
+Loop 167 (us) 29.403
+Loop 168 (us) 29.479
+Loop 169 (us) 30.925
+Loop 170 (us) 31.103
+Loop 171 (us) 30.308
+Loop 172 (us) 29.753
+Loop 173 (us) 29.48
+Loop 174 (us) 29.755
+Loop 175 (us) 29.598
+Loop 176 (us) 29.706
+Loop 177 (us) 30.118
+Loop 178 (us) 29.748
+Loop 179 (us) 29.634
+Loop 180 (us) 29.702
+Loop 181 (us) 30.542
+Loop 182 (us) 31.109
+Loop 183 (us) 30.142
+Loop 184 (us) 29.786
+Loop 185 (us) 29.997
+Loop 186 (us) 29.717
+Loop 187 (us) 29.272
+Loop 188 (us) 29.826
+Loop 189 (us) 29.216
+Loop 190 (us) 30.268
+Loop 191 (us) 29.507
+Loop 192 (us) 29.954
+Loop 193 (us) 37.789
+Loop 194 (us) 30.489
+Loop 195 (us) 29.534
+Loop 196 (us) 29.837
+Loop 197 (us) 29.243
+Loop 198 (us) 29.815
+Loop 199 (us) 29.25
+Loop 200 (us) 32.41
+Loop 201 (us) 30.418
+Loop 202 (us) 30.068
+Loop 203 (us) 31.032
+Loop 204 (us) 48.654
+Loop 205 (us) 30.063
+Loop 206 (us) 29.452
+Loop 207 (us) 28.552
+Loop 208 (us) 29.532
+Loop 209 (us) 29.584
+Loop 210 (us) 29.302
+Loop 211 (us) 28.566
+Loop 212 (us) 29.627
+Loop 213 (us) 29.126
+Loop 214 (us) 28.546
+Loop 215 (us) 28.572
+Loop 216 (us) 43.259
+Loop 217 (us) 31.003
+Loop 218 (us) 44.474
+Loop 219 (us) 30.032
+Loop 220 (us) 28.992
+Loop 221 (us) 28.623
+Loop 222 (us) 28.194
+Loop 223 (us) 28.058
+Loop 224 (us) 712.322
+Loop 225 (us) 33.196
+Loop 226 (us) 29.113
+Loop 227 (us) 28.628
+Loop 228 (us) 29.086
+Loop 229 (us) 28.638
+Loop 230 (us) 31.658
+Loop 231 (us) 27.998
+Loop 232 (us) 28.11
+Loop 233 (us) 29.891
+Loop 234 (us) 28.299
+Loop 235 (us) 28.468
+Loop 236 (us) 29.789
+Loop 237 (us) 29.195
+Loop 238 (us) 29.514
+Loop 239 (us) 28.262
+Loop 240 (us) 29.585
+Loop 241 (us) 29.436
+Loop 242 (us) 28.792
+Loop 243 (us) 28.028
+Loop 244 (us) 28.443
+Loop 245 (us) 29.325
+Loop 246 (us) 53.767
+Loop 247 (us) 29.744
+Loop 248 (us) 27.611
+Loop 249 (us) 27.699
+Loop 250 (us) 27.479
+Loop 251 (us) 27.15
+Loop 252 (us) 27.923
+Loop 253 (us) 26.816
+Loop 254 (us) 27.439
+Loop 255 (us) 31.445
+Loop 256 (us) 27.889
+Loop 257 (us) 30.826
+Loop 258 (us) 28.714
+Loop 259 (us) 27.996
+Loop 260 (us) 39.115
+Loop 261 (us) 28.033
+Loop 262 (us) 41.823
+Loop 263 (us) 28.852
+Loop 264 (us) 27.323
+Loop 265 (us) 44.487
+Loop 266 (us) 30.259
+Loop 267 (us) 27.3
+Loop 268 (us) 48.692
+Loop 269 (us) 29.922
+Loop 270 (us) 37.688
+Loop 271 (us) 37.799
+Loop 272 (us) 29.015
+Loop 273 (us) 27.634
+Loop 274 (us) 42.04
+Loop 275 (us) 29.891
+Loop 276 (us) 79.636
+Loop 277 (us) 62.841
+Loop 278 (us) 28.676
+Loop 279 (us) 30.68
+Loop 280 (us) 29.31
+Loop 281 (us) 28.413
+Loop 282 (us) 27.262
+Loop 283 (us) 26.573
+Loop 284 (us) 26.479
+Loop 285 (us) 26.186
+Loop 286 (us) 26.596
+Loop 287 (us) 26.128
+Loop 288 (us) 26.397
+Loop 289 (us) 26.955
+Loop 290 (us) 26.76
+Loop 291 (us) 26.962
+Loop 292 (us) 27.864
+Loop 293 (us) 26.959
+Loop 294 (us) 51.245
+Loop 295 (us) 30.166
+Loop 296 (us) 26.693
+Loop 297 (us) 26.975
+Loop 298 (us) 27.245
+Loop 299 (us) 26.558
+Loop 300 (us) 26.981
+Loop 301 (us) 26.793
+Loop 302 (us) 26.186
+Loop 303 (us) 26.316
+Loop 304 (us) 27.795
+Loop 305 (us) 26.921
+Loop 306 (us) 26.69
+Loop 307 (us) 26.452
+Loop 308 (us) 26.391
+Loop 309 (us) 26.465
+Loop 310 (us) 26.706
+Loop 311 (us) 26.054
+Loop 312 (us) 25.896
+Loop 313 (us) 26.901
+Loop 314 (us) 26.368
+Loop 315 (us) 44.964
+Loop 316 (us) 26.015
+Loop 317 (us) 27.229
+Loop 318 (us) 26.263
+Loop 319 (us) 25.388
+Loop 320 (us) 26.652
+Loop 321 (us) 26.363
+Loop 322 (us) 25.719
+Loop 323 (us) 25.458
+Loop 324 (us) 25.953
+Loop 325 (us) 25.714
+Loop 326 (us) 26.113
+Loop 327 (us) 25.769
+Loop 328 (us) 25.718
+Loop 329 (us) 34.637
+Loop 330 (us) 26.068
+Loop 331 (us) 26.174
+Loop 332 (us) 25.975
+Loop 333 (us) 25.655
+Loop 334 (us) 26.508
+Loop 335 (us) 25.845
+Loop 336 (us) 26.322
+Loop 337 (us) 26.511
+Loop 338 (us) 25.774
+Loop 339 (us) 25.784
+Loop 340 (us) 25.635
+Loop 341 (us) 25.714
+Loop 342 (us) 26.888
+Loop 343 (us) 26.197
+Loop 344 (us) 26.676
+Loop 345 (us) 26.334
+Loop 346 (us) 25.902
+Loop 347 (us) 25.496
+Loop 348 (us) 25.835
+Loop 349 (us) 25.561
+Loop 350 (us) 25.406
+Loop 351 (us) 25.399
+Loop 352 (us) 29.487
+Loop 353 (us) 26.837
+Loop 354 (us) 26.141
+Loop 355 (us) 25.919
+Loop 356 (us) 25.563
+Loop 357 (us) 25.511
+Loop 358 (us) 25.727
+Loop 359 (us) 32.811
+Loop 360 (us) 26.469
+Loop 361 (us) 26.417
+Loop 362 (us) 26.147
+Loop 363 (us) 25.359
+Loop 364 (us) 25.548
+Loop 365 (us) 25.432
+Loop 366 (us) 25.995
+Loop 367 (us) 26.07
+Loop 368 (us) 25.771
+Loop 369 (us) 26.558
+Loop 370 (us) 25.611
+Loop 371 (us) 25.674
+Loop 372 (us) 31.965
+Loop 373 (us) 26.234
+Loop 374 (us) 25.518
+Loop 375 (us) 25.809
+Loop 376 (us) 25.649
+Loop 377 (us) 26.327
+Loop 378 (us) 46.343
+Loop 379 (us) 26.771
+Loop 380 (us) 25.175
+Loop 381 (us) 24.78
+Loop 382 (us) 24.824
+Loop 383 (us) 25.675
+Loop 384 (us) 24.808
+Loop 385 (us) 26.392
+Loop 386 (us) 25.191
+Loop 387 (us) 24.526
+Loop 388 (us) 24.493
+Loop 389 (us) 24.835
+Loop 390 (us) 24.841
+Loop 391 (us) 49.145
+Loop 392 (us) 27.883
+Loop 393 (us) 25.563
+Loop 394 (us) 26.453
+Loop 395 (us) 25.595
+Loop 396 (us) 24.482
+Loop 397 (us) 24.855
+Loop 398 (us) 25.488
+Loop 399 (us) 24.59
+Loop 400 (us) 24.765
+Loop 401 (us) 24.963
+Loop 402 (us) 24.159
+Loop 403 (us) 24.436
+Loop 404 (us) 24.344
+Loop 405 (us) 24.377
+Loop 406 (us) 24.167
+Loop 407 (us) 27.488
+Loop 408 (us) 27.096
+Loop 409 (us) 42.594
+Loop 410 (us) 36.354
+Loop 411 (us) 30.976
+Loop 412 (us) 24.238
+Loop 413 (us) 23.903
+Loop 414 (us) 23.845
+Loop 415 (us) 23.531
+Loop 416 (us) 23.515
+Loop 417 (us) 24.263
+Loop 418 (us) 23.899
+Loop 419 (us) 23.823
+Loop 420 (us) 27.322
+Loop 421 (us) 25.356
+Loop 422 (us) 116.974
+Loop 423 (us) 29.301
+Loop 424 (us) 25.075
+Loop 425 (us) 25.363
+Loop 426 (us) 23.859
+Loop 427 (us) 23.889
+Loop 428 (us) 24.335
+Loop 429 (us) 28.638
+Loop 430 (us) 24.684
+Loop 431 (us) 23.968
+Loop 432 (us) 24.976
+Loop 433 (us) 31.233
+Loop 434 (us) 25.771
+Loop 435 (us) 24.063
+Loop 436 (us) 24.448
+Loop 437 (us) 42.371
+Loop 438 (us) 23.757
+Loop 439 (us) 23.71
+Loop 440 (us) 23.425
+Loop 441 (us) 26.431
+Loop 442 (us) 23.711
+Loop 443 (us) 23.704
+Loop 444 (us) 24.85
+Loop 445 (us) 37.6
+Loop 446 (us) 27.681
+Loop 447 (us) 24.993
+Loop 448 (us) 23.93
+Loop 449 (us) 26.974
+Loop 450 (us) 23.537
+Loop 451 (us) 24.26
+Loop 452 (us) 23.635
+Loop 453 (us) 23.406
+Loop 454 (us) 23.236
+Loop 455 (us) 23.342
+Loop 456 (us) 23.05
+Loop 457 (us) 29.002
+Loop 458 (us) 35.743
+Loop 459 (us) 24.583
+Loop 460 (us) 24.295
+Loop 461 (us) 23.944
+Loop 462 (us) 23.446
+Loop 463 (us) 23.474
+Loop 464 (us) 24.098
+Loop 465 (us) 26.711
+Loop 466 (us) 23.416
+Loop 467 (us) 23.718
+Loop 468 (us) 23.081
+Loop 469 (us) 23.382
+Loop 470 (us) 23.24
+Loop 471 (us) 24.8
+Loop 472 (us) 23.171
+Loop 473 (us) 26.356
+Loop 474 (us) 23.726
+Loop 475 (us) 23.012
+Loop 476 (us) 23.692
+Loop 477 (us) 23.395
+Loop 478 (us) 23.274
+Loop 479 (us) 23.414
+Loop 480 (us) 27.3
+Loop 481 (us) 26.611
+Loop 482 (us) 23.621
+Loop 483 (us) 23.618
+Loop 484 (us) 23.411
+Loop 485 (us) 23.183
+Loop 486 (us) 23.378
+Loop 487 (us) 23.247
+Loop 488 (us) 22.944
+Loop 489 (us) 26.935
+Loop 490 (us) 23.816
+Loop 491 (us) 23.542
+Loop 492 (us) 23.406
+Loop 493 (us) 24.477
+Loop 494 (us) 23.297
+Loop 495 (us) 23.238
+Loop 496 (us) 23.156
+Loop 497 (us) 26.02
+Loop 498 (us) 23.712
+Loop 499 (us) 23.511
+Loop 500 (us) 23.298
+Loop 501 (us) 24.825
+Loop 502 (us) 23.288
+Loop 503 (us) 23.387
+Loop 504 (us) 23.168
+Loop 505 (us) 26.073
+Loop 506 (us) 23.511
+Loop 507 (us) 23.672
+Loop 508 (us) 23.454
+Loop 509 (us) 23.336
+Loop 510 (us) 23.186
+Loop 511 (us) 23.394
+Loop 512 (us) 23.358
+Loop 513 (us) 27.121
+Loop 514 (us) 60.971
+Loop 515 (us) 57.39
+Loop 516 (us) 26.728
+Loop 517 (us) 23.624
+Loop 518 (us) 23.276
+Loop 519 (us) 23.187
+Loop 520 (us) 22.828
+Loop 521 (us) 25.911
+Loop 522 (us) 23.07
+Loop 523 (us) 23.075
+Loop 524 (us) 22.771
+Loop 525 (us) 23.179
+Loop 526 (us) 24.26
+Loop 527 (us) 23.287
+Loop 528 (us) 22.963
+Loop 529 (us) 25.868
+Loop 530 (us) 23.236
+Loop 531 (us) 23.294
+Loop 532 (us) 22.924
+Loop 533 (us) 23.043
+Loop 534 (us) 22.71
+Loop 535 (us) 22.97
+Loop 536 (us) 23.114
+Loop 537 (us) 25.663
+Loop 538 (us) 30.061
+Loop 539 (us) 23.245
+Loop 540 (us) 23.037
+Loop 541 (us) 23.21
+Loop 542 (us) 22.873
+Loop 543 (us) 22.76
+Loop 544 (us) 23.11
+Loop 545 (us) 25.802
+Loop 546 (us) 22.939
+Loop 547 (us) 23.57
+Loop 548 (us) 22.815
+Loop 549 (us) 23.054
+Loop 550 (us) 22.677
+Loop 551 (us) 30.598
+Loop 552 (us) 23.198
+Loop 553 (us) 25.631
+Loop 554 (us) 23.413
+Loop 555 (us) 22.972
+Loop 556 (us) 22.436
+Loop 557 (us) 22.749
+Loop 558 (us) 22.74
+Loop 559 (us) 22.667
+Loop 560 (us) 22.722
+Loop 561 (us) 25.184
+Loop 562 (us) 22.667
+Loop 563 (us) 22.564
+Loop 564 (us) 23.638
+Loop 565 (us) 22.621
+Loop 566 (us) 22.571
+Loop 567 (us) 22.56
+Loop 568 (us) 22.52
+Loop 569 (us) 24.996
+Loop 570 (us) 22.801
+Loop 571 (us) 25.408
+Loop 572 (us) 22.731
+Loop 573 (us) 23.143
+Loop 574 (us) 22.511
+Loop 575 (us) 22.718
+Loop 576 (us) 23.205
+Loop 577 (us) 25.667
+Loop 578 (us) 24.321
+Loop 579 (us) 22.851
+Loop 580 (us) 22.58
+Loop 581 (us) 23.391
+Loop 582 (us) 23.564
+Loop 583 (us) 22.822
+Loop 584 (us) 22.327
+Loop 585 (us) 25.368
+Loop 586 (us) 22.779
+Loop 587 (us) 22.724
+Loop 588 (us) 22.749
+Loop 589 (us) 28.863
+Loop 590 (us) 24.149
+Loop 591 (us) 22.624
+Loop 592 (us) 22.992
+Loop 593 (us) 25.291
+Loop 594 (us) 22.62
+Loop 595 (us) 22.795
+Loop 596 (us) 22.339
+Loop 597 (us) 22.313
+Loop 598 (us) 22.314
+Loop 599 (us) 23.471
+Loop 600 (us) 23.006
+Loop 601 (us) 25.176
+Loop 602 (us) 45.181
+Loop 603 (us) 24.493
+Loop 604 (us) 23.466
+Loop 605 (us) 22.377
+Loop 606 (us) 21.725
+Loop 607 (us) 21.862
+Loop 608 (us) 25.242
+Loop 609 (us) 25.119
+Loop 610 (us) 22.039
+Loop 611 (us) 21.891
+Loop 612 (us) 21.92
+Loop 613 (us) 21.925
+Loop 614 (us) 21.829
+Loop 615 (us) 21.754
+Loop 616 (us) 21.801
+Loop 617 (us) 24.621
+Loop 618 (us) 22.25
+Loop 619 (us) 22.567
+Loop 620 (us) 22.734
+Loop 621 (us) 25.463
+Loop 622 (us) 23.208
+Loop 623 (us) 22.081
+Loop 624 (us) 22.153
+Loop 625 (us) 24.425
+Loop 626 (us) 21.894
+Loop 627 (us) 21.815
+Loop 628 (us) 21.627
+Loop 629 (us) 21.845
+Loop 630 (us) 21.846
+Loop 631 (us) 21.904
+Loop 632 (us) 21.868
+Loop 633 (us) 24.975
+Loop 634 (us) 21.911
+Loop 635 (us) 21.869
+Loop 636 (us) 21.835
+Loop 637 (us) 21.549
+Loop 638 (us) 22.132
+Loop 639 (us) 21.66
+Loop 640 (us) 22.225
+Loop 641 (us) 24.133
+Loop 642 (us) 21.74
+Loop 643 (us) 21.795
+Loop 644 (us) 21.647
+Loop 645 (us) 21.924
+Loop 646 (us) 22.587
+Loop 647 (us) 22.059
+Loop 648 (us) 21.838
+Loop 649 (us) 24.545
+Loop 650 (us) 21.761
+Loop 651 (us) 22.109
+Loop 652 (us) 21.856
+Loop 653 (us) 21.904
+Loop 654 (us) 21.756
+Loop 655 (us) 21.718
+Loop 656 (us) 24.419
+Loop 657 (us) 25.077
+Loop 658 (us) 22.319
+Loop 659 (us) 27.602
+Loop 660 (us) 21.798
+Loop 661 (us) 22.06
+Loop 662 (us) 22.117
+Loop 663 (us) 24.032
+Loop 664 (us) 22.297
+Loop 665 (us) 24.106
+Loop 666 (us) 22.134
+Loop 667 (us) 21.357
+Loop 668 (us) 21.353
+Loop 669 (us) 21.66
+Loop 670 (us) 21.513
+Loop 671 (us) 21.379
+Loop 672 (us) 21.559
+Loop 673 (us) 21.514
+Loop 674 (us) 21.654
+Loop 675 (us) 21.355
+Loop 676 (us) 22.115
+Loop 677 (us) 22.648
+Loop 678 (us) 40.232
+Loop 679 (us) 48.584
+Loop 680 (us) 24.711
+Loop 681 (us) 21.649
+Loop 682 (us) 21.352
+Loop 683 (us) 20.971
+Loop 684 (us) 21.034
+Loop 685 (us) 24.214
+Loop 686 (us) 21.122
+Loop 687 (us) 20.745
+Loop 688 (us) 21.151
+Loop 689 (us) 20.99
+Loop 690 (us) 20.927
+Loop 691 (us) 21.236
+Loop 692 (us) 20.993
+Loop 693 (us) 21.344
+Loop 694 (us) 21.383
+Loop 695 (us) 21.094
+Loop 696 (us) 21.486
+Loop 697 (us) 20.786
+Loop 698 (us) 27.508
+Loop 699 (us) 21.643
+Loop 700 (us) 21.145
+Loop 701 (us) 21.093
+Loop 702 (us) 21.125
+Loop 703 (us) 21.032
+Loop 704 (us) 21.022
+Loop 705 (us) 20.987
+Loop 706 (us) 21.073
+Loop 707 (us) 20.902
+Loop 708 (us) 21.075
+Loop 709 (us) 20.976
+Loop 710 (us) 21.248
+Loop 711 (us) 21.233
+Loop 712 (us) 21.016
+Loop 713 (us) 21.162
+Loop 714 (us) 21.095
+Loop 715 (us) 21.322
+Loop 716 (us) 21.118
+Loop 717 (us) 21.286
+Loop 718 (us) 21.32
+Loop 719 (us) 21.213
+Loop 720 (us) 21.021
+Loop 721 (us) 21.917
+Loop 722 (us) 20.892
+Loop 723 (us) 21.237
+Loop 724 (us) 21.106
+Loop 725 (us) 20.942
+Loop 726 (us) 20.955
+Loop 727 (us) 21.158
+Loop 728 (us) 20.942
+Loop 729 (us) 21.036
+Loop 730 (us) 21.136
+Loop 731 (us) 21.035
+Loop 732 (us) 21.204
+Loop 733 (us) 20.96
+Loop 734 (us) 21.204
+Loop 735 (us) 21.191
+Loop 736 (us) 21.034
+Loop 737 (us) 23.745
+Loop 738 (us) 20.967
+Loop 739 (us) 21.159
+Loop 740 (us) 20.887
+Loop 741 (us) 20.786
+Loop 742 (us) 20.739
+Loop 743 (us) 20.992
+Loop 744 (us) 20.809
+Loop 745 (us) 20.674
+Loop 746 (us) 20.521
+Loop 747 (us) 21.164
+Loop 748 (us) 22.268
+Loop 749 (us) 21.782
+Loop 750 (us) 21.26
+Loop 751 (us) 20.983
+Loop 752 (us) 20.972
+Loop 753 (us) 21.931
+Loop 754 (us) 20.956
+Loop 755 (us) 21.093
+Loop 756 (us) 21.029
+Loop 757 (us) 20.964
+Loop 758 (us) 20.852
+Loop 759 (us) 21.138
+Loop 760 (us) 21.126
+Loop 761 (us) 21.148
+Loop 762 (us) 21.082
+Loop 763 (us) 20.95
+Loop 764 (us) 21.033
+Loop 765 (us) 20.774
+Loop 766 (us) 20.77
+Loop 767 (us) 20.938
+Loop 768 (us) 20.903
+Loop 769 (us) 20.918
+Loop 770 (us) 21.066
+Loop 771 (us) 21.02
+Loop 772 (us) 20.968
+Loop 773 (us) 20.924
+Loop 774 (us) 22.306
+Loop 775 (us) 21.359
+Loop 776 (us) 21.949
+Loop 777 (us) 21.14
+Loop 778 (us) 21.156
+Loop 779 (us) 21.215
+Loop 780 (us) 21.153
+Loop 781 (us) 21.095
+Loop 782 (us) 20.856
+Loop 783 (us) 20.411
+Loop 784 (us) 20.876
+Loop 785 (us) 20.526
+Loop 786 (us) 20.75
+Loop 787 (us) 20.623
+Loop 788 (us) 20.859
+Loop 789 (us) 21.073
+Loop 790 (us) 21.095
+Loop 791 (us) 21.133
+Loop 792 (us) 21.202
+Loop 793 (us) 21.124
+Loop 794 (us) 21.194
+Loop 795 (us) 20.856
+Loop 796 (us) 20.922
+Loop 797 (us) 20.947
+Loop 798 (us) 21.126
+Loop 799 (us) 23.644
+Loop 800 (us) 21.107
+Loop 801 (us) 20.595
+Loop 802 (us) 21.167
+Loop 803 (us) 21.341
+Loop 804 (us) 20.949
+Loop 805 (us) 20.646
+Loop 806 (us) 21.208
+Loop 807 (us) 20.712
+Loop 808 (us) 21.238
+Loop 809 (us) 20.794
+Loop 810 (us) 20.827
+Loop 811 (us) 21.193
+Loop 812 (us) 21.051
+Loop 813 (us) 20.94
+Loop 814 (us) 21.159
+Loop 815 (us) 20.883
+Loop 816 (us) 21.062
+Loop 817 (us) 20.819
+Loop 818 (us) 21.0
+Loop 819 (us) 21.224
+Loop 820 (us) 20.883
+Loop 821 (us) 25.122
+Loop 822 (us) 21.173
+Loop 823 (us) 20.604
+Loop 824 (us) 20.913
+Loop 825 (us) 20.509
+Loop 826 (us) 20.888
+Loop 827 (us) 20.639
+Loop 828 (us) 21.146
+Loop 829 (us) 21.532
+Loop 830 (us) 20.785
+Loop 831 (us) 20.987
+Loop 832 (us) 21.353
+Loop 833 (us) 20.719
+Loop 834 (us) 21.058
+Loop 835 (us) 20.579
+Loop 836 (us) 21.104
+Loop 837 (us) 20.96
+Loop 838 (us) 20.961
+Loop 839 (us) 21.033
+Loop 840 (us) 20.989
+Loop 841 (us) 20.865
+Loop 842 (us) 20.803
+Loop 843 (us) 21.639
+Loop 844 (us) 25.362
+Loop 845 (us) 21.262
+Loop 846 (us) 21.842
+Loop 847 (us) 21.1
+Loop 848 (us) 21.053
+Loop 849 (us) 21.087
+Loop 850 (us) 21.058
+Loop 851 (us) 20.818
+Loop 852 (us) 20.761
+Loop 853 (us) 21.02
+Loop 854 (us) 20.961
+Loop 855 (us) 20.67
+Loop 856 (us) 21.06
+Loop 857 (us) 20.668
+Loop 858 (us) 20.85
+Loop 859 (us) 20.781
+Loop 860 (us) 20.902
+Loop 861 (us) 20.887
+Loop 862 (us) 20.98
+Loop 863 (us) 20.929
+Loop 864 (us) 21.014
+Loop 865 (us) 20.524
+Loop 866 (us) 20.801
+Loop 867 (us) 24.011
+Loop 868 (us) 21.074
+Loop 869 (us) 21.385
+Loop 870 (us) 20.942
+Loop 871 (us) 21.202
+Loop 872 (us) 20.872
+Loop 873 (us) 21.069
+Loop 874 (us) 20.925
+Loop 875 (us) 21.193
+Loop 876 (us) 24.909
+Loop 877 (us) 21.304
+Loop 878 (us) 21.093
+Loop 879 (us) 20.705
+Loop 880 (us) 20.71
+Loop 881 (us) 21.191
+Loop 882 (us) 20.746
+Loop 883 (us) 21.079
+Loop 884 (us) 21.25
+Loop 885 (us) 21.211
+Loop 886 (us) 20.502
+Loop 887 (us) 20.932
+Loop 888 (us) 20.691
+Loop 889 (us) 20.938
+Loop 890 (us) 20.812
+Loop 891 (us) 20.622
+Loop 892 (us) 20.936
+Loop 893 (us) 21.521
+Loop 894 (us) 20.641
+Loop 895 (us) 20.734
+Loop 896 (us) 20.741
+Loop 897 (us) 20.371
+Loop 898 (us) 20.377
+Loop 899 (us) 21.355
+Loop 900 (us) 20.652
+Loop 901 (us) 20.894
+Loop 902 (us) 20.896
+Loop 903 (us) 20.572
+Loop 904 (us) 20.978
+Loop 905 (us) 20.748
+Loop 906 (us) 20.565
+Loop 907 (us) 21.12
+Loop 908 (us) 20.908
+Loop 909 (us) 20.987
+Loop 910 (us) 20.659
+Loop 911 (us) 20.455
+Loop 912 (us) 20.492
+Loop 913 (us) 21.393
+Loop 914 (us) 20.663
+Loop 915 (us) 20.687
+Loop 916 (us) 20.42
+Loop 917 (us) 20.61
+Loop 918 (us) 20.61
+Loop 919 (us) 22.221
+Loop 920 (us) 21.696
+Loop 921 (us) 25.397
+Loop 922 (us) 21.399
+Loop 923 (us) 21.04
+Loop 924 (us) 20.72
+Loop 925 (us) 20.953
+Loop 926 (us) 20.932
+Loop 927 (us) 20.927
+Loop 928 (us) 20.907
+Loop 929 (us) 20.566
+Loop 930 (us) 20.715
+Loop 931 (us) 20.588
+Loop 932 (us) 21.51
+Loop 933 (us) 21.102
+Loop 934 (us) 20.959
+Loop 935 (us) 20.632
+Loop 936 (us) 20.878
+Loop 937 (us) 20.511
+Loop 938 (us) 20.571
+Loop 939 (us) 20.548
+Loop 940 (us) 20.838
+Loop 941 (us) 20.703
+Loop 942 (us) 20.918
+Loop 943 (us) 20.714
+Loop 944 (us) 24.575
+Loop 945 (us) 22.244
+Loop 946 (us) 20.706
+Loop 947 (us) 20.738
+Loop 948 (us) 20.812
+Loop 949 (us) 20.648
+Loop 950 (us) 20.667
+Loop 951 (us) 20.53
+Loop 952 (us) 20.814
+Loop 953 (us) 20.474
+Loop 954 (us) 20.912
+Loop 955 (us) 20.582
+Loop 956 (us) 20.756
+Loop 957 (us) 20.419
+Loop 958 (us) 20.857
+Loop 959 (us) 20.569
+Loop 960 (us) 20.83
+Loop 961 (us) 20.515
+Loop 962 (us) 20.652
+Loop 963 (us) 20.685
+Loop 964 (us) 20.825
+Loop 965 (us) 20.623
+Loop 966 (us) 20.834
+Loop 967 (us) 24.59
+Loop 968 (us) 21.417
+Loop 969 (us) 20.506
+Loop 970 (us) 20.632
+Loop 971 (us) 20.624
+Loop 972 (us) 20.763
+Loop 973 (us) 20.639
+Loop 974 (us) 20.79
+Loop 975 (us) 20.612
+Loop 976 (us) 20.973
+Loop 977 (us) 20.777
+Loop 978 (us) 20.789
+Loop 979 (us) 20.77
+Loop 980 (us) 20.898
+Loop 981 (us) 20.717
+Loop 982 (us) 20.83
+Loop 983 (us) 20.727
+Loop 984 (us) 20.899
+Loop 985 (us) 20.621
+Loop 986 (us) 20.679
+Loop 987 (us) 20.615
+Loop 988 (us) 20.803
+Loop 989 (us) 20.912
+Loop 990 (us) 24.513
+Loop 991 (us) 21.02
+Loop 992 (us) 20.969
+Loop 993 (us) 20.503
+Loop 994 (us) 20.602
+Loop 995 (us) 20.743
+Loop 996 (us) 576.591
+Loop 997 (us) 21.795
+Loop 998 (us) 21.434
+Loop 999 (us) 20.776
 Warmup times 0
-avgLoopLatency(us) 25.529322
-iops 39170.64464148323
-variance 27.348852130177537
-Loop 0 [56560, 13104, 22976, 8670]
-Loop 1 [52364, 5037, 30697, 7924]
-Loop 2 [50136, 4397, 20548, 7632]
-Loop 3 [59535, 4234, 21519, 26881]
-Loop 4 [38763, 4279, 20982, 7012]
-Loop 5 [44799, 3774, 28473, 6847]
-Loop 6 [37514, 4033, 20746, 7138]
-Loop 7 [56818, 3645, 32918, 15033]
-Loop 8 [37181, 4131, 21608, 6119]
-Loop 9 [36968, 4098, 21249, 6306]
-Loop 10 [37302, 3907, 21883, 6360]
-Loop 11 [35882, 3643, 21585, 5795]
-Loop 12 [32802, 3253, 19073, 5930]
-Loop 13 [31805, 3347, 18312, 5554]
-Loop 14 [32771, 3355, 18814, 5659]
-Loop 15 [32561, 3531, 18071, 6216]
-Loop 16 [36044, 3966, 21144, 6098]
-Loop 17 [32683, 3430, 18733, 5978]
-Loop 18 [30791, 3572, 17260, 5575]
-Loop 19 [34423, 3171, 20649, 6008]
-Loop 20 [31638, 3399, 17751, 5733]
-Loop 21 [33736, 3240, 19991, 5547]
-Loop 22 [32632, 3151, 18620, 5987]
-Loop 23 [29917, 3308, 16148, 5998]
-Loop 24 [31405, 3222, 17038, 5977]
-Loop 25 [32350, 3621, 16974, 6346]
-Loop 26 [31504, 3387, 17231, 5768]
-Loop 27 [34686, 3174, 20670, 5974]
-Loop 28 [33498, 3215, 19311, 6113]
-Loop 29 [33187, 3167, 19285, 5592]
-Loop 30 [31528, 3314, 17411, 5833]
-Loop 31 [31118, 3344, 16688, 5928]
-Loop 32 [30422, 3211, 16936, 5544]
-Loop 33 [31135, 3257, 16726, 6126]
-Loop 34 [31730, 3175, 17860, 5912]
-Loop 35 [31089, 3510, 16850, 5792]
-Loop 36 [30166, 3027, 16161, 5914]
-Loop 37 [41466, 3375, 26544, 7058]
-Loop 38 [37272, 3672, 16352, 12815]
-Loop 39 [28800, 2994, 15826, 5582]
-Loop 40 [29008, 2999, 16458, 5306]
-Loop 41 [40202, 3044, 27143, 5641]
-Loop 42 [28765, 3133, 15615, 5700]
-Loop 43 [28605, 3027, 16070, 5284]
-Loop 44 [28414, 2920, 15469, 5622]
-Loop 45 [28610, 2967, 15660, 5684]
-Loop 46 [28528, 2923, 15487, 5831]
-Loop 47 [30530, 3181, 16463, 6034]
-Loop 48 [29603, 3085, 16313, 5874]
-Loop 49 [29491, 3157, 15771, 5981]
-Loop 50 [29478, 2952, 16513, 5509]
-Loop 51 [29055, 3004, 16055, 5551]
-Loop 52 [28370, 2887, 15637, 5276]
-Loop 53 [29006, 3019, 15922, 5615]
-Loop 54 [30356, 3067, 16725, 5731]
-Loop 55 [29128, 3128, 15704, 5662]
-Loop 56 [29431, 2883, 16034, 6273]
-Loop 57 [35293, 3062, 21621, 6045]
-Loop 58 [29124, 3328, 15666, 5875]
-Loop 59 [29073, 3022, 16132, 5624]
-Loop 60 [27987, 2872, 15472, 5340]
-Loop 61 [34880, 4100, 18844, 6637]
-Loop 62 [47595, 3426, 16337, 22853]
-Loop 63 [29808, 3332, 16196, 5729]
-Loop 64 [52948, 3573, 37712, 6739]
-Loop 65 [56544, 4660, 38741, 7277]
-Loop 66 [41425, 3660, 17207, 15509]
-Loop 67 [30819, 2985, 16477, 6409]
-Loop 68 [135184, 3518, 17337, 109504]
-Loop 69 [45975, 4157, 30014, 6843]
-Loop 70 [31706, 3938, 16341, 6464]
-Loop 71 [27083, 2925, 14824, 5024]
-Loop 72 [26744, 2788, 14199, 5535]
-Loop 73 [28132, 2952, 15240, 5445]
-Loop 74 [27082, 2861, 14967, 5019]
-Loop 75 [26684, 2821, 14143, 5489]
-Loop 76 [26842, 2832, 14208, 5518]
-Loop 77 [26732, 2770, 14780, 4981]
-Loop 78 [36111, 2787, 14707, 14359]
-Loop 79 [28122, 3051, 15206, 5482]
-Loop 80 [27881, 3045, 14860, 5624]
-Loop 81 [108662, 3534, 16280, 35891]
-Loop 82 [29662, 3597, 15538, 5732]
-Loop 83 [26952, 2839, 14684, 5181]
-Loop 84 [26983, 2877, 14348, 5435]
-Loop 85 [27120, 2862, 14567, 5476]
-Loop 86 [47847, 3171, 21292, 5766]
-Loop 87 [29689, 3311, 15278, 6397]
-Loop 88 [48830, 2928, 27612, 12950]
-Loop 89 [53047, 3585, 27785, 15064]
-Loop 90 [39858, 3339, 15580, 16174]
-Loop 91 [28330, 3082, 15179, 5469]
-Loop 92 [27843, 2994, 14613, 5859]
-Loop 93 [27936, 2952, 14684, 5770]
-Loop 94 [26834, 2882, 14354, 5072]
-Loop 95 [36279, 2846, 23258, 5775]
-Loop 96 [27688, 3120, 14718, 5447]
-Loop 97 [27464, 2996, 14722, 5245]
-Loop 98 [26581, 2850, 14357, 5072]
-Loop 99 [35197, 2947, 21583, 6395]
-Loop 100 [26963, 3277, 14258, 5146]
-Loop 101 [26812, 2885, 14687, 4969]
-Loop 102 [26362, 2808, 13879, 5465]
-Loop 103 [26671, 2787, 14266, 5420]
-Loop 104 [26804, 2813, 14224, 5504]
-Loop 105 [36264, 3009, 22931, 5970]
-Loop 106 [27883, 3102, 14878, 5517]
-Loop 107 [26870, 2971, 14283, 5400]
-Loop 108 [26319, 2883, 14175, 5063]
-Loop 109 [30155, 2899, 14248, 8809]
-Loop 110 [26600, 2967, 14264, 5155]
-Loop 111 [27654, 3015, 14678, 5596]
-Loop 112 [27175, 3036, 14343, 5471]
-Loop 113 [27384, 3015, 14671, 5379]
-Loop 114 [26877, 2930, 14311, 5429]
-Loop 115 [26398, 2879, 14282, 4962]
-Loop 116 [29850, 3036, 14442, 5561]
-Loop 117 [26810, 2896, 14288, 5327]
-Loop 118 [26092, 2886, 14051, 4995]
-Loop 119 [26411, 2848, 14216, 5008]
-Loop 120 [26557, 2796, 14516, 5039]
-Loop 121 [27435, 3058, 14659, 5245]
-Loop 122 [27923, 3111, 14762, 5683]
-Loop 123 [27291, 3013, 14445, 5546]
-Loop 124 [26640, 2871, 14136, 5349]
-Loop 125 [26976, 2896, 14736, 5110]
-Loop 126 [26604, 2910, 14288, 5038]
-Loop 127 [28993, 2989, 14558, 5139]
-Loop 128 [28626, 2991, 15272, 5540]
-Loop 129 [27725, 2905, 14948, 5749]
-Loop 130 [26200, 2934, 14135, 5008]
-Loop 131 [26959, 2865, 14843, 5281]
-Loop 132 [25949, 2846, 14160, 4975]
-Loop 133 [26595, 2960, 14678, 4957]
-Loop 134 [27125, 2942, 14769, 5279]
-Loop 135 [26518, 3058, 14366, 4941]
-Loop 136 [26066, 2779, 14213, 5078]
-Loop 137 [28800, 3060, 14835, 6782]
-Loop 138 [26786, 2892, 14027, 5887]
-Loop 139 [26214, 2858, 14503, 4925]
-Loop 140 [25962, 2820, 14195, 5032]
-Loop 141 [26165, 2899, 14343, 4883]
-Loop 142 [25935, 2805, 14038, 5030]
-Loop 143 [25971, 2818, 14246, 4864]
-Loop 144 [45189, 3140, 14742, 5854]
-Loop 145 [37343, 3554, 15760, 5946]
-Loop 146 [27747, 3281, 15046, 5195]
-Loop 147 [26190, 2921, 14267, 5027]
-Loop 148 [25962, 2838, 14301, 4994]
-Loop 149 [25826, 2841, 14189, 4954]
-Loop 150 [25718, 2863, 14063, 5021]
-Loop 151 [27612, 2976, 14634, 5190]
-Loop 152 [26414, 2905, 14472, 5143]
-Loop 153 [26500, 2883, 14461, 5136]
-Loop 154 [25867, 2861, 14198, 4944]
-Loop 155 [25678, 2825, 13931, 5117]
-Loop 156 [26093, 2890, 14356, 4995]
-Loop 157 [27171, 2944, 14915, 5212]
-Loop 158 [26113, 2959, 14162, 5045]
-Loop 159 [25605, 2832, 13903, 5030]
-Loop 160 [25753, 2748, 14146, 5034]
-Loop 161 [26381, 2885, 14343, 5154]
-Loop 162 [26223, 2829, 14495, 5072]
-Loop 163 [26136, 2962, 14317, 4960]
-Loop 164 [33310, 2923, 20907, 5469]
-Loop 165 [26941, 3134, 14776, 4957]
-Loop 166 [25966, 2821, 14173, 5021]
-Loop 167 [26163, 2841, 14255, 5124]
-Loop 168 [30853, 2890, 18832, 5245]
-Loop 169 [27002, 3244, 14491, 5141]
-Loop 170 [25860, 2920, 14080, 4982]
-Loop 171 [25821, 2846, 14136, 4975]
-Loop 172 [26061, 2982, 14186, 4993]
-Loop 173 [25610, 2821, 13865, 5003]
-Loop 174 [38544, 2815, 26154, 5553]
-Loop 175 [26854, 3069, 14685, 5046]
-Loop 176 [25483, 2872, 13706, 5024]
-Loop 177 [27123, 2834, 15052, 5161]
-Loop 178 [25667, 2810, 13914, 5075]
-Loop 179 [37261, 2799, 25075, 5389]
-Loop 180 [27136, 3244, 14289, 5327]
-Loop 181 [25489, 2950, 13672, 4918]
-Loop 182 [25295, 2826, 13372, 5201]
-Loop 183 [25428, 2874, 13328, 5353]
-Loop 184 [25173, 2823, 13432, 5066]
-Loop 185 [25814, 2911, 13674, 5219]
-Loop 186 [25345, 2801, 13575, 5051]
-Loop 187 [24730, 2730, 13256, 4955]
-Loop 188 [25202, 2822, 13326, 5143]
-Loop 189 [25086, 2828, 13347, 5076]
-Loop 190 [25203, 2796, 13377, 5080]
-Loop 191 [24896, 2846, 13127, 5065]
-Loop 192 [26300, 3039, 13912, 5212]
-Loop 193 [26556, 3098, 14286, 5140]
-Loop 194 [36843, 2885, 24537, 5609]
-Loop 195 [28714, 3661, 14845, 5817]
-Loop 196 [25561, 2856, 13586, 5219]
-Loop 197 [26639, 3051, 13670, 5884]
-Loop 198 [25484, 3076, 13286, 5292]
-Loop 199 [25481, 2911, 13460, 5214]
-Loop 200 [24763, 2761, 13340, 4854]
-Loop 201 [26012, 3038, 13776, 5183]
-Loop 202 [25679, 2874, 13677, 5256]
-Loop 203 [25542, 2807, 13353, 5482]
-Loop 204 [25734, 2877, 13539, 5424]
-Loop 205 [25379, 2912, 13677, 4840]
-Loop 206 [27663, 2831, 13315, 7633]
-Loop 207 [24703, 2772, 13262, 4855]
-Loop 208 [24776, 2925, 13038, 4888]
-Loop 209 [28445, 3085, 15096, 5697]
-Loop 210 [25406, 3024, 13588, 4946]
-Loop 211 [24862, 2874, 13193, 4923]
-Loop 212 [24904, 2756, 13309, 4942]
-Loop 213 [24723, 2777, 13107, 4951]
-Loop 214 [24584, 2755, 13052, 4924]
-Loop 215 [24958, 2914, 13291, 4870]
-Loop 216 [26222, 2754, 14744, 4879]
-Loop 217 [25549, 2897, 13471, 5143]
-Loop 218 [24379, 2828, 12921, 4922]
-Loop 219 [24807, 2742, 13244, 5018]
-Loop 220 [30713, 2754, 19044, 5072]
-Loop 221 [25279, 3140, 13165, 5050]
-Loop 222 [25286, 2889, 13406, 5039]
-Loop 223 [24682, 2754, 12939, 5088]
-Loop 224 [24794, 2863, 13215, 4900]
-Loop 225 [25909, 2968, 13444, 5538]
-Loop 226 [25326, 2896, 13249, 5282]
-Loop 227 [25124, 2815, 13333, 5141]
-Loop 228 [25556, 3029, 13605, 5001]
-Loop 229 [24983, 2868, 13146, 5187]
-Loop 230 [28280, 2885, 13649, 5961]
-Loop 231 [24840, 2872, 13046, 5062]
-Loop 232 [32294, 2959, 14107, 5690]
-Loop 233 [26101, 2987, 13345, 5724]
-Loop 234 [25069, 2887, 12992, 5293]
-Loop 235 [25356, 2857, 13453, 5175]
-Loop 236 [26762, 2794, 14289, 5711]
-Loop 237 [24630, 2867, 13040, 4887]
-Loop 238 [24821, 2854, 13300, 4888]
-Loop 239 [25363, 2759, 13856, 4864]
-Loop 240 [24615, 2815, 13293, 4782]
-Loop 241 [25246, 2874, 13422, 5083]
-Loop 242 [24625, 2810, 13180, 4887]
-Loop 243 [24415, 2806, 13015, 4858]
-Loop 244 [25758, 3029, 13683, 5057]
-Loop 245 [24723, 2916, 13003, 4903]
-Loop 246 [25155, 2865, 13262, 5089]
-Loop 247 [25206, 2874, 13242, 5283]
-Loop 248 [24838, 2817, 13304, 4957]
-Loop 249 [25629, 2978, 13484, 5099]
-Loop 250 [24803, 2934, 13019, 4881]
-Loop 251 [24577, 2889, 12950, 4871]
-Loop 252 [24570, 2795, 13051, 4838]
-Loop 253 [24718, 2815, 13077, 4947]
-Loop 254 [24672, 2785, 13121, 4884]
-Loop 255 [48538, 3145, 30184, 5983]
-Loop 256 [27794, 3526, 13209, 5327]
-Loop 257 [25799, 3002, 12710, 5171]
-Loop 258 [25317, 2911, 12519, 5657]
-Loop 259 [24403, 3009, 12516, 4895]
-Loop 260 [25837, 2810, 13190, 5940]
-Loop 261 [24960, 2903, 12353, 5766]
-Loop 262 [24076, 2759, 12387, 4981]
-Loop 263 [24087, 2866, 12296, 4979]
-Loop 264 [23860, 2736, 12300, 4927]
-Loop 265 [26498, 3377, 13243, 5455]
-Loop 266 [24076, 2863, 12179, 4964]
-Loop 267 [29704, 2989, 12638, 5036]
-Loop 268 [43720, 2829, 31450, 5260]
-Loop 269 [25687, 3339, 12683, 5360]
-Loop 270 [23540, 2810, 11852, 4873]
-Loop 271 [23576, 2836, 11938, 4886]
-Loop 272 [23225, 2774, 11620, 4856]
-Loop 273 [24138, 2945, 12249, 4921]
-Loop 274 [47895, 3258, 12884, 5449]
-Loop 275 [23701, 2905, 11971, 4925]
-Loop 276 [22895, 2752, 11853, 4808]
-Loop 277 [22961, 2763, 11818, 4782]
-Loop 278 [22940, 2766, 11821, 4835]
-Loop 279 [50618, 3040, 13481, 27792]
-Loop 280 [29913, 3101, 13054, 5436]
-Loop 281 [24060, 2996, 12203, 5221]
-Loop 282 [22930, 2828, 11621, 4960]
-Loop 283 [23121, 2783, 11912, 4947]
-Loop 284 [37205, 2786, 11866, 19132]
-Loop 285 [24249, 3157, 12396, 5083]
-Loop 286 [22820, 2740, 11691, 4909]
-Loop 287 [22790, 2828, 11626, 4831]
-Loop 288 [22825, 2734, 11729, 4882]
-Loop 289 [23533, 2741, 12078, 5218]
-Loop 290 [27550, 2692, 16114, 5308]
-Loop 291 [23161, 2894, 12005, 4703]
-Loop 292 [22984, 2698, 11797, 5063]
-Loop 293 [23404, 2883, 11946, 4885]
-Loop 294 [23046, 2654, 12180, 4735]
-Loop 295 [22874, 2679, 11864, 4869]
-Loop 296 [22872, 2735, 11616, 5106]
-Loop 297 [23061, 2790, 11838, 4908]
-Loop 298 [22573, 2732, 11630, 4790]
-Loop 299 [24243, 2746, 13260, 4745]
-Loop 300 [22948, 2726, 11840, 4923]
-Loop 301 [22549, 2635, 11638, 4739]
-Loop 302 [22682, 2801, 11563, 4866]
-Loop 303 [23671, 2841, 12198, 5026]
-Loop 304 [22673, 2896, 11512, 4806]
-Loop 305 [23057, 2807, 11879, 4910]
-Loop 306 [22543, 2650, 11620, 4824]
-Loop 307 [22661, 2703, 11733, 4756]
-Loop 308 [22773, 2798, 11769, 4764]
-Loop 309 [22830, 2696, 11873, 4800]
-Loop 310 [33239, 2726, 11873, 15224]
-Loop 311 [24038, 3121, 12408, 4913]
-Loop 312 [22702, 2812, 11663, 4775]
-Loop 313 [23181, 2821, 11827, 4972]
-Loop 314 [22448, 2767, 11447, 4802]
-Loop 315 [23255, 2810, 11893, 4904]
-Loop 316 [22671, 2744, 11700, 4726]
-Loop 317 [23404, 2916, 12006, 4975]
-Loop 318 [23005, 2763, 11826, 4915]
-Loop 319 [22702, 2810, 11618, 4822]
-Loop 320 [22557, 2721, 11639, 4742]
-Loop 321 [23427, 2838, 12096, 4946]
-Loop 322 [37467, 3494, 13016, 17200]
-Loop 323 [23808, 3217, 12651, 4298]
-Loop 324 [22768, 2943, 11994, 4290]
-Loop 325 [21935, 2841, 11578, 4145]
-Loop 326 [21698, 2648, 11585, 4065]
-Loop 327 [22222, 2821, 11797, 4166]
-Loop 328 [21623, 2662, 11461, 4113]
-Loop 329 [22656, 2871, 11930, 4307]
-Loop 330 [22013, 2696, 11540, 4317]
-Loop 331 [22024, 2713, 11677, 4157]
-Loop 332 [21836, 2679, 11619, 4103]
-Loop 333 [22697, 2786, 12098, 4271]
-Loop 334 [22030, 2728, 11682, 4173]
-Loop 335 [22006, 2688, 11749, 4114]
-Loop 336 [22508, 2830, 11822, 4286]
-Loop 337 [22618, 2872, 12012, 4208]
-Loop 338 [21922, 2769, 11514, 4150]
-Loop 339 [22352, 2750, 12017, 4145]
-Loop 340 [22278, 2823, 11935, 4127]
-Loop 341 [22268, 2663, 12108, 4091]
-Loop 342 [21658, 2701, 11604, 4004]
-Loop 343 [21986, 2700, 11722, 4139]
-Loop 344 [22507, 2871, 11866, 4268]
-Loop 345 [23039, 2875, 12008, 4585]
-Loop 346 [22049, 2794, 11762, 4066]
-Loop 347 [21948, 2721, 11700, 4099]
-Loop 348 [21771, 2650, 11605, 4107]
-Loop 349 [22155, 2755, 11740, 4259]
-Loop 350 [21920, 2736, 11722, 4081]
-Loop 351 [21878, 2690, 11647, 4146]
-Loop 352 [21787, 2668, 11643, 4055]
-Loop 353 [22525, 2831, 12035, 4201]
-Loop 354 [21603, 2656, 11510, 4063]
-Loop 355 [21973, 2688, 11795, 4094]
-Loop 356 [21762, 2644, 11574, 4101]
-Loop 357 [21763, 2657, 11601, 4041]
-Loop 358 [22475, 2747, 12019, 4206]
-Loop 359 [22158, 2716, 11749, 4120]
-Loop 360 [21854, 2679, 11683, 4049]
-Loop 361 [22536, 2943, 11910, 4186]
-Loop 362 [21831, 2815, 11488, 4146]
-Loop 363 [22190, 2648, 11507, 4401]
-Loop 364 [22252, 2799, 11818, 4225]
-Loop 365 [21740, 2675, 11704, 3953]
-Loop 366 [41225, 2639, 11651, 23513]
-Loop 367 [22579, 3021, 12304, 3729]
-Loop 368 [21316, 2633, 11654, 3657]
-Loop 369 [27907, 4212, 14304, 5052]
-Loop 370 [22502, 3138, 12038, 3769]
-Loop 371 [21377, 2698, 11580, 3693]
-Loop 372 [21224, 2634, 11472, 3722]
-Loop 373 [21210, 2548, 11640, 3668]
-Loop 374 [25011, 2627, 15399, 3671]
-Loop 375 [21142, 2558, 11532, 3669]
-Loop 376 [21379, 2646, 11680, 3685]
-Loop 377 [24461, 3360, 13014, 4310]
-Loop 378 [21703, 2819, 11711, 3783]
-Loop 379 [21495, 2652, 11781, 3672]
-Loop 380 [21350, 2665, 11636, 3701]
-Loop 381 [22302, 2717, 12214, 3845]
-Loop 382 [21383, 2648, 11633, 3723]
-Loop 383 [21526, 2623, 11709, 3793]
-Loop 384 [21333, 2630, 11627, 3696]
-Loop 385 [24028, 3082, 12775, 4365]
-Loop 386 [36472, 2807, 11992, 18239]
-Loop 387 [23119, 3126, 12542, 3938]
-Loop 388 [21527, 2648, 11802, 3654]
-Loop 389 [21157, 2642, 11617, 3566]
-Loop 390 [21304, 2632, 11735, 3594]
-Loop 391 [21292, 2640, 11634, 3588]
-Loop 392 [21318, 2644, 11780, 3576]
-Loop 393 [24401, 3155, 13047, 4290]
-Loop 394 [21311, 2690, 11644, 3528]
-Loop 395 [21329, 2703, 11636, 3613]
-Loop 396 [21237, 2632, 11738, 3545]
-Loop 397 [20907, 2558, 11430, 3546]
-Loop 398 [21290, 2599, 11672, 3623]
-Loop 399 [20886, 2604, 11427, 3508]
-Loop 400 [21045, 2589, 11593, 3515]
-Loop 401 [24258, 3304, 12972, 4207]
-Loop 402 [21519, 2774, 11704, 3623]
-Loop 403 [21082, 2604, 11502, 3611]
-Loop 404 [21202, 2599, 11563, 3574]
-Loop 405 [21991, 2810, 11880, 3747]
-Loop 406 [21924, 2772, 12156, 3571]
-Loop 407 [25169, 2595, 14122, 5015]
-Loop 408 [21915, 2865, 11933, 3616]
-Loop 409 [23692, 3136, 12680, 4162]
-Loop 410 [21373, 2701, 11614, 3585]
-Loop 411 [21672, 2650, 11689, 3499]
-Loop 412 [21707, 2667, 11930, 3614]
-Loop 413 [21182, 2598, 11569, 3649]
-Loop 414 [21058, 2588, 11558, 3516]
-Loop 415 [20943, 2526, 11460, 3596]
-Loop 416 [21182, 2568, 11636, 3627]
-Loop 417 [24251, 3261, 12981, 4307]
-Loop 418 [21716, 2852, 11683, 3706]
-Loop 419 [21098, 2562, 11669, 3558]
-Loop 420 [21643, 2595, 11818, 3781]
-Loop 421 [21104, 2610, 11514, 3605]
-Loop 422 [21202, 2674, 11696, 3476]
-Loop 423 [21000, 2695, 11390, 3581]
-Loop 424 [21142, 2626, 11624, 3566]
-Loop 425 [23473, 3098, 12564, 4137]
-Loop 426 [21428, 2737, 11623, 3595]
-Loop 427 [21210, 2588, 11672, 3562]
-Loop 428 [21335, 2590, 11753, 3629]
-Loop 429 [26103, 2600, 12094, 3688]
-Loop 430 [21467, 2796, 11683, 3574]
-Loop 431 [23004, 2686, 12631, 4341]
-Loop 432 [22108, 2705, 11644, 4362]
-Loop 433 [23991, 3134, 12851, 4230]
-Loop 434 [21896, 2867, 11997, 3652]
-Loop 435 [21270, 2708, 11634, 3603]
-Loop 436 [22789, 2692, 11864, 4886]
-Loop 437 [21567, 2690, 11915, 3614]
-Loop 438 [21393, 2704, 11809, 3608]
-Loop 439 [21275, 2710, 11530, 3675]
-Loop 440 [21774, 2642, 12248, 3549]
-Loop 441 [27619, 3099, 12875, 7964]
-Loop 442 [22179, 2889, 12132, 3679]
-Loop 443 [21290, 2748, 11685, 3528]
-Loop 444 [21597, 2672, 12057, 3585]
-Loop 445 [20926, 2632, 11361, 3623]
-Loop 446 [21198, 2628, 11654, 3567]
-Loop 447 [39064, 2683, 29466, 3543]
-Loop 448 [520610, 2726, 510456, 4006]
-Loop 449 [24914, 3832, 12948, 4252]
-Loop 450 [21678, 2798, 11791, 3592]
-Loop 451 [21085, 2607, 11631, 3514]
-Loop 452 [21211, 2646, 11633, 3550]
-Loop 453 [20891, 2606, 11411, 3492]
-Loop 454 [21275, 2582, 11734, 3577]
-Loop 455 [20845, 2553, 11422, 3517]
-Loop 456 [21366, 2584, 11798, 3594]
-Loop 457 [25780, 3101, 12700, 4236]
-Loop 458 [21991, 3025, 12025, 3587]
-Loop 459 [21118, 2614, 11555, 3594]
-Loop 460 [22077, 2801, 12198, 3699]
-Loop 461 [21164, 2689, 11459, 3648]
-Loop 462 [21498, 2573, 11944, 3648]
-Loop 463 [20958, 2600, 11521, 3537]
-Loop 464 [21162, 2630, 11702, 3559]
-Loop 465 [23679, 3195, 12679, 4108]
-Loop 466 [21537, 2754, 11837, 3505]
-Loop 467 [21226, 2641, 11696, 3536]
-Loop 468 [21208, 2609, 11682, 3535]
-Loop 469 [21053, 2584, 11649, 3519]
-Loop 470 [21130, 2632, 11677, 3499]
-Loop 471 [21289, 2655, 11605, 3608]
-Loop 472 [22227, 2742, 12282, 3720]
-Loop 473 [23686, 3167, 12689, 4166]
-Loop 474 [21468, 2741, 11751, 3528]
-Loop 475 [21091, 2651, 11520, 3565]
-Loop 476 [21435, 2667, 11839, 3497]
-Loop 477 [21173, 2683, 11471, 3616]
-Loop 478 [21100, 2708, 11554, 3493]
-Loop 479 [21169, 2666, 11518, 3614]
-Loop 480 [21069, 2604, 11516, 3585]
-Loop 481 [23613, 3107, 12664, 4159]
-Loop 482 [21385, 2710, 11606, 3620]
-Loop 483 [21527, 2724, 11800, 3570]
-Loop 484 [25642, 2735, 15740, 3747]
-Loop 485 [21541, 2854, 11709, 3512]
-Loop 486 [21366, 2819, 11583, 3497]
-Loop 487 [21087, 2608, 11518, 3525]
-Loop 488 [20985, 2628, 11501, 3525]
-Loop 489 [23917, 3201, 12908, 4155]
-Loop 490 [21373, 2739, 11625, 3567]
-Loop 491 [21379, 2682, 11731, 3590]
-Loop 492 [21290, 2719, 11579, 3571]
-Loop 493 [21926, 2841, 11846, 3786]
-Loop 494 [21055, 2702, 11521, 3543]
-Loop 495 [21053, 2785, 11376, 3567]
-Loop 496 [21144, 2670, 11570, 3546]
-Loop 497 [24182, 3233, 12993, 4146]
-Loop 498 [21518, 2888, 11614, 3553]
-Loop 499 [21171, 2670, 11621, 3537]
-Loop 500 [21304, 2662, 11705, 3583]
-Loop 501 [21085, 2644, 11551, 3549]
-Loop 502 [21105, 2758, 11531, 3525]
-Loop 503 [20927, 2610, 11440, 3544]
-Loop 504 [21102, 2641, 11556, 3535]
-Loop 505 [23528, 3186, 12526, 4157]
-Loop 506 [21377, 2730, 11667, 3534]
-Loop 507 [21043, 2674, 11425, 3528]
-Loop 508 [21197, 2714, 11549, 3585]
-Loop 509 [21727, 2827, 11751, 3702]
-Loop 510 [20977, 2692, 11437, 3470]
-Loop 511 [21148, 2690, 11552, 3566]
-Loop 512 [21018, 2659, 11445, 3613]
-Loop 513 [24111, 3317, 12893, 4217]
-Loop 514 [21295, 2695, 11547, 3592]
-Loop 515 [21361, 2679, 11733, 3550]
-Loop 516 [21146, 2670, 11589, 3552]
-Loop 517 [21028, 2663, 11480, 3566]
-Loop 518 [21492, 2727, 11888, 3623]
-Loop 519 [21117, 2639, 11565, 3563]
-Loop 520 [21065, 2623, 11595, 3552]
-Loop 521 [27752, 6752, 13121, 4199]
-Loop 522 [21422, 2947, 11501, 3534]
-Loop 523 [21366, 2719, 11636, 3541]
-Loop 524 [21213, 2741, 11615, 3481]
-Loop 525 [21251, 2802, 11565, 3505]
-Loop 526 [21257, 2661, 11742, 3577]
-Loop 527 [21057, 2646, 11488, 3574]
-Loop 528 [21018, 2661, 11501, 3519]
-Loop 529 [23699, 3126, 12750, 4124]
-Loop 530 [21225, 2750, 11542, 3554]
-Loop 531 [20998, 2696, 11447, 3520]
-Loop 532 [21098, 2657, 11549, 3595]
-Loop 533 [21040, 2634, 11379, 3629]
-Loop 534 [21809, 2757, 11849, 3649]
-Loop 535 [21335, 2688, 11641, 3635]
-Loop 536 [21101, 2630, 11622, 3526]
-Loop 537 [23774, 3174, 12861, 4122]
-Loop 538 [21038, 2741, 11405, 3470]
-Loop 539 [21066, 2626, 11592, 3537]
-Loop 540 [21069, 2643, 11693, 3503]
-Loop 541 [21224, 2639, 11791, 3528]
-Loop 542 [21135, 2668, 11617, 3585]
-Loop 543 [20963, 2604, 11654, 3467]
-Loop 544 [21000, 2623, 11629, 3450]
-Loop 545 [23651, 3118, 12850, 4111]
-Loop 546 [21930, 2767, 11864, 3798]
-Loop 547 [21470, 2721, 11824, 3587]
-Loop 548 [21155, 2750, 11492, 3631]
-Loop 549 [22150, 2843, 12031, 3762]
-Loop 550 [21200, 2679, 11597, 3580]
-Loop 551 [21323, 2568, 11745, 3625]
-Loop 552 [21253, 2548, 11757, 3583]
-Loop 553 [23522, 3100, 12689, 4069]
-Loop 554 [21230, 2719, 11487, 3628]
-Loop 555 [20904, 2582, 11451, 3528]
-Loop 556 [21161, 2604, 11563, 3623]
-Loop 557 [21036, 2590, 11605, 3525]
-Loop 558 [21581, 2708, 11790, 3699]
-Loop 559 [21484, 2717, 11757, 3619]
-Loop 560 [39162, 2570, 29726, 3556]
-Loop 561 [31277, 3257, 19993, 4299]
-Loop 562 [21991, 2977, 11856, 3550]
-Loop 563 [20898, 2601, 11400, 3580]
-Loop 564 [20951, 2639, 11456, 3540]
-Loop 565 [21184, 2656, 11578, 3581]
-Loop 566 [20869, 2664, 11345, 3550]
-Loop 567 [21064, 2677, 11498, 3510]
-Loop 568 [20783, 2571, 11299, 3544]
-Loop 569 [23495, 3133, 12679, 4040]
-Loop 570 [21724, 2801, 11745, 3676]
-Loop 571 [23693, 2820, 11844, 3718]
-Loop 572 [23134, 3056, 12560, 3938]
-Loop 573 [21754, 2727, 11804, 3834]
-Loop 574 [21556, 2673, 11773, 3736]
-Loop 575 [21189, 2591, 11642, 3591]
-Loop 576 [20987, 2587, 11487, 3575]
-Loop 577 [24845, 3154, 13723, 4246]
-Loop 578 [22194, 2707, 11767, 4241]
-Loop 579 [23312, 3211, 12682, 3880]
-Loop 580 [20834, 2648, 11383, 3550]
-Loop 581 [20739, 2566, 11425, 3524]
-Loop 582 [20793, 2520, 11530, 3563]
-Loop 583 [21023, 2654, 11618, 3552]
-Loop 584 [20562, 2549, 11184, 3620]
-Loop 585 [20963, 2577, 11529, 3611]
-Loop 586 [20785, 2562, 11426, 3585]
-Loop 587 [20782, 2623, 11324, 3601]
-Loop 588 [20774, 2558, 11399, 3607]
-Loop 589 [20561, 2573, 11228, 3544]
-Loop 590 [20666, 2531, 11396, 3566]
-Loop 591 [20597, 2581, 11396, 3479]
-Loop 592 [21452, 2652, 11678, 3769]
-Loop 593 [20889, 2548, 11500, 3522]
-Loop 594 [20911, 2612, 11494, 3530]
-Loop 595 [20742, 2535, 11434, 3515]
-Loop 596 [20558, 2546, 11372, 3455]
-Loop 597 [21694, 2728, 11861, 3700]
-Loop 598 [20634, 2639, 11219, 3542]
-Loop 599 [20918, 2676, 11418, 3617]
-Loop 600 [20675, 2524, 11360, 3545]
-Loop 601 [22328, 2630, 12263, 4236]
-Loop 602 [21430, 2631, 11492, 4094]
-Loop 603 [20940, 2595, 11493, 3643]
-Loop 604 [20752, 2617, 11324, 3560]
-Loop 605 [20805, 2650, 11314, 3631]
-Loop 606 [20630, 2535, 11463, 3463]
-Loop 607 [20557, 2481, 11354, 3514]
-Loop 608 [20617, 2591, 11250, 3541]
-Loop 609 [20520, 2477, 11308, 3497]
-Loop 610 [20644, 2526, 11377, 3532]
-Loop 611 [20658, 2530, 11375, 3521]
-Loop 612 [20490, 2549, 11117, 3590]
-Loop 613 [20677, 2575, 11353, 3532]
-Loop 614 [20435, 2546, 11219, 3519]
-Loop 615 [20655, 2520, 11441, 3510]
-Loop 616 [20198, 2559, 10951, 3547]
-Loop 617 [20699, 2579, 11416, 3527]
-Loop 618 [20576, 2575, 11241, 3521]
-Loop 619 [20832, 2528, 11486, 3596]
-Loop 620 [26910, 2721, 12039, 3625]
-Loop 621 [25601, 2754, 12972, 4503]
-Loop 622 [21072, 2647, 11485, 3692]
-Loop 623 [20728, 2590, 11374, 3547]
-Loop 624 [20435, 2670, 11038, 3532]
-Loop 625 [20703, 2706, 11298, 3494]
-Loop 626 [20921, 2595, 11562, 3572]
-Loop 627 [20703, 2531, 11354, 3590]
-Loop 628 [20551, 2589, 11285, 3457]
-Loop 629 [20809, 2558, 11479, 3555]
-Loop 630 [20703, 2608, 11343, 3561]
-Loop 631 [20972, 2657, 11491, 3585]
-Loop 632 [20517, 2509, 11248, 3530]
-Loop 633 [20697, 2542, 11383, 3528]
-Loop 634 [20706, 2604, 11344, 3523]
-Loop 635 [20706, 2585, 11437, 3492]
-Loop 636 [20624, 2507, 11310, 3583]
-Loop 637 [20874, 2562, 11536, 3590]
-Loop 638 [20645, 2545, 11337, 3541]
-Loop 639 [20789, 2531, 11439, 3552]
-Loop 640 [20652, 2622, 11197, 3610]
-Loop 641 [20735, 2579, 11440, 3490]
-Loop 642 [20739, 2597, 11344, 3562]
-Loop 643 [25988, 2692, 11895, 3659]
-Loop 644 [20623, 2571, 11242, 3534]
-Loop 645 [20624, 2575, 11393, 3434]
-Loop 646 [20662, 2567, 11276, 3590]
-Loop 647 [20863, 2603, 11548, 3486]
-Loop 648 [20594, 2526, 11324, 3543]
-Loop 649 [20637, 2536, 11434, 3457]
-Loop 650 [20448, 2492, 11326, 3468]
-Loop 651 [20608, 2512, 11399, 3488]
-Loop 652 [20357, 2485, 11208, 3457]
-Loop 653 [20519, 2549, 11330, 3445]
-Loop 654 [20570, 2524, 11332, 3501]
-Loop 655 [20534, 2566, 11394, 3391]
-Loop 656 [20280, 2524, 11083, 3476]
-Loop 657 [20383, 2536, 11142, 3516]
-Loop 658 [20497, 2545, 11229, 3477]
-Loop 659 [20572, 2535, 11301, 3516]
-Loop 660 [20442, 2524, 11238, 3472]
-Loop 661 [20762, 2566, 11496, 3495]
-Loop 662 [20629, 2626, 11336, 3437]
-Loop 663 [22051, 2650, 11604, 3774]
-Loop 664 [20960, 2657, 11456, 3568]
-Loop 665 [20663, 2566, 11252, 3546]
-Loop 666 [25133, 2598, 15588, 3710]
-Loop 667 [20846, 2770, 11255, 3568]
-Loop 668 [20809, 2675, 11262, 3598]
-Loop 669 [20681, 2584, 11405, 3497]
-Loop 670 [20601, 2607, 11374, 3420]
-Loop 671 [20783, 2623, 11412, 3538]
-Loop 672 [20670, 2571, 11330, 3472]
-Loop 673 [20709, 2673, 11243, 3530]
-Loop 674 [20689, 2603, 11312, 3528]
-Loop 675 [20805, 2681, 11459, 3487]
-Loop 676 [21724, 2759, 11769, 3792]
-Loop 677 [20836, 2597, 11363, 3588]
-Loop 678 [20747, 2597, 11381, 3501]
-Loop 679 [20821, 2724, 11255, 3633]
-Loop 680 [20564, 2577, 11243, 3516]
-Loop 681 [20610, 2590, 11279, 3548]
-Loop 682 [20613, 2641, 11206, 3499]
-Loop 683 [20604, 2529, 11461, 3439]
-Loop 684 [20728, 2599, 11324, 3541]
-Loop 685 [23344, 2834, 11627, 3701]
-Loop 686 [20654, 2608, 11284, 3466]
-Loop 687 [20679, 2577, 11443, 3483]
-Loop 688 [20834, 2628, 11101, 3554]
-Loop 689 [24470, 2564, 15053, 3679]
-Loop 690 [21240, 2770, 11594, 3532]
-Loop 691 [20770, 2655, 11407, 3512]
-Loop 692 [20517, 2677, 11095, 3467]
-Loop 693 [20668, 2641, 11270, 3499]
-Loop 694 [20645, 2572, 11361, 3501]
-Loop 695 [20727, 2559, 11408, 3564]
-Loop 696 [20553, 2508, 11289, 3469]
-Loop 697 [20692, 2533, 11412, 3563]
-Loop 698 [20471, 2520, 11291, 3494]
-Loop 699 [20577, 2544, 11345, 3505]
-Loop 700 [508631, 2496, 478978, 23872]
-Loop 701 [27867, 3657, 12704, 3725]
-Loop 702 [20889, 2648, 11414, 3397]
-Loop 703 [20647, 2568, 11412, 3392]
-Loop 704 [20696, 2504, 11569, 3390]
-Loop 705 [20524, 2523, 11401, 3366]
-Loop 706 [20750, 2517, 11508, 3430]
-Loop 707 [20614, 2575, 11359, 3430]
-Loop 708 [20642, 2520, 11332, 3505]
-Loop 709 [20494, 2546, 11373, 3368]
-Loop 710 [20557, 2536, 11352, 3421]
-Loop 711 [20481, 2525, 11324, 3390]
-Loop 712 [20520, 2501, 11443, 3372]
-Loop 713 [20664, 2588, 11306, 3514]
-Loop 714 [20386, 2559, 11210, 3362]
-Loop 715 [20306, 2515, 11168, 3411]
-Loop 716 [20504, 2508, 11423, 3315]
-Loop 717 [20249, 2464, 11122, 3439]
-Loop 718 [20748, 2534, 11461, 3488]
-Loop 719 [20422, 2531, 11220, 3411]
-Loop 720 [20340, 2556, 11272, 3344]
-Loop 721 [20354, 2520, 11310, 3362]
-Loop 722 [20523, 2493, 11409, 3390]
-Loop 723 [20650, 2646, 11356, 3386]
-Loop 724 [25370, 2677, 15997, 3453]
-Loop 725 [20970, 2874, 11379, 3421]
-Loop 726 [20733, 2628, 11463, 3395]
-Loop 727 [20594, 2574, 11396, 3413]
-Loop 728 [20626, 2553, 11532, 3372]
-Loop 729 [20433, 2524, 11361, 3362]
-Loop 730 [20545, 2592, 11376, 3357]
-Loop 731 [20467, 2562, 11346, 3405]
-Loop 732 [20659, 2571, 11516, 3361]
-Loop 733 [20812, 2597, 11591, 3409]
-Loop 734 [20588, 2573, 11489, 3329]
-Loop 735 [20400, 2568, 11266, 3349]
-Loop 736 [20654, 2625, 11418, 3410]
-Loop 737 [20149, 2502, 11157, 3288]
-Loop 738 [20424, 2537, 11377, 3322]
-Loop 739 [20373, 2519, 11366, 3329]
-Loop 740 [20681, 2634, 11536, 3344]
-Loop 741 [20619, 2555, 11464, 3392]
-Loop 742 [21022, 2653, 11630, 3504]
-Loop 743 [20622, 2611, 11517, 3343]
-Loop 744 [20482, 2566, 11368, 3311]
-Loop 745 [20375, 2548, 11294, 3342]
-Loop 746 [20683, 2582, 11502, 3382]
-Loop 747 [20464, 2595, 11277, 3428]
-Loop 748 [23035, 2754, 13055, 3917]
-Loop 749 [20942, 2814, 11381, 3421]
-Loop 750 [20602, 2610, 11365, 3377]
-Loop 751 [20513, 2560, 11352, 3364]
-Loop 752 [46089, 2568, 11328, 28887]
-Loop 753 [23037, 3426, 12691, 3428]
-Loop 754 [20839, 2679, 11538, 3304]
-Loop 755 [20397, 2608, 11341, 3248]
-Loop 756 [20408, 2678, 11317, 3206]
-Loop 757 [20510, 2566, 11516, 3136]
-Loop 758 [20535, 2664, 11439, 3218]
-Loop 759 [20340, 2616, 11283, 3255]
-Loop 760 [20331, 2591, 11379, 3182]
-Loop 761 [20298, 2534, 11345, 3251]
-Loop 762 [20275, 2538, 11302, 3199]
-Loop 763 [20284, 2550, 11327, 3187]
-Loop 764 [20486, 2623, 11423, 3225]
-Loop 765 [20405, 2555, 11378, 3279]
-Loop 766 [20404, 2652, 11330, 3217]
-Loop 767 [20353, 2615, 11214, 3347]
-Loop 768 [20239, 2482, 11291, 3251]
-Loop 769 [20124, 2557, 11132, 3227]
-Loop 770 [25667, 7256, 11755, 3419]
-Loop 771 [20407, 2684, 11256, 3184]
-Loop 772 [21618, 2630, 12424, 3293]
-Loop 773 [20340, 2614, 11297, 3178]
-Loop 774 [20212, 2532, 11259, 3219]
-Loop 775 [20389, 2577, 11410, 3224]
-Loop 776 [20256, 2626, 11204, 3244]
-Loop 777 [20356, 2593, 11332, 3173]
-Loop 778 [20218, 2537, 11270, 3184]
-Loop 779 [20107, 2583, 11076, 3240]
-Loop 780 [20322, 2528, 11317, 3205]
-Loop 781 [20307, 2546, 11281, 3227]
-Loop 782 [20378, 2673, 11221, 3231]
-Loop 783 [20455, 2586, 11501, 3151]
-Loop 784 [20089, 2575, 11183, 3149]
-Loop 785 [20176, 2535, 11279, 3195]
-Loop 786 [20506, 2643, 11410, 3198]
-Loop 787 [20439, 2519, 11372, 3295]
-Loop 788 [20521, 2588, 11412, 3256]
-Loop 789 [20322, 2592, 11348, 3178]
-Loop 790 [20196, 2570, 11201, 3240]
-Loop 791 [20282, 2580, 11240, 3264]
-Loop 792 [20353, 2598, 11315, 3222]
-Loop 793 [75137, 2547, 11193, 58161]
-Loop 794 [42927, 3832, 13709, 21386]
-Loop 795 [23940, 3532, 12502, 4419]
-Loop 796 [21798, 2814, 11492, 4169]
-Loop 797 [21240, 2544, 11286, 4192]
-Loop 798 [21311, 2637, 11272, 4168]
-Loop 799 [24537, 2819, 11755, 4358]
-Loop 800 [21674, 2637, 11472, 4217]
-Loop 801 [21273, 2535, 11210, 4226]
-Loop 802 [21485, 2595, 11424, 4167]
-Loop 803 [21337, 2617, 11282, 4237]
-Loop 804 [21539, 2640, 11392, 4221]
-Loop 805 [22075, 2714, 11538, 4392]
-Loop 806 [21535, 2642, 11377, 4230]
-Loop 807 [21578, 2613, 11569, 4188]
-Loop 808 [21547, 2692, 11332, 4272]
-Loop 809 [21791, 2613, 11643, 4292]
-Loop 810 [21712, 2667, 11467, 4256]
-Loop 811 [21430, 2622, 11277, 4307]
-Loop 812 [21546, 2588, 11446, 4222]
-Loop 813 [21443, 2564, 11434, 4174]
-Loop 814 [37680, 2606, 17320, 14388]
-Loop 815 [24144, 3154, 12440, 5070]
-Loop 816 [22505, 2769, 11662, 4785]
-Loop 817 [21663, 2595, 11498, 4270]
-Loop 818 [21419, 2616, 11326, 4190]
-Loop 819 [36310, 2577, 11391, 19063]
-Loop 820 [22460, 3213, 12310, 3468]
-Loop 821 [20762, 2676, 11379, 3386]
-Loop 822 [20740, 2644, 11408, 3408]
-Loop 823 [20551, 2613, 11347, 3345]
-Loop 824 [20447, 2538, 11226, 3397]
-Loop 825 [20603, 2533, 11341, 3455]
-Loop 826 [20601, 2598, 11277, 3439]
-Loop 827 [29241, 11389, 11219, 3383]
-Loop 828 [20593, 2522, 11412, 3412]
-Loop 829 [40791, 3240, 12941, 20924]
-Loop 830 [22574, 3175, 12272, 3558]
-Loop 831 [20530, 2588, 11351, 3348]
-Loop 832 [20481, 2601, 11344, 3279]
-Loop 833 [20300, 2555, 11237, 3219]
-Loop 834 [20532, 2568, 11398, 3245]
-Loop 835 [20360, 2606, 11319, 3217]
-Loop 836 [20459, 2595, 11241, 3353]
-Loop 837 [20291, 2575, 11224, 3217]
-Loop 838 [20251, 2508, 11172, 3308]
-Loop 839 [20420, 2575, 11301, 3289]
-Loop 840 [20549, 2524, 11412, 3357]
-Loop 841 [20504, 2641, 11317, 3242]
-Loop 842 [20393, 2629, 11259, 3224]
-Loop 843 [20936, 2682, 11431, 3455]
-Loop 844 [20307, 2575, 11337, 3180]
-Loop 845 [20466, 2550, 11339, 3288]
-Loop 846 [20424, 2577, 11374, 3233]
-Loop 847 [20331, 2479, 11343, 3291]
-Loop 848 [24765, 2768, 15097, 3524]
-Loop 849 [20775, 2781, 11427, 3259]
-Loop 850 [20466, 2700, 11266, 3268]
-Loop 851 [20202, 2547, 11233, 3244]
-Loop 852 [20351, 2577, 11332, 3228]
-Loop 853 [20371, 2628, 11277, 3249]
-Loop 854 [20943, 2637, 11477, 3480]
-Loop 855 [20353, 2597, 11243, 3302]
-Loop 856 [20637, 2604, 11539, 3330]
-Loop 857 [20308, 2529, 11234, 3321]
-Loop 858 [20305, 2628, 11299, 3237]
-Loop 859 [20309, 2564, 11303, 3209]
-Loop 860 [20454, 2611, 11421, 3231]
-Loop 861 [20344, 2540, 11339, 3244]
-Loop 862 [20442, 2568, 11400, 3260]
-Loop 863 [20336, 2591, 11271, 3248]
-Loop 864 [20344, 2635, 11308, 3224]
-Loop 865 [20300, 2624, 11223, 3223]
-Loop 866 [20302, 2606, 11259, 3259]
-Loop 867 [20311, 2521, 11415, 3175]
-Loop 868 [20451, 2503, 11512, 3221]
-Loop 869 [20329, 2586, 11274, 3235]
-Loop 870 [20271, 2559, 11312, 3209]
-Loop 871 [23863, 2607, 11324, 6686]
-Loop 872 [21014, 2735, 11658, 3272]
-Loop 873 [20415, 2664, 11282, 3220]
-Loop 874 [20328, 2622, 11349, 3164]
-Loop 875 [20202, 2559, 11250, 3189]
-Loop 876 [20349, 2499, 11443, 3213]
-Loop 877 [20291, 2544, 11350, 3191]
-Loop 878 [20255, 2560, 11290, 3235]
-Loop 879 [20269, 2541, 11305, 3163]
-Loop 880 [20114, 2563, 11110, 3242]
-Loop 881 [20413, 2528, 11412, 3267]
-Loop 882 [20329, 2570, 11256, 3307]
-Loop 883 [20193, 2566, 11252, 3176]
-Loop 884 [20353, 2518, 11439, 3169]
-Loop 885 [20265, 2538, 11319, 3181]
-Loop 886 [20220, 2526, 11290, 3198]
-Loop 887 [20100, 2555, 11164, 3184]
-Loop 888 [20291, 2575, 11260, 3260]
-Loop 889 [20313, 2571, 11277, 3237]
-Loop 890 [20219, 2646, 11104, 3233]
-Loop 891 [20287, 2557, 11261, 3247]
-Loop 892 [20362, 2606, 11357, 3219]
-Loop 893 [20340, 2591, 11304, 3224]
-Loop 894 [20402, 2581, 11365, 3286]
-Loop 895 [21199, 2732, 11587, 3468]
-Loop 896 [20515, 2645, 11361, 3280]
-Loop 897 [20402, 2507, 11363, 3259]
-Loop 898 [20273, 2606, 11144, 3238]
-Loop 899 [20273, 2555, 11265, 3225]
-Loop 900 [20435, 2515, 11372, 3293]
-Loop 901 [20481, 2624, 11456, 3273]
-Loop 902 [20482, 2584, 11389, 3229]
-Loop 903 [20444, 2568, 11404, 3193]
-Loop 904 [20315, 2582, 11204, 3295]
-Loop 905 [20326, 2555, 11276, 3275]
-Loop 906 [20236, 2573, 11232, 3218]
-Loop 907 [20404, 2604, 11327, 3240]
-Loop 908 [20324, 2566, 11195, 3321]
-Loop 909 [20480, 2582, 11383, 3238]
-Loop 910 [20432, 2624, 11322, 3277]
-Loop 911 [20322, 2602, 11226, 3273]
-Loop 912 [20178, 2570, 11135, 3238]
-Loop 913 [21064, 2697, 11600, 3470]
-Loop 914 [20296, 2573, 11276, 3278]
-Loop 915 [20313, 2615, 11169, 3322]
-Loop 916 [20579, 2713, 11353, 3276]
-Loop 917 [20572, 2581, 11358, 3280]
-Loop 918 [24379, 5906, 11740, 3442]
-Loop 919 [22422, 2701, 12335, 3869]
-Loop 920 [20791, 2710, 11363, 3445]
-Loop 921 [20322, 2577, 11262, 3184]
-Loop 922 [20271, 2555, 11155, 3300]
-Loop 923 [20304, 2515, 11293, 3246]
-Loop 924 [20402, 2522, 11372, 3251]
-Loop 925 [20470, 2626, 11366, 3242]
-Loop 926 [20506, 2652, 11411, 3260]
-Loop 927 [20491, 2585, 11339, 3284]
-Loop 928 [20309, 2548, 11290, 3299]
-Loop 929 [20351, 2533, 11412, 3206]
-Loop 930 [20326, 2586, 11241, 3300]
-Loop 931 [20461, 2551, 11537, 3169]
-Loop 932 [21025, 2684, 11478, 3505]
-Loop 933 [20559, 2487, 11558, 3261]
-Loop 934 [20480, 2582, 11341, 3293]
-Loop 935 [20497, 2563, 11416, 3264]
-Loop 936 [20262, 2560, 11106, 3333]
-Loop 937 [20627, 2606, 11369, 3352]
-Loop 938 [20413, 2538, 11277, 3304]
-Loop 939 [20650, 2584, 11569, 3222]
-Loop 940 [20521, 2553, 11396, 3306]
-Loop 941 [24211, 2606, 14769, 3546]
-Loop 942 [20756, 2701, 11427, 3304]
-Loop 943 [21386, 2637, 12083, 3362]
-Loop 944 [20428, 2640, 11148, 3390]
-Loop 945 [20497, 2526, 11436, 3298]
-Loop 946 [20209, 2528, 11199, 3246]
-Loop 947 [20515, 2561, 11459, 3234]
-Loop 948 [20309, 2535, 11250, 3249]
-Loop 949 [20462, 2575, 11306, 3288]
-Loop 950 [20212, 2539, 11174, 3277]
-Loop 951 [20428, 2595, 11327, 3270]
-Loop 952 [20513, 2522, 11470, 3267]
-Loop 953 [20486, 2575, 11279, 3302]
-Loop 954 [20070, 2558, 10993, 3268]
-Loop 955 [20674, 2588, 11456, 3320]
-Loop 956 [20557, 2549, 11410, 3293]
-Loop 957 [489718, 2546, 479970, 3793]
-Loop 958 [21286, 3049, 11596, 3268]
-Loop 959 [20466, 2561, 11266, 3254]
-Loop 960 [20306, 2570, 11134, 3346]
-Loop 961 [20599, 2530, 11477, 3321]
-Loop 962 [20207, 2531, 11162, 3286]
-Loop 963 [20575, 2666, 11392, 3280]
-Loop 964 [20208, 2512, 11163, 3286]
-Loop 965 [20577, 2528, 11427, 3333]
-Loop 966 [20269, 2549, 11224, 3241]
-Loop 967 [20625, 2586, 11498, 3306]
-Loop 968 [20282, 2537, 11212, 3292]
-Loop 969 [20446, 2608, 11329, 3260]
-Loop 970 [20236, 2648, 11033, 3319]
-Loop 971 [20566, 2589, 11414, 3233]
-Loop 972 [20265, 2541, 11192, 3215]
-Loop 973 [20611, 2646, 11409, 3248]
-Loop 974 [20203, 2517, 11112, 3303]
-Loop 975 [20467, 2508, 11502, 3194]
-Loop 976 [20099, 2543, 11091, 3275]
-Loop 977 [24147, 2498, 14991, 3403]
-Loop 978 [20389, 2666, 11181, 3275]
-Loop 979 [20754, 2611, 11623, 3246]
-Loop 980 [20391, 2563, 11350, 3243]
-Loop 981 [20703, 2564, 11638, 3227]
-Loop 982 [20204, 2517, 11201, 3266]
-Loop 983 [20562, 2604, 11401, 3295]
-Loop 984 [20439, 2568, 11363, 3260]
-Loop 985 [21581, 2526, 11302, 4505]
-Loop 986 [20517, 2639, 11344, 3279]
-Loop 987 [20663, 2640, 11470, 3293]
-Loop 988 [20322, 2601, 11212, 3301]
-Loop 989 [20502, 2632, 11381, 3289]
-Loop 990 [20347, 2601, 11232, 3291]
-Loop 991 [20324, 2599, 11201, 3270]
-Loop 992 [20422, 2615, 11263, 3289]
-Loop 993 [20428, 2586, 11281, 3315]
-Loop 994 [20165, 2598, 11084, 3262]
-Loop 995 [20487, 2566, 11410, 3323]
-Loop 996 [20085, 2533, 11130, 3218]
-Loop 997 [20244, 2524, 11231, 3262]
-Loop 998 [20203, 2614, 11201, 3235]
-Loop 999 [20360, 2599, 11272, 3249]
-replicas primary file /tmp1024eccache.dat capacity 256
-replicas slave file /tmp1024eccache.datLQL0 capacity 256
-replicas slave file /tmp1024eccache.datLQL1 capacity 256
-replicas slave file /tmp1024eccache.datLQL2 capacity 256
-replicas slave file /tmp1024eccache.datLQL3 capacity 256
-replicas slave file /tmp1024eccache.datLQL4 capacity 256
+avgLoopLatency(us) 28.479408
+iops 35113.089429387015
+variance 37.06491734769596
+Loop 0 [58257, 9, 6026, 27752, 10503]
+Loop 1 [46806, 9, 5541, 22733, 10056]
+Loop 2 [55225, 9, 4946, 22138, 9790]
+Loop 3 [42601, 9, 4365, 21838, 9409]
+Loop 4 [42480, 9, 4235, 22259, 9048]
+Loop 5 [44816, 9, 4279, 25492, 9074]
+Loop 6 [40152, 9, 4501, 20196, 9417]
+Loop 7 [39484, 9, 4234, 20224, 9066]
+Loop 8 [38378, 9, 4118, 19600, 8766]
+Loop 9 [43286, 9, 4220, 24401, 8757]
+Loop 10 [57784, 9, 4159, 20497, 27114]
+Loop 11 [43019, 9, 5270, 22520, 8824]
+Loop 12 [39791, 9, 4472, 20816, 8385]
+Loop 13 [54186, 9, 4085, 23639, 20858]
+Loop 14 [65562, 9, 4589, 40203, 14711]
+Loop 15 [36068, 9, 4365, 18873, 7235]
+Loop 16 [35218, 9, 3681, 19515, 6843]
+Loop 17 [39056, 9, 3805, 22854, 7140]
+Loop 18 [34776, 9, 3636, 19056, 6868]
+Loop 19 [34231, 9, 3622, 18640, 6865]
+Loop 20 [37438, 9, 3570, 20773, 7744]
+Loop 21 [34841, 9, 3676, 18549, 7115]
+Loop 22 [36303, 9, 3767, 19998, 6916]
+Loop 23 [37487, 9, 3668, 21388, 6884]
+Loop 24 [43722, 9, 4166, 25313, 7931]
+Loop 25 [38273, 9, 4066, 21131, 7091]
+Loop 26 [40069, 9, 3656, 23602, 7079]
+Loop 27 [40433, 9, 3705, 24051, 6958]
+Loop 28 [39612, 9, 3623, 23932, 6621]
+Loop 29 [38218, 9, 3767, 21499, 7196]
+Loop 30 [35061, 9, 3683, 18672, 7146]
+Loop 31 [35100, 9, 3538, 18349, 7354]
+Loop 32 [34531, 9, 3510, 18375, 7048]
+Loop 33 [40044, 9, 4574, 20526, 8333]
+Loop 34 [35806, 9, 3780, 18722, 7182]
+Loop 35 [33715, 9, 3483, 18224, 6668]
+Loop 36 [34140, 9, 3184, 18329, 7046]
+Loop 37 [33595, 9, 3361, 17746, 7176]
+Loop 38 [32664, 9, 3107, 17859, 6660]
+Loop 39 [32619, 9, 3340, 17725, 6672]
+Loop 40 [32773, 9, 3180, 17670, 6993]
+Loop 41 [33686, 9, 3398, 18212, 6933]
+Loop 42 [34061, 9, 3369, 18476, 7281]
+Loop 43 [32953, 9, 3218, 17525, 6951]
+Loop 44 [33267, 9, 3273, 17940, 6761]
+Loop 45 [33440, 9, 3263, 18350, 6687]
+Loop 46 [39122, 9, 3125, 17848, 13084]
+Loop 47 [33921, 9, 3445, 18408, 6796]
+Loop 48 [33076, 9, 3260, 18100, 6861]
+Loop 49 [33250, 9, 3375, 18128, 6570]
+Loop 50 [32323, 9, 3206, 17512, 6684]
+Loop 51 [33110, 9, 3293, 18106, 6790]
+Loop 52 [32775, 9, 3193, 18015, 6495]
+Loop 53 [32347, 9, 3216, 17583, 6604]
+Loop 54 [34413, 9, 3497, 18481, 6994]
+Loop 55 [33043, 9, 3253, 18173, 6528]
+Loop 56 [32463, 9, 3242, 17805, 6466]
+Loop 57 [35592, 9, 3579, 19023, 7433]
+Loop 58 [32274, 9, 3185, 17511, 6691]
+Loop 59 [32224, 9, 3209, 17606, 6581]
+Loop 60 [32108, 9, 3157, 17570, 6489]
+Loop 61 [45034, 9, 4710, 26012, 8336]
+Loop 62 [35977, 9, 3663, 19389, 7147]
+Loop 63 [33276, 9, 3399, 18301, 6409]
+Loop 64 [38530, 9, 4449, 20360, 7707]
+Loop 65 [41535, 9, 5237, 21514, 8078]
+Loop 66 [80413, 9, 3628, 61354, 9901]
+Loop 67 [42455, 9, 4990, 23442, 8204]
+Loop 68 [34805, 9, 3998, 18643, 7112]
+Loop 69 [64231, 9, 3118, 17969, 38426]
+Loop 70 [81778, 9, 4048, 19286, 53135]
+Loop 71 [41334, 9, 4791, 21390, 9229]
+Loop 72 [51757, 9, 3900, 17712, 25155]
+Loop 73 [41384, 9, 3898, 24307, 7714]
+Loop 74 [33582, 9, 3150, 17931, 7505]
+Loop 75 [35193, 9, 3376, 18014, 7401]
+Loop 76 [52201, 9, 3263, 35428, 8307]
+Loop 77 [32871, 9, 3788, 17561, 6417]
+Loop 78 [37121, 9, 3969, 19027, 8638]
+Loop 79 [33125, 9, 3320, 18110, 6736]
+Loop 80 [32975, 9, 3246, 17989, 6909]
+Loop 81 [34213, 9, 3285, 18557, 6449]
+Loop 82 [31849, 9, 3187, 17053, 6725]
+Loop 83 [32561, 9, 3224, 17905, 6707]
+Loop 84 [33032, 9, 3282, 18011, 6735]
+Loop 85 [32547, 9, 2992, 16785, 7893]
+Loop 86 [49576, 9, 3701, 18439, 7664]
+Loop 87 [44460, 9, 3216, 16890, 19221]
+Loop 88 [49973, 9, 3485, 30427, 10895]
+Loop 89 [34624, 9, 3787, 18555, 7226]
+Loop 90 [33630, 9, 3226, 18588, 7027]
+Loop 91 [32866, 9, 3488, 17465, 7130]
+Loop 92 [36126, 9, 3073, 20599, 7614]
+Loop 93 [31841, 9, 3259, 16983, 6770]
+Loop 94 [32596, 9, 3090, 18415, 6264]
+Loop 95 [32779, 9, 3388, 17567, 6762]
+Loop 96 [763052, 9, 3202, 747463, 7490]
+Loop 97 [33245, 9, 3713, 16852, 7696]
+Loop 98 [32357, 9, 3258, 17506, 6666]
+Loop 99 [31650, 9, 2987, 16801, 7207]
+Loop 100 [32831, 9, 3204, 16837, 7924]
+Loop 101 [30469, 9, 3142, 16404, 6187]
+Loop 102 [30287, 9, 3069, 16378, 6217]
+Loop 103 [31659, 9, 3019, 16170, 7703]
+Loop 104 [31339, 9, 3160, 16837, 6725]
+Loop 105 [31579, 9, 3218, 16561, 7004]
+Loop 106 [31687, 9, 3175, 17244, 6410]
+Loop 107 [30338, 9, 3082, 16427, 6144]
+Loop 108 [30350, 9, 3075, 16537, 6053]
+Loop 109 [30178, 9, 2981, 16408, 6160]
+Loop 110 [32393, 9, 3187, 17534, 6708]
+Loop 111 [30675, 9, 3008, 16835, 6020]
+Loop 112 [30469, 9, 2981, 16492, 6296]
+Loop 113 [30905, 9, 3135, 16805, 6185]
+Loop 114 [30273, 9, 3032, 16477, 6031]
+Loop 115 [30025, 9, 2941, 16363, 5990]
+Loop 116 [52779, 9, 3229, 17395, 24765]
+Loop 117 [33224, 9, 3875, 17832, 6187]
+Loop 118 [30608, 9, 3233, 16476, 6087]
+Loop 119 [30417, 9, 2953, 16489, 6376]
+Loop 120 [29693, 9, 2892, 16435, 5779]
+Loop 121 [37857, 9, 3035, 23241, 6735]
+Loop 122 [31138, 9, 3176, 16913, 6269]
+Loop 123 [30540, 9, 2952, 16655, 6351]
+Loop 124 [30351, 9, 2994, 16651, 6027]
+Loop 125 [29912, 9, 2979, 16437, 5854]
+Loop 126 [29969, 9, 2942, 16533, 5866]
+Loop 127 [32423, 9, 3199, 16812, 5936]
+Loop 128 [30429, 9, 2973, 16803, 5961]
+Loop 129 [30644, 9, 3066, 16859, 5867]
+Loop 130 [30192, 9, 2843, 16898, 5803]
+Loop 131 [29804, 9, 2934, 16368, 5845]
+Loop 132 [29881, 9, 2876, 16377, 6018]
+Loop 133 [36139, 9, 2962, 22254, 6327]
+Loop 134 [30543, 9, 3158, 16652, 6001]
+Loop 135 [29826, 9, 2857, 16287, 5971]
+Loop 136 [30801, 9, 3200, 16587, 6353]
+Loop 137 [30373, 9, 3080, 16591, 6003]
+Loop 138 [30033, 9, 2932, 16605, 5850]
+Loop 139 [29935, 9, 3023, 16373, 5966]
+Loop 140 [30103, 9, 3062, 16451, 5891]
+Loop 141 [29879, 9, 2893, 16445, 5917]
+Loop 142 [29695, 9, 3035, 16128, 5955]
+Loop 143 [29762, 9, 2987, 16331, 5798]
+Loop 144 [30420, 9, 2957, 16949, 5926]
+Loop 145 [37065, 9, 3011, 23096, 6247]
+Loop 146 [30635, 9, 3180, 16875, 5826]
+Loop 147 [29512, 9, 2916, 16258, 5812]
+Loop 148 [29584, 9, 2980, 16148, 5902]
+Loop 149 [29879, 9, 2883, 16535, 5770]
+Loop 150 [29939, 9, 3054, 16449, 5888]
+Loop 151 [32005, 9, 3142, 16856, 6397]
+Loop 152 [30552, 9, 3077, 16799, 5926]
+Loop 153 [30254, 9, 3157, 16538, 5870]
+Loop 154 [30215, 9, 3081, 16606, 5917]
+Loop 155 [30054, 9, 2976, 16581, 5924]
+Loop 156 [30004, 9, 3080, 16505, 5814]
+Loop 157 [35060, 9, 3011, 21313, 6180]
+Loop 158 [30522, 9, 3182, 16670, 6023]
+Loop 159 [29680, 9, 3037, 16141, 5888]
+Loop 160 [49617, 9, 3023, 16645, 25273]
+Loop 161 [35694, 9, 3831, 18556, 6570]
+Loop 162 [32002, 9, 3140, 16799, 6158]
+Loop 163 [29765, 9, 2849, 16340, 5443]
+Loop 164 [31784, 9, 3202, 17711, 5793]
+Loop 165 [30344, 9, 3255, 16774, 5727]
+Loop 166 [29928, 9, 2986, 16584, 5748]
+Loop 167 [29403, 9, 2939, 16160, 5717]
+Loop 168 [29479, 9, 2932, 16395, 5620]
+Loop 169 [30925, 9, 3076, 17059, 5903]
+Loop 170 [31103, 9, 3012, 17667, 5491]
+Loop 171 [30308, 9, 2926, 16706, 5596]
+Loop 172 [29753, 9, 2978, 16719, 5549]
+Loop 173 [29480, 9, 2949, 16362, 5564]
+Loop 174 [29755, 9, 2965, 16686, 5486]
+Loop 175 [29598, 9, 2996, 16352, 5596]
+Loop 176 [29706, 9, 2996, 16618, 5547]
+Loop 177 [30118, 9, 3145, 16679, 5635]
+Loop 178 [29748, 9, 2879, 16549, 5568]
+Loop 179 [29634, 9, 2918, 16349, 5801]
+Loop 180 [29702, 9, 2868, 16410, 5807]
+Loop 181 [30542, 9, 3045, 16843, 5926]
+Loop 182 [31109, 9, 2984, 16354, 7102]
+Loop 183 [30142, 9, 2985, 16294, 6176]
+Loop 184 [29786, 9, 2992, 16393, 5885]
+Loop 185 [29997, 9, 3188, 16389, 5693]
+Loop 186 [29717, 9, 3009, 16723, 5499]
+Loop 187 [29272, 9, 2881, 16090, 5658]
+Loop 188 [29826, 9, 3078, 16537, 5411]
+Loop 189 [29216, 9, 2931, 16094, 5667]
+Loop 190 [30268, 9, 2937, 17047, 5547]
+Loop 191 [29507, 9, 2916, 16458, 5583]
+Loop 192 [29954, 9, 2974, 16788, 5569]
+Loop 193 [37789, 9, 9561, 17459, 5935]
+Loop 194 [30489, 9, 3140, 16967, 5723]
+Loop 195 [29534, 9, 2903, 16337, 5537]
+Loop 196 [29837, 9, 2949, 16887, 5423]
+Loop 197 [29243, 9, 2963, 16198, 5559]
+Loop 198 [29815, 9, 2911, 16943, 5486]
+Loop 199 [29250, 9, 3029, 16017, 5640]
+Loop 200 [32410, 9, 3397, 17708, 6173]
+Loop 201 [30418, 9, 3194, 16752, 5799]
+Loop 202 [30068, 9, 3047, 16812, 5664]
+Loop 203 [31032, 9, 2942, 17881, 5603]
+Loop 204 [48654, 9, 2967, 16356, 5573]
+Loop 205 [30063, 9, 2972, 16529, 5779]
+Loop 206 [29452, 9, 2828, 16495, 5432]
+Loop 207 [28552, 9, 2752, 15742, 5467]
+Loop 208 [29532, 9, 2900, 16539, 5657]
+Loop 209 [29584, 9, 3038, 16230, 5586]
+Loop 210 [29302, 9, 2912, 16300, 5522]
+Loop 211 [28566, 9, 2941, 15795, 5423]
+Loop 212 [29627, 9, 2983, 16677, 5411]
+Loop 213 [29126, 9, 2872, 16399, 5391]
+Loop 214 [28546, 9, 2863, 15699, 5471]
+Loop 215 [28572, 9, 2854, 15686, 5429]
+Loop 216 [43259, 9, 2821, 30017, 5800]
+Loop 217 [31003, 9, 3562, 16483, 5894]
+Loop 218 [44474, 9, 3620, 17264, 6249]
+Loop 219 [30032, 9, 3368, 16332, 5500]
+Loop 220 [28992, 9, 3020, 15963, 5551]
+Loop 221 [28623, 9, 2938, 15695, 5524]
+Loop 222 [28194, 9, 2914, 15755, 5265]
+Loop 223 [28058, 9, 2821, 15349, 5524]
+Loop 224 [712322, 9, 2927, 698640, 6264]
+Loop 225 [33196, 9, 4160, 17468, 6143]
+Loop 226 [29113, 9, 3082, 16013, 5478]
+Loop 227 [28628, 9, 2863, 15881, 5420]
+Loop 228 [29086, 9, 2967, 16225, 5493]
+Loop 229 [28638, 9, 2892, 15633, 5424]
+Loop 230 [31658, 9, 3140, 16246, 5543]
+Loop 231 [27998, 9, 3012, 15272, 5348]
+Loop 232 [28110, 9, 2858, 15434, 5509]
+Loop 233 [29891, 9, 3196, 16205, 5815]
+Loop 234 [28299, 9, 2940, 15651, 5356]
+Loop 235 [28468, 9, 2863, 15527, 5449]
+Loop 236 [29789, 9, 2885, 17003, 5488]
+Loop 237 [29195, 9, 2960, 15379, 6365]
+Loop 238 [29514, 9, 3021, 16634, 5465]
+Loop 239 [28262, 9, 3031, 15247, 5522]
+Loop 240 [29585, 9, 2871, 15647, 6708]
+Loop 241 [29436, 9, 3027, 15613, 6293]
+Loop 242 [28792, 9, 3022, 15851, 5573]
+Loop 243 [28028, 9, 2863, 15281, 5467]
+Loop 244 [28443, 9, 2920, 15651, 5513]
+Loop 245 [29325, 9, 2871, 16163, 5659]
+Loop 246 [53767, 9, 2964, 39659, 6475]
+Loop 247 [29744, 9, 3880, 15319, 5669]
+Loop 248 [27611, 9, 2983, 14835, 5394]
+Loop 249 [27699, 9, 2941, 14616, 5633]
+Loop 250 [27479, 9, 2832, 14785, 5463]
+Loop 251 [27150, 9, 2865, 14359, 5515]
+Loop 252 [27923, 9, 2815, 15471, 5389]
+Loop 253 [26816, 9, 2714, 14299, 5478]
+Loop 254 [27439, 9, 2875, 15013, 5239]
+Loop 255 [31445, 9, 3109, 15476, 5943]
+Loop 256 [27889, 9, 2948, 14818, 5549]
+Loop 257 [30826, 9, 3341, 15215, 5671]
+Loop 258 [28714, 9, 2920, 14444, 6011]
+Loop 259 [27996, 9, 3027, 14826, 5429]
+Loop 260 [39115, 9, 2941, 25365, 6073]
+Loop 261 [28033, 9, 3353, 14629, 5433]
+Loop 262 [41823, 9, 2874, 27950, 6406]
+Loop 263 [28852, 9, 3360, 15181, 5586]
+Loop 264 [27323, 9, 2909, 14630, 5378]
+Loop 265 [44487, 9, 4095, 28224, 6744]
+Loop 266 [30259, 9, 3825, 15476, 5485]
+Loop 267 [27300, 9, 2928, 14611, 5362]
+Loop 268 [48692, 9, 2927, 14463, 26560]
+Loop 269 [29922, 9, 3277, 15931, 5769]
+Loop 270 [37688, 9, 2969, 14869, 15227]
+Loop 271 [37799, 9, 3235, 15815, 13932]
+Loop 272 [29015, 9, 3131, 15609, 5361]
+Loop 273 [27634, 9, 3044, 14518, 5457]
+Loop 274 [42040, 9, 2925, 15595, 18478]
+Loop 275 [29891, 9, 3178, 15970, 5682]
+Loop 276 [79636, 9, 2994, 14585, 57291]
+Loop 277 [62841, 9, 4560, 17628, 6344]
+Loop 278 [28676, 9, 3388, 15012, 5352]
+Loop 279 [30680, 9, 3222, 16301, 5828]
+Loop 280 [29310, 9, 3069, 14909, 6216]
+Loop 281 [28413, 9, 3031, 14814, 5325]
+Loop 282 [27262, 9, 3007, 14758, 5429]
+Loop 283 [26573, 9, 2947, 14572, 5263]
+Loop 284 [26479, 9, 2983, 14499, 5192]
+Loop 285 [26186, 9, 2846, 14411, 5264]
+Loop 286 [26596, 9, 2916, 14529, 5225]
+Loop 287 [26128, 9, 2834, 14271, 5210]
+Loop 288 [26397, 9, 2930, 14483, 5136]
+Loop 289 [26955, 9, 2885, 14756, 5371]
+Loop 290 [26760, 9, 2903, 14511, 5429]
+Loop 291 [26962, 9, 3062, 14628, 5427]
+Loop 292 [27864, 9, 2978, 15296, 5549]
+Loop 293 [26959, 9, 2923, 14502, 5739]
+Loop 294 [51245, 9, 3003, 37063, 7244]
+Loop 295 [30166, 9, 3678, 17045, 5227]
+Loop 296 [26693, 9, 3018, 14279, 5129]
+Loop 297 [26975, 9, 2976, 14578, 5440]
+Loop 298 [27245, 9, 2965, 15092, 5218]
+Loop 299 [26558, 9, 2761, 14545, 5480]
+Loop 300 [26981, 9, 2794, 14863, 5407]
+Loop 301 [26793, 9, 2927, 14837, 5336]
+Loop 302 [26186, 9, 2819, 14445, 5181]
+Loop 303 [26316, 9, 2921, 14461, 5214]
+Loop 304 [27795, 9, 3018, 15032, 5715]
+Loop 305 [26921, 9, 3005, 14678, 5309]
+Loop 306 [26690, 9, 2881, 14569, 5133]
+Loop 307 [26452, 9, 2910, 14529, 5203]
+Loop 308 [26391, 9, 3003, 14326, 5214]
+Loop 309 [26465, 9, 2929, 14441, 5274]
+Loop 310 [26706, 9, 2944, 14785, 5082]
+Loop 311 [26054, 9, 2847, 14184, 5291]
+Loop 312 [25896, 9, 2919, 13955, 5185]
+Loop 313 [26901, 9, 3029, 14690, 5267]
+Loop 314 [26368, 9, 2958, 14246, 5278]
+Loop 315 [44964, 9, 2852, 14272, 24110]
+Loop 316 [26015, 9, 2890, 14063, 5048]
+Loop 317 [27229, 9, 3091, 14627, 5562]
+Loop 318 [26263, 9, 2899, 14008, 5369]
+Loop 319 [25388, 9, 2770, 13641, 5227]
+Loop 320 [26652, 9, 3107, 14266, 5327]
+Loop 321 [26363, 9, 2942, 14244, 5283]
+Loop 322 [25719, 9, 2911, 13819, 5163]
+Loop 323 [25458, 9, 2821, 13787, 5139]
+Loop 324 [25953, 9, 2881, 14131, 5174]
+Loop 325 [25714, 9, 2857, 14051, 5111]
+Loop 326 [26113, 9, 2781, 14337, 5194]
+Loop 327 [25769, 9, 2817, 14075, 5174]
+Loop 328 [25718, 9, 2878, 13778, 5194]
+Loop 329 [34637, 9, 2938, 22361, 5462]
+Loop 330 [26068, 9, 2920, 14063, 5097]
+Loop 331 [26174, 9, 2905, 14433, 5097]
+Loop 332 [25975, 9, 2798, 14147, 5136]
+Loop 333 [25655, 9, 2834, 13944, 5193]
+Loop 334 [26508, 9, 2941, 14180, 5400]
+Loop 335 [25845, 9, 2796, 13892, 5265]
+Loop 336 [26322, 9, 2887, 14321, 5283]
+Loop 337 [26511, 9, 2903, 14484, 5259]
+Loop 338 [25774, 9, 2728, 14060, 5227]
+Loop 339 [25784, 9, 2860, 13949, 5245]
+Loop 340 [25635, 9, 2863, 13969, 5046]
+Loop 341 [25714, 9, 2785, 14026, 5083]
+Loop 342 [26888, 9, 2865, 14583, 5579]
+Loop 343 [26197, 9, 2803, 14284, 5285]
+Loop 344 [26676, 9, 2991, 14561, 5304]
+Loop 345 [26334, 9, 2897, 14376, 5146]
+Loop 346 [25902, 9, 2850, 13949, 5293]
+Loop 347 [25496, 9, 2769, 13985, 5043]
+Loop 348 [25835, 9, 2863, 14080, 5162]
+Loop 349 [25561, 9, 2874, 13814, 5216]
+Loop 350 [25406, 9, 2835, 13821, 5100]
+Loop 351 [25399, 9, 2821, 13790, 5150]
+Loop 352 [29487, 9, 3235, 15768, 6121]
+Loop 353 [26837, 9, 2967, 14696, 5242]
+Loop 354 [26141, 9, 2851, 14273, 5214]
+Loop 355 [25919, 9, 2910, 14144, 5083]
+Loop 356 [25563, 9, 2876, 13941, 5064]
+Loop 357 [25511, 9, 2796, 13798, 5211]
+Loop 358 [25727, 9, 2854, 13960, 5126]
+Loop 359 [32811, 9, 2834, 14058, 12136]
+Loop 360 [26469, 9, 2895, 14452, 5196]
+Loop 361 [26417, 9, 3016, 14359, 5154]
+Loop 362 [26147, 9, 2696, 14610, 5127]
+Loop 363 [25359, 9, 2825, 13736, 5055]
+Loop 364 [25548, 9, 2701, 14060, 5130]
+Loop 365 [25432, 9, 2848, 13676, 5191]
+Loop 366 [25995, 9, 2849, 14166, 5256]
+Loop 367 [26070, 9, 2849, 14319, 5161]
+Loop 368 [25771, 9, 2813, 14145, 5085]
+Loop 369 [26558, 9, 2938, 14385, 5340]
+Loop 370 [25611, 9, 2823, 13944, 5110]
+Loop 371 [25674, 9, 2801, 13997, 5095]
+Loop 372 [31965, 9, 2941, 19783, 5538]
+Loop 373 [26234, 9, 3058, 14087, 5106]
+Loop 374 [25518, 9, 2873, 13903, 5125]
+Loop 375 [25809, 9, 2820, 13885, 5277]
+Loop 376 [25649, 9, 2834, 14164, 5042]
+Loop 377 [26327, 9, 3049, 14306, 5128]
+Loop 378 [46343, 9, 2872, 32403, 7160]
+Loop 379 [26771, 9, 3683, 13407, 5456]
+Loop 380 [25175, 9, 2859, 13014, 5496]
+Loop 381 [24780, 9, 2812, 13082, 5176]
+Loop 382 [24824, 9, 2783, 12999, 5216]
+Loop 383 [25675, 9, 3058, 13331, 5382]
+Loop 384 [24808, 9, 2851, 13028, 5220]
+Loop 385 [26392, 9, 2943, 13836, 5480]
+Loop 386 [25191, 9, 2883, 13231, 5166]
+Loop 387 [24526, 9, 2923, 12735, 5108]
+Loop 388 [24493, 9, 2820, 12861, 4990]
+Loop 389 [24835, 9, 2810, 13109, 5192]
+Loop 390 [24841, 9, 2792, 13083, 5187]
+Loop 391 [49145, 9, 2916, 13167, 29312]
+Loop 392 [27883, 9, 3408, 14174, 6219]
+Loop 393 [25563, 9, 3013, 13172, 5381]
+Loop 394 [26453, 9, 2803, 12903, 6396]
+Loop 395 [25595, 9, 2927, 13229, 5613]
+Loop 396 [24482, 9, 2818, 13021, 5003]
+Loop 397 [24855, 9, 2809, 13183, 5107]
+Loop 398 [25488, 9, 2969, 13289, 5327]
+Loop 399 [24590, 9, 2787, 12808, 5199]
+Loop 400 [24765, 9, 2788, 13096, 5133]
+Loop 401 [24963, 9, 2917, 13163, 5072]
+Loop 402 [24159, 9, 2685, 12750, 4955]
+Loop 403 [24436, 9, 2848, 12874, 5081]
+Loop 404 [24344, 9, 2821, 12881, 4950]
+Loop 405 [24377, 9, 2839, 12889, 5024]
+Loop 406 [24167, 9, 2749, 12817, 4931]
+Loop 407 [27488, 9, 2828, 15692, 5254]
+Loop 408 [27096, 9, 2940, 13240, 7156]
+Loop 409 [42594, 9, 2936, 13533, 22285]
+Loop 410 [36354, 9, 3384, 23865, 4870]
+Loop 411 [30976, 9, 3120, 13220, 10650]
+Loop 412 [24238, 9, 2996, 12937, 4332]
+Loop 413 [23903, 9, 2865, 12857, 4530]
+Loop 414 [23845, 9, 2808, 12773, 4576]
+Loop 415 [23531, 9, 2884, 12563, 4358]
+Loop 416 [23515, 9, 2856, 12653, 4285]
+Loop 417 [24263, 9, 3000, 13047, 4516]
+Loop 418 [23899, 9, 2779, 12802, 4509]
+Loop 419 [23823, 9, 2856, 12797, 4464]
+Loop 420 [27322, 9, 2959, 13280, 7327]
+Loop 421 [25356, 9, 2972, 13291, 5337]
+Loop 422 [116974, 9, 3428, 15152, 36234]
+Loop 423 [29301, 9, 4028, 15555, 5233]
+Loop 424 [25075, 9, 3235, 13101, 4775]
+Loop 425 [25363, 9, 3013, 13118, 5314]
+Loop 426 [23859, 9, 2726, 12905, 4427]
+Loop 427 [23889, 9, 2819, 12912, 4372]
+Loop 428 [24335, 9, 2833, 13205, 4662]
+Loop 429 [28638, 9, 2894, 13127, 8974]
+Loop 430 [24684, 9, 2985, 13327, 4558]
+Loop 431 [23968, 9, 2774, 12843, 4638]
+Loop 432 [24976, 9, 2921, 13339, 5094]
+Loop 433 [31233, 9, 3869, 16788, 5868]
+Loop 434 [25771, 9, 3150, 13735, 4719]
+Loop 435 [24063, 9, 2838, 12753, 4496]
+Loop 436 [24448, 9, 2864, 13307, 4471]
+Loop 437 [42371, 9, 2762, 31493, 4369]
+Loop 438 [23757, 9, 2723, 12897, 4411]
+Loop 439 [23710, 9, 2653, 12876, 4485]
+Loop 440 [23425, 9, 2716, 12704, 4378]
+Loop 441 [26431, 9, 3178, 14257, 4861]
+Loop 442 [23711, 9, 2912, 12750, 4301]
+Loop 443 [23704, 9, 2748, 13023, 4259]
+Loop 444 [24850, 9, 2825, 12558, 5753]
+Loop 445 [37600, 9, 3077, 13154, 17432]
+Loop 446 [27681, 9, 3574, 14804, 5061]
+Loop 447 [24993, 9, 2898, 12864, 5271]
+Loop 448 [23930, 9, 2850, 13032, 4275]
+Loop 449 [26974, 9, 3266, 14396, 4908]
+Loop 450 [23537, 9, 2763, 12554, 4297]
+Loop 451 [24260, 9, 2897, 12951, 4565]
+Loop 452 [23635, 9, 2753, 12870, 4199]
+Loop 453 [23406, 9, 2784, 12722, 4191]
+Loop 454 [23236, 9, 2741, 12604, 4190]
+Loop 455 [23342, 9, 2823, 12679, 4189]
+Loop 456 [23050, 9, 2810, 12513, 4095]
+Loop 457 [29002, 9, 3302, 13876, 4959]
+Loop 458 [35743, 9, 3097, 13488, 4731]
+Loop 459 [24583, 9, 2969, 13402, 4312]
+Loop 460 [24295, 9, 2617, 13085, 4748]
+Loop 461 [23944, 9, 2708, 13109, 4325]
+Loop 462 [23446, 9, 2661, 12637, 4316]
+Loop 463 [23474, 9, 2754, 12824, 4168]
+Loop 464 [24098, 9, 2741, 13156, 4571]
+Loop 465 [26711, 9, 3320, 14268, 4815]
+Loop 466 [23416, 9, 2723, 12681, 4264]
+Loop 467 [23718, 9, 2777, 12786, 4384]
+Loop 468 [23081, 9, 2695, 12642, 4109]
+Loop 469 [23382, 9, 2679, 12786, 4248]
+Loop 470 [23240, 9, 2714, 12520, 4270]
+Loop 471 [24800, 9, 2819, 13622, 4546]
+Loop 472 [23171, 9, 2670, 12566, 4237]
+Loop 473 [26356, 9, 3399, 14040, 4745]
+Loop 474 [23726, 9, 2896, 12560, 4378]
+Loop 475 [23012, 9, 2746, 12464, 4177]
+Loop 476 [23692, 9, 2800, 12941, 4273]
+Loop 477 [23395, 9, 2821, 12575, 4283]
+Loop 478 [23274, 9, 2688, 12622, 4325]
+Loop 479 [23414, 9, 2859, 12589, 4340]
+Loop 480 [27300, 9, 3296, 14202, 5305]
+Loop 481 [26611, 9, 3237, 14310, 4818]
+Loop 482 [23621, 9, 2871, 12841, 4191]
+Loop 483 [23618, 9, 2936, 12775, 4192]
+Loop 484 [23411, 9, 2900, 12696, 4179]
+Loop 485 [23183, 9, 2725, 12594, 4177]
+Loop 486 [23378, 9, 2732, 12795, 4171]
+Loop 487 [23247, 9, 2705, 12710, 4184]
+Loop 488 [22944, 9, 2736, 12461, 4135]
+Loop 489 [26935, 9, 3339, 14392, 4917]
+Loop 490 [23816, 9, 2829, 12899, 4324]
+Loop 491 [23542, 9, 2734, 12781, 4325]
+Loop 492 [23406, 9, 2792, 12624, 4350]
+Loop 493 [24477, 9, 2934, 13237, 4532]
+Loop 494 [23297, 9, 2708, 12698, 4239]
+Loop 495 [23238, 9, 2660, 12682, 4206]
+Loop 496 [23156, 9, 2770, 12485, 4292]
+Loop 497 [26020, 9, 3225, 14086, 4620]
+Loop 498 [23712, 9, 2809, 12770, 4288]
+Loop 499 [23511, 9, 2744, 12775, 4287]
+Loop 500 [23298, 9, 2610, 12817, 4221]
+Loop 501 [24825, 9, 2943, 13479, 4434]
+Loop 502 [23288, 9, 2728, 12710, 4123]
+Loop 503 [23387, 9, 2821, 12763, 4185]
+Loop 504 [23168, 9, 2752, 12498, 4246]
+Loop 505 [26073, 9, 3419, 13613, 4844]
+Loop 506 [23511, 9, 2742, 12642, 4319]
+Loop 507 [23672, 9, 2779, 12968, 4281]
+Loop 508 [23454, 9, 2750, 12715, 4261]
+Loop 509 [23336, 9, 2787, 12684, 4192]
+Loop 510 [23186, 9, 2741, 12544, 4321]
+Loop 511 [23394, 9, 2764, 12627, 4299]
+Loop 512 [23358, 9, 2826, 12584, 4257]
+Loop 513 [27121, 9, 3481, 14073, 5057]
+Loop 514 [60971, 9, 3584, 15108, 5578]
+Loop 515 [57390, 9, 3419, 14350, 15954]
+Loop 516 [26728, 9, 3500, 14373, 4398]
+Loop 517 [23624, 9, 2982, 12708, 4084]
+Loop 518 [23276, 9, 2940, 12615, 4099]
+Loop 519 [23187, 9, 2805, 12747, 3987]
+Loop 520 [22828, 9, 2734, 12325, 4225]
+Loop 521 [25911, 9, 3295, 13862, 4562]
+Loop 522 [23070, 9, 2725, 12495, 4146]
+Loop 523 [23075, 9, 2719, 12529, 4190]
+Loop 524 [22771, 9, 2776, 12400, 4044]
+Loop 525 [23179, 9, 2795, 12646, 4146]
+Loop 526 [24260, 9, 2758, 13154, 4545]
+Loop 527 [23287, 9, 2694, 12709, 4177]
+Loop 528 [22963, 9, 2734, 12628, 4043]
+Loop 529 [25868, 9, 3213, 13981, 4547]
+Loop 530 [23236, 9, 2910, 12425, 4180]
+Loop 531 [23294, 9, 2919, 12553, 4170]
+Loop 532 [22924, 9, 2751, 12509, 4098]
+Loop 533 [23043, 9, 2871, 12544, 4021]
+Loop 534 [22710, 9, 2649, 12412, 4099]
+Loop 535 [22970, 9, 2678, 12392, 4265]
+Loop 536 [23114, 9, 2768, 12591, 4153]
+Loop 537 [25663, 9, 3388, 13801, 4345]
+Loop 538 [30061, 9, 2853, 13199, 4319]
+Loop 539 [23245, 9, 2717, 12681, 4073]
+Loop 540 [23037, 9, 2799, 12646, 3999]
+Loop 541 [23210, 9, 2866, 12579, 4157]
+Loop 542 [22873, 9, 2707, 12419, 4119]
+Loop 543 [22760, 9, 2739, 12356, 4015]
+Loop 544 [23110, 9, 2819, 12487, 4209]
+Loop 545 [25802, 9, 3206, 13953, 4448]
+Loop 546 [22939, 9, 2654, 12411, 4173]
+Loop 547 [23570, 9, 2856, 12731, 4217]
+Loop 548 [22815, 9, 2715, 12341, 4164]
+Loop 549 [23054, 9, 2818, 12447, 4168]
+Loop 550 [22677, 9, 2710, 12417, 4016]
+Loop 551 [30598, 9, 9600, 13160, 4175]
+Loop 552 [23198, 9, 2985, 12473, 4084]
+Loop 553 [25631, 9, 3275, 13776, 4444]
+Loop 554 [23413, 9, 2972, 12396, 4374]
+Loop 555 [22972, 9, 2666, 12522, 4065]
+Loop 556 [22436, 9, 2597, 12238, 3968]
+Loop 557 [22749, 9, 2803, 12379, 3996]
+Loop 558 [22740, 9, 2659, 12447, 4077]
+Loop 559 [22667, 9, 2703, 12416, 4003]
+Loop 560 [22722, 9, 2704, 12336, 4002]
+Loop 561 [25184, 9, 3200, 13506, 4250]
+Loop 562 [22667, 9, 2632, 12263, 4061]
+Loop 563 [22564, 9, 2668, 12298, 3944]
+Loop 564 [23638, 9, 2858, 12750, 4239]
+Loop 565 [22621, 9, 2579, 12353, 4008]
+Loop 566 [22571, 9, 2561, 12179, 4137]
+Loop 567 [22560, 9, 2639, 12438, 3821]
+Loop 568 [22520, 9, 2560, 12187, 4040]
+Loop 569 [24996, 9, 3224, 13315, 4427]
+Loop 570 [22801, 9, 2729, 12284, 4068]
+Loop 571 [25408, 9, 2677, 12678, 4108]
+Loop 572 [22731, 9, 2748, 12294, 3981]
+Loop 573 [23143, 9, 2840, 12486, 4130]
+Loop 574 [22511, 9, 2659, 12257, 3894]
+Loop 575 [22718, 9, 2714, 12345, 4024]
+Loop 576 [23205, 9, 2880, 12504, 4086]
+Loop 577 [25667, 9, 3162, 13836, 4558]
+Loop 578 [24321, 9, 2712, 13314, 4538]
+Loop 579 [22851, 9, 2804, 12509, 3966]
+Loop 580 [22580, 9, 2646, 12380, 3933]
+Loop 581 [23391, 9, 2664, 12223, 4972]
+Loop 582 [23564, 9, 2721, 12663, 4591]
+Loop 583 [22822, 9, 2769, 12405, 4084]
+Loop 584 [22327, 9, 2721, 12203, 3905]
+Loop 585 [25368, 9, 3217, 13473, 4494]
+Loop 586 [22779, 9, 2621, 12392, 4159]
+Loop 587 [22724, 9, 2610, 12412, 4069]
+Loop 588 [22749, 9, 2586, 12367, 4069]
+Loop 589 [28863, 9, 2661, 12318, 10301]
+Loop 590 [24149, 9, 2982, 13114, 4334]
+Loop 591 [22624, 9, 2763, 12447, 3923]
+Loop 592 [22992, 9, 2696, 12615, 4086]
+Loop 593 [25291, 9, 3098, 13708, 4306]
+Loop 594 [22620, 9, 2648, 12370, 4023]
+Loop 595 [22795, 9, 2644, 12488, 4077]
+Loop 596 [22339, 9, 2583, 12278, 4041]
+Loop 597 [22313, 9, 2606, 12168, 4036]
+Loop 598 [22314, 9, 2594, 12110, 3986]
+Loop 599 [23471, 9, 2609, 12562, 4766]
+Loop 600 [23006, 9, 2757, 12566, 4134]
+Loop 601 [25176, 9, 3315, 13573, 4294]
+Loop 602 [45181, 9, 2819, 12806, 25705]
+Loop 603 [24493, 9, 3254, 13699, 3559]
+Loop 604 [23466, 9, 2733, 13481, 3565]
+Loop 605 [22377, 9, 2727, 12483, 3466]
+Loop 606 [21725, 9, 2507, 12310, 3380]
+Loop 607 [21862, 9, 2569, 12241, 3508]
+Loop 608 [25242, 9, 3131, 14036, 3914]
+Loop 609 [25119, 9, 3315, 13858, 3834]
+Loop 610 [22039, 9, 2584, 12378, 3376]
+Loop 611 [21891, 9, 2584, 12302, 3437]
+Loop 612 [21920, 9, 2562, 12424, 3406]
+Loop 613 [21925, 9, 2586, 12247, 3508]
+Loop 614 [21829, 9, 2557, 12247, 3395]
+Loop 615 [21754, 9, 2489, 12365, 3353]
+Loop 616 [21801, 9, 2603, 12234, 3393]
+Loop 617 [24621, 9, 3075, 13697, 3823]
+Loop 618 [22250, 9, 2648, 12557, 3348]
+Loop 619 [22567, 9, 2735, 12750, 3439]
+Loop 620 [22734, 9, 2648, 12594, 3703]
+Loop 621 [25463, 9, 2863, 13672, 3572]
+Loop 622 [23208, 9, 2686, 12467, 4523]
+Loop 623 [22081, 9, 2661, 12309, 3489]
+Loop 624 [22153, 9, 2578, 12503, 3472]
+Loop 625 [24425, 9, 3113, 13512, 3774]
+Loop 626 [21894, 9, 2592, 12133, 3534]
+Loop 627 [21815, 9, 2572, 12223, 3497]
+Loop 628 [21627, 9, 2575, 12036, 3541]
+Loop 629 [21845, 9, 2698, 12257, 3373]
+Loop 630 [21846, 9, 2619, 12223, 3512]
+Loop 631 [21904, 9, 2635, 12225, 3503]
+Loop 632 [21868, 9, 2573, 12214, 3493]
+Loop 633 [24975, 9, 3158, 13658, 3883]
+Loop 634 [21911, 9, 2610, 12000, 3561]
+Loop 635 [21869, 9, 2657, 12321, 3348]
+Loop 636 [21835, 9, 2624, 12227, 3499]
+Loop 637 [21549, 9, 2600, 11955, 3445]
+Loop 638 [22132, 9, 2633, 12498, 3459]
+Loop 639 [21660, 9, 2670, 12005, 3497]
+Loop 640 [22225, 9, 2701, 12445, 3510]
+Loop 641 [24133, 9, 3157, 13216, 3702]
+Loop 642 [21740, 9, 2493, 12170, 3338]
+Loop 643 [21795, 9, 2532, 12421, 3311]
+Loop 644 [21647, 9, 2529, 12123, 3377]
+Loop 645 [21924, 9, 2561, 12330, 3451]
+Loop 646 [22587, 9, 2655, 12702, 3534]
+Loop 647 [22059, 9, 2600, 12495, 3455]
+Loop 648 [21838, 9, 2570, 12207, 3472]
+Loop 649 [24545, 9, 3136, 13471, 3746]
+Loop 650 [21761, 9, 2617, 12101, 3386]
+Loop 651 [22109, 9, 2614, 12460, 3433]
+Loop 652 [21856, 9, 2768, 12028, 3552]
+Loop 653 [21904, 9, 2736, 12219, 3439]
+Loop 654 [21756, 9, 2694, 12135, 3405]
+Loop 655 [21718, 9, 2579, 12218, 3385]
+Loop 656 [24419, 9, 3051, 13682, 3771]
+Loop 657 [25077, 9, 3134, 13927, 3874]
+Loop 658 [22319, 9, 2632, 12556, 3434]
+Loop 659 [27602, 9, 2704, 12832, 3563]
+Loop 660 [21798, 9, 2535, 12249, 3547]
+Loop 661 [22060, 9, 2655, 12403, 3466]
+Loop 662 [22117, 9, 2528, 12365, 3623]
+Loop 663 [24032, 9, 2918, 12815, 3607]
+Loop 664 [22297, 9, 2693, 12511, 3402]
+Loop 665 [24106, 9, 3136, 13238, 3716]
+Loop 666 [22134, 9, 2843, 12080, 3575]
+Loop 667 [21357, 9, 2493, 11996, 3397]
+Loop 668 [21353, 9, 2564, 11974, 3374]
+Loop 669 [21660, 9, 2617, 12096, 3416]
+Loop 670 [21513, 9, 2546, 12068, 3437]
+Loop 671 [21379, 9, 2608, 11986, 3352]
+Loop 672 [21559, 9, 2560, 12089, 3448]
+Loop 673 [21514, 9, 2546, 12039, 3422]
+Loop 674 [21654, 9, 2555, 12088, 3548]
+Loop 675 [21355, 9, 2590, 11844, 3413]
+Loop 676 [22115, 9, 2702, 12270, 3499]
+Loop 677 [22648, 9, 2841, 12609, 3466]
+Loop 678 [40232, 9, 2541, 30812, 3322]
+Loop 679 [48584, 9, 2666, 12046, 30293]
+Loop 680 [24711, 9, 3519, 13598, 3519]
+Loop 681 [21649, 9, 2700, 12008, 3256]
+Loop 682 [21352, 9, 2506, 11935, 3331]
+Loop 683 [20971, 9, 2458, 11893, 3169]
+Loop 684 [21034, 9, 2424, 11964, 3279]
+Loop 685 [24214, 9, 2697, 12413, 3332]
+Loop 686 [21122, 9, 2456, 12098, 3127]
+Loop 687 [20745, 9, 2387, 11791, 3182]
+Loop 688 [21151, 9, 2542, 11988, 3237]
+Loop 689 [20990, 9, 2411, 11906, 3184]
+Loop 690 [20927, 9, 2451, 11895, 3177]
+Loop 691 [21236, 9, 2551, 11921, 3295]
+Loop 692 [20993, 9, 2505, 11850, 3224]
+Loop 693 [21344, 9, 2462, 12151, 3273]
+Loop 694 [21383, 9, 2546, 12127, 3231]
+Loop 695 [21094, 9, 2416, 11963, 3242]
+Loop 696 [21486, 9, 2673, 12039, 3270]
+Loop 697 [20786, 9, 2431, 11784, 3232]
+Loop 698 [27508, 9, 2500, 18137, 3383]
+Loop 699 [21643, 9, 2733, 12116, 3191]
+Loop 700 [21145, 9, 2646, 12033, 3038]
+Loop 701 [21093, 9, 2460, 11978, 3195]
+Loop 702 [21125, 9, 2570, 11980, 3188]
+Loop 703 [21032, 9, 2443, 11984, 3155]
+Loop 704 [21022, 9, 2507, 12032, 3084]
+Loop 705 [20987, 9, 2552, 11809, 3140]
+Loop 706 [21073, 9, 2526, 11879, 3178]
+Loop 707 [20902, 9, 2478, 11946, 3118]
+Loop 708 [21075, 9, 2608, 11888, 3173]
+Loop 709 [20976, 9, 2484, 11933, 3131]
+Loop 710 [21248, 9, 2520, 12114, 3160]
+Loop 711 [21233, 9, 2475, 12113, 3200]
+Loop 712 [21016, 9, 2515, 11925, 3133]
+Loop 713 [21162, 9, 2551, 12010, 3185]
+Loop 714 [21095, 9, 2564, 11892, 3200]
+Loop 715 [21322, 9, 2516, 12204, 3171]
+Loop 716 [21118, 9, 2597, 11928, 3204]
+Loop 717 [21286, 9, 2557, 12059, 3164]
+Loop 718 [21320, 9, 2586, 12128, 3176]
+Loop 719 [21213, 9, 2510, 12046, 3193]
+Loop 720 [21021, 9, 2555, 11826, 3162]
+Loop 721 [21917, 9, 2555, 12506, 3240]
+Loop 722 [20892, 9, 2476, 11704, 3175]
+Loop 723 [21237, 9, 2554, 11911, 3291]
+Loop 724 [21106, 9, 2453, 12001, 3255]
+Loop 725 [20942, 9, 2468, 11959, 3142]
+Loop 726 [20955, 9, 2560, 11780, 3226]
+Loop 727 [21158, 9, 2487, 12031, 3204]
+Loop 728 [20942, 9, 2489, 11819, 3224]
+Loop 729 [21036, 9, 2513, 11771, 3218]
+Loop 730 [21136, 9, 2626, 11811, 3186]
+Loop 731 [21035, 9, 2488, 12037, 3023]
+Loop 732 [21204, 9, 2616, 11957, 3177]
+Loop 733 [20960, 9, 2520, 11929, 3147]
+Loop 734 [21204, 9, 2566, 12030, 3211]
+Loop 735 [21191, 9, 2495, 11965, 3227]
+Loop 736 [21034, 9, 2582, 11891, 3159]
+Loop 737 [23745, 9, 2952, 13314, 3632]
+Loop 738 [20967, 9, 2507, 11712, 3226]
+Loop 739 [21159, 9, 2506, 11957, 3142]
+Loop 740 [20887, 9, 2426, 11995, 3100]
+Loop 741 [20786, 9, 2451, 11726, 3177]
+Loop 742 [20739, 9, 2484, 11740, 3127]
+Loop 743 [20992, 9, 2393, 11963, 3222]
+Loop 744 [20809, 9, 2460, 11739, 3225]
+Loop 745 [20674, 9, 2425, 11725, 3149]
+Loop 746 [20521, 9, 2395, 11631, 3135]
+Loop 747 [21164, 9, 2409, 12023, 3284]
+Loop 748 [22268, 9, 2431, 13204, 3216]
+Loop 749 [21782, 9, 2554, 11906, 3849]
+Loop 750 [21260, 9, 2623, 12041, 3167]
+Loop 751 [20983, 9, 2511, 11907, 3140]
+Loop 752 [20972, 9, 2546, 11899, 3155]
+Loop 753 [21931, 9, 2606, 12306, 3330]
+Loop 754 [20956, 9, 2402, 11865, 3160]
+Loop 755 [21093, 9, 2577, 11753, 3251]
+Loop 756 [21029, 9, 2455, 11966, 3124]
+Loop 757 [20964, 9, 2487, 11826, 3142]
+Loop 758 [20852, 9, 2487, 11795, 3092]
+Loop 759 [21138, 9, 2457, 12079, 3170]
+Loop 760 [21126, 9, 2597, 11981, 3156]
+Loop 761 [21148, 9, 2573, 11815, 3270]
+Loop 762 [21082, 9, 2553, 11844, 3228]
+Loop 763 [20950, 9, 2552, 11975, 3076]
+Loop 764 [21033, 9, 2520, 11886, 3215]
+Loop 765 [20774, 9, 2462, 11709, 3180]
+Loop 766 [20770, 9, 2406, 11713, 3162]
+Loop 767 [20938, 9, 2517, 11878, 3182]
+Loop 768 [20903, 9, 2435, 11841, 3169]
+Loop 769 [20918, 9, 2461, 11795, 3195]
+Loop 770 [21066, 9, 2494, 11955, 3169]
+Loop 771 [21020, 9, 2467, 11949, 3197]
+Loop 772 [20968, 9, 2462, 11979, 3122]
+Loop 773 [20924, 9, 2487, 11799, 3244]
+Loop 774 [22306, 9, 2467, 13091, 3270]
+Loop 775 [21359, 9, 2584, 12076, 3134]
+Loop 776 [21949, 9, 2564, 12378, 3318]
+Loop 777 [21140, 9, 2566, 11729, 3331]
+Loop 778 [21156, 9, 2467, 11981, 3207]
+Loop 779 [21215, 9, 2564, 11806, 3422]
+Loop 780 [21153, 9, 2427, 12062, 3137]
+Loop 781 [21095, 9, 2657, 11792, 3246]
+Loop 782 [20856, 9, 2391, 11830, 3159]
+Loop 783 [20411, 9, 2469, 11533, 3092]
+Loop 784 [20876, 9, 2447, 11829, 3120]
+Loop 785 [20526, 9, 2422, 11541, 3188]
+Loop 786 [20750, 9, 2436, 11667, 3209]
+Loop 787 [20623, 9, 2439, 11552, 3252]
+Loop 788 [20859, 9, 2359, 11828, 3218]
+Loop 789 [21073, 9, 2497, 11901, 3277]
+Loop 790 [21095, 9, 2417, 12006, 3164]
+Loop 791 [21133, 9, 2472, 11855, 3403]
+Loop 792 [21202, 9, 2436, 11993, 3222]
+Loop 793 [21124, 9, 2546, 11844, 3242]
+Loop 794 [21194, 9, 2471, 11882, 3291]
+Loop 795 [20856, 9, 2529, 11757, 3147]
+Loop 796 [20922, 9, 2430, 11933, 3080]
+Loop 797 [20947, 9, 2471, 11685, 3298]
+Loop 798 [21126, 9, 2415, 12012, 3140]
+Loop 799 [23644, 9, 2750, 12321, 3335]
+Loop 800 [21107, 9, 2473, 11831, 3247]
+Loop 801 [20595, 9, 2444, 11461, 3210]
+Loop 802 [21167, 9, 2564, 11931, 3247]
+Loop 803 [21341, 9, 2694, 11877, 3284]
+Loop 804 [20949, 9, 2472, 11877, 3160]
+Loop 805 [20646, 9, 2447, 11576, 3206]
+Loop 806 [21208, 9, 2382, 12194, 3209]
+Loop 807 [20712, 9, 2400, 11698, 3209]
+Loop 808 [21238, 9, 2518, 11928, 3277]
+Loop 809 [20794, 9, 2433, 11691, 3244]
+Loop 810 [20827, 9, 2488, 11653, 3258]
+Loop 811 [21193, 9, 2558, 11887, 3215]
+Loop 812 [21051, 9, 2504, 11851, 3246]
+Loop 813 [20940, 9, 2468, 11844, 3205]
+Loop 814 [21159, 9, 2438, 11984, 3222]
+Loop 815 [20883, 9, 2464, 11860, 3143]
+Loop 816 [21062, 9, 2548, 11899, 3253]
+Loop 817 [20819, 9, 2498, 11656, 3146]
+Loop 818 [21000, 9, 2453, 11802, 3262]
+Loop 819 [21224, 9, 2433, 12033, 3280]
+Loop 820 [20883, 9, 2508, 11751, 3266]
+Loop 821 [25122, 9, 2402, 15729, 3512]
+Loop 822 [21173, 9, 2644, 11750, 3293]
+Loop 823 [20604, 9, 2408, 11645, 3151]
+Loop 824 [20913, 9, 2484, 11760, 3200]
+Loop 825 [20509, 9, 2393, 11549, 3155]
+Loop 826 [20888, 9, 2444, 11820, 3237]
+Loop 827 [20639, 9, 2430, 11641, 3124]
+Loop 828 [21146, 9, 2440, 12013, 3264]
+Loop 829 [21532, 9, 2621, 11992, 3368]
+Loop 830 [20785, 9, 2393, 11638, 3266]
+Loop 831 [20987, 9, 2440, 11777, 3284]
+Loop 832 [21353, 9, 2663, 11901, 3185]
+Loop 833 [20719, 9, 2511, 11529, 3198]
+Loop 834 [21058, 9, 2472, 11862, 3172]
+Loop 835 [20579, 9, 2393, 11569, 3213]
+Loop 836 [21104, 9, 2546, 11873, 3202]
+Loop 837 [20960, 9, 2508, 11798, 3205]
+Loop 838 [20961, 9, 2510, 11890, 3124]
+Loop 839 [21033, 9, 2427, 11908, 3267]
+Loop 840 [20989, 9, 2526, 11820, 3210]
+Loop 841 [20865, 9, 2449, 11737, 3258]
+Loop 842 [20803, 9, 2483, 11714, 3174]
+Loop 843 [21639, 9, 2628, 12120, 3306]
+Loop 844 [25362, 9, 2451, 16067, 3366]
+Loop 845 [21262, 9, 2535, 11937, 3263]
+Loop 846 [21842, 9, 2614, 12398, 3271]
+Loop 847 [21100, 9, 2542, 11899, 3191]
+Loop 848 [21053, 9, 2506, 11844, 3257]
+Loop 849 [21087, 9, 2493, 12026, 3059]
+Loop 850 [21058, 9, 2473, 11919, 3246]
+Loop 851 [20818, 9, 2442, 11731, 3140]
+Loop 852 [20761, 9, 2487, 11717, 3120]
+Loop 853 [21020, 9, 2498, 11995, 3151]
+Loop 854 [20961, 9, 2460, 11859, 3244]
+Loop 855 [20670, 9, 2420, 11829, 3043]
+Loop 856 [21060, 9, 2553, 11872, 3189]
+Loop 857 [20668, 9, 2450, 11672, 3136]
+Loop 858 [20850, 9, 2541, 11707, 3221]
+Loop 859 [20781, 9, 2467, 11755, 3113]
+Loop 860 [20902, 9, 2499, 11831, 3153]
+Loop 861 [20887, 9, 2449, 11864, 3170]
+Loop 862 [20980, 9, 2455, 11900, 3211]
+Loop 863 [20929, 9, 2452, 11895, 3163]
+Loop 864 [21014, 9, 2561, 11915, 3162]
+Loop 865 [20524, 9, 2467, 11564, 3106]
+Loop 866 [20801, 9, 2490, 11743, 3189]
+Loop 867 [24011, 9, 2925, 13417, 3774]
+Loop 868 [21074, 9, 2549, 11937, 3171]
+Loop 869 [21385, 9, 2581, 12197, 3154]
+Loop 870 [20942, 9, 2473, 11900, 3140]
+Loop 871 [21202, 9, 2519, 12135, 3134]
+Loop 872 [20872, 9, 2462, 11811, 3188]
+Loop 873 [21069, 9, 2596, 11969, 3158]
+Loop 874 [20925, 9, 2575, 11762, 3162]
+Loop 875 [21193, 9, 2453, 12009, 3319]
+Loop 876 [24909, 9, 2486, 15701, 3337]
+Loop 877 [21304, 9, 2584, 11955, 3229]
+Loop 878 [21093, 9, 2586, 11857, 3187]
+Loop 879 [20705, 9, 2420, 11783, 3136]
+Loop 880 [20710, 9, 2422, 11834, 3106]
+Loop 881 [21191, 9, 2561, 11964, 3085]
+Loop 882 [20746, 9, 2438, 11715, 3131]
+Loop 883 [21079, 9, 2582, 12002, 3147]
+Loop 884 [21250, 9, 2644, 11833, 3306]
+Loop 885 [21211, 9, 2695, 11876, 3204]
+Loop 886 [20502, 9, 2390, 11598, 3121]
+Loop 887 [20932, 9, 2504, 11741, 3266]
+Loop 888 [20691, 9, 2463, 11692, 3053]
+Loop 889 [20938, 9, 2468, 11886, 3231]
+Loop 890 [20812, 9, 2504, 11687, 3139]
+Loop 891 [20622, 9, 2484, 11615, 3142]
+Loop 892 [20936, 9, 2491, 11799, 3155]
+Loop 893 [21521, 9, 2644, 12063, 3239]
+Loop 894 [20641, 9, 2440, 11573, 3175]
+Loop 895 [20734, 9, 2446, 11678, 3157]
+Loop 896 [20741, 9, 2438, 11762, 3144]
+Loop 897 [20371, 9, 2400, 11429, 3129]
+Loop 898 [20377, 9, 2453, 11344, 3147]
+Loop 899 [21355, 9, 2582, 11973, 3207]
+Loop 900 [20652, 9, 2470, 11716, 3096]
+Loop 901 [20894, 9, 2385, 11742, 3304]
+Loop 902 [20896, 9, 2435, 11875, 3202]
+Loop 903 [20572, 9, 2362, 11653, 3118]
+Loop 904 [20978, 9, 2486, 11820, 3154]
+Loop 905 [20748, 9, 2562, 11582, 3213]
+Loop 906 [20565, 9, 2393, 11550, 3152]
+Loop 907 [21120, 9, 2460, 11919, 3224]
+Loop 908 [20908, 9, 2509, 11885, 3105]
+Loop 909 [20987, 9, 2468, 11765, 3224]
+Loop 910 [20659, 9, 2427, 11676, 3217]
+Loop 911 [20455, 9, 2448, 11682, 3071]
+Loop 912 [20492, 9, 2435, 11562, 3134]
+Loop 913 [21393, 9, 2621, 12057, 3239]
+Loop 914 [20663, 9, 2504, 11454, 3296]
+Loop 915 [20687, 9, 2440, 11689, 3172]
+Loop 916 [20420, 9, 2395, 11530, 3188]
+Loop 917 [20610, 9, 2478, 11655, 3116]
+Loop 918 [20610, 9, 2470, 11605, 3074]
+Loop 919 [22221, 9, 2497, 13001, 3289]
+Loop 920 [21696, 9, 2566, 11786, 3910]
+Loop 921 [25397, 9, 2586, 11730, 7627]
+Loop 922 [21399, 9, 2527, 12097, 3160]
+Loop 923 [21040, 9, 2446, 11995, 3245]
+Loop 924 [20720, 9, 2400, 11788, 3038]
+Loop 925 [20953, 9, 2435, 11915, 3236]
+Loop 926 [20932, 9, 2337, 11990, 3109]
+Loop 927 [20927, 9, 2524, 11838, 3184]
+Loop 928 [20907, 9, 2462, 11840, 3116]
+Loop 929 [20566, 9, 2486, 11516, 3244]
+Loop 930 [20715, 9, 2358, 11711, 3191]
+Loop 931 [20588, 9, 2429, 11604, 3209]
+Loop 932 [21510, 9, 2664, 12102, 3226]
+Loop 933 [21102, 9, 2559, 11812, 3176]
+Loop 934 [20959, 9, 2466, 11963, 3076]
+Loop 935 [20632, 9, 2435, 11663, 3125]
+Loop 936 [20878, 9, 2465, 11930, 3078]
+Loop 937 [20511, 9, 2473, 11461, 3151]
+Loop 938 [20571, 9, 2360, 11633, 3086]
+Loop 939 [20548, 9, 2458, 11585, 3116]
+Loop 940 [20838, 9, 2356, 11906, 3143]
+Loop 941 [20703, 9, 2446, 11791, 3110]
+Loop 942 [20918, 9, 2480, 11892, 3136]
+Loop 943 [20714, 9, 2477, 11733, 3147]
+Loop 944 [24575, 9, 2444, 15356, 3344]
+Loop 945 [22244, 9, 2574, 12959, 3200]
+Loop 946 [20706, 9, 2471, 11611, 3111]
+Loop 947 [20738, 9, 2502, 11659, 3230]
+Loop 948 [20812, 9, 2493, 11855, 3126]
+Loop 949 [20648, 9, 2561, 11512, 3177]
+Loop 950 [20667, 9, 2513, 11622, 3069]
+Loop 951 [20530, 9, 2373, 11682, 3081]
+Loop 952 [20814, 9, 2455, 11828, 3100]
+Loop 953 [20474, 9, 2398, 11520, 3117]
+Loop 954 [20912, 9, 2449, 11947, 3110]
+Loop 955 [20582, 9, 2440, 11674, 3078]
+Loop 956 [20756, 9, 2396, 11870, 3134]
+Loop 957 [20419, 9, 2384, 11468, 3175]
+Loop 958 [20857, 9, 2400, 11919, 3144]
+Loop 959 [20569, 9, 2439, 11594, 3119]
+Loop 960 [20830, 9, 2484, 11826, 3130]
+Loop 961 [20515, 9, 2450, 11490, 3200]
+Loop 962 [20652, 9, 2445, 11666, 3186]
+Loop 963 [20685, 9, 2506, 11633, 3093]
+Loop 964 [20825, 9, 2449, 11811, 3130]
+Loop 965 [20623, 9, 2400, 11709, 3099]
+Loop 966 [20834, 9, 2442, 11902, 3102]
+Loop 967 [24590, 9, 2431, 15380, 3311]
+Loop 968 [21417, 9, 2613, 12107, 3212]
+Loop 969 [20506, 9, 2443, 11413, 3166]
+Loop 970 [20632, 9, 2429, 11596, 3205]
+Loop 971 [20624, 9, 2382, 11755, 3113]
+Loop 972 [20763, 9, 2530, 11707, 3133]
+Loop 973 [20639, 9, 2462, 11625, 3144]
+Loop 974 [20790, 9, 2542, 11593, 3231]
+Loop 975 [20612, 9, 2564, 11518, 3110]
+Loop 976 [20973, 9, 2482, 11805, 3209]
+Loop 977 [20777, 9, 2523, 11742, 3080]
+Loop 978 [20789, 9, 2471, 11722, 3193]
+Loop 979 [20770, 9, 2504, 11662, 3171]
+Loop 980 [20898, 9, 2551, 11691, 3184]
+Loop 981 [20717, 9, 2476, 11638, 3130]
+Loop 982 [20830, 9, 2488, 11737, 3144]
+Loop 983 [20727, 9, 2502, 11651, 3131]
+Loop 984 [20899, 9, 2448, 11796, 3162]
+Loop 985 [20621, 9, 2482, 11666, 3038]
+Loop 986 [20679, 9, 2521, 11683, 3127]
+Loop 987 [20615, 9, 2446, 11693, 3099]
+Loop 988 [20803, 9, 2398, 11902, 3165]
+Loop 989 [20912, 9, 2473, 11778, 3241]
+Loop 990 [24513, 9, 2439, 15376, 3293]
+Loop 991 [21020, 9, 2590, 11718, 3188]
+Loop 992 [20969, 9, 2555, 11871, 3149]
+Loop 993 [20503, 9, 2433, 11486, 3184]
+Loop 994 [20602, 9, 2511, 11583, 3163]
+Loop 995 [20743, 9, 2445, 11652, 3207]
+Loop 996 [576591, 9, 2564, 567122, 3451]
+Loop 997 [21795, 9, 2939, 11826, 3304]
+Loop 998 [21434, 9, 2484, 12167, 3229]
+Loop 999 [20776, 9, 2513, 11645, 3200]
+replicas primary file /tmp1024eccache3.dat capacity 256
+replicas slave file /tmp1024eccache3.datLQL0 capacity 256
+replicas slave file /tmp1024eccache3.datLQL1 capacity 256
+replicas slave file /tmp1024eccache3.datLQL2 capacity 256
+replicas slave file /tmp1024eccache3.datLQL3 capacity 256
+replicas slave file /tmp1024eccache3.datLQL4 capacity 256
